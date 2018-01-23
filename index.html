@@ -179,7 +179,7 @@
       function Cell ({ data }) {
         const { url, img, title } = data
         return (
-          <li className="cell">
+          <li className="cell" key={title}>
             <a href={url}>
               <div className="img-box">
                 <img src={img} alt={title}/>
