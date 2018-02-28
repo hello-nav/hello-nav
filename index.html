@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="Hello Nav" content="content">
+    <!-- <meta name="name" content="content"> -->
     <title>Hello Nav!</title>
     <style>
       * {
@@ -80,8 +81,8 @@
     <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
     <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
     <script src="https://cdn.bootcss.com/babel-core/5.8.38/browser.min.js"></script>
-    <script type="text/babel">
-      const webs = [{
+    <script>
+      const library = [{
         url: 'https://www.baidu.com/',
         img: './logos/baidu.png',
         title: '百度'
@@ -146,7 +147,7 @@
         img: './logos/xcx.png',
         title: '微信小程序'
       }, {
-        url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
+        url: 'http://nodejs.cn/api/',
         img: './logos/nodejs.png',
         title: 'nodeJS'
       }, {
@@ -166,6 +167,14 @@
         img: './logos/less.png',
         title: 'less'
       }, {
+        url: 'https://studygolang.com/',
+        img: './logos/golang.png',
+        title: 'go'
+      }, {
+        url: 'https://ruby-china.org/',
+        img: './logos/ruby.png',
+        title: 'ruby'
+      }, {
         url: 'hhttp://www.iconfont.cn/',
         img: './logos/iconfont.png',
         title: 'iconfont'
@@ -182,33 +191,29 @@
         img: './logos/jobbole.png',
         title: '伯乐在线'
       }];
+    </script>
+    <script type="text/babel">
 
+      const App = ({ list }) => (
+        <ul className="contain">
+          {list.map( (item, idx) => <Cell {...item} key={idx}/> )}
+        </ul>
+      )
 
-      function Cell ({ data }) {
-        const { url, img, title } = data
-        return (
-          <li className="cell" key={title}>
-            <a href={url}>
-              <div className="img-box">
-                <img src={img} alt={title}/>
-              </div>
-              <p className="title">{title}</p>
-            </a>
-          </li>
-        )
-      }
-
-
-      function List ({ list }) {
-        const listItems = list.map( v => <Cell data={v}/> )
-        return <ul className="contain">{ listItems }</ul>
-      }
-
-
+      const Cell = ({ url, img, title }) => (
+        <li className="cell">
+          <a href={url}>
+            <div className="img-box">
+              <img src={img} alt={title}/>
+            </div>
+            <p className="title">{title}</p>
+          </a>
+        </li>
+      )
 
       ReactDOM.render(
-        <List list={webs}/>,
+        <App list={library}/>,
         document.getElementById('app')
-      );
+      )
     </script>
 </html>
