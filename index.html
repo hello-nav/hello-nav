@@ -196,9 +196,9 @@
     </script>
     <script type="text/babel">
 
-      const App = ({ list }) => (
+      const App = _ => (
         <ul className="contain">
-          {list.map( (item, idx) => <Cell {...item} key={idx}/> )}
+          {library.map( (item, idx) => <Cell {...item} key={idx}/> )}
         </ul>
       )
 
@@ -214,7 +214,7 @@
       )
 
       ReactDOM.render(
-        <App list={library}/>,
+        <App/>,
         document.getElementById('app')
       )
     </script>
