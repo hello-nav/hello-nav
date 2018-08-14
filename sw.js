@@ -1,4 +1,4 @@
-const cacheName = 'cache'
+const cacheName = 'cache-0.0.1'
 self.addEventListener('fetch', function (event) {
   event.respondWith(
     caches.match(event.request, {ignoreSearch: true}).then(response => {
