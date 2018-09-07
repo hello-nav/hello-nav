@@ -89,14 +89,15 @@
       .cell img {
         display: block;
         max-width: 60px;
+        border-radius: 4px;
       }
       .cell .title {
-        padding: 6px 0;
+        padding-top: 6px;
       }
       .err-message {
         line-height: 30px;
         text-align: center;
-        padding: 200px 0;
+        padding-top: 200px;
         font-size: 20px;
         color: gray;
       }
@@ -117,8 +118,6 @@
     <script src="./config.js"></script>
     <script type="text/babel">
       void (function (library) {
-        const isIncludesStr = (str, subStr) => !!~str.toLowerCase().indexOf(subStr.toLowerCase())
-
         const WithError = (Component, text) => ({isError, ...props}) => (
           isError ?
           <p className="err-message">{text}</p> :
@@ -135,14 +134,15 @@
           }
           filterLibrary (e) {
             this.setState({
-              filterValue: e.target.value
+              filterValue: e.target.value.trim()
             })
           }
           render () {
             const { library, filterValue } = this.state
             const lowerCaseValue = filterValue.toLowerCase()
-            const list = library.filter( ({title, imgSrc}) =>
-              (isIncludesStr(title, lowerCaseValue) || isIncludesStr(imgSrc, lowerCaseValue)) )
+            const list = lowerCaseValue === '' ?
+              library :
+              library.filter( ({keyWords}) => keyWords.some(item => item.toLowerCase().includes(lowerCaseValue)))
             return (
               <div>
                 <Filter value={filterValue} onInput={this.filterLibrary.bind(this)}/>
