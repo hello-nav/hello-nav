@@ -49,36 +49,6 @@ const library = [{
     keyWords: ['jquery'],
     title: 'jQuery'
 }, {
-    url: 'https://github.com/',
-    imgSrc: './logos/github.png',
-    keyWords: ['github'],
-    title: 'GitHub'
-}, {
-    url: 'https://segmentfault.com/',
-    imgSrc: './logos/sf.png',
-    keyWords: ['segmentfault', 'sf'],
-    title: 'segmentfault'
-}, {
-    url: 'https://developer.mozilla.org/zh-CN/',
-    imgSrc: './logos/MDN.png',
-    keyWords: ['mdn'],
-    title: 'MDN'
-}, {
-    url: 'https://www.zhihu.com/',
-    imgSrc: './logos/zhihu.png',
-    keyWords: ['知乎', 'zhihu'],
-    title: '知乎'
-}, {
-    url: 'https://juejin.im/timeline',
-    imgSrc: './logos/juejin.png',
-    keyWords: ['掘金', 'juejin'],
-    title: '掘金'
-}, {
-    url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
-    imgSrc: './logos/xcx.png',
-    keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
-    title: '微信小程序'
-}, {
     url: 'http://nodejs.cn/api/',
     imgSrc: './logos/nodejs.png',
     keyWords: ['nodejs'],
@@ -113,6 +83,36 @@ const library = [{
     imgSrc: './logos/ruby.png',
     keyWords: ['ruby'],
     title: 'ruby'
+}, {
+    url: 'https://github.com/',
+    imgSrc: './logos/github.png',
+    keyWords: ['github'],
+    title: 'GitHub'
+}, {
+    url: 'https://segmentfault.com/',
+    imgSrc: './logos/sf.png',
+    keyWords: ['segmentfault', 'sf'],
+    title: 'segmentfault'
+}, {
+    url: 'https://developer.mozilla.org/zh-CN/',
+    imgSrc: './logos/MDN.png',
+    keyWords: ['mdn'],
+    title: 'MDN'
+}, {
+    url: 'https://www.zhihu.com/',
+    imgSrc: './logos/zhihu.png',
+    keyWords: ['知乎', 'zhihu'],
+    title: '知乎'
+}, {
+    url: 'https://juejin.im/timeline',
+    imgSrc: './logos/juejin.png',
+    keyWords: ['掘金', 'juejin'],
+    title: '掘金'
+}, {
+    url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
+    imgSrc: './logos/xcx.png',
+    keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
+    title: '微信小程序'
 }, {
     url: 'hhttp://www.iconfont.cn/',
     imgSrc: './logos/iconfont.png',
