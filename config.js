@@ -85,7 +85,7 @@ const library = [{
 }, {
     url: 'https://studygolang.com/',
     imgSrc: './logos/golang.png',
-    title: 'go'
+    title: 'golang'
 }, {
     url: 'https://ruby-china.org/',
     imgSrc: './logos/ruby.png',
