@@ -36,12 +36,31 @@
         z-index: 100;
       }
       #app {
-        padding: 100px;
+        padding: 70px 0;
+        text-align: center;
+      }
+      .search-input {
+        outline: none;
+        height: 26px;
+        line-height: 26px;
+        width: 200px;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        border: 1px solid #e4e4e4;
+        border-radius: 100px;
+        color: #999;
+        font-size: 14px;
+      }
+      .search-input:focus {
+        transition: .5s;
+        border-color: rgba(3, 195, 178, 0.52);
+        box-shadow: 0 0 8px rgba(3, 195, 178, 0.28);
       }
       .contain {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fill, 130px);
+        padding: 0 100px;
       }
       .cell {
         min-width: 100px;
@@ -72,7 +91,14 @@
         max-width: 60px;
       }
       .cell .title {
-        padding: 6px;
+        padding: 6px 0;
+      }
+      .err-message {
+        line-height: 30px;
+        text-align: center;
+        padding: 200px 0;
+        font-size: 20px;
+        color: gray;
       }
     </style>
   </head>
@@ -90,27 +116,68 @@
     <script src="https://cdn.bootcss.com/babel-core/5.8.38/browser.min.js"></script>
     <script src="./config.js"></script>
     <script type="text/babel">
+      void (function (library) {
+        const isIncludesStr = (str, subStr) => !!~str.toLowerCase().indexOf(subStr.toLowerCase())
 
-      const App = _ => (
-        <ul className="contain">
-          {library.map( (item, idx) => <Cell {...item} key={idx}/> )}
-        </ul>
-      )
+        const WithError = (Component, text) => ({isError, ...props}) => (
+          isError ?
+          <p className="err-message">{text}</p> :
+          <Component {...props} />
+        )
 
-      const Cell = ({ url, img, title }) => (
-        <li className="cell">
-          <a href={url}>
-            <div className="img-box">
-              <img src={img} alt={title}/>
-            </div>
-            <p className="title">{title}</p>
-          </a>
-        </li>
-      )
+        class App extends React.Component {
+          constructor (props) {
+            super(props)
+            this.state = {
+              library,
+              filterValue: ''
+            }
+          }
+          filterLibrary (e) {
+            this.setState({
+              filterValue: e.target.value
+            })
+          }
+          render () {
+            const { library, filterValue } = this.state
+            const lowerCaseValue = filterValue.toLowerCase()
+            const list = library.filter( ({title, imgSrc}) =>
+              (isIncludesStr(title, lowerCaseValue) || isIncludesStr(imgSrc, lowerCaseValue)) )
+            return (
+              <div>
+                <Filter value={filterValue} onInput={this.filterLibrary.bind(this)}/>
+                <ContainWithNotFind list={list} isError={!list.length}/>
+              </div>
+            )
+          }
+        }
 
-      ReactDOM.render(
-        <App/>,
-        document.getElementById('app')
-      )
+        const Filter = ({filterValue, onInput}) =>
+          <input className="search-input" type="text" value={filterValue} onInput={onInput} />
+
+        const Contain = ({list}) => (
+          <ul className="contain">
+            { list.map( (item, idx) => <Cell {...item} key={idx}/> ) }
+          </ul>
+        )
+
+        const ContainWithNotFind = WithError(Contain, 'Opps! Can not find it here.')
+
+        const Cell = ({ url, imgSrc, title }) => (
+          <li className="cell">
+            <a href={url}>
+              <div className="img-box">
+                <img src={imgSrc} alt={title}/>
+              </div>
+              <p className="title">{title}</p>
+            </a>
+          </li>
+        )
+
+        ReactDOM.render(
+          <App/>,
+          document.getElementById('app')
+        )
+      })(library)
     </script>
 </html>

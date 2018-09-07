@@ -1,109 +1,109 @@
 const library = [{
     url: 'https://www.baidu.com/',
-    img: './logos/baidu.png',
+    imgSrc: './logos/baidu.png',
     title: '百度'
 }, {
     url: 'https://cn.vuejs.org/',
-    img: './logos/vue.png',
+    imgSrc: './logos/vue.png',
     title: 'Vue.js'
 }, {
     url: 'https://doc.react-china.org/',
-    img: './logos/react.png',
+    imgSrc: './logos/react.png',
     title: 'React.js'
 }, {
     url: 'https://angular.cn/',
-    img: './logos/angular.png',
+    imgSrc: './logos/angular.png',
     title: 'Angular.js'
 }, {
     url: 'https://webpack.js.org/',
-    img: './logos/webpack.png',
+    imgSrc: './logos/webpack.png',
     title: 'webpack'
 }, {
     url: 'https://www.gulpjs.com.cn/',
-    img: './logos/gulp.png',
+    imgSrc: './logos/gulp.png',
     title: 'gulp'
 }, {
     url: 'http://eslint.cn/',
-    img: './logos/eslint.png',
+    imgSrc: './logos/eslint.png',
     title: 'eslint'
 }, {
     url: 'http://babeljs.io/',
-    img: './logos/babel.png',
+    imgSrc: './logos/babel.png',
     title: 'babel'
 }, {
     url: 'https://www.tslang.cn/',
-    img: './logos/typescript.png',
+    imgSrc: './logos/typescript.png',
     title: 'TypeScript'
 }, {
     url: 'http://jquery.cuishifeng.cn/',
-    img: './logos/jquery.png',
+    imgSrc: './logos/jquery.png',
     title: 'jQuery'
 }, {
     url: 'https://github.com/',
-    img: './logos/github.png',
+    imgSrc: './logos/github.png',
     title: 'github'
 }, {
     url: 'https://segmentfault.com/',
-    img: './logos/sf.png',
+    imgSrc: './logos/sf.png',
     title: 'segmentfault'
 }, {
     url: 'https://developer.mozilla.org/zh-CN/',
-    img: './logos/MDN.png',
+    imgSrc: './logos/MDN.png',
     title: 'MDN'
 }, {
     url: 'https://www.zhihu.com/',
-    img: './logos/zhihu.png',
+    imgSrc: './logos/zhihu.png',
     title: '知乎'
 }, {
     url: 'https://juejin.im/timeline',
-    img: './logos/juejin.png',
+    imgSrc: './logos/juejin.png',
     title: '掘金'
 }, {
     url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
-    img: './logos/xcx.png',
+    imgSrc: './logos/xcx.png',
     title: '微信小程序'
 }, {
     url: 'http://nodejs.cn/api/',
-    img: './logos/nodejs.png',
+    imgSrc: './logos/nodejs.png',
     title: 'nodeJS'
 }, {
     url: 'http://expressjs.com/',
-    img: './logos/express.png',
+    imgSrc: './logos/express.png',
     title: 'expressjs'
 }, {
     url: 'https://electronjs.org/',
-    img: './logos/electron.png',
+    imgSrc: './logos/electron.png',
     title: 'electron'
 }, {
     url: 'https://www.sass.hk/',
-    img: './logos/sass.png',
+    imgSrc: './logos/sass.png',
     title: 'sass'
 }, {
     url: 'http://lesscss.cn/',
-    img: './logos/less.png',
+    imgSrc: './logos/less.png',
     title: 'less'
 }, {
     url: 'https://studygolang.com/',
-    img: './logos/golang.png',
+    imgSrc: './logos/golang.png',
     title: 'go'
 }, {
     url: 'https://ruby-china.org/',
-    img: './logos/ruby.png',
+    imgSrc: './logos/ruby.png',
     title: 'ruby'
 }, {
     url: 'hhttp://www.iconfont.cn/',
-    img: './logos/iconfont.png',
+    imgSrc: './logos/iconfont.png',
     title: 'iconfont'
 }, {
     url: 'https://kb.cnblogs.com/',
-    img: './logos/bokeyuan.png',
+    imgSrc: './logos/bokeyuan.png',
     title: '博客园'
 }, {
     url: 'https://www.jianshu.com/',
-    img: './logos/jianshu.png',
+    imgSrc: './logos/jianshu.png',
     title: '简书'
 }, {
     url: 'http://web.jobbole.com/',
-    img: './logos/jobbole.png',
+    imgSrc: './logos/jobbole.png',
     title: '伯乐在线'
 }];
