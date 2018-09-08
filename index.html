@@ -22,6 +22,7 @@
         text-indent: -99999px;
       }
       body {
+        background: #f7f7f7;
         font-size: 15px;
         font-family: 'microsoft yahei';
       }
@@ -65,22 +66,23 @@
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fill, 130px);
-        padding: 0 100px;
+        padding: 0 70px;
       }
       .cell {
         display: grid;
-        grid-template: 15px 1fr 15px / 20px 1fr 20px;
+        grid-template: 15px 1fr 15px / 15px 1fr 15px;
       }
       .cell a {
         display: grid;
         grid-area: 2 / 2;
         grid-template: 70px 28px / 100%;
         transition: all .2s;
-        border-radius: 4px;
+        border-radius: 6px;
         color: #555;
       }
       .cell a:hover {
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, .15);
+        background: #fefefe;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, .15);
       }
       .cell .img-box {
         display: flex;

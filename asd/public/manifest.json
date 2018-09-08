@@ -1,0 +1,13 @@
+{
+  "name": "hello nav",
+  "short_name": "nav",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A nav of technology stack",
+  "start_url": "./index.html",
+  "icons": [{
+    "src": "./icons/N-logo@144x144.png",
+    "type": "image/png",
+    "sizes": "144x144"
+  }]
+}
