@@ -62,23 +62,26 @@
       .cell {
         display: grid;
         grid-template: 15px 1fr 15px / 15px 1fr 15px;
+        transform-origin: bottom;
+      }
+      .cell:hover {
+        animation: 2.5s jump infinite;
+      }
+      .cell:hover a {
+        transform: translateY(-5px);
       }
       .cell a {
         display: grid;
         grid-area: 2 / 2;
         grid-template: 70px 28px / 100%;
         border-radius: 6px;
-        color: #555;
-        box-shadow: 40px 40px 80px #f7f7f7;
-        transition: .5s;
-      }
-      .cell:hover a {
-        transform: translateY(-5px);
+        transition: .382s;
       }
       .cell a:hover {
         transition: 0s;
         background: #fff;
         box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+        animation: none;
       }
       .cell .img-box {
         display: flex;
@@ -99,6 +102,26 @@
         padding-top: 200px;
         font-size: 20px;
         color: gray;
+      }
+      @keyframes jump {
+        75% {
+          transform: rotate(0deg);
+        }
+        80% {
+          transform: rotate(5deg);
+        }
+        85% {
+          transform: rotate(-5deg);
+        }
+        90% {
+          transform: rotate(5deg);
+        }
+        95% {
+          transform: rotate(-5deg);
+        }
+        to {
+          transform: rotate(0deg);
+        }
       }
     </style>
   </head>

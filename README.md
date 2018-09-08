@@ -8,3 +8,4 @@ Technology stack nav with PWA
 [ ] create nav categary
 [ ] add sw
 [ ] github link
+[ ] blur toggle(list & categary)
