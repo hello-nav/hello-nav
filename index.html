@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="Hello Nav" content="前端开发导航">
-    <meta name="keywords" content="中国 前端 导航 前端导航 Hello-Nav Nav">
+    <meta name="keywords" content="前端导航,Hello Nav">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="manifest" href="./manifest.json">
@@ -23,18 +23,9 @@
       }
       body {
         background: #f7f7f7;
-        font-size: 15px;
+        font-size: 14px;
         font-family: 'microsoft yahei';
-      }
-      body:before {
-        content: "";
-        position: fixed;
-        top: -10px;
-        left: 0;
-        width: 100%;
-        height: 10px;
-        box-shadow: 0px 0px 15px rgba(0,0,0,.4);
-        z-index: 100;
+        box-shadow:inset 0 15px 15px -15px rgba(0,0,0,.4)
       }
       #app {
         padding: 70px 0;
@@ -76,13 +67,18 @@
         display: grid;
         grid-area: 2 / 2;
         grid-template: 70px 28px / 100%;
-        transition: all .2s;
         border-radius: 6px;
         color: #555;
+        box-shadow: 40px 40px 80px #f7f7f7;
+        transition: .5s;
+      }
+      .cell:hover a {
+        transform: translateY(-5px);
       }
       .cell a:hover {
-        background: #fefefe;
-        box-shadow: 2px 2px 15px rgba(0, 0, 0, .15);
+        transition: 0s;
+        background: #fff;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .08);
       }
       .cell .img-box {
         display: flex;
@@ -94,6 +90,8 @@
         border-radius: 4px;
       }
       .cell .title {
+        font-size: 14px;
+        color: #757575;
       }
       .err-message {
         line-height: 30px;
