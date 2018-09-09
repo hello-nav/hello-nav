@@ -58,13 +58,13 @@
       .contain {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fill, 130px);
-        padding: 0 70px;
+        grid-template-columns: repeat(auto-fill, 120px);
+        padding: 0 4vw;
       }
       .cell {
         text-align: center;
         display: grid;
-        grid-template: 15px 1fr 15px / 15px 1fr 15px;
+        grid-template: 15px 1fr 15px / 10px 1fr 10px;
         transform-origin: bottom;
       }
       .cell:hover {
@@ -78,9 +78,11 @@
         grid-area: 2 / 2;
         grid-template: 70px 28px / 100%;
         border-radius: 6px;
-        transition: .382s;
+        transform-origin: bottom;
+        transition: .4s;
       }
       .cell a:hover {
+        animation: none;
         transition: 0s;
         box-shadow: 0 0 30px rgba(0, 0, 0, .08);
         background: #fff;
@@ -95,6 +97,8 @@
         border-radius: 4px;
       }
       .cell .title {
+        /* 防止字体动画时抖帧 */
+        padding-top: 1px;
         font-size: 14px;
         color: #757575;
       }
