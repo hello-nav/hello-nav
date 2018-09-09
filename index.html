@@ -29,59 +29,59 @@
       }
       #app {
         padding: 70px 0;
-        text-align: center;
       }
       .search-input {
         outline: none;
-        height: 26px;
-        line-height: 26px;
-        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        width: 60px;
         padding: 0 15px;
-        margin-bottom: 30px;
+        margin: 0 12vw 30px;
         border: 1px solid #e4e4e4;
         border-radius: 100px;
         color: #999;
         font-size: 14px;
+        transition: .2s;
       }
       .search-input:hover {
-        transition: .2s;
-        border-color: rgba(3, 195, 178, 0.22);
-        box-shadow: 0 0 8px rgba(3, 195, 178, 0.08);
+        width: 60px;
+        border-color: rgba(4, 170, 255, 0.2);
+        box-shadow: 0 0 10px rgba(4, 170, 255, 0.2);
       }
       .search-input:focus {
+        width: 210px;
         transition: .5s;
-        border-color: rgba(3, 195, 178, 0.52);
-        box-shadow: 0 0 8px rgba(3, 195, 178, 0.28);
+        border-color: rgba(4, 170, 255, 0.4);
+        box-shadow: 0 0 14px rgba(4, 170, 255, 0.3);
       }
       .contain {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fill, 130px);
-        padding: 0 70px;
+        padding: 0 4vw;
       }
       .cell {
+        text-align: center;
         display: grid;
         grid-template: 15px 1fr 15px / 15px 1fr 15px;
-        transform-origin: bottom;
-      }
-      .cell:hover {
-        animation: 2.5s jump infinite;
       }
       .cell:hover a {
         transform: translateY(-5px);
+        animation: 2.5s .4s rock infinite;
       }
       .cell a {
         display: grid;
         grid-area: 2 / 2;
         grid-template: 70px 28px / 100%;
         border-radius: 6px;
-        transition: .382s;
+        transform-origin: bottom;
+        transition: .4s;
       }
       .cell a:hover {
-        transition: 0s;
-        background: #fff;
-        box-shadow: 0 0 30px rgba(0, 0, 0, .08);
         animation: none;
+        transition: 0s;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+        background: #fff;
       }
       .cell .img-box {
         display: flex;
@@ -89,10 +89,12 @@
         align-items: center;
       }
       .cell img {
-        width: 52px;
+        width: 50px;
         border-radius: 4px;
       }
       .cell .title {
+        /* 防止字体动画时抖帧 */
+        padding-top: 1px;
         font-size: 14px;
         color: #757575;
       }
@@ -103,24 +105,21 @@
         font-size: 20px;
         color: gray;
       }
-      @keyframes jump {
+      @keyframes rock {
         75% {
-          transform: rotate(0deg);
+          transform: translateY(-5px);
         }
         80% {
-          transform: rotate(5deg);
+          transform: translateY(-5px) rotate(-4deg);
         }
         85% {
-          transform: rotate(-5deg);
+          transform: translateY(-5px) rotate(3deg);
         }
         90% {
-          transform: rotate(5deg);
+          transform: translateY(-5px) rotate(-2deg);
         }
         95% {
-          transform: rotate(-5deg);
-        }
-        to {
-          transform: rotate(0deg);
+          transform: translateY(-5px) rotate(1deg);
         }
       }
     </style>
