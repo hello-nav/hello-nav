@@ -1,0 +1,6 @@
+.contain {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 120px);
+  padding: 0 4vw;
+}

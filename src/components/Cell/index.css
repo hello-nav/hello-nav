@@ -1,0 +1,68 @@
+.cell {
+  text-align: center;
+  display: grid;
+  grid-template: 15px 1fr 15px / 10px 1fr 10px;
+  transform-origin: bottom;
+}
+
+.cell:hover {
+  animation: 2.5s 2s rock infinite;
+}
+
+.cell:hover a {
+  transform: translateY(-5px);
+}
+
+.cell a {
+  display: grid;
+  grid-area: 2 / 2;
+  grid-template: 70px 28px / 100%;
+  border-radius: 6px;
+  transform-origin: bottom;
+  transition: .4s;
+}
+
+.cell a:hover {
+  animation: none;
+  transition: 0s;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+  background: #fff;
+}
+
+.cell .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  width: 50px;
+  border-radius: 4px;
+}
+
+.cell .title {
+  font-size: 14px;
+  color: #757575;
+}
+
+@keyframes rock {
+  75% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(-4deg);
+  }
+
+  85% {
+    transform: rotate(3deg);
+  }
+
+  90% {
+    transform: rotate(-2deg);
+  }
+
+  95% {
+    transform: rotate(1deg);
+  }
+}

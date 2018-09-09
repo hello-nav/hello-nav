@@ -1,12 +1,9 @@
-# Technology-stack-nav
-
-Technology stack nav with PWA
+# hello nav
 
 ## TODO
 
-- [ ] fix all image file
-- [ ] create nav categary
-- [ ] add sw
+- [x] fix all image file
+- [ ] create nav categary & blur toggle(list & categary)
 - [ ] github link
-- [ ] blur toggle(list & categary)
 - [ ] grid layout
+- [ ] add sw

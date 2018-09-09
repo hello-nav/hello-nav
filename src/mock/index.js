@@ -1,141 +1,138 @@
-const library = [{
+const _require = path => require('../assets/images/' + path)
+
+export default [{
     url: 'https://www.baidu.com/',
-    imgSrc: './logos/baidu.png',
+    imgSrc: _require('baidu.png'),
     keyWords: ['百度', 'baidu'],
     title: '百度'
 }, {
     url: 'https://cn.vuejs.org/',
-    imgSrc: './logos/vue.png',
+    imgSrc: _require('vue.png'),
     keyWords: ['vue'],
     title: 'Vue.js'
 }, {
     url: 'https://doc.react-china.org/',
-    imgSrc: './logos/react.png',
+    imgSrc: _require('react.png'),
     keyWords: ['react'],
     title: 'React.js'
 }, {
     url: 'https://angular.cn/',
-    imgSrc: './logos/angular.png',
+    imgSrc: _require('angular.png'),
     keyWords: ['angular'],
     title: 'Angular.js'
 }, {
     url: 'https://webpack.js.org/',
-    imgSrc: './logos/webpack.png',
+    imgSrc: _require('webpack.png'),
     keyWords: ['webpack'],
     title: 'webpack'
 }, {
     url: 'https://www.gulpjs.com.cn/',
-    imgSrc: './logos/gulp.png',
+    imgSrc: _require('gulp.png'),
     keyWords: ['gulp'],
     title: 'gulp'
 }, {
     url: 'http://eslint.cn/',
-    imgSrc: './logos/eslint.png',
+    imgSrc: _require('eslint.png'),
     keyWords: ['eslint'],
     title: 'eslint'
 }, {
     url: 'http://babeljs.io/',
-    imgSrc: './logos/babel.png',
+    imgSrc: _require('babel.png'),
     keyWords: ['babel'],
     title: 'babel'
 }, {
     url: 'https://www.tslang.cn/',
-    imgSrc: './logos/typescript.png',
+    imgSrc: _require('typescript.png'),
     keyWords: ['typescript'],
     title: 'TypeScript'
 }, {
     url: 'http://jquery.cuishifeng.cn/',
-    imgSrc: './logos/jquery.png',
+    imgSrc: _require('jquery.png'),
     keyWords: ['jquery'],
     title: 'jQuery'
 }, {
     url: 'http://nodejs.cn/api/',
-    imgSrc: './logos/nodejs.png',
+    imgSrc: _require('nodejs.png'),
     keyWords: ['nodejs'],
     title: 'nodeJS'
 }, {
     url: 'http://expressjs.com/',
-    imgSrc: './logos/express.png',
+    imgSrc: _require('express.png'),
     keyWords: ['express'],
     title: 'express'
 }, {
     url: 'https://electronjs.org/',
-    imgSrc: './logos/electron.png',
+    imgSrc: _require('electron.png'),
     keyWords: ['electron'],
     title: 'electron'
 }, {
     url: 'https://www.sass.hk/',
-    imgSrc: './logos/sass.png',
+    imgSrc: _require('sass.png'),
     keyWords: ['sass'],
     title: 'sass'
 }, {
     url: 'http://lesscss.cn/',
-    imgSrc: './logos/less.png',
+    imgSrc: _require('less.png'),
     keyWords: ['less'],
     title: 'less'
 }, {
-    url: 'https://postcss.org/',
-    imgSrc: './logos/postcss.png',
-    keyWords: ['postcss'],
-    title: 'postcss'
-}, {
     url: 'https://studygolang.com/',
-    imgSrc: './logos/golang.png',
+    imgSrc: _require('golang.png'),
     keyWords: ['golang'],
     title: 'golang'
 }, {
     url: 'https://ruby-china.org/',
-    imgSrc: './logos/ruby.png',
+    imgSrc: _require('ruby.png'),
     keyWords: ['ruby'],
     title: 'ruby'
 }, {
     url: 'https://github.com/',
-    imgSrc: './logos/github.png',
+    imgSrc: _require('github.png'),
     keyWords: ['github'],
     title: 'GitHub'
 }, {
     url: 'https://segmentfault.com/',
-    imgSrc: './logos/sf.png',
+    imgSrc: _require('sf.png'),
     keyWords: ['segmentfault', 'sf'],
     title: 'segmentfault'
 }, {
     url: 'https://developer.mozilla.org/zh-CN/',
-    imgSrc: './logos/MDN.png',
+    imgSrc: _require('MDN.png'),
     keyWords: ['mdn'],
     title: 'MDN'
 }, {
     url: 'https://www.zhihu.com/',
-    imgSrc: './logos/zhihu.png',
+    imgSrc: _require('zhihu.png'),
     keyWords: ['知乎', 'zhihu'],
     title: '知乎'
 }, {
     url: 'https://juejin.im/timeline',
-    imgSrc: './logos/juejin.png',
+    imgSrc: _require('juejin.png'),
     keyWords: ['掘金', 'juejin'],
     title: '掘金'
 }, {
     url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
-    imgSrc: './logos/xcx.png',
+    imgSrc: _require('xcx.png'),
     keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
     title: '微信小程序'
 }, {
     url: 'hhttp://www.iconfont.cn/',
-    imgSrc: './logos/iconfont.png',
+    imgSrc: _require('iconfont.png'),
     keyWords: ['iconfont'],
     title: 'iconfont'
 }, {
     url: 'https://kb.cnblogs.com/',
-    imgSrc: './logos/bokeyuan.png',
+    imgSrc: _require('bokeyuan.png'),
     keyWords: ['博客园', 'cnblogs', 'bokeyuan'],
     title: '博客园'
 }, {
     url: 'https://www.jianshu.com/',
-    imgSrc: './logos/jianshu.png',
+    imgSrc: _require('jianshu.png'),
     keyWords: ['简书', 'jianshu'],
     title: '简书'
 }, {
     url: 'http://web.jobbole.com/',
-    imgSrc: './logos/jobbole.png',
+    imgSrc: _require('jobbole.png'),
     keyWords: ['伯乐在线', 'bolezaixian', 'jobbole'],
     title: '伯乐在线'
 }];
