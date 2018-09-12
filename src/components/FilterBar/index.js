@@ -4,7 +4,6 @@ import './index.css'
 class FilterBar extends Component {
   constructor (props) {
     super(props)
-    console.log(this)
   }
 
   click () {
