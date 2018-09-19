@@ -4,23 +4,23 @@ import FilterBar from '../FilterBar'
 import Contain from '../Contain'
 import WithError from '../WithError'
 
-const categoryTypes = ['list', 'category']
+const CATEGORY_TYPES = ['list', 'category']
 
 const ContainWithNotFind = WithError(Contain, 'Ooops! Can not find it here.')
 
 class App extends Component {
   constructor (props) {
     super (props)
-    const CATEGORY_TYPE = window.localStorage.CATEGORY_TYPE
+    this.libraryMap = {
+      category: Library,
+      list: Library.reduce((res, item) => (res.push(...item.children), res), [])
+    }
     const state = {
-      toggleTypeValue: CATEGORY_TYPE || categoryTypes[0],
-      filterValue: '',
-      library: Library
+      typeValue: window.localStorage.__CATEGORY_TYPE__ || CATEGORY_TYPES[0],
+      filterValue: ''
     }
-    if (CATEGORY_TYPE === 'list') {
-      state.library = Library.reduce((res, item) => (res.push(...item.children), res), [])
-    }
-    state.toggleTypeIndex = categoryTypes.indexOf(state.toggleTypeValue)
+    state.library = this.libraryMap[state.typeValue]
+    state.typeIndex = CATEGORY_TYPES.indexOf(state.typeValue)
     this.state = state
   }
   filterLibrary =  e => {
@@ -29,35 +29,25 @@ class App extends Component {
     })
   }
   toggleType = () => {
-    const state = {}
-    const toggleTypeIndex = (this.state.toggleTypeIndex + 1) % 2
-    const toggleTypeValue = categoryTypes[toggleTypeIndex]
-    if (toggleTypeValue === 'list') {
-      library = Library.reduce((res, item) => (res.push(...item.children), res), [])
-    }
+    const typeIndex = (this.state.typeIndex + 1) % 2
+    const typeValue = CATEGORY_TYPES[typeIndex]
     this.setState({
-      toggleTypeIndex,
-      toggleTypeValue,
-      filterValue: ''
-    }))
-    window.localStorage.CATEGORY_TYPE = toggleTypeValue
+      typeIndex,
+      typeValue,
+      filterValue: '',
+      library: this.libraryMap[typeValue]
+    })
+    window.localStorage.__CATEGORY_TYPE__ = typeValue
   }
   render () {
-    const { library, filterValue, toggleTypeValue } = this.state
+    let { library: list, filterValue, typeValue } = this.state
     const lowerCaseValue = filterValue.toLowerCase()
-    console.log(toggleTypeValue)
-    console.log(library)
-
-    let list = library
-    if (toggleTypeValue === 'list') {
-      list = list.reduce((res, item) => (res.push(...item.children), res), [])
-      if (lowerCaseValue === '') {
+    if (lowerCaseValue !== '') {
+      if (typeValue === 'list') {
         list = list
           .filter( ({keyWords}) => keyWords
           .some(item => item.toLowerCase().includes(lowerCaseValue)))
-      }
-    } else {
-      if (lowerCaseValue === '') {
+      } else {
         list = list
           .filter( ({keyWords}) => keyWords
           .some(item => item.toLowerCase().includes(lowerCaseValue)))
@@ -66,7 +56,7 @@ class App extends Component {
     console.log(list)
     return (
       <div>
-        <FilterBar value={filterValue} onInput={this.filterLibrary} type={toggleTypeValue} toggleType={this.toggleType}/>
+        <FilterBar value={filterValue} onInput={this.filterLibrary} type={typeValue} toggleType={this.toggleType}/>
         <ContainWithNotFind list={list} isError={!list.length}/>
       </div>
     )
