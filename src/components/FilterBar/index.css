@@ -30,15 +30,11 @@
 }
 
 .filter-bar__toggle-btn .icon {
+  font-size: 14px;
+}
+
+.filter-bar__toggle-btn .list-icon {
   font-size: 16px;
-}
-
-.list-icon {
-  font-size: 18px;
-}
-
-.category-icon {
-  display: none;
 }
 
 .filter-bar__input-warp {

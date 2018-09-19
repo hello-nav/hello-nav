@@ -6,20 +6,13 @@ class FilterBar extends Component {
     super(props)
   }
 
-  click () {
-    console.log(123)
-  }
-
   render () {
-    const {filterValue, onInput} = this.props
+    const {filterValue, onInput, toggleType, type} = this.props
     return (
       <div className="filter-bar">
-        <div className="filter-bar__toggle-btn">
-          <svg className="icon list-icon" aria-hidden="true">
-            <use href="#icon-list"></use>
-          </svg>
-          <svg className="icon category-icon" aria-hidden="true">
-            <use href="#icon-category"></use>
+        <div className="filter-bar__toggle-btn" onClick={toggleType}>
+          <svg className={`icon ${type}-icon`} aria-hidden="true">
+            <use href={`#icon-${type}`}></use>
           </svg>
         </div>
         <div className="filter-bar__input-warp">

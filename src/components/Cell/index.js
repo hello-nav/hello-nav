@@ -1,13 +1,13 @@
 import React from 'react'
 import './index.css'
 
-const Cell = ({ url, imgSrc, title }) => (
+const Cell = ({ url, imgSrc, label }) => (
   <li className="cell">
-    <a href={url} title={title}>
+    <a href={url} title={label}>
       <div className="img-box">
-        <img src={imgSrc} alt={title}/>
+        <img src={imgSrc} alt={label}/>
       </div>
-      <p className="title">{title}</p>
+      <p className="title">{label}</p>
     </a>
   </li>
 )
