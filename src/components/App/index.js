@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import Library from '../../mock'
 import FilterBar from '../FilterBar'
-import Contain from '../Contain'
+import ContainWrap from '../Contain'
 import WithError from '../WithError'
 
 const CATEGORY_TYPES = ['list', 'category']
 
-const ContainWithNotFind = WithError(Contain, 'Ooops! Can not find it here.')
+const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here.')
 const filterKeyWords = filterValue => ({keyWords}) => keyWords.some(item => item.toLowerCase().includes(filterValue))
 
 class App extends Component {
@@ -49,7 +49,7 @@ class App extends Component {
         list = list.map(({title = '/', children = []}) => ({
           children: children.filter(filterKeyWords(filterValue)),
           title
-        }))
+        })).filter(item => item.children.length)
       }
     }
     // console.log(list)
