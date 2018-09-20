@@ -1,6 +1,26 @@
+.list-item {
+  padding: 0 4vw;
+}
+
+.list-item .contain {
+  justify-content: center;
+}
+
+.category-item {
+  margin-bottom: 40px;
+  padding: 0 6vw;
+}
+
+.category-item__title {
+  text-align: left;
+}
+
+.category-item .contain {
+  justify-content: flex-start;
+}
+
 .contain {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 120px);
-  padding: 0 4vw;
 }

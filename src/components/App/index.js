@@ -7,6 +7,7 @@ import WithError from '../WithError'
 const CATEGORY_TYPES = ['list', 'category']
 
 const ContainWithNotFind = WithError(Contain, 'Ooops! Can not find it here.')
+const filterKeyWords = filterValue => ({keyWords}) => keyWords.some(item => item.toLowerCase().includes(filterValue))
 
 class App extends Component {
   constructor (props) {
@@ -25,7 +26,7 @@ class App extends Component {
   }
   filterLibrary =  e => {
     this.setState({
-      filterValue: e.target.value.trim()
+      filterValue: e.target.value.trim().toLowerCase()
     })
   }
   toggleType = () => {
@@ -34,30 +35,37 @@ class App extends Component {
     this.setState({
       typeIndex,
       typeValue,
-      filterValue: '',
+      // filterValue: '',
       library: this.libraryMap[typeValue]
     })
     window.localStorage.__CATEGORY_TYPE__ = typeValue
   }
   render () {
     let { library: list, filterValue, typeValue } = this.state
-    const lowerCaseValue = filterValue.toLowerCase()
-    if (lowerCaseValue !== '') {
+    if (filterValue !== '') {
       if (typeValue === 'list') {
-        list = list
-          .filter( ({keyWords}) => keyWords
-          .some(item => item.toLowerCase().includes(lowerCaseValue)))
+        list = list.filter(filterKeyWords(filterValue))
       } else {
-        list = list
-          .filter( ({keyWords}) => keyWords
-          .some(item => item.toLowerCase().includes(lowerCaseValue)))
+        list = list.map(({title = '/', children = []}) => ({
+          children: children.filter(filterKeyWords(filterValue)),
+          title
+        }))
       }
     }
-    console.log(list)
+    // console.log(list)
+    // console.log(filterValue)
     return (
       <div>
-        <FilterBar value={filterValue} onInput={this.filterLibrary} type={typeValue} toggleType={this.toggleType}/>
-        <ContainWithNotFind list={list} isError={!list.length}/>
+        <FilterBar value={filterValue}
+          onInput={this.filterLibrary}
+          type={typeValue}
+          toggleType={this.toggleType}
+        />
+        <ContainWithNotFind value={filterValue}
+          type={typeValue}
+          list={list}
+          isError={!list.length}
+        />
       </div>
     )
   }
