@@ -133,7 +133,7 @@ export default [{
     keyWords: ['segmentfault', 'sf'],
     label: 'segmentfault'
   }, {
-    url: 'hhttp://www.iconfont.cn/',
+    url: 'http://www.iconfont.cn/',
     imgSrc: _require('iconfont.png'),
     keyWords: ['iconfont'],
     label: 'iconfont'
