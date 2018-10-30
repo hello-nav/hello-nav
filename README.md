@@ -3,7 +3,7 @@
 ## TODO
 
 - [x] fix all image file
-- [ ] create nav categary & blur toggle(list & categary)
+- [x] create nav categary & blur toggle(list & categary)
 - [ ] github link
-- [ ] grid layout
+- [x] grid layout
 - [ ] add sw

@@ -6,17 +6,17 @@ export default [{
     url: 'https://cn.vuejs.org/',
     imgSrc: _require('vue.png'),
     keyWords: ['vue'],
-    label: 'Vue.js'
+    label: 'Vue'
   }, {
     url: 'https://doc.react-china.org/',
     imgSrc: _require('react.png'),
     keyWords: ['react'],
-    label: 'React.js'
+    label: 'React'
   }, {
     url: 'https://angular.cn/',
     imgSrc: _require('angular.png'),
     keyWords: ['angular'],
-    label: 'Angular.js'
+    label: 'Angular'
   }, {
     url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
     imgSrc: _require('xcx.png'),
@@ -26,35 +26,63 @@ export default [{
     url: 'https://electronjs.org/',
     imgSrc: _require('electron.png'),
     keyWords: ['electron'],
-    label: 'electron'
+    label: 'Electron'
   }]
 }, {
-  title: 'tools',
+  title: 'ui-library',
   children: [{
-    url: 'https://www.baidu.com/',
-    imgSrc: _require('baidu.png'),
-    keyWords: ['百度', 'baidu'],
-    label: '百度'
+    url: 'https://element.eleme.io/',
+    imgSrc: _require('element-ui.png'),
+    keyWords: ['饿了么', 'element', 'element-ui', 'ui'],
+    label: 'Element'
   }, {
+    url: 'https://www.iviewui.com/',
+    imgSrc: _require('iview.png'),
+    keyWords: ['iview', 'ui'],
+    label: 'iView'
+  }, {
+    url: 'https://at-ui.github.io/at-ui/',
+    imgSrc: _require('at-ui.png'),
+    keyWords: ['at-ui', 'ui'],
+    label: 'AT-UI'
+  }, {
+    url: 'https://youzan.github.io/vant',
+    imgSrc: _require('vant.png'),
+    keyWords: ['vant', 'ui'],
+    label: 'Vant'
+  }, {
+    url: 'https://ant.design/',
+    imgSrc: _require('ant-design.png'),
+    keyWords: ['antd', 'ant-design', 'ui'],
+    label: 'Ant-Design'
+  }, {
+    url: 'http://www.iconfont.cn/',
+    imgSrc: _require('iconfont.png'),
+    keyWords: ['iconfont'],
+    label: 'IconFont'
+  }]
+}, {
+  title: 'library',
+  children: [{
     url: 'https://webpack.js.org/',
     imgSrc: _require('webpack.png'),
     keyWords: ['webpack'],
-    label: 'webpack'
+    label: 'Webpack'
   }, {
     url: 'https://www.gulpjs.com.cn/',
     imgSrc: _require('gulp.png'),
     keyWords: ['gulp'],
-    label: 'gulp'
+    label: 'Gulp'
   }, {
     url: 'http://babeljs.io/',
     imgSrc: _require('babel.png'),
     keyWords: ['babel'],
-    label: 'babel'
+    label: 'Babel'
   }, {
     url: 'http://eslint.cn/',
     imgSrc: _require('eslint.png'),
     keyWords: ['eslint'],
-    label: 'eslint'
+    label: 'Eslint'
   }, {
     url: 'https://www.tslang.cn/',
     imgSrc: _require('typescript.png'),
@@ -72,17 +100,17 @@ export default [{
     url: 'https://www.sass.hk/',
     imgSrc: _require('sass.png'),
     keyWords: ['sass'],
-    label: 'sass'
+    label: 'Sass'
   }, {
     url: 'http://lesscss.cn/',
     imgSrc: _require('less.png'),
     keyWords: ['less'],
-    label: 'less'
+    label: 'Less'
   }, {
     url: 'https://postcss.org/',
     imgSrc: _require('postcss.png'),
     keyWords: ['postcss'],
-    label: 'postcss'
+    label: 'Postcss'
   }]
 }, {
   title: 'nodejs',
@@ -90,12 +118,12 @@ export default [{
     url: 'http://nodejs.cn/api/',
     imgSrc: _require('nodejs.png'),
     keyWords: ['nodejs'],
-    label: 'nodeJS'
+    label: 'NodeJS'
   }, {
     url: 'http://expressjs.com/',
     imgSrc: _require('express.png'),
     keyWords: ['express'],
-    label: 'express'
+    label: 'Express'
   }]
 }, {
   title: 'other',
@@ -103,16 +131,26 @@ export default [{
     url: 'https://studygolang.com/',
     imgSrc: _require('golang.png'),
     keyWords: ['golang'],
-    label: 'golang'
+    label: 'Golang'
   }, {
     url: 'https://ruby-china.org/',
     imgSrc: _require('ruby.png'),
     keyWords: ['ruby'],
-    label: 'ruby'
+    label: 'Ruby'
   }]
 }, {
   title: 'website',
   children: [{
+    url: 'https://www.baidu.com/',
+    imgSrc: _require('baidu.png'),
+    keyWords: ['百度', 'baidu'],
+    label: '百度'
+  }, {
+    url: 'https://www.google.com/',
+    imgSrc: _require('google.png'),
+    keyWords: ['谷歌', 'google'],
+    label: 'Google'
+  }, {
     url: 'https://github.com/',
     imgSrc: _require('github.png'),
     keyWords: ['github'],
@@ -123,7 +161,7 @@ export default [{
     keyWords: ['mdn'],
     label: 'MDN'
   }, {
-    url: 'https://juejin.im/timeline',
+    url: 'https://juejin.im/',
     imgSrc: _require('juejin.png'),
     keyWords: ['掘金', 'juejin'],
     label: '掘金'
@@ -131,12 +169,7 @@ export default [{
     url: 'https://segmentfault.com/',
     imgSrc: _require('sf.png'),
     keyWords: ['segmentfault', 'sf'],
-    label: 'segmentfault'
-  }, {
-    url: 'http://www.iconfont.cn/',
-    imgSrc: _require('iconfont.png'),
-    keyWords: ['iconfont'],
-    label: 'iconfont'
+    label: 'SegmentFault'
   }, {
     url: 'https://www.zhihu.com/',
     imgSrc: _require('zhihu.png'),
