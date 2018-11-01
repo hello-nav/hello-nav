@@ -41,10 +41,15 @@ export default [{
     keyWords: ['iview', 'ui'],
     label: 'iView'
   }, {
+    url: 'https://muse-ui.org/',
+    imgSrc: _require('museui.png'),
+    keyWords: ['muse-ui', 'ui'],
+    label: 'Muse'
+  }, {
     url: 'https://at-ui.github.io/at-ui/',
     imgSrc: _require('at-ui.png'),
     keyWords: ['at-ui', 'ui'],
-    label: 'AT-UI'
+    label: 'At'
   }, {
     url: 'https://youzan.github.io/vant',
     imgSrc: _require('vant.png'),
@@ -137,6 +142,11 @@ export default [{
     imgSrc: _require('ruby.png'),
     keyWords: ['ruby'],
     label: 'Ruby'
+  }, {
+    url: 'https://www.dartlang.org/',
+    imgSrc: _require('dart.png'),
+    keyWords: ['dart'],
+    label: 'Dart'
   }]
 }, {
   title: 'website',
