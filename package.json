@@ -4,15 +4,15 @@
   "private": true,
   "dependencies": {
     "react": "^16.5.0",
+    "react-app-rewired": "^1.6.2",
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app eject"
   },
-  "port": 3001,
   "homepage": "."
 }
