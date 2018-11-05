@@ -5,7 +5,7 @@ const getModules = context => context.keys().map(path => {
     children: context(path).default
   }
 })
-const context = require.context('./data', true, /\.js$/)
+const context = require.context('./modules', true, /\.js$/)
 const routes = getModules(context)
 
 export default routes

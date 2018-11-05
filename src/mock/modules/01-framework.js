@@ -18,6 +18,16 @@ export default [{
   keyWords: ['angular'],
   label: 'Angular'
 }, {
+  url: 'https://preactjs.com/',
+  imgSrc: requireImg('preactjs.png'),
+  keyWords: ['preactjs'],
+  label: 'Preactjs'
+}, {
+  url: 'https://nerv.aotu.io/',
+  imgSrc: requireImg('nervjs.png'),
+  keyWords: ['nervjs'],
+  label: 'NervJS'
+}, {
   url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
   imgSrc: requireImg('xcx.png'),
   keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
