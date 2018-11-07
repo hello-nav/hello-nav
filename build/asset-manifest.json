@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.5a54bf84.css",
-  "main.css.map": "static/css/main.5a54bf84.css.map",
-  "main.js": "static/js/main.d49e8243.js",
-  "main.js.map": "static/js/main.d49e8243.js.map",
+  "main.css": "static/css/main.78d2d665.css",
+  "main.css.map": "static/css/main.78d2d665.css.map",
+  "main.js": "static/js/main.506bf6ea.js",
+  "main.js.map": "static/js/main.506bf6ea.js.map",
   "static/media/ant-design.png": "static/media/ant-design.2bfa30ae.png",
   "static/media/babel.png": "static/media/babel.f56f787b.png",
   "static/media/eslint.png": "static/media/eslint.c5477768.png",
@@ -12,5 +12,6 @@
   "static/media/preactjs.png": "static/media/preactjs.a9e8dd56.png",
   "static/media/react.png": "static/media/react.5ae7cf05.png",
   "static/media/ruby.png": "static/media/ruby.be8a7846.png",
+  "static/media/tinypng.png": "static/media/tinypng.a5a8efa9.png",
   "static/media/vant.png": "static/media/vant.2e036e3e.png"
 }
