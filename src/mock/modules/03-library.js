@@ -28,6 +28,11 @@ export default [{
   keyWords: ['typescript'],
   label: 'TypeScript'
 }, {
+  url: 'https://lodash.com/',
+  imgSrc: requireImg('lodash.png'),
+  keyWords: ['lodash'],
+  label: 'Lodash'
+}, {
   url: 'http://jquery.cuishifeng.cn/',
   imgSrc: requireImg('jquery.png'),
   keyWords: ['jquery'],

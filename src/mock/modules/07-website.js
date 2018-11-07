@@ -23,6 +23,11 @@ export default [{
   keyWords: ['mdn'],
   label: 'MDN'
 }, {
+  url: 'https://tinypng.com/',
+  imgSrc: requireImg('tinypng.png'),
+  keyWords: ['tinypng'],
+  label: 'Tinypng'
+}, {
   url: 'https://juejin.im/',
   imgSrc: requireImg('juejin.png'),
   keyWords: ['掘金', 'juejin'],
