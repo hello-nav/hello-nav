@@ -19,7 +19,7 @@ export default [{
   label: 'GitHub'
 }, {
   url: 'https://developer.mozilla.org/zh-CN/',
-  imgSrc: requireImg('MDN.png'),
+  imgSrc: requireImg('mdn.png'),
   keyWords: ['mdn'],
   label: 'MDN'
 }, {
