@@ -33,6 +33,11 @@ export default [{
   keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
   label: '微信小程序'
 }, {
+  url: 'https://nuxtjs.org/',
+  imgSrc: requireImg('nuxt.png'),
+  keyWords: ['nuxt', 'vue'],
+  label: 'Nuxt'
+}, {
   url: 'https://electronjs.org/',
   imgSrc: requireImg('electron.png'),
   keyWords: ['electron'],
