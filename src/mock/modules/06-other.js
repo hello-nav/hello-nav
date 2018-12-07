@@ -17,4 +17,9 @@ export default [{
   imgSrc: requireImg('dart.png'),
   keyWords: ['dart'],
   label: 'Dart'
+}, {
+  url: 'https://flutter.io/',
+  imgSrc: requireImg('flutter.png'),
+  keyWords: ['flutter'],
+  label: 'Flutter'
 }]
