@@ -22,4 +22,9 @@ export default [{
   imgSrc: requireImg('flutter.png'),
   keyWords: ['flutter'],
   label: 'Flutter'
+}, {
+  url: 'https://www.docker.com/',
+  imgSrc: requireImg('docker.png'),
+  keyWords: ['docker'],
+  label: 'Docker'
 }]
