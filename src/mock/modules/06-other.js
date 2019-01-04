@@ -18,6 +18,11 @@ export default [{
   keyWords: ['dart'],
   label: 'Dart'
 }, {
+  url: 'https://www.python.org/',
+  imgSrc: requireImg('python.png'),
+  keyWords: ['python'],
+  label: 'Python'
+}, {
   url: 'https://flutter.io/',
   imgSrc: requireImg('flutter.png'),
   keyWords: ['flutter'],
