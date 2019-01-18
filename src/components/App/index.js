@@ -3,6 +3,7 @@ import Library from '../../mock'
 import FilterBar from '../FilterBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'
+import Footer from '../Footer'
 
 const CATEGORY_TYPES = ['list', 'category']
 
@@ -66,6 +67,7 @@ class App extends Component {
           list={list}
           isError={!list.length}
         />
+        <Footer/>
       </div>
     )
   }

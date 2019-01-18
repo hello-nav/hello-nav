@@ -13,6 +13,8 @@
 
 .category-item__title {
   text-align: left;
+  font-weight: bold;
+  color: #696969;
 }
 
 .category-item .contain {

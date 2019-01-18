@@ -1,1 +1,1 @@
-export const requireImg = fileName => require('@/assets/images/' + fileName)
+export const requireImg = fileName => require('@/assets/icons/' + fileName)

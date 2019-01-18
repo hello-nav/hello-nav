@@ -22,4 +22,9 @@ export default [{
   imgSrc: requireImg('egg.png'),
   keyWords: ['egg', 'node'],
   label: 'Egg'
+}, {
+  url: 'https://hapijs.com/',
+  imgSrc: requireImg('hapi.png'),
+  keyWords: ['hapi', 'node'],
+  label: 'Hapi'
 }]

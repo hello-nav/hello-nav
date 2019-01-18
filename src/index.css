@@ -41,3 +41,7 @@ h1 {
   padding: 70px 0;
   text-align: center;
 }
+
+.vertical-center {
+  vertical-align: middle;
+}
