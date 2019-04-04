@@ -8,6 +8,11 @@ export default [{
   keyWords: ['webpack'],
   label: 'Webpack'
 }, {
+  url: 'https://rollupjs.org/',
+  imgSrc: requireImg('rollup.png'),
+  keyWords: ['rollup'],
+  label: 'Rollup'
+}, {
   url: 'https://www.gulpjs.com.cn/',
   imgSrc: requireImg('gulp.png'),
   keyWords: ['gulp'],
@@ -27,6 +32,11 @@ export default [{
   imgSrc: requireImg('typescript.png'),
   keyWords: ['typescript'],
   label: 'TypeScript'
+}, {
+  url: 'https://lernajs.io/',
+  imgSrc: requireImg('lerna.png'),
+  keyWords: ['lerna'],
+  label: 'Lerna'
 }, {
   url: 'https://lodash.com/',
   imgSrc: requireImg('lodash.png'),

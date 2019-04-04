@@ -18,6 +18,11 @@ export default [{
   keyWords: ['github'],
   label: 'GitHub'
 }, {
+  url: 'https://www.npmjs.com/',
+  imgSrc: requireImg('npm.png'),
+  keyWords: ['npm'],
+  label: 'NPM'
+}, {
   url: 'https://developer.mozilla.org/zh-CN/',
   imgSrc: requireImg('mdn.png'),
   keyWords: ['mdn'],

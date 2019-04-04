@@ -28,15 +28,20 @@ export default [{
   keyWords: ['nervjs'],
   label: 'NervJS'
 }, {
-  url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
-  imgSrc: requireImg('xcx.png'),
-  keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
-  label: '微信小程序'
+  url: 'https://nerv.aotu.io/',
+  imgSrc: requireImg('chameleon.png'),
+  keyWords: ['chameleon'],
+  label: 'Chameleon'
 }, {
   url: 'https://nuxtjs.org/',
   imgSrc: requireImg('nuxt.png'),
   keyWords: ['nuxt', 'vue'],
   label: 'Nuxt'
+}, {
+  url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
+  imgSrc: requireImg('xcx.png'),
+  keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
+  label: '微信小程序'
 }, {
   url: 'https://electronjs.org/',
   imgSrc: requireImg('electron.png'),
