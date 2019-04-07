@@ -18,7 +18,7 @@ after_script:
   - git config user.email "${GIT_USER_EMAIL}"
   - git add .
   - git commit -m "build app"
-  - git push "https://${GIT_USER_NAME}@${GIT_TOKEN}${GIT_REPO} master:master"
+  - git push "https://${GIT_USER_NAME}@${GIT_TOKEN}${GIT_REPO}" HEAD:master
 
 branches:
   only:
