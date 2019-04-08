@@ -19,6 +19,7 @@ after_script:
   - git add .
   - git commit -m "build app"
   - git push "https://${GIT_USER_NAME}:${GIT_TOKEN}@${GIT_REPO}" HEAD:master
+  - 0
 
 branches:
   only:
