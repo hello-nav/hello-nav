@@ -6,13 +6,11 @@ const Footer = () => (
     <p>
       <span className="logo vertical-center"></span>
       <span className="vertical-center">
-        Made by<span className="bold"> Bener </span>with
+        Made by<b> Bener </b>with
         <span className="heart"> ❤ </span>
       </span>
     </p>
-    <p>
-      <span>© 2018-2019</span>
-    </p>
+    <p>&copy; 2018-2019</p>
 
   </div>
 )
