@@ -33,6 +33,11 @@ export default [{
   keyWords: ['typescript'],
   label: 'TypeScript'
 }, {
+  url: 'https://redux.js.org/',
+  imgSrc: requireImg('redux.png'),
+  keyWords: ['redux'],
+  label: 'Redux'
+}, {
   url: 'https://lernajs.io/',
   imgSrc: requireImg('lerna.png'),
   keyWords: ['lerna'],
