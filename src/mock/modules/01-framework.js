@@ -23,6 +23,11 @@ export default [{
   keyWords: ['preactjs'],
   label: 'Preactjs'
 }, {
+  url: 'https://redux.js.org/',
+  imgSrc: requireImg('redux.png'),
+  keyWords: ['redux'],
+  label: 'Redux'
+}, {
   url: 'https://nerv.aotu.io/',
   imgSrc: requireImg('nervjs.png'),
   keyWords: ['nervjs'],
