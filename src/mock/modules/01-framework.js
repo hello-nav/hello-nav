@@ -13,6 +13,11 @@ export default [{
   keyWords: ['react'],
   label: 'React'
 }, {
+  url: 'https://www.gatsbyjs.org/',
+  imgSrc: requireImg('gatsby.png'),
+  keyWords: ['gatsby'],
+  label: 'Gatsby'
+}, {
   url: 'https://angular.cn/',
   imgSrc: requireImg('angular.png'),
   keyWords: ['angular'],
