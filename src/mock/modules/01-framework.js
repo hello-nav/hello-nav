@@ -28,7 +28,7 @@ export default [{
   keyWords: ['nervjs'],
   label: 'NervJS'
 }, {
-  url: 'https://nerv.aotu.io/',
+  url: 'https://cml.js.org/#/',
   imgSrc: requireImg('chameleon.png'),
   keyWords: ['chameleon'],
   label: 'Chameleon'
