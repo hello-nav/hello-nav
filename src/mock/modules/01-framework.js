@@ -38,6 +38,11 @@ export default [{
   keyWords: ['nuxt', 'vue'],
   label: 'Nuxt'
 }, {
+  url: 'https://nextjs.org/',
+  imgSrc: requireImg('next.png'),
+  keyWords: ['next', 'react'],
+  label: 'Next'
+}, {
   url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
   imgSrc: requireImg('xcx.png'),
   keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
