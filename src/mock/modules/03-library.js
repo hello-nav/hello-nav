@@ -13,6 +13,11 @@ export default [{
   keyWords: ['rollup'],
   label: 'Rollup'
 }, {
+  url: 'https://parceljs.org/',
+  imgSrc: requireImg('parcel.png'),
+  keyWords: ['parcel'],
+  label: 'Parcel'
+}, {
   url: 'https://www.gulpjs.com.cn/',
   imgSrc: requireImg('gulp.png'),
   keyWords: ['gulp'],
