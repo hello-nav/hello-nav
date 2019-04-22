@@ -15,7 +15,7 @@ class App extends Component {
     super (props)
     this.libraryMap = {
       category: Library,
-      list: Library.reduce((res, item) => (res.push(...item.children), res), [])
+      list: Library.reduce((res, item) => (res.push(...item.children) || res), [])
     }
     const state = {
       typeValue: window.localStorage.__CATEGORY_TYPE__ || CATEGORY_TYPES[0],
