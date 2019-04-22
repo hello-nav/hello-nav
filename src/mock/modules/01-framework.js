@@ -48,13 +48,13 @@ export default [{
   keyWords: ['next', 'react'],
   label: 'Next'
 }, {
-  url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
-  imgSrc: requireImg('xcx.png'),
-  keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
-  label: '微信小程序'
-}, {
   url: 'https://electronjs.org/',
   imgSrc: requireImg('electron.png'),
   keyWords: ['electron'],
   label: 'Electron'
+}, {
+  url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
+  imgSrc: requireImg('xcx.png'),
+  keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
+  label: '微信小程序'
 }]
