@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './index.css'
 
 function FilterBar ({filterValue, onInput, toggleType, type}) {
