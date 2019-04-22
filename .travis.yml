@@ -11,9 +11,9 @@ script:
 
 deploy:
   provider: pages
-  local-dit: build
+  local-dir: build
   skip-cleanup: true
-  githug-token: $GIT_TOKEN
+  github-token: $GIT_TOKEN
   keep-history: true
   on:
     branch: master
