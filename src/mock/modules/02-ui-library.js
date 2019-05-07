@@ -3,7 +3,7 @@ import {
 } from '../utils'
 
 export default [{
-  url: 'https://element.eleme.io/',
+  url: 'https://element.eleme.cn/',
   imgSrc: requireImg('element-ui.png'),
   keyWords: ['饿了么', 'element', 'element-ui', 'ui'],
   label: 'Element'
