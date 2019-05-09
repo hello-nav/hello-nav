@@ -28,6 +28,11 @@ export default [{
   keyWords: ['mdn'],
   label: 'MDN'
 }, {
+  url: 'https://travis-ci.org/',
+  imgSrc: requireImg('travis.png'),
+  keyWords: ['travis', 'ci'],
+  label: 'Travis'
+}, {
   url: 'https://tinypng.com/',
   imgSrc: requireImg('tinypng.png'),
   keyWords: ['tinypng'],
