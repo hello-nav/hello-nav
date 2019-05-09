@@ -62,4 +62,14 @@ export default [{
   imgSrc: requireImg('jquery.png'),
   keyWords: ['jquery'],
   label: 'jQuery'
+}, {
+  url: 'https://markdown-it.github.io/',
+  imgSrc: requireImg('markdown.png'),
+  keyWords: ['markdown-it'],
+  label: 'markdown-it'
+}, {
+  url: 'https://highlightjs.org/',
+  imgSrc: requireImg('hljs.png'),
+  keyWords: ['highlightjs', 'highlight.js', 'hljs'],
+  label: 'highlight.js'
 }]
