@@ -53,6 +53,16 @@ export default [{
   keyWords: ['electron'],
   label: 'Electron'
 }, {
+  url: 'https://weex.apache.org/',
+  imgSrc: requireImg('weex.png'),
+  keyWords: ['weex', 'vue'],
+  label: 'Weex'
+}, {
+  url: 'https://facebook.github.io/react-native/',
+  imgSrc: requireImg('react.png'),
+  keyWords: ['react-native', 'react', 'rn'],
+  label: 'React-Native'
+}, {
   url: 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html',
   imgSrc: requireImg('xcx.png'),
   keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],

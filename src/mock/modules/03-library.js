@@ -43,6 +43,11 @@ export default [{
   keyWords: ['redux'],
   label: 'Redux'
 }, {
+  url: 'https://reacttraining.com/react-router/',
+  imgSrc: requireImg('react-router.png'),
+  keyWords: ['react-router'],
+  label: 'React-Router'
+}, {
   url: 'https://lernajs.io/',
   imgSrc: requireImg('lerna.png'),
   keyWords: ['lerna'],
