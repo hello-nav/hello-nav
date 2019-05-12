@@ -23,6 +23,11 @@ export default [{
   keyWords: ['npm'],
   label: 'NPM'
 }, {
+  url: 'https://yarnpkg.com/zh-Hans/',
+  imgSrc: requireImg('yarn.png'),
+  keyWords: ['yarn'],
+  label: 'Yarn'
+}, {
   url: 'https://developer.mozilla.org/zh-CN/',
   imgSrc: requireImg('mdn.png'),
   keyWords: ['mdn'],
