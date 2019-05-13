@@ -43,6 +43,11 @@ export default [{
   keyWords: ['ng-alain'],
   label: 'Ng-Alain'
 }, {
+  url: 'https://echarts.baidu.com/',
+  imgSrc: requireImg('echarts.png'),
+  keyWords: ['echarts'],
+  label: 'ECharts'
+}, {
   url: 'http://www.iconfont.cn/',
   imgSrc: requireImg('iconfont.png'),
   keyWords: ['iconfont'],
