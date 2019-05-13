@@ -33,6 +33,11 @@ export default [{
   keyWords: ['eslint'],
   label: 'Eslint'
 }, {
+  url: 'https://flow.org/',
+  imgSrc: requireImg('flow.png'),
+  keyWords: ['flow'],
+  label: 'Flow'
+}, {
   url: 'https://www.tslang.cn/',
   imgSrc: requireImg('typescript.png'),
   keyWords: ['typescript'],
