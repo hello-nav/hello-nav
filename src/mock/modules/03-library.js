@@ -73,6 +73,11 @@ export default [{
   keyWords: ['jquery'],
   label: 'jQuery'
 }, {
+  url: 'https://github.com/axios/axios',
+  imgSrc: requireImg('javascript-tool.png'),
+  keyWords: ['axios'],
+  label: 'Axios'
+}, {
   url: 'https://markdown-it.github.io/',
   imgSrc: requireImg('markdown.png'),
   keyWords: ['markdown-it'],
