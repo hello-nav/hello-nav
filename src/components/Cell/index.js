@@ -8,6 +8,7 @@ const Cell = ({ url, imgSrc, label }) => (
         <img src={imgSrc} alt={label}/>
       </div>
       <p className="title">{label}</p>
+      <i className="corner"></i>
     </a>
   </li>
 )
