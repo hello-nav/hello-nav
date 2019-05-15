@@ -43,6 +43,11 @@ export default [{
   keyWords: ['typescript'],
   label: 'TypeScript'
 }, {
+  url: 'https://rxjs.dev/',
+  imgSrc: requireImg('rxjs.png'),
+  keyWords: ['rxjs'],
+  label: 'RxJS'
+}, {
   url: 'https://redux.js.org/',
   imgSrc: requireImg('redux.png'),
   keyWords: ['redux'],
