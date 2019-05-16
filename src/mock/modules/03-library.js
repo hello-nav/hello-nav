@@ -87,4 +87,9 @@ export default [{
   imgSrc: requireImg('hljs.png'),
   keyWords: ['highlightjs', 'highlight.js', 'hljs'],
   label: 'highlight.js'
+}, {
+  url: 'https://threejs.org/',
+  imgSrc: requireImg('three.js.png'),
+  keyWords: ['threejs', 'three.js'],
+  label: 'three.js'
 }]
