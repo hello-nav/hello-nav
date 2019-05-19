@@ -92,4 +92,9 @@ export default [{
   imgSrc: requireImg('three.js.png'),
   keyWords: ['threejs', 'three.js'],
   label: 'three.js'
+}, {
+  url: 'https://pptr.dev/',
+  imgSrc: requireImg('puppeteer.png'),
+  keyWords: ['pptr', 'puppeteer'],
+  label: 'Puppeteer'
 }]
