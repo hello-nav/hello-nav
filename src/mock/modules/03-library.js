@@ -83,6 +83,11 @@ export default [{
   keyWords: ['zepto'],
   label: 'Zepto'
 }, {
+  url: 'https://mochajs.org/',
+  imgSrc: requireImg('mocha.png'),
+  keyWords: ['mocha'],
+  label: 'Mocha'
+}, {
   url: 'https://markdown-it.github.io/',
   imgSrc: requireImg('markdown.png'),
   keyWords: ['markdown-it'],
