@@ -78,6 +78,11 @@ export default [{
   keyWords: ['axios'],
   label: 'Axios'
 }, {
+  url: 'https://zeptojs.com/',
+  imgSrc: requireImg('zepto.png'),
+  keyWords: ['zepto'],
+  label: 'Zepto'
+}, {
   url: 'https://markdown-it.github.io/',
   imgSrc: requireImg('markdown.png'),
   keyWords: ['markdown-it'],
