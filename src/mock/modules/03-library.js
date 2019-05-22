@@ -88,6 +88,11 @@ export default [{
   keyWords: ['mocha'],
   label: 'Mocha'
 }, {
+  url: 'https://github.com/avajs/ava',
+  imgSrc: requireImg('ava.png'),
+  keyWords: ['ava'],
+  label: 'AVA'
+}, {
   url: 'https://markdown-it.github.io/',
   imgSrc: requireImg('markdown.png'),
   keyWords: ['markdown-it'],
