@@ -88,6 +88,11 @@ export default [{
   keyWords: ['mocha'],
   label: 'Mocha'
 }, {
+  url: 'https://www.cypress.io/',
+  imgSrc: requireImg('cypress.png'),
+  keyWords: ['cypress'],
+  label: 'Cypress'
+}, {
   url: 'https://github.com/avajs/ava',
   imgSrc: requireImg('ava.png'),
   keyWords: ['ava'],
