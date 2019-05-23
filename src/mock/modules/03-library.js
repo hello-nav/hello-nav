@@ -88,6 +88,11 @@ export default [{
   keyWords: ['mocha'],
   label: 'Mocha'
 }, {
+  url: 'https://jestjs.io/',
+  imgSrc: requireImg('jest.png'),
+  keyWords: ['jest'],
+  label: 'Jest'
+}, {
   url: 'https://www.cypress.io/',
   imgSrc: requireImg('cypress.png'),
   keyWords: ['cypress'],
