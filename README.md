@@ -1,6 +1,6 @@
 # hello nav
 
-## [a navigation of developer](https://heroor.github.io/hello-nav/)
+## [A navigation for developer](https://heroor.github.io/hello-nav/)
 
 - search
 - category
