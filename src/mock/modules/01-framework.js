@@ -4,26 +4,31 @@ import {
 
 export default [{
   url: 'https://cn.vuejs.org/',
+  githubUrl: 'https://github.com/vuejs/vue',
   imgSrc: requireImg('vue.png'),
   keyWords: ['vue'],
   label: 'Vue'
 }, {
-  url: 'https://doc.react-china.org/',
+  url: 'https://zh-hans.reactjs.org/',
+  githubUrl: 'https://github.com/facebook/react/',
   imgSrc: requireImg('react.png'),
   keyWords: ['react'],
   label: 'React'
 }, {
   url: 'https://www.gatsbyjs.org/',
+  githubUrl: 'https://github.com/gatsbyjs/gatsby',
   imgSrc: requireImg('gatsby.png'),
   keyWords: ['gatsby'],
   label: 'Gatsby'
 }, {
   url: 'https://angular.cn/',
+  githubUrl: 'https://github.com/angular/angular',
   imgSrc: requireImg('angular.png'),
   keyWords: ['angular'],
   label: 'Angular'
 }, {
   url: 'https://preactjs.com/',
+  githubUrl: 'https://github.com/angular/angular',
   imgSrc: requireImg('preactjs.png'),
   keyWords: ['preactjs'],
   label: 'Preactjs'

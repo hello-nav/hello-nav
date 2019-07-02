@@ -9,11 +9,11 @@
   animation: 2.5s 2s rock infinite;
 }
 
-.cell:hover a {
+.cell:hover .app {
   transform: translateY(-5px);
 }
 
-.cell a {
+.cell .app {
   position: relative;
   display: grid;
   grid-area: 2 / 2;
@@ -23,7 +23,8 @@
   transition: .4s;
 }
 
-.cell a .corner {
+.cell .app .corner {
+  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
@@ -34,28 +35,58 @@
   background: linear-gradient(45deg, #eee 40%, #9E9E9E 50%, #2f3242 56%);
 }
 
-.cell a:hover {
+.cell .corner-icon-wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  bottom: 4px;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+
+.cell .corner-icon-wrap .corner-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  transform: rotate(45deg) translate(0px, 10px);
+  transition: .2s .5s;
+}
+
+.cell .app:hover {
   animation: none;
   transition: 0s;
   box-shadow: 0 0 30px rgba(0, 0, 0, .08);
   background: #fff;
 }
 
-.cell a:hover .corner {
+.cell .app:hover .corner {
   width: 22px;
   height: 22px;
   transition: 0.2s .5s;
 }
 
-.cell a .corner:hover {
+.cell .app .corner:hover {
   width: 30px;
   height: 30px;
   transition: 0.3s;
 }
 
-.cell a .corner:active {
-  width: 33px;
-  height: 33px;
+.cell .app .corner:hover .corner-icon {
+  transform: rotate(45deg) translate(0px, 6px);
+  transition: .2s;
+}
+
+.cell .app .corner:active {
+  width: 32px;
+  height: 32px;
+  transition: .1s;
+}
+
+.cell .app .corner:active .corner-icon {
+  transform: rotate(45deg) translate(0px, 5px);
 }
 
 .cell .img-box {
