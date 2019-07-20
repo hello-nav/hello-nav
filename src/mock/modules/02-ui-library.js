@@ -43,6 +43,12 @@ export default [{
   keyWords: ['ng-alain'],
   label: 'Ng-Alain'
 }, {
+  url: 'https://l-ui.com/',
+  githubUrl: 'https://github.com/yued-fe/lulu',
+  imgSrc: requireImg('luluui.png'),
+  keyWords: ['lulu', 'luluui', 'lulu ui'],
+  label: 'LuLu ui'
+}, {
   url: 'https://echarts.baidu.com/',
   imgSrc: requireImg('echarts.png'),
   keyWords: ['echarts'],
