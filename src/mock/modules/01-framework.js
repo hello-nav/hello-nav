@@ -71,7 +71,7 @@ export default [{
 }, {
   url: 'https://facebook.github.io/react-native/',
   githubUrl: 'https://github.com/facebook/react-native',
-  imgSrc: requireImg('react.png'),
+  imgSrc: requireImg('react-native.png'),
   keyWords: ['react-native', 'react', 'rn'],
   label: 'React-Native'
 }, {
