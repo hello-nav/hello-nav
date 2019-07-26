@@ -58,6 +58,12 @@ export default [{
   keyWords: ['react-router'],
   label: 'React-Router'
 }, {
+  url: 'https://graphql.org/',
+  githubUrl: 'https://github.com/graphql/graphiql',
+  imgSrc: requireImg('graphql.png'),
+  keyWords: ['graphql'],
+  label: 'GraphQL'
+}, {
   url: 'https://lernajs.io/',
   imgSrc: requireImg('lerna.png'),
   keyWords: ['lerna'],
@@ -67,6 +73,12 @@ export default [{
   imgSrc: requireImg('lodash.png'),
   keyWords: ['lodash'],
   label: 'Lodash'
+}, {
+  url: 'https://immutable-js.github.io/immutable-js/',
+  githubUrl: 'https://github.com/immutable-js/immutable-js',
+  imgSrc: requireImg('immutable.png'),
+  keyWords: ['immutable'],
+  label: 'Immutable'
 }, {
   url: 'http://jquery.cuishifeng.cn/',
   imgSrc: requireImg('jquery.png'),

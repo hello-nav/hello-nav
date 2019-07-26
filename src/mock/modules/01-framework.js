@@ -15,11 +15,11 @@ export default [{
   keyWords: ['react'],
   label: 'React'
 }, {
-  url: 'https://www.gatsbyjs.org/',
-  githubUrl: 'https://github.com/gatsbyjs/gatsby',
-  imgSrc: requireImg('gatsby.png'),
-  keyWords: ['gatsby'],
-  label: 'Gatsby'
+  url: 'https://preactjs.com/',
+  githubUrl: 'https://github.com/preactjs/preact',
+  imgSrc: requireImg('preactjs.png'),
+  keyWords: ['preactjs'],
+  label: 'Preactjs'
 }, {
   url: 'https://angular.cn/',
   githubUrl: 'https://github.com/angular/angular',
@@ -27,11 +27,11 @@ export default [{
   keyWords: ['angular'],
   label: 'Angular'
 }, {
-  url: 'https://preactjs.com/',
-  githubUrl: 'https://github.com/preactjs/preact',
-  imgSrc: requireImg('preactjs.png'),
-  keyWords: ['preactjs'],
-  label: 'Preactjs'
+  url: 'https://www.gatsbyjs.org/',
+  githubUrl: 'https://github.com/gatsbyjs/gatsby',
+  imgSrc: requireImg('gatsby.png'),
+  keyWords: ['gatsby'],
+  label: 'Gatsby'
 }, {
   url: 'https://nerv.aotu.io/',
   githubUrl: 'https://github.com/NervJS/nerv',

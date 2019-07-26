@@ -13,6 +13,12 @@ export default [{
   keyWords: ['谷歌', 'google'],
   label: 'Google'
 }, {
+  url: 'https://www.facebook.com/',
+  githubUrl: 'https://github.com/facebook',
+  imgSrc: requireImg('facebook.png'),
+  keyWords: ['facebook'],
+  label: 'Facebook'
+}, {
   url: 'https://github.com/',
   imgSrc: requireImg('github.png'),
   keyWords: ['github'],
