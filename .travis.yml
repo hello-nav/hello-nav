@@ -2,6 +2,10 @@ language: node_js
 node_js:
   - '10'
 
+branches:
+  only:
+  - source
+
 cache:
   directories:
     - node_modules
@@ -10,8 +14,9 @@ script:
   - npm run build
 
 deploy:
-  branch: master
   local-dir: build
   skip-cleanup: true
   github-token: $GIT_TOKEN
   keep-history: true
+  on:
+    branch: master
