@@ -1,22 +1,26 @@
 language: node_js
-node_js:
-  - '10'
 
-branches:
-  only:
-  - source
+node_js: stable
 
-cache:
-  directories:
-    - node_modules
+install:
+  - npm install
 
 script:
   - npm run build
 
-deploy:
-  local-dir: build
-  skip-cleanup: true
-  github-token: $GIT_TOKEN
-  keep-history: true
-  on:
-    branch: master
+after_script:
+  - cd ./build
+  - git init
+  - git config user.name "${GH_USER}"
+  - git config user.email "${GH_EMAIL}"
+  - git add .
+  - git commit -m "CI BUILD"
+  - git push --force --quiet "https://${GH_USER}:${GH_TOKEN}@${GH_REF}" master:master
+
+branches:
+  only:
+    - source
+
+env:
+ global:
+   - GH_REF: github.com/hello-nav/hello-nav.github.io.git
