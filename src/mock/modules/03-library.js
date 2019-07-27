@@ -23,6 +23,12 @@ export default [{
   keyWords: ['gulp'],
   label: 'Gulp'
 }, {
+  url: 'https://gruntjs.com/',
+  githubUrl: 'https://github.com/gruntjs/grunt',
+  imgSrc: requireImg('grunt.png'),
+  keyWords: ['grunt'],
+  label: 'Grunt'
+}, {
   url: 'http://babeljs.io/',
   imgSrc: requireImg('babel.png'),
   keyWords: ['babel'],
@@ -32,6 +38,12 @@ export default [{
   imgSrc: requireImg('eslint.png'),
   keyWords: ['eslint'],
   label: 'ESlint'
+}, {
+  url: 'https://jshint.com/',
+  githubUrl: 'https://github.com/jshint/jshint',
+  imgSrc: requireImg('jshint.png'),
+  keyWords: ['jshint'],
+  label: 'JSHint'
 }, {
   url: 'https://flow.org/',
   imgSrc: requireImg('flow.png'),
@@ -73,6 +85,12 @@ export default [{
   imgSrc: requireImg('lodash.png'),
   keyWords: ['lodash'],
   label: 'Lodash'
+}, {
+  url: 'https://dojotoolkit.org/',
+  githubUrl: 'https://github.com/dojo/dojo',
+  imgSrc: requireImg('dojo.png'),
+  keyWords: ['dojo'],
+  label: 'Dojo'
 }, {
   url: 'https://immutable-js.github.io/immutable-js/',
   githubUrl: 'https://github.com/immutable-js/immutable-js',

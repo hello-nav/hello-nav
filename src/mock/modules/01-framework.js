@@ -15,23 +15,17 @@ export default [{
   keyWords: ['react'],
   label: 'React'
 }, {
+  url: 'https://reasonml.github.io/',
+  githubUrl: 'https://github.com/facebook/reason',
+  imgSrc: requireImg('reason.png'),
+  keyWords: ['reason'],
+  label: 'Reason'
+}, {
   url: 'https://preactjs.com/',
   githubUrl: 'https://github.com/preactjs/preact',
   imgSrc: requireImg('preactjs.png'),
   keyWords: ['preactjs'],
   label: 'Preactjs'
-}, {
-  url: 'https://angular.cn/',
-  githubUrl: 'https://github.com/angular/angular',
-  imgSrc: requireImg('angular.png'),
-  keyWords: ['angular'],
-  label: 'Angular'
-}, {
-  url: 'https://www.gatsbyjs.org/',
-  githubUrl: 'https://github.com/gatsbyjs/gatsby',
-  imgSrc: requireImg('gatsby.png'),
-  keyWords: ['gatsby'],
-  label: 'Gatsby'
 }, {
   url: 'https://nerv.aotu.io/',
   githubUrl: 'https://github.com/NervJS/nerv',
@@ -39,11 +33,53 @@ export default [{
   keyWords: ['nervjs'],
   label: 'NervJS'
 }, {
-  url: 'https://cml.js.org/#/',
+  url: 'https://umijs.org/zh/',
+  githubUrl: 'https://github.com/umijs/umi',
+  imgSrc: requireImg('umi.png'),
+  keyWords: ['umi'],
+  label: 'Umi'
+}, {
+  url: 'https://angular.cn/',
+  githubUrl: 'https://github.com/angular/angular',
+  imgSrc: requireImg('angular.png'),
+  keyWords: ['angular'],
+  label: 'Angular'
+}, {
+  url: 'https://emberjs.com/',
+  githubUrl: 'https://github.com/emberjs/ember.js/',
+  imgSrc: requireImg('ember.png'),
+  keyWords: ['ember'],
+  label: 'Ember'
+}, {
+  url: 'https://www.gatsbyjs.org/',
+  githubUrl: 'https://github.com/gatsbyjs/gatsby',
+  imgSrc: requireImg('gatsby.png'),
+  keyWords: ['gatsby'],
+  label: 'Gatsby'
+}, {
+  url: 'https://markojs.com/',
+  githubUrl: 'https://github.com/marko-js/marko/',
+  imgSrc: requireImg('marko.png'),
+  keyWords: ['marko'],
+  label: 'Marko'
+}, {
+  url: 'https://cml.js.org/',
   githubUrl: 'https://github.com/didi/chameleon',
   imgSrc: requireImg('chameleon.png'),
   keyWords: ['chameleon'],
   label: 'Chameleon'
+}, {
+  url: 'https://svelte.dev/',
+  githubUrl: 'https://github.com/sveltejs/svelte',
+  imgSrc: requireImg('svelte.png'),
+  keyWords: ['svelte'],
+  label: 'Svelte'
+}, {
+  url: 'https://sapper.svelte.dev/',
+  githubUrl: 'https://github.com/sveltejs/sapper',
+  imgSrc: requireImg('sapper.png'),
+  keyWords: ['sapper'],
+  label: 'Sapper'
 }, {
   url: 'https://nuxtjs.org/',
   githubUrl: 'https://github.com/nuxt/nuxt.js',
@@ -56,6 +92,12 @@ export default [{
   imgSrc: requireImg('next.png'),
   keyWords: ['next', 'react'],
   label: 'Next'
+}, {
+  url: 'https://quasar.dev/',
+  githubUrl: 'https://github.com/quasarframework/quasar',
+  imgSrc: requireImg('quasar.png'),
+  keyWords: ['quasar'],
+  label: 'Quasar'
 }, {
   url: 'https://electronjs.org/',
   githubUrl: 'https://github.com/electron/electron',
@@ -74,6 +116,12 @@ export default [{
   imgSrc: requireImg('react-native.png'),
   keyWords: ['react-native', 'react', 'rn'],
   label: 'React-Native'
+}, {
+  url: 'https://www.nativescript.org/',
+  githubUrl: 'https://github.com/NativeScript/NativeScript',
+  imgSrc: requireImg('nativescript.png'),
+  keyWords: ['nativescript'],
+  label: 'NativeScript'
 }, {
   url: 'https://flutter.io/',
   imgSrc: requireImg('flutter.png'),

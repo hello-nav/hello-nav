@@ -28,6 +28,18 @@ export default [{
   keyWords: ['hapi'],
   label: 'Hapi'
 }, {
+  url: 'https://nestjs.com/',
+  githubUrl: 'https://github.com/nestjs/nest/',
+  imgSrc: requireImg('nest.png'),
+  keyWords: ['nest'],
+  label: 'Nest'
+}, {
+  url: 'https://adonisjs.com/',
+  githubUrl: 'https://github.com/adonisjs/adonis-framework',
+  imgSrc: requireImg('adonis.png'),
+  keyWords: ['adonis'],
+  label: 'Adonis'
+}, {
   url: 'http://docs.sequelizejs.com/',
   imgSrc: requireImg('sequelize.png'),
   keyWords: ['sequelize'],
