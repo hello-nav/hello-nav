@@ -23,11 +23,6 @@ export default [{
   keyWords: ['python'],
   label: 'Python'
 }, {
-  url: 'https://flutter.io/',
-  imgSrc: requireImg('flutter.png'),
-  keyWords: ['flutter'],
-  label: 'Flutter'
-}, {
   url: 'https://www.docker.com/',
   imgSrc: requireImg('docker.png'),
   keyWords: ['docker'],

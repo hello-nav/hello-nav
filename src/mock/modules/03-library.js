@@ -31,7 +31,7 @@ export default [{
   url: 'http://eslint.cn/',
   imgSrc: requireImg('eslint.png'),
   keyWords: ['eslint'],
-  label: 'Eslint'
+  label: 'ESlint'
 }, {
   url: 'https://flow.org/',
   imgSrc: requireImg('flow.png'),
@@ -86,7 +86,7 @@ export default [{
   label: 'jQuery'
 }, {
   url: 'https://github.com/axios/axios',
-  imgSrc: requireImg('javascript-tool.png'),
+  imgSrc: requireImg('axios.png'),
   keyWords: ['axios'],
   label: 'Axios'
 }, {

@@ -75,6 +75,11 @@ export default [{
   keyWords: ['react-native', 'react', 'rn'],
   label: 'React-Native'
 }, {
+  url: 'https://flutter.io/',
+  imgSrc: requireImg('flutter.png'),
+  keyWords: ['flutter'],
+  label: 'Flutter'
+}, {
   url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
   imgSrc: requireImg('xcx.png'),
   keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
