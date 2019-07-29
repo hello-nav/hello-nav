@@ -5,8 +5,8 @@ import {
 export default [{
   url: 'https://element.eleme.cn/',
   imgSrc: requireImg('element-ui.png'),
-  keyWords: ['饿了么', 'element', 'element-ui'],
-  label: 'Element'
+  keyWords: ['饿了么', 'elementui'],
+  label: 'Element UI'
 }, {
   url: 'https://www.iviewui.com/',
   imgSrc: requireImg('iview.png'),
@@ -15,13 +15,13 @@ export default [{
 }, {
   url: 'https://muse-ui.org/',
   imgSrc: requireImg('museui.png'),
-  keyWords: ['muse-ui'],
-  label: 'Muse-ui'
+  keyWords: ['museui'],
+  label: 'Muse UI'
 }, {
   url: 'https://at-ui.github.io/at-ui/',
   imgSrc: requireImg('at-ui.png'),
-  keyWords: ['at-ui'],
-  label: 'At-ui'
+  keyWords: ['atui'],
+  label: 'At UI'
 }, {
   url: 'https://youzan.github.io/vant',
   imgSrc: requireImg('vant.png'),
@@ -30,8 +30,8 @@ export default [{
 }, {
   url: 'https://ant.design/',
   imgSrc: requireImg('ant-design.png'),
-  keyWords: ['antd', 'ant-design'],
-  label: 'Ant-Design'
+  keyWords: ['antdesign'],
+  label: 'Ant Design'
 }, {
   url: 'https://antv.alipay.com/',
   imgSrc: requireImg('antv.png'),
@@ -40,14 +40,14 @@ export default [{
 }, {
   url: 'https://ng-alain.com/zh',
   imgSrc: requireImg('ng-alain.png'),
-  keyWords: ['ng-alain'],
-  label: 'Ng-Alain'
+  keyWords: ['ngalain'],
+  label: 'Ng Alain'
 }, {
   url: 'https://l-ui.com/',
   githubUrl: 'https://github.com/yued-fe/lulu',
   imgSrc: requireImg('luluui.png'),
-  keyWords: ['lulu', 'luluui', 'lulu ui'],
-  label: 'LuLu ui'
+  keyWords: ['luluui'],
+  label: 'LuLu UI'
 }, {
   url: 'https://echarts.baidu.com/',
   imgSrc: requireImg('echarts.png'),

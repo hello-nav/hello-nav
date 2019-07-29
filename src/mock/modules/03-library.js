@@ -67,8 +67,8 @@ export default [{
 }, {
   url: 'https://reacttraining.com/react-router/',
   imgSrc: requireImg('react-router.png'),
-  keyWords: ['react-router'],
-  label: 'React-Router'
+  keyWords: ['reactrouter'],
+  label: 'React Router'
 }, {
   url: 'https://graphql.org/',
   githubUrl: 'https://github.com/graphql/graphiql',
@@ -135,18 +135,18 @@ export default [{
 }, {
   url: 'https://markdown-it.github.io/',
   imgSrc: requireImg('markdown.png'),
-  keyWords: ['markdown-it'],
-  label: 'markdown-it'
+  keyWords: ['markdownit'],
+  label: 'Markdown it'
 }, {
   url: 'https://highlightjs.org/',
   imgSrc: requireImg('hljs.png'),
   keyWords: ['highlightjs', 'highlight.js', 'hljs'],
-  label: 'highlight.js'
+  label: 'Highlight JS'
 }, {
   url: 'https://threejs.org/',
   imgSrc: requireImg('three.js.png'),
   keyWords: ['threejs', 'three.js'],
-  label: 'three.js'
+  label: 'Three JS'
 }, {
   url: 'https://pptr.dev/',
   imgSrc: requireImg('puppeteer.png'),

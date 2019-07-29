@@ -76,6 +76,6 @@ export default [{
 }, {
   url: 'http://web.jobbole.com/',
   imgSrc: requireImg('jobbole.png'),
-  keyWords: ['伯乐在线', 'bolezaixian', 'jobbole'],
+  keyWords: ['伯乐在线', 'jobbole', 'bolezaixian'],
   label: '伯乐在线'
 }]

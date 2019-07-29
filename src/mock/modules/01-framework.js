@@ -84,13 +84,13 @@ export default [{
   url: 'https://nuxtjs.org/',
   githubUrl: 'https://github.com/nuxt/nuxt.js',
   imgSrc: requireImg('nuxt.png'),
-  keyWords: ['nuxt', 'vue'],
+  keyWords: ['nuxt'],
   label: 'Nuxt'
 }, {
   url: 'https://nextjs.org/',
   githubUrl: 'https://github.com/zeit/next.js',
   imgSrc: requireImg('next.png'),
-  keyWords: ['next', 'react'],
+  keyWords: ['next'],
   label: 'Next'
 }, {
   url: 'https://quasar.dev/',
@@ -114,8 +114,8 @@ export default [{
   url: 'https://facebook.github.io/react-native/',
   githubUrl: 'https://github.com/facebook/react-native',
   imgSrc: requireImg('react-native.png'),
-  keyWords: ['react-native', 'react', 'rn'],
-  label: 'React-Native'
+  keyWords: ['reactnative', 'react', 'rn'],
+  label: 'React Native'
 }, {
   url: 'https://www.nativescript.org/',
   githubUrl: 'https://github.com/NativeScript/NativeScript',
@@ -129,7 +129,22 @@ export default [{
   label: 'Flutter'
 }, {
   url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
-  imgSrc: requireImg('xcx.png'),
-  keyWords: ['微信小程序', 'weixin', 'xiaochengxu'],
+  imgSrc: requireImg('wxxcx.png'),
+  keyWords: ['微信小程序', 'weixin', 'wechat'],
   label: '微信小程序'
+}, {
+  url: 'https://mini.open.alipay.com/channel/miniIndex.htm',
+  imgSrc: requireImg('zfbxcx.png'),
+  keyWords: ['支付宝小程序', 'zhifubao', 'alipay'],
+  label: '支付宝小程序'
+}, {
+  url: 'https://smartprogram.baidu.com/developer/index.html',
+  imgSrc: requireImg('bdxcx.png'),
+  keyWords: ['百度智能小程序', 'baidu'],
+  label: '百度智能小程序'
+}, {
+  url: 'https://www.quickapp.cn/quickAppShow',
+  imgSrc: requireImg('kyy.png'),
+  keyWords: ['快应用', 'kuaiyingyong'],
+  label: '快应用'
 }]
