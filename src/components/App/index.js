@@ -7,7 +7,7 @@ import Footer from '../Footer'
 
 const CATEGORY_TYPES = ['list', 'category']
 
-const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here.')
+const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here...')
 const filterKeyWords = filterValue => ({keyWords}) => keyWords.some(item => item.toLowerCase().includes(filterValue))
 
 class App extends Component {
@@ -47,6 +47,7 @@ class App extends Component {
   render () {
     let { library: list, filterValue, typeValue } = this.state
     if (filterValue !== '') {
+      filterValue = filterValue.replace(/\ |\-/g, '')
       if (typeValue === 'list') {
         list = list.filter(filterKeyWords(filterValue))
       } else {
