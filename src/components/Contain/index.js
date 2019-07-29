@@ -8,18 +8,21 @@ const Contain = list => (
   </ul>
 )
 
-const ContainWrap = ({list, value, type}) => (
-  type === 'list' ?
-    (<div className="list-item">
-      {Contain(list)}
-    </div>) :
-    (list.map((item, idx) => (
-      <div className="category-item" key={idx}>
-        <p className="category-item__title">{item.title.toUpperCase()}</p>
-        {Contain(item.children)}
-      </div>
-    )))
-)
+const ContainWrap = ({list, value, type}) =>
+  <div className="contain-wrap">
+    {
+      type === 'list' ?
+        (<div className="list-wrap">
+          {Contain(list)}
+        </div>) :
+        (list.map((item, idx) => (
+          <div className="category-item" key={idx}>
+            <p className="category-item__title">{item.title.toUpperCase()}</p>
+            {Contain(item.children)}
+          </div>
+        )))
+    }
+  </div>
 
 
 export default ContainWrap

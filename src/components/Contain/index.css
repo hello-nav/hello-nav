@@ -1,8 +1,12 @@
-.list-item {
+.contain-wrap {
+  padding-top: 60px;
+}
+
+.list-wrap {
   padding: 0 4vw;
 }
 
-.list-item .contain {
+.list-wrap .contain {
   justify-content: center;
 }
 
