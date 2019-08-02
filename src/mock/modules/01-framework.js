@@ -39,7 +39,7 @@ export default [{
   keyWords: ['umi'],
   label: 'Umi'
 }, {
-  url: 'https://angular.cn/',
+  url: 'https://angular.io/',
   githubUrl: 'https://github.com/angular/angular',
   imgSrc: requireImg('angular.png'),
   keyWords: ['angular'],
