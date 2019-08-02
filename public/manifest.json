@@ -6,7 +6,7 @@
   "description": "A nav of technology stack",
   "start_url": "./index.html",
   "icons": [{
-    "src": "./N-logo@144x144.png",
+    "src": "./logo@144x144.png",
     "type": "image/png",
     "sizes": "144x144"
   }]
