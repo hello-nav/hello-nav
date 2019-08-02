@@ -76,7 +76,7 @@ export default [{
   keyWords: ['graphql'],
   label: 'GraphQL'
 }, {
-  url: 'https://lernajs.io/',
+  url: 'hhttps://lerna.js.org/',
   imgSrc: requireImg('lerna.png'),
   keyWords: ['lerna'],
   label: 'Lerna'
