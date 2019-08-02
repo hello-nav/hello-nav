@@ -47,7 +47,7 @@ class App extends Component {
   render () {
     let { library: list, filterValue, typeValue } = this.state
     if (filterValue !== '') {
-      filterValue = filterValue.replace(/\ |\-/g, '')
+      filterValue = filterValue.replace(/[ -]/g, '')
       if (typeValue === 'list') {
         list = list.filter(filterKeyWords(filterValue))
       } else {
