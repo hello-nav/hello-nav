@@ -18,12 +18,18 @@ export default [{
   keyWords: ['museui'],
   label: 'Muse UI'
 }, {
+  url: 'https://vux.li/',
+  githubUrl: 'https://github.com/airyland/vux',
+  imgSrc: requireImg('vux.png'),
+  keyWords: ['vux'],
+  label: 'VUX'
+}, {
   url: 'https://at-ui.github.io/at-ui/',
   imgSrc: requireImg('at-ui.png'),
   keyWords: ['atui'],
   label: 'At UI'
 }, {
-  url: 'https://youzan.github.io/vant',
+  url: 'https://youzan.github.io/vant/',
   imgSrc: requireImg('vant.png'),
   keyWords: ['vant'],
   label: 'Vant'
