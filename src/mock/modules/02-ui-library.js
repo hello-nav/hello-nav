@@ -13,26 +13,38 @@ export default [{
   keyWords: ['iview'],
   label: 'iView'
 }, {
+  url: 'https://vue.ant.design/',
+  githubUrl: 'https://github.com/vueComponent/ant-design-vue',
+  imgSrc: requireImg('ant-design-vue.png'),
+  keyWords: ['ant-design-vue'],
+  label: 'Ant Design Vue'
+}, {
   url: 'https://muse-ui.org/',
   imgSrc: requireImg('museui.png'),
   keyWords: ['museui'],
   label: 'Muse UI'
-}, {
-  url: 'https://vux.li/',
-  githubUrl: 'https://github.com/airyland/vux',
-  imgSrc: requireImg('vux.png'),
-  keyWords: ['vux'],
-  label: 'VUX'
 }, {
   url: 'https://at-ui.github.io/at-ui/',
   imgSrc: requireImg('at-ui.png'),
   keyWords: ['atui'],
   label: 'At UI'
 }, {
+  url: 'https://didi.github.io/cube-ui/',
+  githubUrl: 'https://github.com/didi/cube-ui',
+  imgSrc: requireImg('cube.png'),
+  keyWords: ['cube'],
+  label: 'Cube UI'
+}, {
   url: 'https://youzan.github.io/vant/',
   imgSrc: requireImg('vant.png'),
   keyWords: ['vant'],
   label: 'Vant'
+}, {
+  url: 'https://vux.li/',
+  githubUrl: 'https://github.com/airyland/vux',
+  imgSrc: requireImg('vux.png'),
+  keyWords: ['vux'],
+  label: 'VUX'
 }, {
   url: 'https://ant.design/',
   imgSrc: requireImg('ant-design.png'),
