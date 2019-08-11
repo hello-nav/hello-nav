@@ -9,6 +9,7 @@ export default [{
   label: '百度'
 }, {
   url: 'https://www.google.com/',
+  githubUrl: 'https://github.com/google',
   imgSrc: requireImg('google.png'),
   keyWords: ['谷歌', 'google'],
   label: 'Google'
@@ -25,21 +26,25 @@ export default [{
   label: 'GitHub'
 }, {
   url: 'https://www.npmjs.com/',
+  githubUrl: 'https://github.com/npm',
   imgSrc: requireImg('npm.png'),
   keyWords: ['npm'],
   label: 'NPM'
 }, {
-  url: 'https://yarnpkg.com/zh-Hans/',
+  url: 'https://yarnpkg.com/',
+  githubUrl: 'https://github.com/yarnpkg/yarn',
   imgSrc: requireImg('yarn.png'),
   keyWords: ['yarn'],
   label: 'Yarn'
 }, {
-  url: 'https://developer.mozilla.org/zh-CN/',
+  url: 'https://developer.mozilla.org/',
+  githubUrl: 'https://github.com/mdn',
   imgSrc: requireImg('mdn.png'),
   keyWords: ['mdn'],
   label: 'MDN'
 }, {
   url: 'https://travis-ci.org/',
+  githubUrl: 'https://github.com/travis-ci',
   imgSrc: requireImg('travis.png'),
   keyWords: ['travis', 'ci'],
   label: 'Travis'
@@ -50,6 +55,7 @@ export default [{
   label: 'Tinypng'
 }, {
   url: 'https://juejin.im/',
+  githubUrl: 'https://github.com/xitu',
   imgSrc: requireImg('juejin.png'),
   keyWords: ['掘金', 'juejin'],
   label: '掘金'

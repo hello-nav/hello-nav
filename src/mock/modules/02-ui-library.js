@@ -4,11 +4,13 @@ import {
 
 export default [{
   url: 'https://element.eleme.cn/',
+  githubUrl: 'https://github.com/ElemeFE/element',
   imgSrc: requireImg('element-ui.png'),
   keyWords: ['饿了么', 'elementui'],
   label: 'Element UI'
 }, {
   url: 'https://www.iviewui.com/',
+  githubUrl: 'https://github.com/iview/iview',
   imgSrc: requireImg('iview.png'),
   keyWords: ['iview'],
   label: 'iView'
@@ -20,11 +22,13 @@ export default [{
   label: 'Ant Design Vue'
 }, {
   url: 'https://muse-ui.org/',
+  githubUrl: 'https://github.com/museui/muse-ui',
   imgSrc: requireImg('museui.png'),
   keyWords: ['museui'],
   label: 'Muse UI'
 }, {
   url: 'https://at-ui.github.io/at-ui/',
+  githubUrl: 'https://github.com/at-ui/at-ui',
   imgSrc: requireImg('at-ui.png'),
   keyWords: ['atui'],
   label: 'At UI'
@@ -36,6 +40,7 @@ export default [{
   label: 'Cube UI'
 }, {
   url: 'https://youzan.github.io/vant/',
+  githubUrl: 'https://github.com/youzan/vant',
   imgSrc: requireImg('vant.png'),
   keyWords: ['vant'],
   label: 'Vant'
@@ -47,16 +52,19 @@ export default [{
   label: 'VUX'
 }, {
   url: 'https://ant.design/',
+  githubUrl: 'https://github.com/ant-design/ant-design/',
   imgSrc: requireImg('ant-design.png'),
   keyWords: ['antdesign'],
   label: 'Ant Design'
 }, {
   url: 'https://antv.alipay.com/',
+  githubUrl: 'https://github.com/antvis/',
   imgSrc: requireImg('antv.png'),
   keyWords: ['antv'],
   label: 'AntV'
 }, {
   url: 'https://ng-alain.com/zh',
+  githubUrl: 'https://github.com/ng-alain/ng-alain/',
   imgSrc: requireImg('ng-alain.png'),
   keyWords: ['ngalain'],
   label: 'Ng Alain'
@@ -68,6 +76,7 @@ export default [{
   label: 'LuLu UI'
 }, {
   url: 'https://echarts.baidu.com/',
+  githubUrl: 'https://github.com/apache/incubator-echarts',
   imgSrc: requireImg('echarts.png'),
   keyWords: ['echarts'],
   label: 'ECharts'

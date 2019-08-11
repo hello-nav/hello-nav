@@ -124,6 +124,7 @@ export default [{
   label: 'NativeScript'
 }, {
   url: 'https://flutter.io/',
+  githubUrl: 'https://github.com/flutter/flutter',
   imgSrc: requireImg('flutter.png'),
   keyWords: ['flutter'],
   label: 'Flutter'
@@ -141,7 +142,7 @@ export default [{
   url: 'https://smartprogram.baidu.com/developer/index.html',
   imgSrc: requireImg('bdxcx.png'),
   keyWords: ['百度智能小程序', 'baidu'],
-  label: '百度智能小程序'
+  label: '智能小程序'
 }, {
   url: 'https://www.quickapp.cn/quickAppShow',
   imgSrc: requireImg('kyy.png'),
