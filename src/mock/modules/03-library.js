@@ -8,6 +8,12 @@ export default [{
   keyWords: ['webpack'],
   label: 'Webpack'
 }, {
+  url: 'https://www.pika.dev/',
+  githubUrl: 'https://github.com/pikapkg/web',
+  imgSrc: requireImg('pika.png'),
+  keyWords: ['pika'],
+  label: 'Pika'
+}, {
   url: 'https://rollupjs.org/',
   imgSrc: requireImg('rollup.png'),
   keyWords: ['rollup'],
