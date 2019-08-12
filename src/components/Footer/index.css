@@ -24,3 +24,6 @@
 .bold {
   font-weight: bold;
 }
+.bener-link {
+  color: currentColor;
+}
