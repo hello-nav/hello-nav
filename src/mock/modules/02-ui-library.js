@@ -6,7 +6,7 @@ export default [{
   url: 'https://element.eleme.cn/',
   githubUrl: 'https://github.com/ElemeFE/element',
   imgSrc: requireImg('element-ui.png'),
-  keyWords: ['饿了么', 'elementui'],
+  keyWords: ['饿了么', 'element-ui'],
   label: 'Element UI'
 }, {
   url: 'https://www.iviewui.com/',
@@ -74,6 +74,12 @@ export default [{
   imgSrc: requireImg('luluui.png'),
   keyWords: ['luluui'],
   label: 'LuLu UI'
+}, {
+  url: 'https://flutter-go.pub/',
+  githubUrl: 'https://github.com/alibaba/flutter-go/',
+  imgSrc: requireImg('flutter-go.png'),
+  keyWords: ['fluttergo'],
+  label: 'Flutter Go'
 }, {
   url: 'https://echarts.baidu.com/',
   githubUrl: 'https://github.com/apache/incubator-echarts',
