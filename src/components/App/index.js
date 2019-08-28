@@ -8,7 +8,13 @@ import Footer from '../Footer'
 const CATEGORY_TYPES = ['list', 'category']
 
 const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here...')
-const filterKeyWords = filterValue => ({keyWords}) => keyWords.some(item => item.toLowerCase().includes(filterValue))
+const filterKeyWords = filterValue =>
+  ({keyWords}) => keyWords.some(item =>
+      item
+        .toLowerCase()
+        .replace(/[ -]/g, '')
+        .includes(filterValue)
+    )
 
 class App extends Component {
   constructor (props) {
