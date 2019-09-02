@@ -49,6 +49,12 @@ export default [{
   keyWords: ['travis', 'ci'],
   label: 'Travis'
 }, {
+  url: 'https://codesandbox.io/',
+  githubUrl: 'https://github.com/codesandbox/codesandbox-client',
+  imgSrc: requireImg('codesandbox.png'),
+  keyWords: ['codesandbox'],
+  label: 'CodeSandbox'
+}, {
   url: 'https://tinypng.com/',
   imgSrc: requireImg('tinypng.png'),
   keyWords: ['tinypng'],
