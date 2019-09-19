@@ -1,6 +1,6 @@
 {
-  "name": "hello-nav-ts",
-  "version": "0.1.0",
+  "name": "hello-nav",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
@@ -42,5 +42,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0"
-  }
+  },
+  "homepage": "."
 }

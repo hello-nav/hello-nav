@@ -2,7 +2,7 @@ import {
   requireImg
 } from '../utils'
 
-const apps: AppItem[] = [{
+export default [{
   url: 'https://www.baidu.com/',
   imgSrc: requireImg('baidu.png'),
   keyWords: ['百度', 'baidu'],
@@ -91,5 +91,3 @@ const apps: AppItem[] = [{
   keyWords: ['伯乐在线', 'jobbole', 'bolezaixian'],
   label: '伯乐在线'
 }]
-
-export default apps
