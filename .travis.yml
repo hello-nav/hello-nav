@@ -1,0 +1,27 @@
+language: node_js
+
+node_js: stable
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run build
+
+after_script:
+  - cd build
+  - git init
+  - git config user.name "${GH_USER}"
+  - git config user.email "${GH_EMAIL}"
+  - git add .
+  - git commit -m "CI BUILD"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
+branches:
+  only:
+    - master
+
+env:
+ global:
+   - GH_REF: github.com/hello-nav/hello-nav.github.io.git

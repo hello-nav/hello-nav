@@ -1,0 +1,32 @@
+.contain-wrap {
+  padding-top: 30px;
+}
+
+.list-wrap {
+  padding: 0 4vw;
+}
+
+.list-wrap .contain {
+  justify-content: center;
+}
+
+.category-item {
+  margin-bottom: 40px;
+  padding: 0 6vw;
+}
+
+.category-item__title {
+  text-align: left;
+  font-weight: bold;
+  color: #696969;
+}
+
+.category-item .contain {
+  justify-content: flex-start;
+}
+
+.contain {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 120px);
+}
