@@ -8,6 +8,6 @@ const getModules = (context: __WebpackModuleApi.RequireContext): CateItem[] =>
     }))
 
 const context = require.context('./modules', true, /\.ts$/)
-const routes = getModules(context)
+const libraryTree: CateItem[] = getModules(context)
 
-export default routes
+export default libraryTree
