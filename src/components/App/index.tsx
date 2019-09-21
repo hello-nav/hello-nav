@@ -5,9 +5,6 @@ import ContainWrap from '../Contain'
 import WithError from '../WithError'
 import Footer from '../Footer'
 
-type CategoryType = 'list' | 'category'
-type CategoryTypes = CategoryType[]
-
 const CATEGORY_TYPES: CategoryTypes = ['list', 'category']
 const libraryMap: any = {
   category: libraryTree,

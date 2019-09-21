@@ -1,13 +1,6 @@
 import React from 'react'
 import './index.css'
 
-interface FilterProps {
-  filterKey: string
-  onInput(e: React.FormEvent): void
-  toggleType: any
-  type: string
-}
-
 function FilterBar ({filterKey, onInput, toggleType, type}: FilterProps) {
   return (
     <div className="filter-bar">
