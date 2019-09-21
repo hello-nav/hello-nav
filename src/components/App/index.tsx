@@ -18,13 +18,13 @@ const libraryMap: any = {
 }
 
 const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here...')
-const genFilterByKey = (filterKey: string) => (list: AppItem[]) =>
-  list.filter(({ keyWords }: any) => keyWords.some((item: string) =>
-      item
-        .toLowerCase()
-        .replace(/[ -]/g, '')
-        .includes(filterKey)
-    ))
+// const genFilterByKey = (filterKey: string) => (list: AppItem[]) =>
+//   list.filter(({ keyWords }: any) => keyWords.some((item: string) =>
+//       item
+//         .toLowerCase()
+//         .replace(/[ -]/g, '')
+//         .includes(filterKey)
+//     ))
 
 let typeIndex: number = 0
 let toggleType: () => void
