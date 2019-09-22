@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, Children } from 'react'
 import libraryTree from '../../mock'
 import FilterBar from '../FilterBar'
 import ContainWrap from '../Contain'
@@ -10,7 +10,7 @@ const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here..
 
 const libraryMap: LibraryMap = {
   category: libraryTree,
-  list: libraryTree.reduce((res: AppItem[], item) => {
+  list: libraryTree.reduce((res: AppItem[], item: CateItem) => {
     item.childrens.forEach(app => {
       if (!app.keyWords || !app.keyWords.length) {
         app.keyWords = [app.label]
@@ -31,7 +31,10 @@ const genKeyFilterByList = (list: (AppItem | CateItem)[]) => (filterKey: string)
     return filterListByKey((list as AppItem[]), filterKey)
   } else {
     return (list as CateItem[])
-      .map(cate => filterListByKey(cate.childrens, filterKey))
+      .map(cate => ({
+        title: cate.title,
+        childrens: filterListByKey(cate.childrens, filterKey)
+      }))
   }
 }
 let listFiltersMap: ListFiltersMap = CATEGORY_TYPES
@@ -47,24 +50,30 @@ let toggleType = (setType: any, setList: any, type?: CategoryType) => {
   type = CATEGORY_TYPES[typeIndex]
   window.localStorage.__CATEGORY_TYPE__ = type
   setType(type)
-  setList(libraryMap[type as CategoryType])
+  if (oldFilterKey) {
+    setList(listFiltersMap[type](oldFilterKey))
+  } else {
+    setList(libraryMap[type])
+  }
 }
 
 function App () {
-  const [type, setType] = useState(window.localStorage.__CATEGORY_TYPE__ || CATEGORY_TYPES[0])
+  const [type, setType]: [CategoryType, React.Dispatch<any>] = useState(window.localStorage.__CATEGORY_TYPE__ || CATEGORY_TYPES[0])
   !window.localStorage.__CATEGORY_TYPE__ && (window.localStorage.__CATEGORY_TYPE__ = type)
 
-  const [list, setList] = useState(libraryMap[type as CategoryType])
+  const [list, setList] = useState(libraryMap[type])
   const [filterKey, setFilterKey] = useState('')
   typeIndex = CATEGORY_TYPES.indexOf(type)
 
   const newFilterKey = filterKey.trim().replace(/[ -]/g, '')
   if (oldFilterKey !== newFilterKey) {
-    setList(listFiltersMap[type as CategoryType](newFilterKey))
+    setList(listFiltersMap[type](newFilterKey))
     oldFilterKey = newFilterKey
   }
 
-  // console.log(list)
+  const hasData = type === 'category'
+     ? (list as CateItem[]).filter(cate => cate.childrens.length).length
+     : (list as AppItem[]).length
 
   return (
     <div>
@@ -77,7 +86,7 @@ function App () {
       <ContainWithNotFind
         list={list}
         type={type}
-        isError={!list.length}
+        isError={!hasData}
       />
       <Footer/>
     </div>

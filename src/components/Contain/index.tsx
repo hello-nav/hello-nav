@@ -17,13 +17,13 @@ const ContainWrap = ({ list, type }: any) => {
       </div>
     )
   } else {
-    return list.reduce((vmList: React.ReactElement[], item: any, idx: number) => {
-      const apps = item.childrens
+    return list.reduce((vmList: React.ReactElement[], cate: CateItem, idx: number) => {
+      const apps = cate.childrens
       if (apps.length) {
         vmList.push((
           <div className="category-item" key={idx}>
             <p className="category-item__title">
-              {item.title.toUpperCase()}
+              {cate.title.toUpperCase()}
             </p>
             {Contain(apps)}
           </div>
