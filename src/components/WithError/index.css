@@ -1,7 +1,7 @@
 .err-message {
   line-height: 30px;
   text-align: center;
-  padding: 200px 0 150px;
+  margin-top: 200px;
   font-size: 20px;
   color: gray;
 }

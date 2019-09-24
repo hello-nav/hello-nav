@@ -80,18 +80,20 @@ function App () {
      : (list as AppItem[]).length
 
   return (
-    <div>
+    <div className="body">
       <FilterBar
         filterKey={filterKey}
         onInput={(e: any) => setFilterKey(e.target.value)}
         type={type}
         toggleType={() => toggleType(setType, setList)}
       />
-      <ContainWithNotFind
-        list={list}
-        type={type}
-        isError={!hasData}
-      />
+      <div className="main">
+        <ContainWithNotFind
+          list={list}
+          type={type}
+          isError={!hasData}
+        />
+      </div>
       <Footer/>
     </div>
   )

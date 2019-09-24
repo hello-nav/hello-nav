@@ -3,21 +3,17 @@ import Cell from '../Cell'
 import './index.css'
 
 const Contain = (list: object[]) => (
-  <ul className="contain">
+  <ul className="app-list">
     { list.map( (cell, i) => <Cell {...cell} key={i+''}/> ) }
   </ul>
 )
 
 const ContainWrap = ({ list, type }: any) => {
-  let conain
+  let contain
   if (type === 'list') {
-    conain = (
-      <div className="list-wrap">
-        {Contain(list)}
-      </div>
-    )
+    contain = Contain(list)
   } else {
-    return list.reduce((vmList: React.ReactElement[], cate: CateItem, idx: number) => {
+    contain = list.reduce((vmList: React.ReactElement[], cate: CateItem, idx: number) => {
       const apps = cate.childrens
       if (apps.length) {
         vmList.push((
@@ -34,7 +30,7 @@ const ContainWrap = ({ list, type }: any) => {
   }
   return (
     <div className="contain-wrap">
-      {conain}
+      {contain}
     </div>
   )
 }
