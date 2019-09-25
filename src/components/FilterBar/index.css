@@ -7,6 +7,7 @@
   align-items: center;
   user-select: none;
   z-index: 2019;
+  color: #666;
 }
 
 .filter-bar__toggle-btn {
@@ -22,6 +23,7 @@
   background: rgba(255, 255, 255, 0.9);
   color: #777;
   cursor: pointer;
+  backdrop-filter: blur(2px);
 }
 
 .filter-bar__toggle-btn:hover {
@@ -73,12 +75,13 @@
   background: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   transition: .2s;
+  backdrop-filter: blur(2px);
 }
 
 .search-input:hover {
   width: 60px;
-  border-color: rgba(4, 170, 255, 0.2);
-  box-shadow: 0 0 10px rgba(4, 170, 255, 0.2);
+  border-color: rgba(107, 255, 255, 0.3);
+  box-shadow: 0 0 2px rgba(107, 255, 255, 0.02), 0 0 10px rgba(107, 255, 255, 0.2);
 }
 
 .search-input:focus {
@@ -86,8 +89,8 @@
   padding-left: 15px;
   padding-right: 28px;
   transition: width .4s;
-  border-color: rgba(4, 170, 255, 0.4);
-  box-shadow: 0 0 14px rgba(4, 170, 255, 0.3);
+  border-color: rgba(107, 255, 255, 0.2);
+  box-shadow: 0 0 2px rgba(107, 255, 255, 0.1), 0 0 16px rgba(107, 255, 255, 0.3);
 }
 
 .search-input:focus+.search-icon {

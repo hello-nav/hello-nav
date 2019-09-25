@@ -15,7 +15,7 @@ function FilterBar ({filterKey, onInput, toggleType, type}: FilterProps) {
           <use href="#icon-search"></use>
         </svg>
         <svg className="icon clear-icon" aria-hidden="true">
-          <use href="#icon-clear11"></use>
+          <use href="#icon-close"></use>
         </svg>
       </div>
     </div>
