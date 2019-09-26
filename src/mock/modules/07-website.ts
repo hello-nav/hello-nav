@@ -25,6 +25,11 @@ const apps: AppItem[] = [{
   keyWords: ['github'],
   label: 'GitHub'
 }, {
+  url: 'https://gitlab.com/',
+  imgSrc: requireImg('gitlab.png'),
+  keyWords: ['gitlab'],
+  label: 'GitLab'
+}, {
   url: 'https://www.npmjs.com/',
   githubUrl: 'https://github.com/npm',
   imgSrc: requireImg('npm.png'),
@@ -42,6 +47,11 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('mdn.png'),
   keyWords: ['mdn'],
   label: 'MDN'
+}, {
+  url: 'https://stackoverflow.com/',
+  imgSrc: requireImg('stackoverflow.png'),
+  keyWords: ['stackoverflow'],
+  label: 'stackoverflow'
 }, {
   url: 'https://travis-ci.org/',
   githubUrl: 'https://github.com/travis-ci',
