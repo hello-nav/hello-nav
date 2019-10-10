@@ -10,7 +10,7 @@ const apps: AppItem[] = [{
   label: 'Element UI'
 }, {
   url: 'https://www.iviewui.com/',
-  githubUrl: 'https://github.com/iview/iview',
+  githubUrl: 'https://github.com/view-design/ViewUI',
   imgSrc: requireImg('iview.png'),
   keyWords: ['iview'],
   label: 'iView'
