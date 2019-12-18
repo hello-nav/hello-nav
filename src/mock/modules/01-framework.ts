@@ -39,6 +39,12 @@ const apps: AppItem[] = [{
   keyWords: ['umi'],
   label: 'Umi'
 }, {
+  url: 'https://dvajs.com/',
+  githubUrl: 'https://github.com/dvajs/dva',
+  imgSrc: requireImg('dvajs.png'),
+  keyWords: ['dvajs'],
+  label: 'DvaJS'
+}, {
   url: 'https://angular.io/',
   githubUrl: 'https://github.com/angular/angular',
   imgSrc: requireImg('angular.png'),
