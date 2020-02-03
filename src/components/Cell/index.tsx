@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.css'
+
 const gitHubIcon = require('../../assets/images/github.png')
 
 function onCornerClick(e: React.SyntheticEvent, githubUrl: string) {
@@ -8,20 +9,36 @@ function onCornerClick(e: React.SyntheticEvent, githubUrl: string) {
   return false
 }
 
-const Cell = ({ url, imgSrc, githubUrl, label }: {[propName: string]: string}) => (
+const Cell = ({
+  url,
+  imgSrc,
+  githubUrl,
+  label,
+}: {
+  [propName: string]: string
+}) => (
   <li className="cell">
     <a className="app" href={url} title={label}>
       <div className="img-box">
-        <img src={imgSrc} alt={label}/>
+        <img src={imgSrc} alt={label} />
       </div>
       <p className="title">{label}</p>
-      {
-        githubUrl && (<div onClick={e => onCornerClick(e, githubUrl)} className="corner">
+      {githubUrl && (
+        <div
+          onKeyDown={() => {}}
+          onClick={e => onCornerClick(e, githubUrl)}
+          className="corner"
+        >
           <div className="corner-icon-wrap">
-            <img className="corner-icon" draggable={false} src={gitHubIcon} alt=""/>
+            <img
+              className="corner-icon"
+              draggable={false}
+              src={gitHubIcon}
+              alt=""
+            />
           </div>
-        </div>)
-      }
+        </div>
+      )}
     </a>
   </li>
 )

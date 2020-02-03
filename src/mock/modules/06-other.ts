@@ -1,5 +1,5 @@
 import {
-  requireImg
+  requireImg,
 } from '../utils'
 
 const apps: AppItem[] = [{
@@ -7,31 +7,31 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/golang/go/',
   imgSrc: requireImg('golang.png'),
   keyWords: ['golang'],
-  label: 'Golang'
+  label: 'Golang',
 }, {
   url: 'https://www.ruby-lang.org/',
   githubUrl: 'https://github.com/ruby/ruby/',
   imgSrc: requireImg('ruby.png'),
   keyWords: ['ruby'],
-  label: 'Ruby'
+  label: 'Ruby',
 }, {
   url: 'https://www.dartlang.org/',
   githubUrl: 'https://github.com/dart-lang/',
   imgSrc: requireImg('dart.png'),
   keyWords: ['dart'],
-  label: 'Dart'
+  label: 'Dart',
 }, {
   url: 'https://www.python.org/',
   githubUrl: 'https://github.com/python',
   imgSrc: requireImg('python.png'),
   keyWords: ['python'],
-  label: 'Python'
+  label: 'Python',
 }, {
   url: 'https://www.docker.com/',
   githubUrl: 'https://github.com/docker',
   imgSrc: requireImg('docker.png'),
   keyWords: ['docker'],
-  label: 'Docker'
+  label: 'Docker',
 }]
 
 export default apps

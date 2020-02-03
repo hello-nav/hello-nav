@@ -1,5 +1,5 @@
 import {
-  requireImg
+  requireImg,
 } from '../utils'
 
 const apps: AppItem[] = [{
@@ -7,31 +7,31 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/pugjs/pug',
   imgSrc: requireImg('pug.png'),
   keyWords: ['pug'],
-  label: 'Pug'
+  label: 'Pug',
 }, {
   url: 'http://sass-lang.com/',
   githubUrl: 'https://github.com/sass/sass',
   imgSrc: requireImg('sass.png'),
   keyWords: ['sass'],
-  label: 'Sass'
+  label: 'Sass',
 }, {
   url: 'http://lesscss.org/',
   imgSrc: requireImg('less.png'),
   githubUrl: 'https://github.com/less/less-docs',
   keyWords: ['less'],
-  label: 'Less'
+  label: 'Less',
 }, {
   url: 'http://stylus-lang.com/',
   imgSrc: requireImg('stylus.png'),
   githubUrl: 'https://github.com/stylus/stylus/',
   keyWords: ['stylus'],
-  label: 'Stylus'
+  label: 'Stylus',
 }, {
   url: 'https://postcss.org/',
   imgSrc: requireImg('postcss.png'),
   githubUrl: 'https://github.com/postcss/postcss',
   keyWords: ['postcss'],
-  label: 'Postcss'
+  label: 'Postcss',
 }]
 
 export default apps

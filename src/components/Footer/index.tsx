@@ -6,7 +6,13 @@ const Footer = () => (
     <p>
       <a href="https://github.com/hello-nav/hello-nav" className="logo vertical-center"> </a>
       <span className="vertical-center">
-        Made by<b> <a className="bener-link" href="https://github.com/Heroor">Bener</a> </b>with
+        Made by
+        <b>
+          {' '}
+          <a className="bener-link" href="https://github.com/Heroor">Bener</a>
+          {' '}
+        </b>
+        with
         <span className="heart"> ❤ </span>
       </span>
     </p>

@@ -8,7 +8,7 @@ interface AppItem {
 
 interface CateItem {
   title: string
-  childrens: AppItem[]
+  children: AppItem[]
 }
 
 type CategoryType = 'list' | 'category'
@@ -19,7 +19,7 @@ interface LibraryMap {
   category: CateItem[]
 }
 
-interface ListFiltersMap {
+interface FiltersMap {
   list(key: string): AppItem[]
   category(key: string): CateItem[]
 }
