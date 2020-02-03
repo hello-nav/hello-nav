@@ -1,6 +1,6 @@
 # hello nav
 
-## [A navigation for developer](https://hello-nav.github.io/)
+## [A navigation🗺 for developer](https://hello-nav.github.io/)
 
 - search app
 - list or category
