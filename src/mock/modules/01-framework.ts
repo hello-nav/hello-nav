@@ -33,7 +33,7 @@ const apps: AppItem[] = [{
   keyWords: ['nervjs'],
   label: 'NervJS',
 }, {
-  url: 'https://umijs.org/zh/',
+  url: 'https://umijs.org/',
   githubUrl: 'https://github.com/umijs/umi',
   imgSrc: requireImg('umi.png'),
   keyWords: ['umi'],
