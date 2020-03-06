@@ -4,7 +4,7 @@ import FilterBar from '../FilterBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'
 import Footer from '../Footer'
-import { KEYWORD_REG, transformAppKeyWords } from '../../utils'
+import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
 
 const CATEGORY_TYPES: CategoryTypes = ['list', 'category']
 const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here...')
@@ -67,7 +67,7 @@ function App() {
   const newFilterKey = filterKey
     .trim()
     .toLowerCase()
-    .replace(KEYWORD_REG, '')
+    .replace(IGNORE_KEYWORD_REG, '')
   if (oldFilterKey !== newFilterKey) {
     setList(filtersMap[type](newFilterKey))
     oldFilterKey = newFilterKey

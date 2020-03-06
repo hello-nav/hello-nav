@@ -135,6 +135,18 @@ const apps: AppItem[] = [{
   keyWords: ['zepto'],
   label: 'Zepto',
 }, {
+  url: 'https://momentjs.com/',
+  githubUrl: 'https://github.com/moment/moment',
+  imgSrc: requireImg('moment.png'),
+  keyWords: ['moment'],
+  label: 'Moment',
+}, {
+  url: 'https://day.js.org/',
+  githubUrl: 'https://github.com/iamkun/dayjs',
+  imgSrc: requireImg('dayjs.png'),
+  keyWords: ['dayjs'],
+  label: 'Day.js',
+}, {
   url: 'https://mochajs.org/',
   githubUrl: 'https://github.com/mochajs/mocha',
   imgSrc: requireImg('mocha.png'),
