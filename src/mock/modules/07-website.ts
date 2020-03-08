@@ -30,6 +30,12 @@ const apps: AppItem[] = [{
   keyWords: ['gitlab'],
   label: 'GitLab',
 }, {
+  url: 'https://git-scm.com/',
+  githubUrl: 'https://github.com/git/git',
+  imgSrc: requireImg('git.png'),
+  keyWords: ['git'],
+  label: 'Git',
+}, {
   url: 'https://www.npmjs.com/',
   githubUrl: 'https://github.com/npm',
   imgSrc: requireImg('npm.png'),
