@@ -81,7 +81,7 @@ const apps: AppItem[] = [{
   keyWords: ['fluttergo'],
   label: 'Flutter Go',
 }, {
-  url: 'https://echarts.baidu.com/',
+  url: 'https://echarts.apache.org/',
   githubUrl: 'https://github.com/apache/incubator-echarts',
   imgSrc: requireImg('echarts.png'),
   keyWords: ['echarts'],
