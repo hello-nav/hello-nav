@@ -16,7 +16,7 @@ const Footer = () => (
         <span className="heart"> ❤ </span>
       </span>
     </p>
-    <p>&copy;2018-2019</p>
+    <p>&copy;2018-2020</p>
 
   </div>
 )
