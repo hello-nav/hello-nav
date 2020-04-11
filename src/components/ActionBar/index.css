@@ -17,7 +17,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   margin-right: 10px;
   border: 1px solid #e4e4e4;
   background: rgba(255, 255, 255, 0.9);
@@ -74,14 +74,15 @@
   color: #777;
   background: rgba(255, 255, 255, 0.9);
   font-size: 14px;
-  transition: .2s;
+  transition: .3s;
   backdrop-filter: blur(2px);
 }
 
 .search-input:hover {
   width: 60px;
-  border-color: rgba(107, 255, 255, 0.3);
-  box-shadow: 0 0 2px rgba(107, 255, 255, 0.02), 0 0 10px rgba(107, 255, 255, 0.2);
+  /* border-color: rgba(107, 255, 255, 0.2); */
+  border-color: transparent;
+  box-shadow: 0 0 2px rgba(107, 255, 255, 0.02), 0 0 15px rgba(107, 255, 255, 0.3);
 }
 
 .search-input:focus {
@@ -96,13 +97,13 @@
 .search-input:focus+.search-icon {
   opacity: 0;
   right: 12px;
-  transition: right .3s, opacity .2s;
+  transition: right .4s, opacity .2s;
 }
 
 .search-input:focus~.clear-icon {
   right: 12px;
   visibility: visible;
   opacity: 1;
-  transition: right .3s, opacity .2s;
+  transition: right .4s, opacity .2s;
   cursor: pointer;
 }

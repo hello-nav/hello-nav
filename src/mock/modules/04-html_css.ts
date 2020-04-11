@@ -26,6 +26,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/stylus/stylus/',
   keyWords: ['stylus'],
   label: 'Stylus',
+  darkInvert: true,
 }, {
   url: 'https://postcss.org/',
   imgSrc: requireImg('postcss.png'),

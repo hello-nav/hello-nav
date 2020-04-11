@@ -96,6 +96,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('bokeyuan.png'),
   keyWords: ['博客园', 'cnblogs', 'bokeyuan'],
   label: '博客园',
+  darkInvert: true,
 }, {
   url: 'https://www.jianshu.com/',
   imgSrc: requireImg('jianshu.png'),

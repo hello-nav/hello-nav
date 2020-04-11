@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import libraryTree from '../../mock'
-import FilterBar from '../FilterBar'
+import ActionBar from '../ActionBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'
 import Footer from '../Footer'
@@ -79,7 +79,7 @@ function App() {
 
   return (
     <div className="body">
-      <FilterBar
+      <ActionBar
         filterKey={filterKey}
         onInput={(e: any) => setFilterKey(e.target.value)}
         type={type}

@@ -4,6 +4,7 @@ interface AppItem {
   imgSrc: string
   githubUrl?: string
   keyWords?: string[]
+  darkInvert?: boolean
 }
 
 interface CateItem {

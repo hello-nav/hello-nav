@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/fonts/iconfont';
 import './index.css';
+import './style/theme/dark.css';
 import App from './components/App'
 import * as serviceWorker from './serviceWorker';
 

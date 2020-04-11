@@ -50,6 +50,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('vux.png'),
   keyWords: ['vux'],
   label: 'VUX',
+  darkInvert: true,
 }, {
   url: 'https://ant.design/',
   githubUrl: 'https://github.com/ant-design/ant-design/',

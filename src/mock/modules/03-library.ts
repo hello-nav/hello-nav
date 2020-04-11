@@ -98,6 +98,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('lerna.png'),
   keyWords: ['lerna'],
   label: 'Lerna',
+  darkInvert: true,
 }, {
   url: 'https://lodash.com/',
   githubUrl: 'https://github.com/lodash/lodash/',
@@ -176,6 +177,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('markdown.png'),
   keyWords: ['markdownit'],
   label: 'Markdown it',
+  darkInvert: true,
 }, {
   url: 'https://highlightjs.org/',
   githubUrl: 'https://github.com/highlightjs/highlight.js',
@@ -188,6 +190,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('three.js.png'),
   keyWords: ['threejs', 'three.js'],
   label: 'Three JS',
+  darkInvert: true,
 }, {
   url: 'https://pptr.dev/',
   githubUrl: 'https://github.com/GoogleChrome/puppeteer',
