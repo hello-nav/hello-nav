@@ -64,6 +64,12 @@ const apps: AppItem[] = [{
   keyWords: ['antv'],
   label: 'AntV',
 }, {
+  url: 'https://rsuitejs.com/',
+  githubUrl: 'https://github.com/rsuite/rsuite',
+  imgSrc: requireImg('rsuite.png'),
+  keyWords: ['rsuite', 'react suite'],
+  label: 'React Suite',
+}, {
   url: 'https://ng-alain.com/zh',
   githubUrl: 'https://github.com/ng-alain/ng-alain/',
   imgSrc: requireImg('ng-alain.png'),
