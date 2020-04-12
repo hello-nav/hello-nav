@@ -93,6 +93,12 @@ const apps: AppItem[] = [{
   keyWords: ['graphql'],
   label: 'GraphQL',
 }, {
+  url: 'https://www.apollographql.com/',
+  githubUrl: 'https://github.com/apollographql',
+  imgSrc: requireImg('apollographql.png'),
+  keyWords: ['apollographql'],
+  label: 'ApolloGraphQL',
+}, {
   url: 'https://lerna.js.org/',
   githubUrl: 'https://github.com/lerna/lerna',
   imgSrc: requireImg('lerna.png'),
