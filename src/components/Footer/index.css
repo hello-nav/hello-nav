@@ -13,6 +13,7 @@
   margin-right: 8px;
   background: url('../../assets/images/logo@144x144.png') center/22px 22px;
   filter: grayscale(1);
+  transition: .3s;
 }
 .logo:hover {
   transition: .618s;

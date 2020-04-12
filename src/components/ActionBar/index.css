@@ -7,7 +7,7 @@
   align-items: center;
   user-select: none;
   z-index: 2019;
-  color: #666;
+  color: #999;
 }
 
 .filter-bar__btn {
@@ -25,7 +25,7 @@
   margin-right: 10px;
   border: 1px solid #e4e4e4;
   background: rgba(255, 255, 255, 0.9);
-  color: #777;
+  transition: 0.3s;
   cursor: pointer;
   backdrop-filter: blur(2px);
 }
@@ -78,24 +78,20 @@
   color: #777;
   background: rgba(255, 255, 255, 0.9);
   font-size: 14px;
-  transition: .3s;
+  transition: 0.3s;
   backdrop-filter: blur(2px);
 }
 
 .search-input:hover {
   width: 60px;
-  /* border-color: rgba(107, 255, 255, 0.2); */
-  border-color: transparent;
-  box-shadow: 0 0 2px rgba(107, 255, 255, 0.02), 0 0 15px rgba(107, 255, 255, 0.3);
+  opacity: .9;
 }
 
 .search-input:focus {
   width: 210px;
   padding-left: 15px;
   padding-right: 28px;
-  transition: width .4s;
-  border-color: rgba(107, 255, 255, 0.2);
-  box-shadow: 0 0 2px rgba(107, 255, 255, 0.1), 0 0 16px rgba(107, 255, 255, 0.3);
+  transition: .3s;
 }
 
 .search-input:focus+.search-icon {

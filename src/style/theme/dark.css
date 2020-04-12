@@ -1,25 +1,17 @@
 .theme--dark {
-  transition: background 0.3s, color 0.3s, border 0.3s;
   background-color: #1f2022;
 }
 .theme--dark .search-input {
-  background-color: #2d2e30;
+  background-color: rgba(45, 46, 48, 0.9);
   border-color: #2a2b2d;
   color: #eee;
 }
-.theme--dark .search-input:hover,
-.theme--dark .search-input:focus {
-  border-color: #2a2b2d;
-  box-shadow: none;
-  opacity: 0.8;
-}
 .theme--dark .filter-bar__toggle-btn {
-  transition: background 0.3s, color 0.3s, border 0.3s;
-  background-color: #2d2e30;
+  background-color: rgba(45, 46, 48, 0.9);
   border-color: #2a2b2d;
 }
 .theme--dark .filter-bar__toggle-btn:hover {
-  background-color: #2d2e30;
+  background-color: rgba(45, 46, 48, 0.9);
   opacity: 0.8;
 }
 .theme--dark .cell .app {
