@@ -17,11 +17,13 @@ function FilterBar({
 }: FilterProps) {
   return (
     <div className="filter-bar">
-      <PandaBtn onClick={toggleTheme} />
-      <div className="filter-bar__toggle-btn" onClick={toggleType} onKeyDown={() => {}}>
-        <svg className={`icon ${type}-icon`} aria-hidden="true">
-          <use href={`#icon-${type}`} />
-        </svg>
+      <div className="filter-bar__btn">
+        <PandaBtn onClick={toggleTheme} />
+        <div className="filter-bar__toggle-btn" onClick={toggleType} onKeyDown={() => {}}>
+          <svg className={`icon ${type}-icon`} aria-hidden="true">
+            <use href={`#icon-${type}`} />
+          </svg>
+        </div>
       </div>
       <div className="filter-bar__input-warp">
         <input

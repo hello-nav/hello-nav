@@ -1,36 +1,45 @@
-body.theme--dark {
+.theme--dark {
   transition: background 0.3s, color 0.3s, border 0.3s;
   background-color: #1f2022;
 }
-body.theme--dark .search-input {
+.theme--dark .search-input {
   background-color: #2d2e30;
   border-color: #2a2b2d;
+  color: #eee;
 }
-body.theme--dark .search-input:hover,
-body.theme--dark .search-input:focus {
+.theme--dark .search-input:hover,
+.theme--dark .search-input:focus {
+  border-color: #2a2b2d;
   box-shadow: none;
   opacity: 0.8;
 }
-body.theme--dark .filter-bar__toggle-btn {
+.theme--dark .filter-bar__toggle-btn {
   transition: background 0.3s, color 0.3s, border 0.3s;
   background-color: #2d2e30;
   border-color: #2a2b2d;
 }
-body.theme--dark .filter-bar__toggle-btn:hover {
+.theme--dark .filter-bar__toggle-btn:hover {
+  background-color: #2d2e30;
   opacity: 0.8;
 }
-body.theme--dark .cell .app {
+.theme--dark .cell .app {
   background-color: #27272a;
 }
-body.theme--dark .cell .app:hover {
+.theme--dark .cell .app:hover {
   background-color: rgba(39, 39, 42, 0.6);
 }
-body.theme--dark .cell img {
+.theme--dark .cell .app img {
   filter: brightness(0.8);
 }
-body.theme--dark .cell img.dark-invert {
+.theme--dark .cell .app img.dark-invert {
   filter: brightness(0.7) invert(0.6);
 }
-body.theme--dark .cell .corner {
+.theme--dark .cell .app .corner {
   background: linear-gradient(45deg, #333333 40%, #636363 50%, #1e2022 56%);
+}
+.theme--dark .logo {
+  filter: brightness(0.6) grayscale(1);
+}
+.theme--dark .logo:hover {
+  filter: brightness(0.8);
 }
