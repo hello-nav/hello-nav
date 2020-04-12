@@ -1,10 +1,15 @@
-# hello nav
+# Hello Nav!
 
-## [A navigation🗺 for developer](https://hello-nav.github.io/)
+## [🗺 A navigation for developer](https://hello-nav.github.io/)
 
-- search app
-- list or category
-- github link
+- Search app
+- List or category view
+- Github link
+- Dark mode
+
+![hello-nav](./doc/images/hello-nav.png)
+
+![hello-nav-dark](./doc/images/hello-nav-dark.png)
 
 ## TODO
 
@@ -13,6 +18,6 @@
 - [x] github link
 - [x] grid layout
 - [x] add sw
+- [x] dark mode
 - [ ] collect app
 - [ ] mobile
-- [x] dark mode
