@@ -15,4 +15,4 @@
 - [x] add sw
 - [ ] collect app
 - [ ] mobile
-- [ ] dark mode
+- [x] dark mode
