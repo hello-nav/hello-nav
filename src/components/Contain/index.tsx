@@ -18,9 +18,9 @@ const ContainWrap = ({ list, type }: any) => {
       if (apps.length) {
         vmList.push((
           <div className="category-item" key={idx}>
-            <p className="category-item__title">
+            <h2 className="category-item__title">
               {cate.title.toUpperCase()}
-            </p>
+            </h2>
             {Contain(apps)}
           </div>
         ))

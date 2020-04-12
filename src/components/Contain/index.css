@@ -1,5 +1,5 @@
 .contain-wrap {
-  padding: 30px 6vw 0;
+  padding: 50px 4vw 0;
 }
 
 .app-list {
@@ -13,11 +13,19 @@
 }
 
 .category-item__title {
+  font-size: 14px;
   text-align: left;
   font-weight: bold;
   color: #696969;
 }
 
 .category-item .app-list {
-  justify-content: flex-start;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .contain-wrap {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
 }
