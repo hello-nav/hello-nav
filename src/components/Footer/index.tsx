@@ -1,23 +1,25 @@
 import React from 'react'
 import './index.css'
 
+const year = new Date().getFullYear()
+
 const Footer = () => (
   <div className="footer__wrap">
-    <p>
-      <a href="https://github.com/hello-nav/hello-nav" className="logo vertical-center"> </a>
+    <a href="https://github.com/hello-nav/hello-nav" className="logo vertical-center"> </a>
+    <div className="footer__copyright">
       <span className="vertical-center">
         Made by
-        <b>
-          {' '}
-          <a className="bener-link" href="https://github.com/Heroor">Bener</a>
-          {' '}
-        </b>
+        <a className="bener-link" href="https://github.com/Heroor">
+          <b> Bener </b>
+        </a>
         with
-        <span className="heart"> ❤ </span>
+        <span className="heart"> ❤</span>
       </span>
-    </p>
-    <p>&copy;2018-2020</p>
-
+      <p>
+        &copy;2018-
+        {year}
+      </p>
+    </div>
   </div>
 )
 
