@@ -3,6 +3,13 @@ import {
 } from '../utils'
 
 const apps: AppItem[] = [{
+  url: 'https://deno.land/',
+  githubUrl: 'https://github.com/denoland',
+  imgSrc: requireImg('deno.png'),
+  keyWords: ['deno'],
+  label: 'Deno',
+  darkInvert: true,
+}, {
   url: 'https://golang.org/',
   githubUrl: 'https://github.com/golang/go/',
   imgSrc: requireImg('golang.png'),

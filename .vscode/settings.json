@@ -1,3 +1,6 @@
 {
-  "npm-scripts.showStartNotification": false
+  "npm-scripts.showStartNotification": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
