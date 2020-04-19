@@ -2,22 +2,22 @@ import React from 'react'
 import Cell from '../Cell'
 import './index.css'
 
-const Contain = (list: object[]) => (
+const Contain = (list: AppItem[]) => (
   <ul className="app-list">
-    { list.map((cell, i) => <Cell {...cell} key={`${i}`} />) }
+    { list.map(cell => <Cell {...cell} key={cell.label} />) }
   </ul>
 )
 
-const ContainWrap = ({ list, type }: any) => {
+function ContainWrap({ list, type }: {list: (AppItem[] | CateItem[]), type: string}) {
   let contain
   if (type === 'list') {
-    contain = Contain(list)
+    contain = Contain(list as AppItem[])
   } else {
-    contain = list.reduce((vmList: React.ReactElement[], cate: CateItem, idx: number) => {
-      const apps = cate.children
+    contain = (list as CateItem[]).reduce((vmList: React.ReactElement[], cate: CateItem) => {
+      const apps: AppItem[] = cate.children
       if (apps.length) {
         vmList.push((
-          <div className="category-item" key={idx}>
+          <div className="category-item" key={cate.title}>
             <h2 className="category-item__title">
               {cate.title.toUpperCase()}
             </h2>

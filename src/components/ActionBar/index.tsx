@@ -2,7 +2,7 @@ import React from 'react'
 import PandaBtn from '../PandaBtn'
 import './index.css'
 
-function FilterBar({
+function ActionBar({
   filterKey, onInput, toggleType, type,
 }: FilterProps) {
   return (
@@ -34,4 +34,4 @@ function FilterBar({
   )
 }
 
-export default FilterBar
+export default ActionBar

@@ -15,13 +15,11 @@ const Cell = ({
   githubUrl,
   label,
   darkInvert,
-}: {
-  [propName: string]: string
-}) => (
+}: AppItem) => (
   <li className="cell">
     <a className="app" href={url} title={label}>
       <div className="img-box">
-        <img src={imgSrc} className={darkInvert && 'dark-invert'} alt={label} />
+        <img src={imgSrc} className={darkInvert ? 'dark-invert' : ''} alt={label} />
       </div>
       <p className="title">{label}</p>
       {githubUrl && (

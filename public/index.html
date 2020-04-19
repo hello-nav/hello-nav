@@ -14,10 +14,8 @@
     <title>Hello Nav!</title>
   </head>
   <body>
+    <script> document.body.className = window.localStorage.__THEME__ || '' </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script>
-      document.body.className = window.localStorage.__THEME__
-    </script>
     <div id="root"></div>
     <h1 style="color: transparent">Hello Nav</h1>
   </body>

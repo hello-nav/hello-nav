@@ -22,10 +22,13 @@ module.exports = {
     'no-underscore-dangle': 0,
     'no-param-reassign': 0,
     semi: 0,
+    'no-console': 0,
     'import/no-unresolved': 0,
-    'jsx-a11y/no-static-element-interactions': 0,
+    'no-use-before-define': 0,
+    'linebreak-style': ["error", "windows"],
     'react/no-array-index-key': 1,
-    'react/jsx-props-no-spreading': 1,
-    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }]
+    'react/jsx-props-no-spreading': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
   }
 }

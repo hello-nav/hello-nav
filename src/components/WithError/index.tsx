@@ -1,13 +1,17 @@
 import React from 'react'
 import './index.css'
 
-const WithError = (
-  Component: React.FunctionComponent,
-  text: string,
-) => ({ isError, ...props }: WithErrorProps) => (
-  isError
-    ? <p className="err-message">{text}</p>
-    : <Component {...props} />
-)
+interface WithError {
+  <T>(Component: React.ComponentType<T>, text: string):
+    (props: WithErrorProps) => JSX.Element
+}
+
+function WithError<T>(Component: React.ComponentType<T | any>, text: string) {
+  return ({ isError, ...props }: WithErrorProps) => (
+    isError
+      ? <p className="err-message">{text}</p>
+      : <Component {...props} />
+  )
+}
 
 export default WithError

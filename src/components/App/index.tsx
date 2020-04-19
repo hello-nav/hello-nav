@@ -7,7 +7,7 @@ import Footer from '../Footer'
 import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
 
 const CATEGORY_TYPES: CategoryTypes = ['list', 'category']
-const ContainWithNotFind = WithError(ContainWrap, 'Ooops! Can not find it here...')
+const ContainWithNotFind = WithError<AppItem[] | CateItem[]>(ContainWrap, 'Ooops! Can not find it here...')
 
 const libraryMap: LibraryMap = {
   category: libraryTree,
@@ -81,7 +81,7 @@ function App() {
     <div className="body">
       <ActionBar
         filterKey={filterKey}
-        onInput={(e: any) => setFilterKey(e.target.value)}
+        onInput={(e: React.ChangeEvent<HTMLInputElement>) => setFilterKey(e.target.value)}
         type={type}
         toggleType={() => toggleType(setType, setList)}
       />
