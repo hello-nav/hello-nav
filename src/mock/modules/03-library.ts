@@ -69,6 +69,13 @@ const apps: AppItem[] = [{
   keyWords: ['typescript'],
   label: 'TypeScript',
 }, {
+  url: 'https://coffeescript.org/',
+  githubUrl: 'https://github.com/jashkenas/coffeescript',
+  imgSrc: requireImg('coffeescript.png'),
+  keyWords: ['coffeescript'],
+  label: 'CoffeeScript',
+  darkInvert: true,
+}, {
   url: 'https://rxjs.dev/',
   githubUrl: 'https://github.com/ReactiveX/rxjs',
   imgSrc: requireImg('rxjs.png'),
@@ -178,6 +185,12 @@ const apps: AppItem[] = [{
   keyWords: ['ava'],
   label: 'AVA',
 }, {
+  url: 'https://miragejs.com/',
+  githubUrl: 'https://github.com/miragejs',
+  imgSrc: requireImg('mirage.png'),
+  keyWords: ['mirage'],
+  label: 'Mirage',
+}, {
   url: 'https://markdown-it.github.io/',
   githubUrl: 'https://github.com/markdown-it/markdown-it',
   imgSrc: requireImg('markdown.png'),
@@ -203,6 +216,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('puppeteer.png'),
   keyWords: ['pptr', 'puppeteer'],
   label: 'Puppeteer',
+}, {
+  url: 'http://docs.sequelizejs.com/',
+  githubUrl: 'https://github.com/sequelize/sequelize',
+  imgSrc: requireImg('sequelize.png'),
+  keyWords: ['sequelize'],
+  label: 'Sequelize',
 }]
 
 export default apps

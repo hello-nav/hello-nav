@@ -96,19 +96,19 @@ const apps: AppItem[] = [{
   url: 'https://nuxtjs.org/',
   githubUrl: 'https://github.com/nuxt/nuxt.js',
   imgSrc: requireImg('nuxt.png'),
-  keyWords: ['nuxt'],
+  keyWords: ['nuxt', 'vue'],
   label: 'Nuxt',
 }, {
   url: 'https://nextjs.org/',
   githubUrl: 'https://github.com/zeit/next.js',
   imgSrc: requireImg('next.png'),
-  keyWords: ['next'],
+  keyWords: ['next', 'react'],
   label: 'Next',
 }, {
   url: 'https://quasar.dev/',
   githubUrl: 'https://github.com/quasarframework/quasar',
   imgSrc: requireImg('quasar.png'),
-  keyWords: ['quasar'],
+  keyWords: ['quasar', 'vue'],
   label: 'Quasar',
 }, {
   url: 'https://electronjs.org/',
@@ -140,6 +140,30 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('flutter.png'),
   keyWords: ['flutter'],
   label: 'Flutter',
+}, {
+  url: 'https://gridsome.org/',
+  githubUrl: 'https://github.com/gridsome/gridsome',
+  imgSrc: requireImg('gridsome.png'),
+  keyWords: ['gridsome', 'vue'],
+  label: 'Gridsome',
+}, {
+  url: 'https://react-static.js.org',
+  githubUrl: 'hhttps://github.com/react-static/react-static',
+  imgSrc: requireImg('react-static.png'),
+  keyWords: ['react-static', 'react'],
+  label: 'react-static',
+}, {
+  url: 'https://gohugo.io/',
+  githubUrl: 'https://github.com/gohugoio/hugo',
+  imgSrc: requireImg('hugo.png'),
+  keyWords: ['hugo'],
+  label: 'Hugo',
+}, {
+  url: 'https://jekyllrb.com/',
+  githubUrl: 'https://github.com/jekyll/jekyll',
+  imgSrc: requireImg('jekyll.png'),
+  keyWords: ['jekyll'],
+  label: 'Jekyll',
 }, {
   url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
   imgSrc: requireImg('wxxcx.png'),

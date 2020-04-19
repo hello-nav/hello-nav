@@ -39,17 +39,17 @@ const apps: AppItem[] = [{
   keyWords: ['nest'],
   label: 'Nest',
 }, {
+  url: 'https://www.fastify.io/',
+  githubUrl: 'https://github.com/fastify/fastify',
+  imgSrc: requireImg('fastify.png'),
+  keyWords: ['fastify'],
+  label: 'Fastify',
+}, {
   url: 'https://adonisjs.com/',
   githubUrl: 'https://github.com/adonisjs/adonis-framework',
   imgSrc: requireImg('adonis.png'),
   keyWords: ['adonis'],
   label: 'Adonis',
-}, {
-  url: 'http://docs.sequelizejs.com/',
-  githubUrl: 'https://github.com/sequelize/sequelize',
-  imgSrc: requireImg('sequelize.png'),
-  keyWords: ['sequelize'],
-  label: 'Sequelize',
 }]
 
 export default apps
