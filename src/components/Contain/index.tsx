@@ -8,7 +8,7 @@ const Contain = (list: AppItem[]) => (
   </ul>
 )
 
-function ContainWrap({ list, type }: {list: (AppItem[] | CateItem[]), type: string}) {
+function ContainWrap({ list, type }: ContainWrapProp) {
   let contain
   if (type === 'list') {
     contain = Contain(list as AppItem[])

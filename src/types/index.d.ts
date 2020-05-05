@@ -32,6 +32,11 @@ interface FilterProps {
   type: string
 }
 
+interface ContainWrapProp {
+  list: AppItem[] | CateItem[],
+  type: string
+}
+
 interface WithErrorProps {
   isError: boolean
   [propName: string]: any

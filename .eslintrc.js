@@ -25,7 +25,7 @@ module.exports = {
     'no-console': 0,
     'import/no-unresolved': 0,
     'no-use-before-define': 0,
-    'linebreak-style': ["error", "windows"],
+    'linebreak-style': ["error"],
     'react/no-array-index-key': 1,
     'react/jsx-props-no-spreading': 0,
     'jsx-a11y/no-static-element-interactions': 0,
