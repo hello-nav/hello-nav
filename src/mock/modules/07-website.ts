@@ -59,6 +59,12 @@ const apps: AppItem[] = [{
   keyWords: ['stackoverflow'],
   label: 'stackoverflow',
 }, {
+  url: 'https://www.caniuse.com/',
+  githubUrl: 'https://github.com/fyrd/caniuse',
+  imgSrc: requireImg('caniuse.png'),
+  keyWords: ['caniuse'],
+  label: 'Can I use',
+}, {
   url: 'https://travis-ci.org/',
   githubUrl: 'https://github.com/travis-ci',
   imgSrc: requireImg('travis.png'),
