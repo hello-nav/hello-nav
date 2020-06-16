@@ -135,6 +135,12 @@ const apps: AppItem[] = [{
   keyWords: ['nativescript'],
   label: 'NativeScript',
 }, {
+  url: 'https://taro.aotu.io/',
+  githubUrl: 'https://github.com/NervJS/taro',
+  imgSrc: requireImg('taro.png'),
+  keyWords: ['taro'],
+  label: 'Taro',
+}, {
   url: 'https://flutter.io/',
   githubUrl: 'https://github.com/flutter/flutter',
   imgSrc: requireImg('flutter.png'),
@@ -175,10 +181,20 @@ const apps: AppItem[] = [{
   keyWords: ['支付宝小程序', 'zhifubao', 'alipay'],
   label: '支付宝小程序',
 }, {
+  url: 'https://mp.jd.com/',
+  imgSrc: requireImg('jdmp.png'),
+  keyWords: ['京东小程序', 'jingdong', 'jdmp'],
+  label: '京东小程序',
+}, {
   url: 'https://smartprogram.baidu.com/developer/index.html',
   imgSrc: requireImg('bdxcx.png'),
   keyWords: ['百度智能小程序', 'baidu'],
   label: '智能小程序',
+}, {
+  url: 'https://microapp.bytedance.com/',
+  imgSrc: requireImg('dbmp.png'),
+  keyWords: ['字节跳动小程序', 'bytedance'],
+  label: '字节跳动小程序',
 }, {
   url: 'https://www.quickapp.cn/quickAppShow',
   imgSrc: requireImg('kyy.png'),

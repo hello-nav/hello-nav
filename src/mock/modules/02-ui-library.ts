@@ -33,6 +33,12 @@ const apps: AppItem[] = [{
   keyWords: ['atui'],
   label: 'At UI',
 }, {
+  url: 'https://taro-ui.jd.com/',
+  githubUrl: 'https://github.com/NervJS/taro-ui',
+  imgSrc: requireImg('taro.png'),
+  keyWords: ['taro ui'],
+  label: 'Taro UI',
+}, {
   url: 'https://didi.github.io/cube-ui/',
   githubUrl: 'https://github.com/didi/cube-ui',
   imgSrc: requireImg('cube.png'),
