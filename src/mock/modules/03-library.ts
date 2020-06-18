@@ -21,6 +21,12 @@ const apps: AppItem[] = [{
   keyWords: ['rollup'],
   label: 'Rollup',
 }, {
+  url: 'https://prepack.io/',
+  githubUrl: 'https://github.com/facebook/prepack',
+  imgSrc: requireImg('prepack.png'),
+  keyWords: ['prepack'],
+  label: 'Prepack',
+}, {
   url: 'https://parceljs.org/',
   githubUrl: 'https://github.com/parcel-bundler/parcel',
   imgSrc: requireImg('parcel.png'),
