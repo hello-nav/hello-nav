@@ -125,6 +125,12 @@ const apps: AppItem[] = [{
   keyWords: ['lodash'],
   label: 'Lodash',
 }, {
+  url: 'https://ahooks.js.org/',
+  githubUrl: 'https://github.com/alibaba/hooks',
+  imgSrc: requireImg('ahooks.png'),
+  keyWords: ['ahooks'],
+  label: 'ahooks',
+}, {
   url: 'https://dojotoolkit.org/',
   githubUrl: 'https://github.com/dojo/dojo',
   imgSrc: requireImg('dojo.png'),
