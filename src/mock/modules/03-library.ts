@@ -149,17 +149,23 @@ const apps: AppItem[] = [{
   keyWords: ['jquery'],
   label: 'jQuery',
 }, {
+  url: 'https://zeptojs.com/',
+  githubUrl: 'https://github.com/madrobby/zepto/',
+  imgSrc: requireImg('zepto.png'),
+  keyWords: ['zepto'],
+  label: 'Zepto',
+}, {
   url: 'https://github.com/axios/axios',
   githubUrl: 'https://github.com/axios/axios',
   imgSrc: requireImg('axios.png'),
   keyWords: ['axios'],
   label: 'Axios',
 }, {
-  url: 'https://zeptojs.com/',
-  githubUrl: 'https://github.com/madrobby/zepto/',
-  imgSrc: requireImg('zepto.png'),
-  keyWords: ['zepto'],
-  label: 'Zepto',
+  url: 'http://mockjs.com/',
+  githubUrl: 'https://github.com/nuysoft/Mock',
+  imgSrc: requireImg('mockjs.png'),
+  keyWords: ['mockjs'],
+  label: 'Mock.js',
 }, {
   url: 'https://momentjs.com/',
   githubUrl: 'https://github.com/moment/moment',
