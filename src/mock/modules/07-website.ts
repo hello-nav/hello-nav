@@ -109,6 +109,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('devto.png'),
   keyWords: ['dev'],
   label: 'DEV',
+  darkInvert: true,
 }, {
   url: 'https://juejin.im/',
   githubUrl: 'https://github.com/xitu',
