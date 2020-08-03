@@ -48,6 +48,12 @@ const apps: AppItem[] = [{
   keyWords: ['yarn'],
   label: 'Yarn',
 }, {
+  url: 'https://bower.io/',
+  githubUrl: 'https://github.com/bower/bower',
+  imgSrc: requireImg('bower.png'),
+  keyWords: ['bower'],
+  label: 'Bower',
+}, {
   url: 'https://developer.mozilla.org/',
   githubUrl: 'https://github.com/mdn',
   imgSrc: requireImg('mdn.png'),
