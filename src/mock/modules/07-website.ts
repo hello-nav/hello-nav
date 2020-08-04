@@ -83,6 +83,12 @@ const apps: AppItem[] = [{
   keyWords: ['travis', 'ci'],
   label: 'Travis',
 }, {
+  url: 'https://www.jenkins.io/',
+  githubUrl: 'https://github.com/jenkinsci',
+  imgSrc: requireImg('jenkins.png'),
+  keyWords: ['jenkins', 'ci'],
+  label: 'Jenkins',
+}, {
   url: 'https://codesandbox.io/',
   githubUrl: 'https://github.com/codesandbox/codesandbox-client',
   imgSrc: requireImg('codesandbox.png'),
