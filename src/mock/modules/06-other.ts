@@ -46,6 +46,12 @@ const apps: AppItem[] = [{
   keyWords: ['nginx'],
   label: 'Nginx',
 }, {
+  url: 'https://redis.io/',
+  githubUrl: 'https://github.com/redis',
+  imgSrc: requireImg('redis.png'),
+  keyWords: ['redis'],
+  label: 'Redis',
+}, {
   url: 'https://www.mysql.com/',
   githubUrl: 'https://github.com/mysql',
   imgSrc: requireImg('mysql.png'),
