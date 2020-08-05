@@ -34,6 +34,12 @@ const apps: AppItem[] = [{
   keyWords: ['python'],
   label: 'Python',
 }, {
+  url: 'https://www.php.net/',
+  githubUrl: 'https://github.com/php',
+  imgSrc: requireImg('php.png'),
+  keyWords: ['php'],
+  label: 'PHP',
+}, {
   url: 'https://www.docker.com/',
   githubUrl: 'https://github.com/docker',
   imgSrc: requireImg('docker.png'),
@@ -52,17 +58,35 @@ const apps: AppItem[] = [{
   keyWords: ['redis'],
   label: 'Redis',
 }, {
+  url: 'https://spring.io/',
+  githubUrl: 'https://github.com/spring-projects',
+  imgSrc: requireImg('spring.png'),
+  keyWords: ['spring'],
+  label: 'Spring',
+}, {
+  url: 'https://hadoop.apache.org/',
+  githubUrl: 'https://github.com/apache/hadoop',
+  imgSrc: requireImg('hadoop.png'),
+  keyWords: ['hadoop'],
+  label: 'Hadoop',
+}, {
   url: 'https://www.mysql.com/',
   githubUrl: 'https://github.com/mysql',
   imgSrc: requireImg('mysql.png'),
   keyWords: ['mysql'],
-  label: 'mysql',
+  label: 'MySQL',
 }, {
   url: 'https://www.mongodb.com/',
   githubUrl: 'https://github.com/mongodb',
   imgSrc: requireImg('mongodb.png'),
   keyWords: ['mongodb'],
-  label: 'mongodb',
+  label: 'MongoDB',
+}, {
+  url: 'https://v8.dev/',
+  githubUrl: 'https://github.com/v8/v8',
+  imgSrc: requireImg('v8.png'),
+  keyWords: ['v8'],
+  label: 'V8',
 }]
 
 export default apps

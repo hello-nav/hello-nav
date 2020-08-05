@@ -105,12 +105,6 @@ const apps: AppItem[] = [{
   keyWords: ['next', 'react'],
   label: 'Next',
 }, {
-  url: 'https://quasar.dev/',
-  githubUrl: 'https://github.com/quasarframework/quasar',
-  imgSrc: requireImg('quasar.png'),
-  keyWords: ['quasar', 'vue'],
-  label: 'Quasar',
-}, {
   url: 'https://electronjs.org/',
   githubUrl: 'https://github.com/electron/electron',
   imgSrc: requireImg('electron.png'),

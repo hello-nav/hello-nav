@@ -45,6 +45,12 @@ const apps: AppItem[] = [{
   keyWords: ['grunt'],
   label: 'Grunt',
 }, {
+  url: 'http://browserify.org/',
+  githubUrl: 'https://github.com/browserify/browserify',
+  imgSrc: requireImg('browserify.png'),
+  keyWords: ['browserify'],
+  label: 'Browserify',
+}, {
   url: 'http://babeljs.io/',
   githubUrl: 'https://github.com/babel/babel',
   imgSrc: requireImg('babel.png'),
@@ -68,6 +74,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('flow.png'),
   keyWords: ['flow'],
   label: 'Flow',
+}, {
+  url: 'https://prettier.io/',
+  githubUrl: 'https://github.com/prettier/prettier',
+  imgSrc: requireImg('prettier.png'),
+  keyWords: ['prettier'],
+  label: 'Prettier',
 }, {
   url: 'https://www.typescriptlang.org/',
   githubUrl: 'https://github.com/Microsoft/TypeScript',
@@ -234,6 +246,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('puppeteer.png'),
   keyWords: ['pptr', 'puppeteer'],
   label: 'Puppeteer',
+}, {
+  url: 'https://yeoman.io/',
+  githubUrl: 'https://github.com/yeoman/yo',
+  imgSrc: requireImg('yeoman.png'),
+  keyWords: ['yo', 'yeoman'],
+  label: 'Yeoman',
 }, {
   url: 'http://docs.sequelizejs.com/',
   githubUrl: 'https://github.com/sequelize/sequelize',

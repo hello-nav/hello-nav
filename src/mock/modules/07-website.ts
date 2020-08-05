@@ -48,6 +48,12 @@ const apps: AppItem[] = [{
   keyWords: ['yarn'],
   label: 'Yarn',
 }, {
+  url: 'https://bower.io/',
+  githubUrl: 'https://github.com/bower/bower',
+  imgSrc: requireImg('bower.png'),
+  keyWords: ['bower'],
+  label: 'Bower',
+}, {
   url: 'https://developer.mozilla.org/',
   githubUrl: 'https://github.com/mdn',
   imgSrc: requireImg('mdn.png'),
@@ -62,8 +68,8 @@ const apps: AppItem[] = [{
 }, {
   url: 'https://stackoverflow.com/',
   imgSrc: requireImg('stackoverflow.png'),
-  keyWords: ['stackoverflow'],
-  label: 'stackoverflow',
+  keyWords: ['stack overflow'],
+  label: 'StackOverflow',
 }, {
   url: 'https://www.caniuse.com/',
   githubUrl: 'https://github.com/fyrd/caniuse',
@@ -77,6 +83,12 @@ const apps: AppItem[] = [{
   keyWords: ['travis', 'ci'],
   label: 'Travis',
 }, {
+  url: 'https://www.jenkins.io/',
+  githubUrl: 'https://github.com/jenkinsci',
+  imgSrc: requireImg('jenkins.png'),
+  keyWords: ['jenkins', 'ci'],
+  label: 'Jenkins',
+}, {
   url: 'https://codesandbox.io/',
   githubUrl: 'https://github.com/codesandbox/codesandbox-client',
   imgSrc: requireImg('codesandbox.png'),
@@ -86,7 +98,18 @@ const apps: AppItem[] = [{
   url: 'https://tinypng.com/',
   imgSrc: requireImg('tinypng.png'),
   keyWords: ['tinypng'],
-  label: 'Tinypng',
+  label: 'TinyPNG',
+}, {
+  url: 'https://dribbble.com/',
+  imgSrc: requireImg('dribbble.png'),
+  keyWords: ['dribbble'],
+  label: 'Dribbble',
+}, {
+  url: 'https://dev.to/',
+  imgSrc: requireImg('devto.png'),
+  keyWords: ['dev'],
+  label: 'DEV',
+  darkInvert: true,
 }, {
   url: 'https://juejin.im/',
   githubUrl: 'https://github.com/xitu',
