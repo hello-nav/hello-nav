@@ -46,6 +46,12 @@ const apps: AppItem[] = [{
   keyWords: ['docker'],
   label: 'Docker',
 }, {
+  url: 'https://hadoop.apache.org/',
+  githubUrl: 'https://github.com/apache/hadoop',
+  imgSrc: requireImg('hadoop.png'),
+  keyWords: ['hadoop'],
+  label: 'Hadoop',
+}, {
   url: 'https://www.mysql.com/',
   githubUrl: 'https://github.com/mysql',
   imgSrc: requireImg('mysql.png'),
