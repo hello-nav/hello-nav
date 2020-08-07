@@ -69,6 +69,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('mongodb.png'),
   keyWords: ['mongodb'],
   label: 'MongoDB',
+}, {
+  url: 'https://v8.dev/',
+  githubUrl: 'https://github.com/v8/v8',
+  imgSrc: requireImg('v8.png'),
+  keyWords: ['v8'],
+  label: 'V8',
 }]
 
 export default apps
