@@ -46,6 +46,12 @@ const apps: AppItem[] = [{
   keyWords: ['docker'],
   label: 'Docker',
 }, {
+  url: 'https://spring.io/',
+  githubUrl: 'https://github.com/spring-projects',
+  imgSrc: requireImg('spring.png'),
+  keyWords: ['spring'],
+  label: 'Spring',
+}, {
   url: 'https://hadoop.apache.org/',
   githubUrl: 'https://github.com/apache/hadoop',
   imgSrc: requireImg('hadoop.png'),
