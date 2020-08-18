@@ -70,6 +70,12 @@ const apps: AppItem[] = [{
   keyWords: ['ant-design', 'antd'],
   label: 'Ant Design',
 }, {
+  url: 'https://material-ui.com/',
+  githubUrl: 'https://github.com/mui-org/material-ui',
+  imgSrc: requireImg('material-ui.png'),
+  keyWords: ['material-ui'],
+  label: 'Material-UI',
+}, {
   url: 'https://antv.alipay.com/',
   githubUrl: 'https://github.com/antvis/',
   imgSrc: requireImg('antv.png'),
