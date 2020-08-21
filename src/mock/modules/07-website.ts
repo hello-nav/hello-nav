@@ -68,8 +68,8 @@ const apps: AppItem[] = [{
 }, {
   url: 'https://stackoverflow.com/',
   imgSrc: requireImg('stackoverflow.png'),
-  keyWords: ['stackoverflow'],
-  label: 'stackoverflow',
+  keyWords: ['stack overflow'],
+  label: 'StackOverflow',
 }, {
   url: 'https://www.caniuse.com/',
   githubUrl: 'https://github.com/fyrd/caniuse',
@@ -98,7 +98,7 @@ const apps: AppItem[] = [{
   url: 'https://tinypng.com/',
   imgSrc: requireImg('tinypng.png'),
   keyWords: ['tinypng'],
-  label: 'Tinypng',
+  label: 'TinyPNG',
 }, {
   url: 'https://juejin.im/',
   githubUrl: 'https://github.com/xitu',
