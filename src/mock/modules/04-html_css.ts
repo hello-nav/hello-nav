@@ -9,6 +9,11 @@ const apps: AppItem[] = [{
   keyWords: ['pug', 'html'],
   label: 'Pug',
 }, {
+  url: 'https://jade-lang.com/',
+  imgSrc: requireImg('jade.png'),
+  keyWords: ['jade', 'html'],
+  label: 'Jade',
+}, {
   url: 'http://sass-lang.com/',
   githubUrl: 'https://github.com/sass/sass',
   imgSrc: requireImg('sass.png'),
