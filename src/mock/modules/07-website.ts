@@ -54,6 +54,12 @@ const apps: AppItem[] = [{
   keyWords: ['mdn'],
   label: 'MDN',
 }, {
+  url: 'https://javascript.info/',
+  githubUrl: 'https://github.com/javascript-tutorial',
+  imgSrc: requireImg('javascript-tutorial.png'),
+  keyWords: ['javascript-tutorial', 'js'],
+  label: 'JS Tutorial',
+}, {
   url: 'https://stackoverflow.com/',
   imgSrc: requireImg('stackoverflow.png'),
   keyWords: ['stackoverflow'],
