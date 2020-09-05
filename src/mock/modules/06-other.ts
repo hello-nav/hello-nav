@@ -39,6 +39,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('docker.png'),
   keyWords: ['docker'],
   label: 'Docker',
+}, {
+  url: 'https://www.mongodb.com/',
+  githubUrl: 'https://github.com/mongodb',
+  imgSrc: requireImg('mongodb.png'),
+  keyWords: ['mongodb'],
+  label: 'mongodb',
 }]
 
 export default apps
