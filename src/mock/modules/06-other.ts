@@ -40,6 +40,12 @@ const apps: AppItem[] = [{
   keyWords: ['docker'],
   label: 'Docker',
 }, {
+  url: 'https://www.mysql.com/',
+  githubUrl: 'https://github.com/mysql',
+  imgSrc: requireImg('mysql.png'),
+  keyWords: ['mysql'],
+  label: 'mysql',
+}, {
   url: 'https://www.mongodb.com/',
   githubUrl: 'https://github.com/mongodb',
   imgSrc: requireImg('mongodb.png'),
