@@ -34,6 +34,12 @@ const apps: AppItem[] = [{
   keyWords: ['python'],
   label: 'Python',
 }, {
+  url: 'https://www.php.net/',
+  githubUrl: 'https://github.com/php',
+  imgSrc: requireImg('php.png'),
+  keyWords: ['php'],
+  label: 'PHP',
+}, {
   url: 'https://www.docker.com/',
   githubUrl: 'https://github.com/docker',
   imgSrc: requireImg('docker.png'),
@@ -44,13 +50,13 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/mysql',
   imgSrc: requireImg('mysql.png'),
   keyWords: ['mysql'],
-  label: 'mysql',
+  label: 'MySQL',
 }, {
   url: 'https://www.mongodb.com/',
   githubUrl: 'https://github.com/mongodb',
   imgSrc: requireImg('mongodb.png'),
   keyWords: ['mongodb'],
-  label: 'mongodb',
+  label: 'MongoDB',
 }]
 
 export default apps
