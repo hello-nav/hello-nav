@@ -15,10 +15,10 @@ const apps: AppItem[] = [{
   keyWords: ['iview'],
   label: 'iView',
 }, {
-  url: 'https://vue.ant.design/',
+  url: 'https://www.antdv.com/',
   githubUrl: 'https://github.com/vueComponent/ant-design-vue',
   imgSrc: requireImg('ant-design-vue.png'),
-  keyWords: ['ant-design-vue'],
+  keyWords: ['ant-design-vue', 'antdv'],
   label: 'Ant Design Vue',
 }, {
   url: 'https://muse-ui.org/',
@@ -61,7 +61,7 @@ const apps: AppItem[] = [{
   url: 'https://ant.design/',
   githubUrl: 'https://github.com/ant-design/ant-design/',
   imgSrc: requireImg('ant-design.png'),
-  keyWords: ['antdesign'],
+  keyWords: ['ant-design', 'antd'],
   label: 'Ant Design',
 }, {
   url: 'https://antv.alipay.com/',
