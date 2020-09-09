@@ -15,6 +15,12 @@ const apps: AppItem[] = [{
   keyWords: ['iview'],
   label: 'iView',
 }, {
+  url: 'https://quasar.dev/',
+  githubUrl: 'https://github.com/quasarframework/quasar',
+  imgSrc: requireImg('quasar.png'),
+  keyWords: ['quasar', 'vue'],
+  label: 'Quasar',
+}, {
   url: 'https://www.antdv.com/',
   githubUrl: 'https://github.com/vueComponent/ant-design-vue',
   imgSrc: requireImg('ant-design-vue.png'),
