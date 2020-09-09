@@ -45,6 +45,12 @@ const apps: AppItem[] = [{
   keyWords: ['grunt'],
   label: 'Grunt',
 }, {
+  url: 'http://browserify.org/',
+  githubUrl: 'https://github.com/browserify/browserify',
+  imgSrc: requireImg('browserify.png'),
+  keyWords: ['browserify'],
+  label: 'Browserify',
+}, {
   url: 'http://babeljs.io/',
   githubUrl: 'https://github.com/babel/babel',
   imgSrc: requireImg('babel.png'),
