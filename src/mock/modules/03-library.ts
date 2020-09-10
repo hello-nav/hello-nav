@@ -241,6 +241,12 @@ const apps: AppItem[] = [{
   keyWords: ['pptr', 'puppeteer'],
   label: 'Puppeteer',
 }, {
+  url: 'https://yeoman.io/',
+  githubUrl: 'https://github.com/yeoman/yo',
+  imgSrc: requireImg('yeoman.png'),
+  keyWords: ['yo', 'yeoman'],
+  label: 'Yeoman',
+}, {
   url: 'http://docs.sequelizejs.com/',
   githubUrl: 'https://github.com/sequelize/sequelize',
   imgSrc: requireImg('sequelize.png'),
