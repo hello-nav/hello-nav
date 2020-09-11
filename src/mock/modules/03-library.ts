@@ -75,6 +75,12 @@ const apps: AppItem[] = [{
   keyWords: ['flow'],
   label: 'Flow',
 }, {
+  url: 'https://prettier.io/',
+  githubUrl: 'https://github.com/prettier/prettier',
+  imgSrc: requireImg('prettier.png'),
+  keyWords: ['prettier'],
+  label: 'Prettier',
+}, {
   url: 'https://www.typescriptlang.org/',
   githubUrl: 'https://github.com/Microsoft/TypeScript',
   imgSrc: requireImg('typescript.png'),
