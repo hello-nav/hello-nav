@@ -112,6 +112,11 @@ const apps: AppItem[] = [{
   keyWords: ['echarts'],
   label: 'ECharts',
 }, {
+  url: 'https://dribbble.com/',
+  imgSrc: requireImg('dribbble.png'),
+  keyWords: ['dribbble'],
+  label: 'Dribbble',
+}, {
   url: 'http://www.iconfont.cn/',
   imgSrc: requireImg('iconfont.png'),
   keyWords: ['iconfont'],

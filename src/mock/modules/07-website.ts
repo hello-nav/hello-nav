@@ -100,11 +100,6 @@ const apps: AppItem[] = [{
   keyWords: ['tinypng'],
   label: 'TinyPNG',
 }, {
-  url: 'https://dribbble.com/',
-  imgSrc: requireImg('dribbble.png'),
-  keyWords: ['dribbble'],
-  label: 'Dribbble',
-}, {
   url: 'https://dev.to/',
   imgSrc: requireImg('devto.png'),
   keyWords: ['dev'],

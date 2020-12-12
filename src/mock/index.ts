@@ -2,7 +2,7 @@ const PATH_REG = /\.\/\d+?-(.+?)\.ts/
 const getModules = (context: __WebpackModuleApi.RequireContext): CateItem[] => context
   .keys()
   .map((path: string) => ({
-    title: path.replace(PATH_REG, '$1'),
+    title: path.replace(PATH_REG, ($, $1) => $1.replace('_', '/')),
     children: context(path).default,
   }))
 
