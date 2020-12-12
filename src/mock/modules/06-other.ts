@@ -46,6 +46,18 @@ const apps: AppItem[] = [{
   keyWords: ['docker'],
   label: 'Docker',
 }, {
+  url: 'http://nginx.org/',
+  githubUrl: 'https://github.com/nginx',
+  imgSrc: requireImg('nginx.png'),
+  keyWords: ['nginx'],
+  label: 'Nginx',
+}, {
+  url: 'https://redis.io/',
+  githubUrl: 'https://github.com/redis',
+  imgSrc: requireImg('redis.png'),
+  keyWords: ['redis'],
+  label: 'Redis',
+}, {
   url: 'https://spring.io/',
   githubUrl: 'https://github.com/spring-projects',
   imgSrc: requireImg('spring.png'),
