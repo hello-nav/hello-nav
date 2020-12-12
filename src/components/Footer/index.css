@@ -18,7 +18,7 @@
   width: 26px;
   height: 26px;
   margin-right: 10px;
-  background: url('../../assets/images/logo@144x144.png') center/cover;
+  background: url('../../assets/images/logo_512x512.png') center/cover;
   filter: grayscale(1);
   transition: .4s;
 }
