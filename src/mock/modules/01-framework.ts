@@ -170,6 +170,11 @@ const apps: AppItem[] = [{
   keyWords: ['微信小程序', 'weixin', 'wechat'],
   label: '微信小程序',
 }, {
+  url: 'https://q.qq.com/',
+  imgSrc: requireImg('qqxcx.png'),
+  keyWords: ['qq小程序', 'qq'],
+  label: 'QQ小程序',
+}, {
   url: 'https://mini.open.alipay.com/channel/miniIndex.htm',
   imgSrc: requireImg('zfbxcx.png'),
   keyWords: ['支付宝小程序', 'zhifubao', 'alipay'],
