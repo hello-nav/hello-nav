@@ -36,7 +36,7 @@ const apps: AppItem[] = [{
   url: 'https://nerv.aotu.io/',
   githubUrl: 'https://github.com/NervJS/nerv',
   imgSrc: requireImg('nervjs.png'),
-  keyWords: ['nervjs', 'react'],
+  keyWords: ['nervjs', 'react', '小程序'],
   label: 'NervJS',
 }, {
   url: 'https://umijs.org/',
@@ -132,7 +132,7 @@ const apps: AppItem[] = [{
   url: 'https://taro.aotu.io/',
   githubUrl: 'https://github.com/NervJS/taro',
   imgSrc: requireImg('taro.png'),
-  keyWords: ['taro'],
+  keyWords: ['taro', 'nerv', 'react'],
   label: 'Taro',
 }, {
   url: 'https://flutter.io/',
