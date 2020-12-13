@@ -13,8 +13,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "lint": "eslint --fix --ext .ts,.tsx src",
-    "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
