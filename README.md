@@ -17,7 +17,7 @@
 
 ![hello-nav](./doc/images/hello-nav.png)
 
-![hello-nav-dark](./doc/images/hello-nav-search.png)
+![hello-nav-search](./doc/images/hello-nav-search.png)
 
 ![hello-nav-dark](./doc/images/hello-nav-dark.png)
 
@@ -57,4 +57,4 @@ npm run build
 
 Hello Nav is [MIT](https://github.com/hello-nav/hello-nav/blob/master/LICENSE) license.
 
-© 2018-present - Bener
+© 2018-present Bener
