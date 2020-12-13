@@ -1,4 +1,5 @@
-.theme--dark {
+.theme--dark,
+.theme--dark body {
   background-color: #1f2022;
 }
 .theme--dark .search-input {

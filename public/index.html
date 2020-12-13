@@ -50,9 +50,9 @@
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Hello Nav!</title>
+    <script> document.documentElement && (document.documentElement.className = window.localStorage && window.localStorage.__THEME__ || '') </script>
   </head>
   <body>
-    <script> document.body.className = window.localStorage.__THEME__ || '' </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <h1 style="color: transparent">Hello Nav</h1>

@@ -5,16 +5,16 @@ interface PandaBtnProps {
   onClick?: (event: React.SyntheticEvent) => void;
 }
 
-const DARK_CLASS_NAME = 'theme--dark'
+const STATUS_CLASS_NAME = 'theme--dark'
 
-function toggleBodyClassName(isDark: boolean) {
-  const bodyClassList = document.body.classList
-  if (isDark) {
-    bodyClassList.remove(DARK_CLASS_NAME)
+function toggleBodyClassName(isStatusTrue: boolean) {
+  const pageClassList = document.documentElement.classList
+  if (isStatusTrue) {
+    pageClassList.remove(STATUS_CLASS_NAME)
     window.localStorage.__THEME__ = ''
   } else {
-    bodyClassList.add(DARK_CLASS_NAME)
-    window.localStorage.__THEME__ = DARK_CLASS_NAME
+    pageClassList.add(STATUS_CLASS_NAME)
+    window.localStorage.__THEME__ = STATUS_CLASS_NAME
   }
 }
 
@@ -22,7 +22,7 @@ export default function PandaBtn({ onClick }: PandaBtnProps) {
   const [status, setStatus] = useState(!!window.localStorage.__THEME__)
   const classNames = [
     'panda-btn',
-    status && DARK_CLASS_NAME,
+    status && STATUS_CLASS_NAME,
   ].join(' ')
 
   const handleClick: React.MouseEventHandler = e => {
@@ -34,7 +34,7 @@ export default function PandaBtn({ onClick }: PandaBtnProps) {
   }
 
   return (
-    <div
+    <span
       className={classNames}
       onClick={handleClick}
       onKeyDown={() => {}}

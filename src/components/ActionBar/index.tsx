@@ -7,15 +7,15 @@ function ActionBar({
 }: FilterProps) {
   return (
     <div className="filter-bar">
-      <div className="filter-bar__btn">
+      <span className="filter-bar__btn">
         <PandaBtn />
-        <div className="filter-bar__toggle-btn" onClick={toggleType} onKeyDown={() => {}}>
+        <span className="filter-bar__toggle-btn" onClick={toggleType} onKeyDown={() => {}}>
           <svg className={`icon ${type}-icon`} aria-hidden="true">
             <use href={`#icon-${type}`} />
           </svg>
-        </div>
-      </div>
-      <div className="filter-bar__input-warp">
+        </span>
+      </span>
+      <span className="filter-bar__input-warp">
         <input
           className="search-input"
           type="text"
@@ -29,7 +29,7 @@ function ActionBar({
         <svg className="icon clear-icon" aria-hidden="true">
           <use href="#icon-close" />
         </svg>
-      </div>
+      </span>
     </div>
   )
 }
