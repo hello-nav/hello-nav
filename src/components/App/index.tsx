@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import libraryTree from '../../mock'
+import libraryTree from '../../model'
 import ActionBar from '../ActionBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'
