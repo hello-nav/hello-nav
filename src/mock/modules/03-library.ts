@@ -172,6 +172,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('axios.png'),
   keyWords: ['axios'],
   label: 'Axios',
+  darkInvert: true,
 }, {
   url: 'http://mockjs.com/',
   githubUrl: 'https://github.com/nuysoft/Mock',
