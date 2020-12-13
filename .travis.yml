@@ -13,7 +13,7 @@ after_script:
   - git clone "https://${GH_TOKEN}@${GH_REF}" repo
   - cd repo
   - rm -rf ./*
-  - cp -r ../build/* ./*
+  - cp -r ../build/* ./
   - git config user.name "${GH_USER}"
   - git config user.email "${GH_EMAIL}"
   - git add .
