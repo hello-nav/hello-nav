@@ -173,32 +173,32 @@ const apps: AppItem[] = [{
 }, {
   url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
   imgSrc: requireImg('wxxcx.png'),
-  keyWords: ['微信小程序', 'weixin', 'wechat'],
+  keyWords: ['微信小程序', 'weixin', 'wechat', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '微信小程序',
 }, {
   url: 'https://q.qq.com/',
   imgSrc: requireImg('qqxcx.png'),
-  keyWords: ['qq小程序', 'qq'],
+  keyWords: ['qq小程序', 'qq', 'xiaochengxu', 'miniapp', 'microapp'],
   label: 'QQ小程序',
 }, {
   url: 'https://mini.open.alipay.com/channel/miniIndex.htm',
   imgSrc: requireImg('zfbxcx.png'),
-  keyWords: ['支付宝小程序', 'zhifubao', 'alipay'],
+  keyWords: ['支付宝小程序', 'zhifubao', 'alipay', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '支付宝小程序',
 }, {
   url: 'https://mp.jd.com/',
   imgSrc: requireImg('jdmp.png'),
-  keyWords: ['京东小程序', 'jingdong', 'jdmp'],
+  keyWords: ['京东小程序', 'jingdong', 'jdmp', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '京东小程序',
 }, {
   url: 'https://smartprogram.baidu.com/developer/index.html',
   imgSrc: requireImg('bdxcx.png'),
-  keyWords: ['百度智能小程序', 'baidu'],
+  keyWords: ['百度智能小程序', 'baidu', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '智能小程序',
 }, {
   url: 'https://microapp.bytedance.com/',
   imgSrc: requireImg('dbmp.png'),
-  keyWords: ['字节跳动小程序', 'bytedance'],
+  keyWords: ['字节跳动小程序', 'bytedance', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '字节跳动小程序',
 }, {
   url: 'https://www.quickapp.cn/quickAppShow',
