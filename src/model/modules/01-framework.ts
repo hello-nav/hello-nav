@@ -111,6 +111,12 @@ const apps: AppItem[] = [{
   keyWords: ['electron'],
   label: 'Electron',
 }, {
+  url: 'https://ionic.io/',
+  githubUrl: 'https://github.com/ionic-team',
+  imgSrc: requireImg('ionic.png'),
+  keyWords: ['ionic'],
+  label: 'Ionic',
+}, {
   url: 'https://weex.apache.org/',
   githubUrl: 'https://github.com/apache/incubator-weex',
   imgSrc: requireImg('weex.png'),
