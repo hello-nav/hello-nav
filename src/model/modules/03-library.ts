@@ -167,7 +167,7 @@ const apps: AppItem[] = [{
   keyWords: ['zepto'],
   label: 'Zepto',
 }, {
-  url: 'https://github.com/axios/axios',
+  url: 'https://axios-http.com/',
   githubUrl: 'https://github.com/axios/axios',
   imgSrc: requireImg('axios.png'),
   keyWords: ['axios'],
