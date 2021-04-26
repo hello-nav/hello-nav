@@ -7,7 +7,7 @@
 ## 🗺 Features
 
 - 140+ Apps
-- App search
+- App search with keywords
 - List or category view
 - Github link
 - Service worker
