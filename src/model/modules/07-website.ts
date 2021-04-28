@@ -132,11 +132,6 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('jianshu.png'),
   keyWords: ['简书', 'jianshu'],
   label: '简书',
-}, {
-  url: 'http://web.jobbole.com/',
-  imgSrc: requireImg('jobbole.png'),
-  keyWords: ['伯乐在线', 'jobbole', 'bolezaixian'],
-  label: '伯乐在线',
 }]
 
 export default apps
