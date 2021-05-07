@@ -33,7 +33,7 @@ const paths = require('./paths');
 const appPackageJson = require(paths.appPackageJson);
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
-const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
+const shouldUseSourceMap = false;
 // Some apps do not need the benefits of saving a web request, so not inlining the chunk
 // makes for a smoother build process.
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
@@ -579,13 +579,13 @@ module.exports = function webpackConfig(webpackEnv) {
       // solution that requires the user to opt into importing specific locales.
       // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
       // You can remove this if you don't use Moment.js:
-      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+      // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
       // Generate a service worker script that will precache, and keep up to date,
       // the HTML & assets that are part of the Webpack build.
       isEnvProduction
         && new WorkboxWebpackPlugin.GenerateSW({
           clientsClaim: true,
-          exclude: [/\.map$/, /asset-manifest\.json$/],
+          exclude: [/\.map$/, /\.css$/, /asset-manifest\.json$/],
           importWorkboxFrom: 'cdn',
           navigateFallback: `${publicUrl}/index.html`,
           navigateFallbackBlacklist: [
