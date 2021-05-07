@@ -235,6 +235,12 @@ const apps: AppItem[] = [{
   keyWords: ['highlightjs', 'highlight.js', 'hljs'],
   label: 'Highlight JS',
 }, {
+  url: 'http://logic-flow.org/',
+  githubUrl: 'https://github.com/didi/LogicFlow',
+  imgSrc: requireImg('logic-flow.png'),
+  keyWords: ['logic-flow'],
+  label: 'LogicFlow',
+}, {
   url: 'https://threejs.org/',
   githubUrl: 'https://github.com/mrdoob/three.js/',
   imgSrc: requireImg('three.js.png'),

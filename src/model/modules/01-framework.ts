@@ -75,12 +75,6 @@ const apps: AppItem[] = [{
   keyWords: ['marko'],
   label: 'Marko',
 }, {
-  url: 'https://cml.js.org/',
-  githubUrl: 'https://github.com/didi/chameleon',
-  imgSrc: requireImg('chameleon.png'),
-  keyWords: ['chameleon'],
-  label: 'Chameleon',
-}, {
   url: 'https://svelte.dev/',
   githubUrl: 'https://github.com/sveltejs/svelte',
   imgSrc: requireImg('svelte.png'),
@@ -135,17 +129,29 @@ const apps: AppItem[] = [{
   keyWords: ['nativescript'],
   label: 'NativeScript',
 }, {
+  url: 'https://flutter.io/',
+  githubUrl: 'https://github.com/flutter/flutter',
+  imgSrc: requireImg('flutter.png'),
+  keyWords: ['flutter'],
+  label: 'Flutter',
+}, {
   url: 'https://taro.aotu.io/',
   githubUrl: 'https://github.com/NervJS/taro',
   imgSrc: requireImg('taro.png'),
   keyWords: ['taro', 'nerv', 'react'],
   label: 'Taro',
 }, {
-  url: 'https://flutter.io/',
-  githubUrl: 'https://github.com/flutter/flutter',
-  imgSrc: requireImg('flutter.png'),
-  keyWords: ['flutter'],
-  label: 'Flutter',
+  url: 'https://rax.js.org/',
+  githubUrl: 'https://github.com/alibaba/rax',
+  imgSrc: requireImg('rax.png'),
+  keyWords: ['rax'],
+  label: 'Rax',
+}, {
+  url: 'https://cml.js.org/',
+  githubUrl: 'https://github.com/didi/chameleon',
+  imgSrc: requireImg('chameleon.png'),
+  keyWords: ['chameleon'],
+  label: 'Chameleon',
 }, {
   url: 'https://gridsome.org/',
   githubUrl: 'https://github.com/gridsome/gridsome',
@@ -170,6 +176,24 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('jekyll.png'),
   keyWords: ['jekyll'],
   label: 'Jekyll',
+}, {
+  url: 'https://single-spa.js.org/',
+  githubUrl: 'https://github.com/single-spa/single-spa',
+  imgSrc: requireImg('single-spa.png'),
+  keyWords: ['single-spa'],
+  label: 'Single-spa',
+}, {
+  url: 'https://qiankun.umijs.org',
+  githubUrl: 'https://github.com/umijs/qiankun',
+  imgSrc: requireImg('qiankun.png'),
+  keyWords: ['qiankun'],
+  label: 'Qiankun',
+}, {
+  url: 'https://mpxjs.cn/',
+  githubUrl: 'https://github.com/didi/mpx',
+  imgSrc: requireImg('mpx.png'),
+  keyWords: ['mpx'],
+  label: 'Mpx',
 }, {
   url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
   imgSrc: requireImg('wxxcx.png'),
