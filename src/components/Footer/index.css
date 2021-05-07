@@ -6,11 +6,12 @@
   margin-top: 70px;
   font-size: 12px;
   line-height: 1.2;
-  color: #787878;
+  color: #504f4f;
 }
 
 .footer__copyright {
   text-align: left;
+  opacity: .8;
 }
 
 .logo {
@@ -18,7 +19,9 @@
   width: 26px;
   height: 26px;
   margin-right: 10px;
+  font-size: 0;
   background: url('../../assets/images/logo_512x512.png') center/cover;
+  color: transparent;
   filter: grayscale(1);
   transition: .4s;
 }
@@ -32,5 +35,5 @@
   font-weight: bold;
 }
 .bener-link {
-  color: currentColor;
+  color: #504f4f;
 }

@@ -5,7 +5,7 @@ const year = new Date().getFullYear()
 
 const Footer = () => (
   <div className="footer__wrap">
-    <a href="https://github.com/hello-nav/hello-nav" className="logo vertical-center"> </a>
+    <a href="https://github.com/hello-nav/hello-nav" className="logo vertical-center">hello-nav github</a>
     <div className="footer__copyright">
       <span className="vertical-center">
         Made by

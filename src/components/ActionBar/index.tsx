@@ -17,6 +17,7 @@ function ActionBar({
       </span>
       <span className="filter-bar__input-warp">
         <input
+          aria-label="filterIpt"
           className="search-input"
           type="text"
           value={filterKey}
