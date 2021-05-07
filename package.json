@@ -2,6 +2,13 @@
   "name": "hello-nav",
   "version": "0.3.0",
   "private": true,
+  "author": "Bener",
+  "license": "MIT",
+  "keywords": [
+    "hello-nav",
+    "nav"
+  ],
+  "homepage": "https://hello-nav.github.io/",
   "dependencies": {
     "@babel/core": "7.5.5",
     "@svgr/webpack": "4.3.2",
@@ -94,7 +101,6 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0"
   },
-  "homepage": ".",
   "jest": {
     "roots": [
       "<rootDir>/src"

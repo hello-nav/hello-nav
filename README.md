@@ -10,7 +10,7 @@
 - App search with keywords
 - List or category view
 - Github link
-- Service worker
+- Offline
 - Dark mode
 
 ## 🎨 Design
@@ -47,7 +47,7 @@ npm run build
 - [x] app search
 - [x] list & category mode
 - [x] github link
-- [x] service worker
+- [x] Offline
 - [x] dark mode
 - [ ] favorites apps
 - [ ] sync setting

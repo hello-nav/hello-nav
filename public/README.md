@@ -10,7 +10,7 @@
 - App search with keywords
 - List or category view
 - Github link
-- Service worker
+- Offline
 - Dark mode
 
 ## 🎨 Design
