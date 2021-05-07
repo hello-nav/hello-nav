@@ -97,6 +97,8 @@
 
 .cell img {
   width: 50px;
+  height: fit-content;
+  max-height: 50px;
   border-radius: 4px;
   transition: filter .3s;
 }
