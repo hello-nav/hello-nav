@@ -584,9 +584,12 @@ module.exports = function webpackConfig(webpackEnv) {
       // the HTML & assets that are part of the Webpack build.
       isEnvProduction
         && new WorkboxWebpackPlugin.GenerateSW({
+          cacheId: 'hello-nav-cache',
           clientsClaim: true,
+          cleanupOutdatedCaches: true,
+          skipWaiting: true,
           exclude: [/\.map$/, /\.css$/, /asset-manifest\.json$/],
-          importWorkboxFrom: 'cdn',
+          importWorkboxFrom: 'local',
           navigateFallback: `${publicUrl}/index.html`,
           navigateFallbackBlacklist: [
             // Exclude URLs starting with /_, as they're likely an API call
