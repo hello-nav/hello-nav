@@ -39,17 +39,71 @@ const apps: AppItem[] = [{
   keyWords: ['nest'],
   label: 'Nest',
 }, {
+  url: 'https://adonisjs.com/',
+  githubUrl: 'https://github.com/adonisjs/adonis-framework',
+  imgSrc: requireImg('adonis.png'),
+  keyWords: ['adonis'],
+  label: 'Adonis',
+}, {
+  url: 'https://thinkjs.org/',
+  githubUrl: 'https://github.com/thinkjs/thinkjs',
+  imgSrc: requireImg('thinkjs.png'),
+  keyWords: ['thinkjs'],
+  label: 'Thinkjs',
+}, {
   url: 'https://www.fastify.io/',
   githubUrl: 'https://github.com/fastify/fastify',
   imgSrc: requireImg('fastify.png'),
   keyWords: ['fastify'],
   label: 'Fastify',
 }, {
-  url: 'https://adonisjs.com/',
-  githubUrl: 'https://github.com/adonisjs/adonis-framework',
-  imgSrc: requireImg('adonis.png'),
-  keyWords: ['adonis'],
-  label: 'Adonis',
+  url: 'https://tinyhttp.v1rtl.site/',
+  githubUrl: 'https://github.com/restify/node-restify',
+  imgSrc: requireImg('tinyhttp.png'),
+  keyWords: ['tinyhttp'],
+  label: 'Tinyhttp',
+}, {
+  url: 'http://restify.com/',
+  githubUrl: 'https://github.com/restify/node-restify',
+  imgSrc: requireImg('restify.png'),
+  keyWords: ['restify'],
+  label: 'Restify',
+}, {
+  url: 'https://loopback.io/',
+  githubUrl: 'https://github.com/strongloop/loopback-next',
+  imgSrc: requireImg('loopback.png'),
+  keyWords: ['loopback'],
+  label: 'LoopBack',
+}, {
+  url: 'https://feathersjs.com/',
+  githubUrl: 'https://github.com/feathersjs/feathers',
+  imgSrc: requireImg('feathers.png'),
+  keyWords: ['feathers'],
+  label: 'Feathers',
+}, {
+  url: 'https://www.actionherojs.com/',
+  githubUrl: 'https://github.com/actionhero/actionhero',
+  imgSrc: requireImg('actionhero.png'),
+  keyWords: ['actionhero'],
+  label: 'Actionhero',
+}, {
+  url: 'https://docs.marblejs.com/',
+  githubUrl: 'https://github.com/marblejs/marble',
+  imgSrc: requireImg('marble.png'),
+  keyWords: ['marble'],
+  label: 'Marble',
+}, {
+  url: 'https://senecajs.org/',
+  githubUrl: 'https://github.com/senecajs/seneca',
+  imgSrc: requireImg('seneca.png'),
+  keyWords: ['seneca'],
+  label: 'Seneca',
+}, {
+  url: 'https://hemerajs.github.io/hemera/',
+  githubUrl: 'https://github.com/hemerajs/hemera',
+  imgSrc: requireImg('hemera.png'),
+  keyWords: ['hemera'],
+  label: 'Hemera',
 }]
 
 export default apps
