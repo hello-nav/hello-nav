@@ -57,6 +57,12 @@ const apps: AppItem[] = [{
   keyWords: ['browserify'],
   label: 'Browserify',
 }, {
+  url: 'https://vitejs.dev/',
+  githubUrl: 'https://github.com/vitejs/vite',
+  imgSrc: requireImg('vite.png'),
+  keyWords: ['vite'],
+  label: 'Vite',
+}, {
   url: 'http://babeljs.io/',
   githubUrl: 'https://github.com/babel/babel',
   imgSrc: requireImg('babel.png'),
