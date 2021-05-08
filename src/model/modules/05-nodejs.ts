@@ -80,6 +80,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('feathers.png'),
   keyWords: ['feathers'],
   label: 'Feathers',
+  darkInvert: true,
 }, {
   url: 'https://www.actionherojs.com/',
   githubUrl: 'https://github.com/actionhero/actionhero',
@@ -98,12 +99,14 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('seneca.png'),
   keyWords: ['seneca'],
   label: 'Seneca',
+  darkInvert: true,
 }, {
   url: 'https://hemerajs.github.io/hemera/',
   githubUrl: 'https://github.com/hemerajs/hemera',
   imgSrc: requireImg('hemera.png'),
   keyWords: ['hemera'],
   label: 'Hemera',
+  darkInvert: true,
 }]
 
 export default apps
