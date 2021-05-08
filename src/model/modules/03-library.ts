@@ -9,6 +9,12 @@ const apps: AppItem[] = [{
   keyWords: ['webpack'],
   label: 'Webpack',
 }, {
+  url: 'https://esbuild.github.io/',
+  githubUrl: 'https://github.com/evanw/esbuild',
+  imgSrc: requireImg('esbuild.png'),
+  keyWords: ['esbuild'],
+  label: 'Esbuild',
+}, {
   url: 'https://www.pika.dev/',
   githubUrl: 'https://github.com/pikapkg/web',
   imgSrc: requireImg('pika.png'),
