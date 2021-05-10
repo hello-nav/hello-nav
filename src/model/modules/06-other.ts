@@ -16,6 +16,13 @@ const apps: AppItem[] = [{
   keyWords: ['golang'],
   label: 'Golang',
 }, {
+  url: 'https://www.rust-lang.org/',
+  githubUrl: 'https://github.com/rust-lang/rust',
+  imgSrc: requireImg('rust.png'),
+  keyWords: ['rust'],
+  label: 'Rust',
+  darkInvert: true,
+}, {
   url: 'https://www.ruby-lang.org/',
   githubUrl: 'https://github.com/ruby/ruby/',
   imgSrc: requireImg('ruby.png'),
