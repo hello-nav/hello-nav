@@ -94,10 +94,16 @@ const apps: AppItem[] = [{
   keyWords: ['ngalain', 'angular'],
   label: 'Ng Alain',
 }, {
+  url: 'https://getbootstrap.com/',
+  githubUrl: 'https://github.com/twbs/bootstrap',
+  imgSrc: requireImg('bootstrap.png'),
+  keyWords: ['bootstrap'],
+  label: 'Bootstrap',
+}, {
   url: 'https://l-ui.com/',
   githubUrl: 'https://github.com/yued-fe/lulu',
   imgSrc: requireImg('luluui.png'),
-  keyWords: ['luluui', 'jquery'],
+  keyWords: ['luluui'],
   label: 'LuLu UI',
 }, {
   url: 'https://flutter-go.pub/',
