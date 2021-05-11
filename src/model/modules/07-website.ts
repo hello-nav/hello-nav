@@ -48,6 +48,12 @@ const apps: AppItem[] = [{
   keyWords: ['yarn'],
   label: 'Yarn',
 }, {
+  url: 'https://pnpm.io/',
+  githubUrl: 'https://github.com/pnpm/pnpm',
+  imgSrc: requireImg('pnpm.png'),
+  keyWords: ['pnpm'],
+  label: 'PNPM',
+}, {
   url: 'https://bower.io/',
   githubUrl: 'https://github.com/bower/bower',
   imgSrc: requireImg('bower.png'),
