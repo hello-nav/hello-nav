@@ -106,6 +106,12 @@ const apps: AppItem[] = [{
   label: 'CoffeeScript',
   darkInvert: true,
 }, {
+  url: 'https://terser.org/',
+  githubUrl: 'https://github.com/terser/terser',
+  imgSrc: requireImg('terser.png'),
+  keyWords: ['terser'],
+  label: 'Terser',
+}, {
   url: 'https://rxjs.dev/',
   githubUrl: 'https://github.com/ReactiveX/rxjs',
   imgSrc: requireImg('rxjs.png'),

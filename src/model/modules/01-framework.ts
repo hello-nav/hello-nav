@@ -63,6 +63,12 @@ const apps: AppItem[] = [{
   keyWords: ['ember'],
   label: 'Ember',
 }, {
+  url: 'http://aurelia.io/',
+  githubUrl: 'https://github.com/aurelia/aurelia',
+  imgSrc: requireImg('aurelia.png'),
+  keyWords: ['aurelia'],
+  label: 'Aurelia',
+}, {
   url: 'https://www.gatsbyjs.org/',
   githubUrl: 'https://github.com/gatsbyjs/gatsby',
   imgSrc: requireImg('gatsby.png'),
