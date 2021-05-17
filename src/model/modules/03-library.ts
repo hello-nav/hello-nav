@@ -63,6 +63,12 @@ const apps: AppItem[] = [{
   keyWords: ['vite'],
   label: 'Vite',
 }, {
+  url: 'https://create-react-app.dev/',
+  githubUrl: 'https://github.com/facebook/create-react-app',
+  imgSrc: requireImg('cra.png'),
+  keyWords: ['cra', 'create-react-app'],
+  label: 'CreateReactApp',
+}, {
   url: 'http://babeljs.io/',
   githubUrl: 'https://github.com/babel/babel',
   imgSrc: requireImg('babel.png'),
@@ -148,6 +154,12 @@ const apps: AppItem[] = [{
   keyWords: ['lerna'],
   label: 'Lerna',
   darkInvert: true,
+}, {
+  url: 'https://pre-commit.com/',
+  githubUrl: 'https://github.com/pre-commit/pre-commit',
+  imgSrc: requireImg('pre-commit.png'),
+  keyWords: ['pre-commit'],
+  label: 'PreCommit',
 }, {
   url: 'https://lodash.com/',
   githubUrl: 'https://github.com/lodash/lodash/',
