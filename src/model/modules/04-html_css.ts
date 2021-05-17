@@ -14,6 +14,12 @@ const apps: AppItem[] = [{
   keyWords: ['jade', 'html'],
   label: 'Jade',
 }, {
+  url: 'https://posthtml.org/',
+  githubUrl: 'https://github.com/posthtml/posthtml',
+  imgSrc: requireImg('post-html.png'),
+  keyWords: ['PostHTML'],
+  label: 'PostHTML',
+}, {
   url: 'http://sass-lang.com/',
   githubUrl: 'https://github.com/sass/sass',
   imgSrc: requireImg('sass.png'),
@@ -38,6 +44,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('postcss.png'),
   keyWords: ['postcss', 'css'],
   label: 'Postcss',
+}, {
+  url: 'https://goober.rocks/',
+  githubUrl: 'https://github.com/cristianbote/goober',
+  imgSrc: requireImg('goober.png'),
+  keyWords: ['goober', 'css'],
+  label: 'Goober',
 }, {
   url: 'https://purgecss.com/',
   githubUrl: 'https://github.com/FullHuman/purgecss',

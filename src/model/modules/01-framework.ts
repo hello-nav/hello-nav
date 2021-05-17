@@ -177,6 +177,12 @@ const apps: AppItem[] = [{
   keyWords: ['hugo'],
   label: 'Hugo',
 }, {
+  url: 'https://docusaurus.io/',
+  githubUrl: 'https://github.com/facebook/docusaurus',
+  imgSrc: requireImg('docusaurus.png'),
+  keyWords: ['docusaurus'],
+  label: 'Docusaurus',
+}, {
   url: 'https://jekyllrb.com/',
   githubUrl: 'https://github.com/jekyll/jekyll',
   imgSrc: requireImg('jekyll.png'),
