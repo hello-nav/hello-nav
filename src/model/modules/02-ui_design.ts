@@ -12,8 +12,8 @@ const apps: AppItem[] = [{
   url: 'https://www.iviewui.com/',
   githubUrl: 'https://github.com/view-design/ViewUI',
   imgSrc: requireImg('iview.png'),
-  keyWords: ['iview', 'vue'],
-  label: 'iView',
+  keyWords: ['iview', 'view-ui', 'vue'],
+  label: 'View UI',
 }, {
   url: 'https://quasar.dev/',
   githubUrl: 'https://github.com/quasarframework/quasar',
@@ -25,7 +25,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/vueComponent/ant-design-vue',
   imgSrc: requireImg('ant-design-vue.png'),
   keyWords: ['ant-design-vue', 'antdv', 'vue'],
-  label: 'Ant Design Vue',
+  label: 'AntDesign Vue',
 }, {
   url: 'https://muse-ui.org/',
   githubUrl: 'https://github.com/museui/muse-ui',
@@ -74,7 +74,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/mui-org/material-ui',
   imgSrc: requireImg('material-ui.png'),
   keyWords: ['material-ui', 'react'],
-  label: 'Material-UI',
+  label: 'Material UI',
 }, {
   url: 'https://antv.alipay.com/',
   githubUrl: 'https://github.com/antvis/',

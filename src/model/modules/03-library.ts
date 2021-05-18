@@ -134,7 +134,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/ReactTraining/react-router',
   imgSrc: requireImg('react-router.png'),
   keyWords: ['reactrouter'],
-  label: 'React Router',
+  label: 'ReactRouter',
 }, {
   url: 'https://graphql.org/',
   githubUrl: 'https://github.com/graphql/graphiql',
@@ -146,7 +146,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/apollographql',
   imgSrc: requireImg('apollographql.png'),
   keyWords: ['apollographql'],
-  label: 'ApolloGraphQL',
+  label: 'Apollo',
 }, {
   url: 'https://lerna.js.org/',
   githubUrl: 'https://github.com/lerna/lerna',
@@ -171,7 +171,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/alibaba/hooks',
   imgSrc: requireImg('ahooks.png'),
   keyWords: ['ahooks'],
-  label: 'ahooks',
+  label: 'Ahooks',
 }, {
   url: 'https://dojotoolkit.org/',
   githubUrl: 'https://github.com/dojo/dojo',
@@ -208,7 +208,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/nuysoft/Mock',
   imgSrc: requireImg('mockjs.png'),
   keyWords: ['mockjs'],
-  label: 'Mock.js',
+  label: 'MockJS',
 }, {
   url: 'https://momentjs.com/',
   githubUrl: 'https://github.com/moment/moment',
@@ -220,7 +220,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/iamkun/dayjs',
   imgSrc: requireImg('dayjs.png'),
   keyWords: ['dayjs'],
-  label: 'Day.js',
+  label: 'DayJS',
 }, {
   url: 'https://mochajs.org/',
   githubUrl: 'https://github.com/mochajs/mocha',
@@ -256,14 +256,14 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/markdown-it/markdown-it',
   imgSrc: requireImg('markdown.png'),
   keyWords: ['markdownit'],
-  label: 'Markdown it',
+  label: 'MarkdownIt',
   darkInvert: true,
 }, {
   url: 'https://highlightjs.org/',
   githubUrl: 'https://github.com/highlightjs/highlight.js',
   imgSrc: requireImg('hljs.png'),
   keyWords: ['highlightjs', 'highlight.js', 'hljs'],
-  label: 'Highlight JS',
+  label: 'HighlightJS',
 }, {
   url: 'http://logic-flow.org/',
   githubUrl: 'https://github.com/didi/LogicFlow',
@@ -275,7 +275,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/mrdoob/three.js/',
   imgSrc: requireImg('three.js.png'),
   keyWords: ['threejs', 'three.js'],
-  label: 'Three JS',
+  label: 'ThreeJS',
   darkInvert: true,
 }, {
   url: 'https://pptr.dev/',

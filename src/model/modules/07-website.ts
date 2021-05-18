@@ -70,7 +70,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/javascript-tutorial',
   imgSrc: requireImg('javascript-tutorial.png'),
   keyWords: ['javascript-tutorial', 'js'],
-  label: 'JS Tutorial',
+  label: 'JSTutorial',
 }, {
   url: 'https://stackoverflow.com/',
   imgSrc: requireImg('stackoverflow.png'),
@@ -131,8 +131,8 @@ const apps: AppItem[] = [{
 }, {
   url: 'https://segmentfault.com/',
   imgSrc: requireImg('sf.png'),
-  keyWords: ['segmentfault', 'sf'],
-  label: 'SegmentFault',
+  keyWords: ['segmentfault', 'sf', '思否', 'sifou'],
+  label: '思否',
 }, {
   url: 'https://www.zhihu.com/',
   imgSrc: requireImg('zhihu.png'),

@@ -127,7 +127,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/facebook/react-native',
   imgSrc: requireImg('react-native.png'),
   keyWords: ['reactnative', 'react', 'rn'],
-  label: 'React Native',
+  label: 'ReactNative',
 }, {
   url: 'https://www.nativescript.org/',
   githubUrl: 'https://github.com/NativeScript/NativeScript',
@@ -169,7 +169,7 @@ const apps: AppItem[] = [{
   githubUrl: 'hhttps://github.com/react-static/react-static',
   imgSrc: requireImg('react-static.png'),
   keyWords: ['react-static', 'react'],
-  label: 'react-static',
+  label: 'ReactStatic',
 }, {
   url: 'https://gohugo.io/',
   githubUrl: 'https://github.com/gohugoio/hugo',
@@ -193,7 +193,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/single-spa/single-spa',
   imgSrc: requireImg('single-spa.png'),
   keyWords: ['single-spa'],
-  label: 'Single-spa',
+  label: 'SingleSPA',
 }, {
   url: 'https://qiankun.umijs.org',
   githubUrl: 'https://github.com/umijs/qiankun',
