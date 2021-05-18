@@ -101,6 +101,17 @@ const apps: AppItem[] = [{
   keyWords: ['codesandbox'],
   label: 'CodeSandbox',
 }, {
+  url: 'https://github.com/jsfiddle',
+  githubUrl: 'https://jsfiddle.net/',
+  imgSrc: requireImg('js-fiddle.png'),
+  keyWords: ['js-fiddle'],
+  label: 'JSFiddle',
+}, {
+  url: 'https://codepen.io/',
+  imgSrc: requireImg('codepen.png'),
+  keyWords: ['codepen'],
+  label: 'CodePen',
+}, {
   url: 'https://tinypng.com/',
   imgSrc: requireImg('tinypng.png'),
   keyWords: ['tinypng'],
@@ -129,7 +140,7 @@ const apps: AppItem[] = [{
   label: '知乎',
 }, {
   url: 'https://kb.cnblogs.com/',
-  imgSrc: requireImg('bokeyuan.png'),
+  imgSrc: requireImg('cnblogs.png'),
   keyWords: ['博客园', 'cnblogs', 'bokeyuan'],
   label: '博客园',
   darkInvert: true,
