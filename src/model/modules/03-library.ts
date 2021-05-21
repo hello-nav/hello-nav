@@ -118,6 +118,12 @@ const apps: AppItem[] = [{
   keyWords: ['terser'],
   label: 'Terser',
 }, {
+  url: 'https://gogocode.io/zh',
+  githubUrl: 'https://github.com/thx/gogocode',
+  imgSrc: requireImg('gogocode.png'),
+  keyWords: ['gogocode'],
+  label: 'GoGoCode',
+}, {
   url: 'https://rxjs.dev/',
   githubUrl: 'https://github.com/ReactiveX/rxjs',
   imgSrc: requireImg('rxjs.png'),
