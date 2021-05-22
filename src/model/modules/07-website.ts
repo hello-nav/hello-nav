@@ -95,6 +95,22 @@ const apps: AppItem[] = [{
   keyWords: ['jenkins', 'ci'],
   label: 'Jenkins',
 }, {
+  url: 'https://code.visualstudio.com/',
+  githubUrl: 'https://github.com/microsoft/vscode',
+  imgSrc: requireImg('vscode.png'),
+  keyWords: ['vscode'],
+  label: 'VSCode',
+}, {
+  url: 'https://www.jetbrains.com/webstorm/',
+  imgSrc: requireImg('webstorm.png'),
+  keyWords: ['webstorm'],
+  label: 'WebStorm',
+}, {
+  url: 'http://www.sublimetext.com/',
+  imgSrc: requireImg('sublimetext.png'),
+  keyWords: ['sublimetext'],
+  label: 'SublimeText',
+}, {
   url: 'https://stackblitz.com/',
   githubUrl: 'https://github.com/stackblitz/core',
   imgSrc: requireImg('stackblitz.png'),
