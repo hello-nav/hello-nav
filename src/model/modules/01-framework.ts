@@ -9,7 +9,7 @@ const apps: AppItem[] = [{
   keyWords: ['vue'],
   label: 'Vue',
 }, {
-  url: 'https://zh-hans.reactjs.org/',
+  url: 'https://reactjs.org/',
   githubUrl: 'https://github.com/facebook/react/',
   imgSrc: requireImg('react.png'),
   keyWords: ['react'],
