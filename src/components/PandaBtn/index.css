@@ -9,9 +9,10 @@
   transition: background 0.5s 0s, opacity .3s;
   overflow: hidden;
   cursor: pointer;
+  opacity: .8;
 }
 .panda-btn:hover {
-  opacity: .8;
+  opacity: 1;
 }
 .panda-btn::before,
 .panda-btn::after {

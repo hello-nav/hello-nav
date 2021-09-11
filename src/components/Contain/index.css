@@ -9,13 +9,15 @@
 }
 
 .category-item {
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 
 .category-item__title {
-  font-size: 14px;
-  text-align: left;
+  font-size: 30px;
+  font-style: italic;
   font-weight: bold;
+  font-family: 'bi';
+  margin-bottom: 15px;
   color: #696969;
 }
 
