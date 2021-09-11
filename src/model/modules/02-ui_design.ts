@@ -25,7 +25,7 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/vueComponent/ant-design-vue',
   imgSrc: requireImg('ant-design-vue.png'),
   keyWords: ['ant-design-vue', 'antdv', 'vue'],
-  label: 'AntDesign Vue',
+  label: 'AntDesignVue',
 }, {
   url: 'https://muse-ui.org/',
   githubUrl: 'https://github.com/museui/muse-ui',

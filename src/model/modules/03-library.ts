@@ -173,6 +173,12 @@ const apps: AppItem[] = [{
   keyWords: ['lodash'],
   label: 'Lodash',
 }, {
+  url: 'https://vueuse.org/',
+  githubUrl: 'https://github.com/vueuse/vueuse',
+  imgSrc: requireImg('vueuse.png'),
+  keyWords: ['vueuse'],
+  label: 'VueUse',
+}, {
   url: 'https://ahooks.js.org/',
   githubUrl: 'https://github.com/alibaba/hooks',
   imgSrc: requireImg('ahooks.png'),
