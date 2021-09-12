@@ -3,22 +3,24 @@
   width: 30px;
   height: 30px;
   margin-right: 5px;
-  background-color: #e6e6e6;
+  background-color: rgba(230, 230, 230, 0.8);
   border-radius: 30px;
   font-size: 0;
   transition: background 0.5s 0s, opacity .3s;
   overflow: hidden;
   cursor: pointer;
-  opacity: .8;
+  backdrop-filter: blur(3px);
+  will-change: background;
 }
 .panda-btn:hover {
-  opacity: 1;
+  background-color: rgba(230, 230, 230, 1);
 }
 .panda-btn::before,
 .panda-btn::after {
   content: '';
   position: absolute;
   border-radius: 30px;
+  will-change: width, height, top, left, right, bottom;
 }
 .panda-btn::before {
   background-color: rgba(119, 119, 119, .618);
@@ -34,11 +36,11 @@
   background-color: rgba(119, 119, 119, .618);
 }
 .panda-btn.theme--dark::before {
-  animation: toggle-before-dark 0.3s forwards;
+  animation: toggle-before--dark 0.3s forwards;
 }
 .panda-btn.theme--dark::after {
   z-index: 3;
-  animation: toggle-after-dark 0.3s 0.3s forwards;
+  animation: toggle-after--dark 0.3s 0.3s forwards;
 }
 @keyframes toggle {
   to {
@@ -59,7 +61,7 @@
     height: 10px;
   }
 }
-@keyframes toggle-before-dark {
+@keyframes toggle-before--dark {
   from {
     top: 10px;
     left: 10px;
@@ -88,7 +90,7 @@
     height: 30px;
   }
 }
-@keyframes toggle-after-dark {
+@keyframes toggle-after--dark {
   from {
     top: 15px;
     left: 15px;

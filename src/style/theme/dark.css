@@ -3,17 +3,19 @@
   background-color: #1f2022;
 }
 .theme--dark .search-input {
-  background-color: rgba(45, 46, 48, 0.9);
+  background-color: rgba(45, 46, 48, 0.8);
   border-color: #2a2b2d;
   color: #c5c5c5;
 }
-.theme--dark .filter-bar__toggle-btn {
+.theme--dark .search-input:hover {
   background-color: rgba(45, 46, 48, 0.9);
+}
+.theme--dark .filter-bar__toggle-btn {
+  background-color: rgba(45, 46, 48, 0.8);
   border-color: #2a2b2d;
 }
 .theme--dark .filter-bar__toggle-btn:hover {
   background-color: rgba(45, 46, 48, 0.9);
-  opacity: 0.8;
 }
 .theme--dark .category-item__title {
   color: #a7a7a7;
