@@ -49,44 +49,55 @@
   position: relative;
 }
 
+.input-icon-wrap {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  border-radius: 50px;
+  transform: translateX(0px);
+  will-change: transform;
+  transition: transform .3s;
+}
+
 .search-icon {
   opacity: 1;
   position: absolute;
-  top: 10px;
-  right: 86px;
-  will-change: opacity, transform;
+  top: 0;
+  left: 0;
+  will-change: opacity;
+  transition: opacity .3s;
 }
 
 .clear-icon {
   opacity: 0;
-  visibility: hidden;
   position: absolute;
-  top: 11px;
-  right: 86px;
+  top: 0;
+  left: 0;
   font-size: 11px;
   z-index: 10;
-  will-change: opacity, transform;
+  will-change: opacity;
+  transition: opacity .3s;
+  cursor: pointer;
 }
 
 .search-input {
   outline: none;
   height: 30px;
   line-height: 30px;
-  width: 60px;
+  width: 80px;
   padding-left: 28px;
   padding-right: 20px;
   border: 1px solid #e4e4e4;
   border-radius: 100px;
+  font-size: 14px;
   color: #504f4f;
   background: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
   transition: 0.3s;
   backdrop-filter: blur(3px);
   will-change: width, background, padding;
 }
 
 .search-input:hover {
-  width: 60px;
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -97,16 +108,14 @@
   transition: .3s;
 }
 
-.search-input:focus~.search-icon {
+.search-input:focus ~ .input-icon-wrap {
+  transform: translateX(220px);
+}
+.search-input:focus ~ .input-icon-wrap .search-icon {
   opacity: 0;
-  right: 12px;
-  transition: right .4s, opacity .2s;
 }
 
-.search-input:focus~.clear-icon {
+.search-input:focus ~ .input-icon-wrap .clear-icon {
   opacity: 1;
-  right: 12px;
-  visibility: visible;
-  transition: right .4s, opacity .2s;
-  cursor: pointer;
 }
+

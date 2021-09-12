@@ -24,12 +24,14 @@ function ActionBar({
           onChange={() => {}}
           onInput={onInput}
         />
-        <svg className="icon search-icon" aria-hidden="true">
-          <use href="#icon-search" />
-        </svg>
-        <svg className="icon clear-icon" aria-hidden="true">
-          <use href="#icon-close" />
-        </svg>
+        <div className="input-icon-wrap">
+          <svg className="icon search-icon" aria-hidden="true">
+            <use href="#icon-search" />
+          </svg>
+          <svg className="icon clear-icon" aria-hidden="true">
+            <use href="#icon-close" />
+          </svg>
+        </div>
       </span>
     </div>
   )
