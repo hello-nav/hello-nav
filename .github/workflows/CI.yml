@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: npm i && npm run build
+
+      - name: Clone website repo
+        uses: GuillaumeFalourd/clone-github-repo-action@v1
+        with:
+          owner: hello-nav
+          repository: hello-nav.github.io
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Deploy
+        run: |
+          sudo chown -R $USER:$USER ./hello-nav.github.io
+          cd hello-nav.github.io
+          rm -rf ./*
+          cp -r ../build/* ./
+          git config --global user.name ${{ secrets.repo_user }}
+          git config --global user.email ${{ secrets.repo_email }}
+          git add .
+          git commit -m 'CI BUILD'
+          git push origin master
