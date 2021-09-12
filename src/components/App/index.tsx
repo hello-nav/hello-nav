@@ -6,7 +6,7 @@ import WithError from '../WithError'
 import Footer from '../Footer'
 import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
 
-const CATEGORY_TYPES: CategoryTypes = ['list', 'category']
+const CATEGORY_TYPES: CategoryTypes = ['category', 'list']
 const ContainWithNotFind = WithError<ContainWrapProp>(ContainWrap, 'Ooops! Can not find it here...')
 
 const libraryMap: LibraryMap = {
