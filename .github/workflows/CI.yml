@@ -28,8 +28,8 @@ jobs:
           cd hello-nav.github.io
           rm -rf ./*
           cp -r ../build/* ./
-          git config --global user.name ${{ secrets.repo_user }}
-          git config --global user.email ${{ secrets.repo_email }}
+          git config --global user.name ${{ secrets.REPO_USER }}
+          git config --global user.email ${{ secrets.REPO_EMAIL }}
           git add .
           git commit -m 'CI BUILD'
           git push origin master
