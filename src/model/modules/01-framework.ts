@@ -57,6 +57,12 @@ const apps: AppItem[] = [{
   keyWords: ['angular'],
   label: 'Angular',
 }, {
+  url: 'https://www.solidjs.com/',
+  githubUrl: 'https://github.com/solidjs/solid',
+  imgSrc: requireImg('solidjs.png'),
+  keyWords: ['solidjs'],
+  label: 'Solid',
+}, {
   url: 'https://emberjs.com/',
   githubUrl: 'https://github.com/emberjs/ember.js/',
   imgSrc: requireImg('ember.png'),

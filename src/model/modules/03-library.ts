@@ -182,7 +182,7 @@ const apps: AppItem[] = [{
   url: 'https://ahooks.js.org/',
   githubUrl: 'https://github.com/alibaba/hooks',
   imgSrc: requireImg('ahooks.png'),
-  keyWords: ['ahooks'],
+  keyWords: ['ahooks', 'react'],
   label: 'Ahooks',
 }, {
   url: 'https://dojotoolkit.org/',
