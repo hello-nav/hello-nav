@@ -130,6 +130,12 @@ const apps: AppItem[] = [{
   keyWords: ['rxjs'],
   label: 'RxJS',
 }, {
+  url: 'https://pinia.esm.dev/',
+  githubUrl: 'https://github.com/posva/pinia',
+  imgSrc: requireImg('pinia.png'),
+  keyWords: ['pinia'],
+  label: 'Pinia',
+}, {
   url: 'https://redux.js.org/',
   githubUrl: 'https://github.com/reduxjs/redux',
   imgSrc: requireImg('redux.png'),
