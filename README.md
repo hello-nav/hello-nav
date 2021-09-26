@@ -47,7 +47,7 @@ npm run build
 - [x] app search
 - [x] list & category mode
 - [x] github link
-- [x] Offline
+- [x] offline
 - [x] dark mode
 - [ ] favorites apps
 - [ ] sync setting

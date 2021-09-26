@@ -55,7 +55,7 @@ h1 {
 #root {
   display: flex;
   flex-direction: column;
-  padding: 70px 0;
+  padding: 86px 0;
   text-align: center;
   min-height: 100vh;
   box-sizing: border-box;
