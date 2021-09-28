@@ -214,17 +214,17 @@ const apps: AppItem[] = [{
   label: 'Mpx',
 }, {
   url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
-  imgSrc: requireImg('wxxcx.png'),
+  imgSrc: requireImg('wechatmp.png'),
   keyWords: ['微信小程序', 'weixin', 'wechat', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '微信小程序',
 }, {
   url: 'https://q.qq.com/',
-  imgSrc: requireImg('qqxcx.png'),
+  imgSrc: requireImg('qqmp.png'),
   keyWords: ['qq小程序', 'qq', 'xiaochengxu', 'miniapp', 'microapp'],
   label: 'QQ小程序',
 }, {
   url: 'https://mini.open.alipay.com/channel/miniIndex.htm',
-  imgSrc: requireImg('zfbxcx.png'),
+  imgSrc: requireImg('alipaymp.png'),
   keyWords: ['支付宝小程序', 'zhifubao', 'alipay', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '支付宝小程序',
 }, {
@@ -234,14 +234,14 @@ const apps: AppItem[] = [{
   label: '京东小程序',
 }, {
   url: 'https://smartprogram.baidu.com/developer/index.html',
-  imgSrc: requireImg('bdxcx.png'),
+  imgSrc: requireImg('bdmp.png'),
   keyWords: ['百度智能小程序', 'baidu', 'xiaochengxu', 'miniapp', 'microapp'],
   label: '智能小程序',
 }, {
   url: 'https://microapp.bytedance.com/',
-  imgSrc: requireImg('dbmp.png'),
-  keyWords: ['字节跳动小程序', 'bytedance', 'xiaochengxu', 'miniapp', 'microapp'],
-  label: '字节跳动小程序',
+  imgSrc: requireImg('bytemp.png'),
+  keyWords: ['字节小程序', '字节跳动小程序', 'bytedance', 'xiaochengxu', 'miniapp', 'microapp'],
+  label: '字节小程序',
 }, {
   url: 'https://www.quickapp.cn/quickAppShow',
   imgSrc: requireImg('kyy.png'),
