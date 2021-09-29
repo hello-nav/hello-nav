@@ -102,8 +102,14 @@ const apps: AppItem[] = [{
   url: 'https://www.typescriptlang.org/',
   githubUrl: 'https://github.com/Microsoft/TypeScript',
   imgSrc: requireImg('typescript.png'),
-  keyWords: ['typescript'],
+  keyWords: ['typescript', 'ts'],
   label: 'TypeScript',
+}, {
+  url: 'https://www.assemblyscript.org/',
+  githubUrl: 'https://github.com/AssemblyScript/assemblyscript',
+  imgSrc: requireImg('assemblyscript.png'),
+  keyWords: ['assemblyscript', 'as'],
+  label: 'AssemblyScript',
 }, {
   url: 'https://coffeescript.org/',
   githubUrl: 'https://github.com/jashkenas/coffeescript',
@@ -313,6 +319,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('sequelize.png'),
   keyWords: ['sequelize'],
   label: 'Sequelize',
+}, {
+  url: 'https://webassembly.org/',
+  githubUrl: 'https://github.com/WebAssembly',
+  imgSrc: requireImg('webassembly.png'),
+  keyWords: ['WebAssembly'],
+  label: 'WebAssembly',
 }]
 
 export default apps
