@@ -60,6 +60,24 @@ const apps: AppItem[] = [{
   keyWords: ['bower'],
   label: 'Bower',
 }, {
+  url: 'https://www.jsdelivr.com/',
+  githubUrl: 'https://github.com/jsdelivr/jsdelivr',
+  imgSrc: requireImg('jsdelivr.png'),
+  keyWords: ['jsdelivr', 'cdn'],
+  label: 'JSDelivr',
+}, {
+  url: 'https://cdnjs.com/',
+  githubUrl: 'https://github.com/cdnjs/cdnjs',
+  imgSrc: requireImg('cdnjs.png'),
+  keyWords: ['cdnjs'],
+  label: 'CDNJS',
+}, {
+  url: 'https://www.bootcdn.cn/',
+  githubUrl: 'https://github.com/bootcdn',
+  imgSrc: requireImg('bootcdn.png'),
+  keyWords: ['bootcdn'],
+  label: 'BootCDN',
+}, {
   url: 'https://developer.mozilla.org/',
   githubUrl: 'https://github.com/mdn',
   imgSrc: requireImg('mdn.png'),
