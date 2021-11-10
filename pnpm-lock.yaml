@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.5.5
   '@svgr/webpack': 4.3.2
   '@types/jest': 24.0.18
-  '@types/node': ^12.7.5
+  '@types/node': 12.12.54
   '@types/react': ^16.14.20
   '@types/react-dom': 16.9.0
   '@types/webpack-env': ^1.16.3
@@ -125,7 +125,7 @@ dependencies:
 
 devDependencies:
   '@types/jest': 24.0.18
-  '@types/node': 12.20.37
+  '@types/node': 12.12.54
   '@types/react': 16.14.20
   '@types/react-dom': 16.9.0
   '@types/webpack-env': 1.16.3
@@ -2614,8 +2614,12 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=, tarball: '@types/json5/download/@types/json5-0.0.29.tgz'}
     dev: true
 
+  /@types/node/12.12.54:
+    resolution: {integrity: sha1-pLWNjfOkZ3tsCL+8lLetenpfgtE=, tarball: '@types/node/download/@types/node-12.12.54.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-12.12.54.tgz'}
+    dev: true
+
   /@types/node/12.20.37:
-    resolution: {integrity: sha512-i1KGxqcvJaLQali+WuypQnXwcplhtNtjs66eNsZpp2P2FL/trJJxx/VWsM0YCL2iMoIJrbXje48lvIQAQ4p2ZA==, tarball: '@types/node/download/@types/node-12.20.37.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-12.20.37.tgz'}
+    resolution: {integrity: sha512-i1KGxqcvJaLQali+WuypQnXwcplhtNtjs66eNsZpp2P2FL/trJJxx/VWsM0YCL2iMoIJrbXje48lvIQAQ4p2ZA==, tarball: '@types/node/download/@types/node-12.20.37.tgz'}
     dev: true
 
   /@types/parse-json/4.0.0:
