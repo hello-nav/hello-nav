@@ -99,6 +99,12 @@ const apps: AppItem[] = [{
   keyWords: ['sapper'],
   label: 'Sapper',
 }, {
+  url: 'https://imba.io/',
+  githubUrl: 'https://github.com/imba/imba',
+  imgSrc: requireImg('imba.png'),
+  keyWords: ['imba'],
+  label: 'Imba',
+}, {
   url: 'https://nuxtjs.org/',
   githubUrl: 'https://github.com/nuxt/nuxt.js',
   imgSrc: requireImg('nuxt.png'),
