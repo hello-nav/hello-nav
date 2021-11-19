@@ -4,6 +4,7 @@ import {
 
 const apps: AppItem[] = [{
   url: 'https://www.baidu.com/',
+  githubUrl: 'https://github.com/baidu',
   imgSrc: requireImg('baidu.png'),
   keyWords: ['百度', 'baidu'],
   label: '百度',
@@ -14,13 +15,20 @@ const apps: AppItem[] = [{
   keyWords: ['谷歌', 'google'],
   label: 'Google',
 }, {
-  url: 'https://www.facebook.com/',
+  url: 'https://www.microsoft.com/',
+  githubUrl: 'https://github.com/microsoft',
+  imgSrc: requireImg('microsoft.png'),
+  keyWords: ['微软', 'Microsoft'],
+  label: 'Microsoft',
+}, {
+  url: 'https://about.facebook.com/meta',
   githubUrl: 'https://github.com/facebook',
-  imgSrc: requireImg('facebook.png'),
-  keyWords: ['facebook'],
-  label: 'Facebook',
+  imgSrc: requireImg('meta.png'),
+  keyWords: ['facebook', 'meta'],
+  label: 'Meta',
 }, {
   url: 'https://github.com/',
+  githubUrl: 'https://github.com/github',
   imgSrc: requireImg('github.png'),
   keyWords: ['github'],
   label: 'GitHub',
