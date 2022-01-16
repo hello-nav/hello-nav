@@ -104,6 +104,10 @@
 }
 
 .cell .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
   font-size: 14px;
   color: #504f4f;
 }
