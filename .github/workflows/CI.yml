@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build
-        run: npm i && npm run build
+        run: npx pnpm i && npx pnpm build
 
       - name: Clone website repo
         uses: GuillaumeFalourd/clone-github-repo-action@v1
