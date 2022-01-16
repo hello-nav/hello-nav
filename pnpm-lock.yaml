@@ -6,7 +6,7 @@ specifiers:
   '@types/jest': 24.0.18
   '@types/node': 12.12.54
   '@types/react': ^16.14.21
-  '@types/react-dom': 16.9.0
+  '@types/react-dom': 16.9.14
   '@types/webpack-env': ^1.16.3
   '@typescript-eslint/eslint-plugin': 1.13.0
   '@typescript-eslint/parser': 1.13.0
@@ -127,7 +127,7 @@ devDependencies:
   '@types/jest': 24.0.18
   '@types/node': 12.12.54
   '@types/react': 16.14.21
-  '@types/react-dom': 16.9.0
+  '@types/react-dom': 16.9.14
   '@types/webpack-env': 1.16.3
   eslint-config-airbnb: 18.2.1_9cc2bae5b9195abbcbc228c6dc76a2ad
   eslint-plugin-import: 2.25.4_eslint@6.8.0
@@ -2633,8 +2633,8 @@ packages:
     resolution: {integrity: sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==}
     dev: false
 
-  /@types/react-dom/16.9.0:
-    resolution: {integrity: sha512-OL2lk7LYGjxn4b0efW3Pvf2KBVP0y1v3wip1Bp7nA79NkOpElH98q3WdCEdDj93b2b0zaeBG9DvriuKjIK5xDA==}
+  /@types/react-dom/16.9.14:
+    resolution: {integrity: sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==}
     dependencies:
       '@types/react': 16.14.21
     dev: true
@@ -3531,6 +3531,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
@@ -5587,6 +5588,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -7935,6 +7937,7 @@ packages:
 
   /nan/2.15.0:
     resolution: {integrity: sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==}
+    requiresBuild: true
     dev: false
     optional: true
 
