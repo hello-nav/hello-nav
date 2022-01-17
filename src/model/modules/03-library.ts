@@ -314,6 +314,12 @@ const apps: AppItem[] = [{
   keyWords: ['yo', 'yeoman'],
   label: 'Yeoman',
 }, {
+  url: 'https://socket.io/',
+  githubUrl: 'https://github.com/socketio/socket.io',
+  imgSrc: requireImg('socket-io.png'),
+  keyWords: ['socketio'],
+  label: 'SocketIO',
+}, {
   url: 'http://docs.sequelizejs.com/',
   githubUrl: 'https://github.com/sequelize/sequelize',
   imgSrc: requireImg('sequelize.png'),
