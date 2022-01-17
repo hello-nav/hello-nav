@@ -106,6 +106,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('theme-ui.png'),
   keyWords: ['theme-ui', 'css'],
   label: 'Theme UI',
+  darkInvert: true,
 }, {
   url: 'https://fela.js.org/',
   githubUrl: 'https://github.com/robinweser/fela',
@@ -118,12 +119,14 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('styled-system.png'),
   keyWords: ['styled-system', 'css'],
   label: 'StyledSystem',
+  darkInvert: true,
 }, {
   url: 'https://stitches.dev/',
   githubUrl: 'https://github.com/modulz/stitches',
   imgSrc: requireImg('stitches.png'),
   keyWords: ['stitches', 'css'],
   label: 'Stitches',
+  darkInvert: true,
 }]
 
 export default apps
