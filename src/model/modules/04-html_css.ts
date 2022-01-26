@@ -45,6 +45,12 @@ const apps: AppItem[] = [{
   keyWords: ['postcss', 'css'],
   label: 'Postcss',
 }, {
+  url: 'https://tailwindcss.com/',
+  githubUrl: 'https://github.com/tailwindlabs/tailwindcss',
+  imgSrc: requireImg('tailwindcss.png'),
+  keyWords: ['tailwindcss', 'css'],
+  label: 'TailwindCSS',
+}, {
   url: 'https://goober.rocks/',
   githubUrl: 'https://github.com/cristianbote/goober',
   imgSrc: requireImg('goober.png'),
