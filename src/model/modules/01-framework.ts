@@ -3,8 +3,8 @@ import {
 } from '../utils'
 
 const apps: AppItem[] = [{
-  url: 'https://cn.vuejs.org/',
-  githubUrl: 'https://github.com/vuejs/vue',
+  url: 'https://vuejs.org/',
+  githubUrl: 'https://github.com/vuejs/core',
   imgSrc: requireImg('vue.png'),
   keyWords: ['vue'],
   label: 'Vue',
