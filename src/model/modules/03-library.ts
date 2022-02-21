@@ -15,6 +15,12 @@ const apps: AppItem[] = [{
   keyWords: ['esbuild'],
   label: 'Esbuild',
 }, {
+  url: 'https://swc.rs/',
+  githubUrl: 'https://github.com/swc-project/swc',
+  imgSrc: requireImg('swc.png'),
+  keyWords: ['swc'],
+  label: 'SWC',
+}, {
   url: 'https://www.pika.dev/',
   githubUrl: 'https://github.com/pikapkg/web',
   imgSrc: requireImg('pika.png'),
@@ -69,6 +75,12 @@ const apps: AppItem[] = [{
   keyWords: ['cra', 'create-react-app'],
   label: 'CreateReactApp',
 }, {
+  url: 'https://github.com/google/zx',
+  githubUrl: 'https://github.com/google/zx',
+  imgSrc: requireImg('zx.png'),
+  keyWords: ['zx'],
+  label: 'ZX',
+}, {
   url: 'http://babeljs.io/',
   githubUrl: 'https://github.com/babel/babel',
   imgSrc: requireImg('babel.png'),
@@ -116,6 +128,13 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('coffeescript.png'),
   keyWords: ['coffeescript'],
   label: 'CoffeeScript',
+  darkInvert: true,
+}, {
+  url: 'https://typestrong.org/ts-node/',
+  githubUrl: 'https://github.com/TypeStrong/ts-node',
+  imgSrc: requireImg('ts-node.png'),
+  keyWords: ['ts-node'],
+  label: 'TSNode',
   darkInvert: true,
 }, {
   url: 'https://terser.org/',

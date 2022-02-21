@@ -77,13 +77,25 @@ const apps: AppItem[] = [{
   url: 'https://cdnjs.com/',
   githubUrl: 'https://github.com/cdnjs/cdnjs',
   imgSrc: requireImg('cdnjs.png'),
-  keyWords: ['cdnjs'],
+  keyWords: ['cdnjs', 'cdn'],
   label: 'CDNJS',
+}, {
+  url: 'https://unpkg.com/',
+  githubUrl: 'https://github.com/mjackson/unpkg',
+  imgSrc: requireImg('unpkg.png'),
+  keyWords: ['unpkg', 'cdn'],
+  label: 'UNPKG',
+}, {
+  url: 'https://esm.sh/',
+  githubUrl: 'https://github.com/esm-dev/esm.sh',
+  imgSrc: requireImg('esm-cdn.png'),
+  keyWords: ['esm', 'cdn'],
+  label: 'ESM',
 }, {
   url: 'https://www.bootcdn.cn/',
   githubUrl: 'https://github.com/bootcdn',
   imgSrc: requireImg('bootcdn.png'),
-  keyWords: ['bootcdn'],
+  keyWords: ['bootcdn', 'cdn'],
   label: 'BootCDN',
 }, {
   url: 'https://developer.mozilla.org/',
@@ -159,6 +171,7 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('codepen.png'),
   keyWords: ['codepen'],
   label: 'CodePen',
+  darkInvert: true,
 }, {
   url: 'https://tinypng.com/',
   imgSrc: requireImg('tinypng.png'),
