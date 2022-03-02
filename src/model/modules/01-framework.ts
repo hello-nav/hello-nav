@@ -129,6 +129,12 @@ const apps: AppItem[] = [{
   keyWords: ['ionic'],
   label: 'Ionic',
 }, {
+  url: 'https://tauri.studio/',
+  githubUrl: 'https://github.com/tauri-apps/tauri',
+  imgSrc: requireImg('tauri.png'),
+  keyWords: ['tauri'],
+  label: 'Tauri',
+}, {
   url: 'https://weex.apache.org/',
   githubUrl: 'https://github.com/apache/incubator-weex',
   imgSrc: requireImg('weex.png'),
