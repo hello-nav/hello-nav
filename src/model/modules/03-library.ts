@@ -21,29 +21,41 @@ const apps: AppItem[] = [{
   keyWords: ['swc'],
   label: 'SWC',
 }, {
-  url: 'https://www.pika.dev/',
-  githubUrl: 'https://github.com/pikapkg/web',
-  imgSrc: requireImg('pika.png'),
-  keyWords: ['pika'],
-  label: 'Pika',
-}, {
   url: 'https://rollupjs.org/',
   githubUrl: 'https://github.com/rollup/rollup',
   imgSrc: requireImg('rollup.png'),
   keyWords: ['rollup'],
   label: 'Rollup',
 }, {
-  url: 'https://prepack.io/',
-  githubUrl: 'https://github.com/facebook/prepack',
-  imgSrc: requireImg('prepack.png'),
-  keyWords: ['prepack'],
-  label: 'Prepack',
-}, {
   url: 'https://parceljs.org/',
   githubUrl: 'https://github.com/parcel-bundler/parcel',
   imgSrc: requireImg('parcel.png'),
   keyWords: ['parcel'],
   label: 'Parcel',
+}, {
+  url: 'https://www.pika.dev/',
+  githubUrl: 'https://github.com/pikapkg/web',
+  imgSrc: requireImg('pika.png'),
+  keyWords: ['pika'],
+  label: 'Pika',
+}, {
+  url: 'https://astro.build/',
+  githubUrl: 'https://github.com/withastro/astro',
+  imgSrc: requireImg('astro.png'),
+  keyWords: ['astro'],
+  label: 'Astro',
+}, {
+  url: 'https://wmr.dev/',
+  githubUrl: 'https://github.com/preactjs/wmr',
+  imgSrc: requireImg('wmr.png'),
+  keyWords: ['wmr'],
+  label: 'WMR',
+}, {
+  url: 'https://prepack.io/',
+  githubUrl: 'https://github.com/facebook/prepack',
+  imgSrc: requireImg('prepack.png'),
+  keyWords: ['prepack'],
+  label: 'Prepack',
 }, {
   url: 'https://gulpjs.com/',
   githubUrl: 'https://github.com/gulpjs/gulp',
