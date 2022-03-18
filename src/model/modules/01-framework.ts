@@ -63,6 +63,24 @@ const apps: AppItem[] = [{
   keyWords: ['solidjs'],
   label: 'Solid',
 }, {
+  url: 'https://svelte.dev/',
+  githubUrl: 'https://github.com/sveltejs/svelte',
+  imgSrc: requireImg('svelte.png'),
+  keyWords: ['svelte'],
+  label: 'Svelte',
+}, {
+  url: 'https://sapper.svelte.dev/',
+  githubUrl: 'https://github.com/sveltejs/sapper',
+  imgSrc: requireImg('sapper.png'),
+  keyWords: ['sapper'],
+  label: 'Sapper',
+}, {
+  url: 'https://yew.rs',
+  githubUrl: 'https://github.com/yewstack/yew',
+  imgSrc: 'https://avatars.githubusercontent.com/u/49116234?v=4',
+  keyWords: ['yew', 'rust', 'wasm'],
+  label: 'yew',
+}, {
   url: 'https://emberjs.com/',
   githubUrl: 'https://github.com/emberjs/ember.js/',
   imgSrc: requireImg('ember.png'),
@@ -86,18 +104,6 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('marko.png'),
   keyWords: ['marko'],
   label: 'Marko',
-}, {
-  url: 'https://svelte.dev/',
-  githubUrl: 'https://github.com/sveltejs/svelte',
-  imgSrc: requireImg('svelte.png'),
-  keyWords: ['svelte'],
-  label: 'Svelte',
-}, {
-  url: 'https://sapper.svelte.dev/',
-  githubUrl: 'https://github.com/sveltejs/sapper',
-  imgSrc: requireImg('sapper.png'),
-  keyWords: ['sapper'],
-  label: 'Sapper',
 }, {
   url: 'https://imba.io/',
   githubUrl: 'https://github.com/imba/imba',

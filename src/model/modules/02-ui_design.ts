@@ -7,7 +7,13 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/ElemeFE/element',
   imgSrc: requireImg('element-ui.png'),
   keyWords: ['饿了么', 'element-ui', 'vue'],
-  label: 'Element UI',
+  label: 'Element',
+}, {
+  url: 'https://element-plus.org/',
+  githubUrl: 'https://github.com/element-plus/element-plus',
+  imgSrc: requireImg('element-plus.png'),
+  keyWords: ['饿了么', 'element-plus', 'vue'],
+  label: 'ElementPlus',
 }, {
   url: 'https://www.iviewui.com/',
   githubUrl: 'https://github.com/view-design/ViewUI',
@@ -43,12 +49,12 @@ const apps: AppItem[] = [{
   githubUrl: 'https://github.com/TuSimple/naive-ui',
   imgSrc: requireImg('naiveui.png'),
   keyWords: ['naiveui', 'vue'],
-  label: 'NaiveUI',
+  label: 'Naive UI',
 }, {
   url: 'https://taro-ui.jd.com/',
   githubUrl: 'https://github.com/NervJS/taro-ui',
   imgSrc: requireImg('taro.png'),
-  keyWords: ['taro ui', 'vue', 'react', 'nerv', '小程序'],
+  keyWords: ['taro', 'vue', 'react', 'nerv', '小程序'],
   label: 'Taro UI',
 }, {
   url: 'https://at-ui.github.io/at-ui/',
