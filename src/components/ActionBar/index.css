@@ -25,15 +25,12 @@
   margin-right: 10px;
   border: 1px solid #e4e4e4;
   background: rgba(255, 255, 255, 0.7);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
   backdrop-filter: blur(2px);
 }
 
-.filter-bar__toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
-}
-
+.filter-bar__toggle-btn:hover,
 .filter-bar__toggle-btn:active {
   background: rgba(255, 255, 255, 0.9);
 }
@@ -43,42 +40,11 @@
 }
 
 .filter-bar__toggle-btn .list-icon {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .filter-bar__input-warp {
   position: relative;
-}
-
-.input-icon-wrap {
-  position: absolute;
-  top: 10px;
-  left: 11px;
-  border-radius: 50px;
-  transform: translateX(0px);
-  will-change: transform;
-  transition: transform .3s;
-}
-
-.search-icon {
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  will-change: opacity;
-  transition: opacity .3s;
-}
-
-.clear-icon {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 11px;
-  z-index: 10;
-  will-change: opacity;
-  transition: opacity .3s;
-  cursor: pointer;
 }
 
 .search-input {
@@ -93,7 +59,7 @@
   font-size: 14px;
   color: #504f4f;
   background: rgba(255, 255, 255, 0.7);
-  transition: 0.3s;
+  transition: 0.3s ease-out;
   backdrop-filter: blur(3px);
   will-change: width, background, padding;
 }
@@ -106,7 +72,6 @@
   width: 210px;
   padding-left: 15px;
   padding-right: 28px;
-  transition: .3s;
 }
 
 .search-input:focus ~ .input-icon-wrap {
@@ -118,5 +83,36 @@
 
 .search-input:focus ~ .input-icon-wrap .clear-icon {
   opacity: 1;
+}
+
+.input-icon-wrap {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  border-radius: 50px;
+  transform: translateX(0px);
+  will-change: transform;
+  transition: transform .3s ease-out;
+}
+
+.search-icon {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: opacity;
+  transition: opacity .3s ease-out;
+}
+
+.clear-icon {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  z-index: 10;
+  will-change: opacity;
+  transition: opacity .3s ease-out;
+  cursor: pointer;
 }
 

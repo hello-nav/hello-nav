@@ -20,7 +20,7 @@
   height: 26px;
   margin-right: 10px;
   font-size: 0;
-  background: url('../../assets/images/logo_512x512.png') center/cover;
+  background: url('/favicon/favicon-512.png') center/cover;
   color: transparent;
   filter: grayscale(1);
   transition: .4s;
