@@ -3,7 +3,7 @@ import {
 } from '../utils'
 
 const apps: AppItem[] = [{
-  url: 'https://element.eleme.cn/',
+  url: 'https://element.eleme.io/',
   githubUrl: 'https://github.com/ElemeFE/element',
   imgSrc: requireImg('element-ui.png'),
   keyWords: ['饿了么', 'element-ui', 'vue'],

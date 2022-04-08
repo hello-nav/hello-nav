@@ -165,7 +165,7 @@ const apps: AppItem[] = [{
   keyWords: ['flutter'],
   label: 'Flutter',
 }, {
-  url: 'https://taro.aotu.io/',
+  url: 'https://taro.zone/',
   githubUrl: 'https://github.com/NervJS/taro',
   imgSrc: requireImg('taro.png'),
   keyWords: ['taro', 'nerv', 'react'],

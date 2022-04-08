@@ -167,7 +167,7 @@ const apps: AppItem[] = [{
   keyWords: ['rxjs'],
   label: 'RxJS',
 }, {
-  url: 'https://pinia.esm.dev/',
+  url: 'https://pinia.vuejs.org/',
   githubUrl: 'https://github.com/posva/pinia',
   imgSrc: requireImg('pinia.png'),
   keyWords: ['pinia'],
