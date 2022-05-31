@@ -27,6 +27,12 @@ const apps: AppItem[] = [{
   keyWords: ['egg'],
   label: 'Egg',
 }, {
+  url: 'https://midwayjs.org/',
+  githubUrl: 'https://github.com/midwayjs/midway',
+  imgSrc: requireImg('midwayjs.png'),
+  keyWords: ['midwayjs'],
+  label: 'Midway',
+}, {
   url: 'https://hapijs.com/',
   githubUrl: 'https://github.com/hapijs/hapi',
   imgSrc: requireImg('hapi.png'),
