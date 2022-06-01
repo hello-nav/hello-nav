@@ -184,6 +184,16 @@ const apps: AppItem[] = [{
   label: 'DEV',
   darkInvert: true,
 }, {
+  url: 'https://css-tricks.com/',
+  imgSrc: requireImg('css-tricks.png'),
+  keyWords: ['css-tricks'],
+  label: 'CSS Tricks',
+}, {
+  url: 'https://www.smashingmagazine.com/',
+  imgSrc: requireImg('smashing-magazine.png'),
+  keyWords: ['smashing-magazine'],
+  label: 'SmashingMagazine',
+}, {
   url: 'https://juejin.im/',
   githubUrl: 'https://github.com/xitu',
   imgSrc: requireImg('juejin.png'),
