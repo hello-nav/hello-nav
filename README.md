@@ -6,7 +6,7 @@
 
 ## 🗺 Features
 
-- 160+ Apps
+- 200+ Apps
 - App search with keywords
 - List or category view
 - Github link
