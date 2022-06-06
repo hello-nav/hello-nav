@@ -51,6 +51,12 @@ const apps: AppItem[] = [{
   keyWords: ['dvajs', 'react'],
   label: 'DvaJS',
 }, {
+  url: 'https://ice.work/',
+  githubUrl: 'https://github.com/alibaba/ice',
+  imgSrc: requireImg('ice.png'),
+  keyWords: ['icejs', 'react'],
+  label: 'Ice',
+}, {
   url: 'https://angular.io/',
   githubUrl: 'https://github.com/angular/angular',
   imgSrc: requireImg('angular.png'),
@@ -164,6 +170,12 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('flutter.png'),
   keyWords: ['flutter'],
   label: 'Flutter',
+}, {
+  url: 'https://openkraken.com/',
+  githubUrl: 'https://github.com/openkraken/kraken',
+  imgSrc: requireImg('kraken.png'),
+  keyWords: ['kraken', 'flutter'],
+  label: 'Kraken',
 }, {
   url: 'https://taro.zone/',
   githubUrl: 'https://github.com/NervJS/taro',
