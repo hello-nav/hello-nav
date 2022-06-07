@@ -57,6 +57,12 @@ const apps: AppItem[] = [{
   keyWords: ['thinkjs'],
   label: 'Thinkjs',
 }, {
+  url: 'https://moleculer.services/',
+  githubUrl: 'https://github.com/moleculerjs/moleculer',
+  imgSrc: requireImg('moleculer.png'),
+  keyWords: ['moleculer'],
+  label: 'Moleculer',
+}, {
   url: 'https://www.fastify.io/',
   githubUrl: 'https://github.com/fastify/fastify',
   imgSrc: requireImg('fastify.png'),
