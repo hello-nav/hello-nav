@@ -188,6 +188,51 @@ const apps: AppItem[] = [{
   imgSrc: requireImg('iconfont.png'),
   keyWords: ['iconfont'],
   label: 'IconFont',
+}, {
+  url: 'https://fonts.google.com/',
+  imgSrc: requireImg('google-fonts.png'),
+  keyWords: ['google-fonts'],
+  label: 'GoogleFonts',
+}, {
+  url: 'https://www.flaticon.com/',
+  imgSrc: requireImg('flaticon.png'),
+  keyWords: ['flaticon'],
+  label: 'Flaticon',
+}, {
+  url: 'https://www.iconfinder.com/',
+  imgSrc: requireImg('iconfinder.png'),
+  keyWords: ['iconfinder'],
+  label: 'Iconfinder',
+  darkInvert: true,
+}, {
+  url: 'https://useanimations.com/',
+  imgSrc: requireImg('useanimations.png'),
+  keyWords: ['useanimations'],
+  label: 'UseAnimations',
+}, {
+  url: 'https://remixicon.com/',
+  githubUrl: 'https://github.com/Remix-Design/RemixIcon',
+  imgSrc: requireImg('remixicon.png'),
+  keyWords: ['remixicon'],
+  label: 'RemixIcon',
+}, {
+  url: 'https://feathericons.com/',
+  githubUrl: 'https://github.com/feathericons/feather',
+  imgSrc: requireImg('feather.png'),
+  keyWords: ['feathericons'],
+  label: 'Feather',
+}, {
+  url: 'https://heroicons.com/',
+  githubUrl: 'https://github.com/tailwindlabs/heroicons',
+  imgSrc: requireImg('heroicons.png'),
+  keyWords: ['heroicons'],
+  label: 'Heroicons',
+}, {
+  url: 'http://iconpark.bytedance.com/',
+  githubUrl: 'https://github.com/bytedance/iconpark',
+  imgSrc: requireImg('iconpark.png'),
+  keyWords: ['iconpark'],
+  label: 'IconPark',
 }]
 
 export default apps
