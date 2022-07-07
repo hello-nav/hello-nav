@@ -1,0 +1,107 @@
+.panda-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-color: rgba(230, 230, 230, 0.8);
+  border-radius: 30px;
+  font-size: 0;
+  transition: background 0.5s 0s, opacity 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+  will-change: background;
+}
+.panda-btn:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+.panda-btn::before,
+.panda-btn::after {
+  content: '';
+  position: absolute;
+  border-radius: 30px;
+  will-change: width, height, top, left, right, bottom;
+}
+.panda-btn::before {
+  background-color: rgba(119, 119, 119, 0.618);
+  animation: toggle-before 0.3s 0.3s forwards;
+  z-index: 2;
+}
+.panda-btn::after {
+  background-color: #e6e6e6;
+  animation: toggle-after 0.3s;
+  z-index: 1;
+}
+.panda-btn.theme--dark {
+  background-color: rgba(119, 119, 119, 0.618);
+}
+.panda-btn.theme--dark::before {
+  animation: toggle-before--dark 0.3s forwards;
+}
+.panda-btn.theme--dark::after {
+  z-index: 3;
+  animation: toggle-after--dark 0.3s 0.3s forwards;
+}
+@keyframes toggle {
+  to {
+    background-color: rgba(119, 119, 119, 0.618);
+  }
+}
+@keyframes toggle-before {
+  from {
+    top: 15px;
+    left: 15px;
+    width: 0;
+    height: 0;
+  }
+  to {
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+@keyframes toggle-before--dark {
+  from {
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+  }
+  to {
+    background-color: #2c2e30;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+@keyframes toggle-after {
+  from {
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+  }
+  to {
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+@keyframes toggle-after--dark {
+  from {
+    top: 15px;
+    left: 15px;
+    width: 0;
+    height: 0;
+  }
+  to {
+    background-color: #777777;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}

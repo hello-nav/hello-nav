@@ -1,0 +1,33 @@
+.contain-wrap {
+  padding: 70px 4vw 0;
+}
+
+.app-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  justify-content: center;
+}
+
+.category-item {
+  margin-bottom: 55px;
+}
+
+.category-item__title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'bi';
+  margin-bottom: 15px;
+  color: #696969;
+}
+
+.category-item .app-list {
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .contain-wrap {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}

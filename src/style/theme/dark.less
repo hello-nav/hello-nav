@@ -1,0 +1,51 @@
+@darkBg: {
+  background-color: rgba(45, 46, 48, 0.9);
+};
+
+.theme--dark {
+  background-color: #1f2022;
+
+  .search-input {
+    @darkBg();
+    border-color: #2a2b2d;
+    color: #eee;
+  }
+  .filter-bar__toggle-btn {
+    @darkBg();
+    border-color: #2a2b2d;
+    &:hover,
+    &:active {
+      @darkBg();
+      opacity: 0.8;
+    }
+  }
+  .cell {
+    .app {
+      background-color: #27272a;
+      &:hover {
+        background-color: rgba(39, 39, 42, 0.6);
+      }
+
+      img {
+        &.dark-invert {
+          filter: brightness(0.7) invert(0.6);
+        }
+        filter: brightness(0.8);
+      }
+      .corner {
+        background: linear-gradient(
+          45deg,
+          #333333 40%,
+          #636363 50%,
+          #1e2022 56%
+        );
+      }
+    }
+  }
+  .logo {
+    filter: brightness(0.6) grayscale(1);
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
