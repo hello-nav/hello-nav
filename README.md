@@ -31,27 +31,16 @@ git clone https://github.com/hello-nav/hello-nav.git
 cd hello-nav
 
 # Installation dependencies
-npm install
+pnpm install
 
 # Develop project
-npm run start
+pnpm run dev
 ```
 
 ```bash
 # Build project
-npm run build
+pnpm run build
 ```
-
-## 🎯 Todo
-
-- [x] app search
-- [x] list & category mode
-- [x] github link
-- [x] offline
-- [x] dark mode
-- [ ] favorites apps
-- [ ] sync setting
-- [ ] mobile UI
 
 ## 📄 License
 
