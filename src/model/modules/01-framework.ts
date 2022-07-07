@@ -79,7 +79,7 @@ export default <AppItem[]> [{
 }, {
   homepage: 'https://yew.rs',
   repository: 'https://github.com/yewstack/yew',
-  icon: 'https://avatars.githubusercontent.com/u/49116234?v=4',
+  icon: 'yew.png',
   keywords: ['yew', 'rust', 'wasm'],
   name: 'yew',
 }, {
