@@ -157,6 +157,12 @@ export default<AppItem[]> [{
   keywords: ['luluui'],
   name: 'LuLu UI',
 }, {
+  homepage: 'https://storybook.js.org/',
+  repository: 'https://github.com/storybookjs/storybook',
+  icon: 'storybook.png',
+  keywords: ['storybook'],
+  name: 'Storybook',
+}, {
   homepage: 'https://flutter-go.pub/',
   repository: 'https://github.com/alibaba/flutter-go/',
   icon: 'flutter-go.png',
