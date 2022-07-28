@@ -170,6 +170,7 @@ export default<AppItem[]> [{
   darkInvert: true,
 }, {
   homepage: 'https://tinypng.com/',
+  repository: 'https://github.com/tinify',
   icon: 'tinypng.png',
   keywords: ['tinypng'],
   name: 'TinyPNG',
