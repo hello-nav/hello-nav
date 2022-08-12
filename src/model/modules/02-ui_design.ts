@@ -121,6 +121,12 @@ export default<AppItem[]> [{
   name: 'Semi Design',
   darkInvert: true,
 }, {
+  homepage: 'https://chakra-ui.com/',
+  repository: 'https://github.com/chakra-ui/chakra-ui',
+  icon: 'chakra.png',
+  keywords: ['chakra', 'react', 'ui'],
+  name: 'Chakra UI',
+}, {
   homepage: 'https://rsuitejs.com/',
   repository: 'https://github.com/rsuite/rsuite',
   icon: 'rsuite.png',
