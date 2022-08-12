@@ -261,6 +261,12 @@ export default<AppItem[]> [{
   keywords: ['mockjs'],
   name: 'MockJS',
 }, {
+  homepage: 'https://fakerjs.dev/',
+  repository: 'https://github.com/faker-js/faker',
+  icon: 'faker.png',
+  keywords: ['faker'],
+  name: 'faker',
+}, {
   homepage: 'https://momentjs.com/',
   repository: 'https://github.com/moment/moment',
   icon: 'moment.png',
