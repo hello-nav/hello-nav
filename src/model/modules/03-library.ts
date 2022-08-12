@@ -279,6 +279,12 @@ export default<AppItem[]> [{
   keywords: ['dayjs'],
   name: 'DayJS',
 }, {
+  homepage: 'https://date-fns.org/',
+  repository: 'https://github.com/date-fns/date-fns',
+  icon: 'date-fns.png',
+  keywords: ['date-fns'],
+  name: 'DateFNS',
+}, {
   homepage: 'https://mochajs.org/',
   repository: 'https://github.com/mochajs/mocha',
   icon: 'mocha.png',
