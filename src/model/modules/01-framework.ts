@@ -113,17 +113,24 @@ export default <AppItem[]> [{
   keywords: ['imba'],
   name: 'Imba',
 }, {
-  homepage: 'https://nuxtjs.org/',
-  repository: 'https://github.com/nuxt/nuxt.js',
-  icon: 'nuxt.png',
-  keywords: ['nuxt', 'vue'],
-  name: 'Nuxt',
-}, {
   homepage: 'https://nextjs.org/',
   repository: 'https://github.com/zeit/next.js',
   icon: 'next.png',
   keywords: ['next', 'react'],
   name: 'Next',
+}, {
+  homepage: 'https://remix.run/',
+  repository: 'https://github.com/remix-run/remix',
+  icon: 'remix.png',
+  keywords: ['remix'],
+  name: 'Remix',
+  darkInvert: true,
+}, {
+  homepage: 'https://nuxtjs.org/',
+  repository: 'https://github.com/nuxt/nuxt.js',
+  icon: 'nuxt.png',
+  keywords: ['nuxt', 'vue'],
+  name: 'Nuxt',
 }, {
   homepage: 'https://electronjs.org/',
   repository: 'https://github.com/electron/electron',
