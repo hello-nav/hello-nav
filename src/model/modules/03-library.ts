@@ -297,6 +297,12 @@ export default<AppItem[]> [{
   keywords: ['jest'],
   name: 'Jest',
 }, {
+  homepage: 'https://testing-library.com/',
+  repository: 'https://github.com/testing-library',
+  icon: 'testing-library.png',
+  keywords: ['testing-library'],
+  name: 'TestingLibrary',
+}, {
   homepage: 'https://www.cypress.io/',
   repository: 'https://github.com/cypress-io/cypress',
   icon: 'cypress.png',
