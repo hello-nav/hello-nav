@@ -6,6 +6,12 @@ export default<AppItem[]> [{
   name: 'Deno',
   darkInvert: true,
 }, {
+  homepage: 'https://bun.sh/',
+  repository: 'https://github.com/oven-sh/bun',
+  icon: 'bun.png',
+  keywords: ['bun'],
+  name: 'Bun',
+}, {
   homepage: 'https://golang.org/',
   repository: 'https://github.com/golang/go/',
   icon: 'golang.png',
