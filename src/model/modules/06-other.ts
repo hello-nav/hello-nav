@@ -4,7 +4,6 @@ export default<AppItem[]> [{
   icon: 'deno.png',
   keywords: ['deno'],
   name: 'Deno',
-  darkInvert: true,
 }, {
   homepage: 'https://bun.sh/',
   repository: 'https://github.com/oven-sh/bun',
