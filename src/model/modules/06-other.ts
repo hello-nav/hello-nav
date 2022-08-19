@@ -24,6 +24,12 @@ export default<AppItem[]> [{
   name: 'Rust',
   darkInvert: true,
 }, {
+  homepage: 'https://ziglang.org/',
+  repository: 'https://github.com/ziglang/zig',
+  icon: 'zig.png',
+  keywords: ['zig'],
+  name: 'Zig',
+}, {
   homepage: 'https://www.ruby-lang.org/',
   repository: 'https://github.com/ruby/ruby/',
   icon: 'ruby.png',
