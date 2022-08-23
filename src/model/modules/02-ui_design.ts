@@ -187,11 +187,6 @@ export default<AppItem[]> [{
   keywords: ['antv', 'charts'],
   name: 'AntV',
 }, {
-  homepage: 'https://dribbble.com/',
-  icon: 'dribbble.png',
-  keywords: ['dribbble'],
-  name: 'Dribbble',
-}, {
   homepage: 'http://www.iconfont.cn/',
   icon: 'iconfont.png',
   keywords: ['iconfont'],
