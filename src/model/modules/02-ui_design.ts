@@ -3,7 +3,7 @@ export default<AppItem[]> [{
   repository: 'https://github.com/ElemeFE/element',
   icon: 'element-ui.png',
   keywords: ['饿了么', 'element-ui', 'vue', 'ui'],
-  name: 'Element UI',
+  name: 'Element',
 }, {
   homepage: 'https://element-plus.org/',
   repository: 'https://github.com/element-plus/element-plus',
@@ -88,6 +88,12 @@ export default<AppItem[]> [{
   icon: 'varlet.png',
   keywords: ['varlet', 'vue3', 'mobile', 'ui'],
   name: 'Varlet',
+}, {
+  homepage: 'https://weui.io/',
+  repository: 'https://github.com/Tencent/weui',
+  icon: 'weui.png',
+  keywords: ['weui', 'mobile', '小程序', 'ui'],
+  name: 'We UI',
 }, {
   homepage: 'https://vux.li/',
   repository: 'https://github.com/airyland/vux',
