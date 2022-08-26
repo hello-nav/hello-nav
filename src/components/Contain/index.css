@@ -13,12 +13,13 @@
 }
 
 .category-item__title {
-  font-size: 30px;
+  font-size: 36px;
   font-style: italic;
   font-weight: bold;
   font-family: 'bi';
   margin-bottom: 15px;
   color: #696969;
+  text-shadow: 3px 3px 2px #87878748;
 }
 
 .category-item .app-list {

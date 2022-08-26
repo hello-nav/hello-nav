@@ -1,4 +1,6 @@
-.theme--dark,
+.theme--dark {
+  background-color: #1f2022;
+}
 .theme--dark body {
   background-color: #1f2022;
 }
@@ -20,6 +22,7 @@
 }
 .theme--dark .category-item__title {
   color: #a7a7a7;
+  text-shadow: 3px 3px 2px #63636360;
 }
 .theme--dark .cell .app {
   background-color: #27272a;
