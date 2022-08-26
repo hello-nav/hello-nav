@@ -237,8 +237,14 @@ export default <AppItem[]> [{
   homepage: 'https://qiankun.umijs.org',
   repository: 'https://github.com/umijs/qiankun',
   icon: 'qiankun.png',
-  keywords: ['qiankun'],
-  name: 'Qiankun',
+  keywords: ['qiankun', '乾坤'],
+  name: 'QianKun',
+}, {
+  homepage: 'https://wujie-micro.github.io/doc/',
+  repository: 'https://github.com/Tencent/wujie',
+  icon: 'wujie.png',
+  keywords: ['wujie', '无界'],
+  name: 'WuJie',
 }, {
   homepage: 'https://mpxjs.cn/',
   repository: 'https://github.com/didi/mpx',
