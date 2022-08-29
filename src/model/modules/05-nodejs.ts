@@ -6,7 +6,7 @@ export default<AppItem[]> [{
   name: 'NodeJS',
 }, {
   homepage: 'http://expressjs.com/',
-  repository: 'https://github.com/expressjs/expressjs.com',
+  repository: 'https://github.com/expressjs/express',
   icon: 'express.png',
   keywords: ['express'],
   name: 'Express',
