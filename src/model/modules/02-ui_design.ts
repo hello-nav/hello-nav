@@ -65,6 +65,12 @@ export default<AppItem[]> [{
   keywords: ['museui', 'vue', 'ui'],
   name: 'Muse UI',
 }, {
+  homepage: 'https://vusion.github.io/cloud-ui/',
+  repository: 'https://github.com/vusion/cloud-ui',
+  icon: 'vusion.png',
+  keywords: ['cloud-ui', 'vue', 'ui'],
+  name: 'Cloud UI',
+}, {
   homepage: 'https://youzan.github.io/vant/',
   repository: 'https://github.com/youzan/vant',
   icon: 'vant.png',
@@ -144,6 +150,18 @@ export default<AppItem[]> [{
   icon: 'taro.png',
   keywords: ['taro', 'react', '小程序', 'ui', 'mobile'],
   name: 'Taro UI',
+}, {
+  homepage: 'https://nsfi.github.io/ppfish-components/',
+  repository: 'https://github.com/NSFI/ppfish-components',
+  icon: 'fish.png',
+  keywords: ['fish', 'react', 'mobile', 'ui'],
+  name: 'Fish Design',
+}, {
+  homepage: 'https://ossa.miaode.com/',
+  repository: 'https://github.com/NeteaseYanxuan/OSSA',
+  icon: 'ossa.png',
+  keywords: ['ossa', 'react', 'mobile', 'ui'],
+  name: 'OSSA',
 }, {
   homepage: 'https://ng-alain.com/zh',
   repository: 'https://github.com/ng-alain/ng-alain/',
