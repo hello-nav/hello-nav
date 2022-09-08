@@ -1,11 +1,11 @@
-import PandaBtn from '../PandaBtn'
-import './index.css'
+import PandaBtn from "../PandaBtn";
+import "./index.css";
 
 function ActionBar({ filterKey, onInput, toggleType, type }: FilterProps) {
   return (
     <div className="filter-bar">
       <span className="filter-bar__btn">
-        <PandaBtn />
+        {/* <PandaBtn /> */}
         <span
           className="filter-bar__toggle-btn"
           onClick={toggleType}
@@ -35,7 +35,7 @@ function ActionBar({ filterKey, onInput, toggleType, type }: FilterProps) {
         </div>
       </span>
     </div>
-  )
+  );
 }
 
-export default ActionBar
+export default ActionBar;
