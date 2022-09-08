@@ -5,7 +5,7 @@ function ActionBar({ filterKey, onInput, toggleType, type }: FilterProps) {
   return (
     <div className="filter-bar">
       <span className="filter-bar__btn">
-        {/* <PandaBtn /> */}
+        <PandaBtn />
         <span
           className="filter-bar__toggle-btn"
           onClick={toggleType}
