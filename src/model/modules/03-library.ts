@@ -378,7 +378,7 @@ export default <AppItem[]>[
     homepage: "https://markdown-it.github.io/",
     repository: "https://github.com/markdown-it/markdown-it",
     icon: "markdown.png",
-    keywords: ["markdownit"],
+    keywords: ["markdown"],
     name: "MarkdownIt",
     darkInvert: true,
   },
@@ -386,8 +386,8 @@ export default <AppItem[]>[
     homepage: "http://markdown.p2hp.com/basic-syntax/",
     repository: "",
     icon: "markdown.png",
-    keywords: ["markdownit"],
-    name: "markdown",
+    keywords: ["markdown"],
+    name: "markdown-1",
     darkInvert: true,
   },
   {
@@ -395,7 +395,7 @@ export default <AppItem[]>[
     repository: "",
     icon: "markdown.png",
     keywords: ["markdown"],
-    name: "markdown",
+    name: "markdown-2",
     darkInvert: true,
   },
   {

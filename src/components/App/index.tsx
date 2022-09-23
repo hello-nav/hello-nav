@@ -1,15 +1,15 @@
-import { useState } from "react";
-import libraryTree from "../../model";
-import ActionBar from "../ActionBar";
-import ContainWrap from "../Contain";
-import WithError from "../WithError";
-import Footer from "../Footer";
-import { IGNORE_KEYWORD_REG, transformAppKeyWords } from "../../utils";
+import { useState } from 'react';
+import libraryTree from '../../model';
+import ActionBar from '../ActionBar';
+import ContainWrap from '../Contain';
+import WithError from '../WithError';
+import Footer from '../Footer';
+import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils';
 
-const CATEGORY_TYPES: CategoryTypes = ["category", "list"];
+const CATEGORY_TYPES: CategoryTypes = ['category', 'list'];
 const ContainWithNotFind = WithError<ContainWrapProp>(
   ContainWrap,
-  "Ooops! Can not find it here..."
+  'Ooops! Can not find it here...'
 );
 
 const libraryMap: LibraryMap = {
@@ -22,14 +22,14 @@ const libraryMap: LibraryMap = {
 };
 
 const filterListByKey = (list: AppItem[], key: string) =>
-  list.filter((app) => (app.keywords as string[]).some((k) => k.includes(key)));
+  list.filter(app => (app.keywords as string[]).some(k => k.includes(key)));
 
 const genFilterByList =
   (list: (AppItem | CateItem)[]) => (filterKey: string) => {
-    if (window.localStorage.__CATEGORY_TYPE__ === "list") {
+    if (window.localStorage.__CATEGORY_TYPE__ === 'list') {
       return filterListByKey(list as AppItem[], filterKey);
     }
-    return (list as CateItem[]).map((cate) => ({
+    return (list as CateItem[]).map(cate => ({
       title: cate.title,
       children: filterListByKey(cate.children, filterKey),
     }));
@@ -38,20 +38,6 @@ const filtersMap: FiltersMap = CATEGORY_TYPES.reduce((res: any, key) => {
   res[key] = genFilterByList(libraryMap[key]);
   return res;
 }, {});
-
-let oldFilterKey = "";
-let typeIndex: number = 0;
-const toggleType = (setType: any, setList: any, type?: CategoryType) => {
-  typeIndex = (typeIndex + 1) % 2;
-  type = CATEGORY_TYPES[typeIndex];
-  window.localStorage.__CATEGORY_TYPE__ = type;
-  setType(type);
-  if (oldFilterKey) {
-    setList(filtersMap[type](oldFilterKey));
-  } else {
-    setList(libraryMap[type]);
-  }
-};
 
 function App() {
   const { __CATEGORY_TYPE__ } = window.localStorage;
@@ -63,33 +49,41 @@ function App() {
   }
 
   const [list, setList] = useState<(AppItem | CateItem)[]>(libraryMap[type]);
-  const [filterKey, setFilterKey] = useState<string>("");
-  typeIndex = CATEGORY_TYPES.indexOf(type);
+  const [filterKey, setFilterKey] = useState<string>('');
 
-  const newFilterKey = filterKey
-    .trim()
-    .toLowerCase()
-    .replace(IGNORE_KEYWORD_REG, "");
-  if (oldFilterKey !== newFilterKey) {
-    setList(filtersMap[type](newFilterKey));
-    oldFilterKey = newFilterKey;
-  }
+  let typeIndex: number = CATEGORY_TYPES.indexOf(type);
+  const toggleType = (setType: any, setList: any, type?: CategoryType) => {
+    typeIndex = (typeIndex + 1) % 2;
+    type = CATEGORY_TYPES[typeIndex];
+    window.localStorage.__CATEGORY_TYPE__ = type;
+    setType(type);
+    if (filterKey) {
+      setList(filtersMap[type](filterKey));
+    } else {
+      setList(libraryMap[type]);
+    }
+  };
 
   const hasData =
-    type === "category"
-      ? (list as CateItem[]).filter((cate) => cate.children.length).length
+    type === 'category'
+      ? (list as CateItem[]).filter(cate => cate.children.length).length
       : (list as AppItem[]).length;
 
   return (
     <div className="body">
-      {/* <ActionBar
+      <ActionBar
         filterKey={filterKey}
-        onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
-          setFilterKey(e.target.value)
-        }
+        onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
+          const keyword = e.target.value
+            .trim()
+            .toLowerCase()
+            .replace(IGNORE_KEYWORD_REG, '');
+          setFilterKey(keyword);
+          setList(filtersMap[type](keyword));
+        }}
         type={type}
         toggleType={() => toggleType(setType, setList)}
-      /> */}
+      />
       <div className="main">
         <ContainWithNotFind list={list} type={type} isError={!hasData} />
       </div>
