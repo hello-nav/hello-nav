@@ -138,6 +138,12 @@ export default<AppItem[]> [{
   name: 'CoffeeScript',
   darkInvert: true,
 }, {
+  homepage: 'https://nodemon.io/',
+  repository: 'https://github.com/remy/nodemon/',
+  icon: 'nodemon.png',
+  keywords: ['nodemon'],
+  name: 'Nodemon',
+}, {
   homepage: 'https://typestrong.org/ts-node/',
   repository: 'https://github.com/TypeStrong/ts-node',
   icon: 'ts-node.png',
