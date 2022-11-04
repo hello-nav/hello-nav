@@ -156,12 +156,6 @@ export default <AppItem[]> [{
   keywords: ['tauri'],
   name: 'Tauri',
 }, {
-  homepage: 'https://doc.weex.io/',
-  repository: 'https://github.com/alibaba/weex',
-  icon: 'weex.png',
-  keywords: ['weex', 'vue'],
-  name: 'Weex',
-}, {
   homepage: 'https://facebook.github.io/react-native/',
   repository: 'https://github.com/facebook/react-native',
   icon: 'react-native.png',
@@ -180,23 +174,35 @@ export default <AppItem[]> [{
   keywords: ['flutter'],
   name: 'Flutter',
 }, {
-  homepage: 'https://openkraken.com/',
-  repository: 'https://github.com/openkraken/kraken',
-  icon: 'kraken.png',
-  keywords: ['kraken', 'flutter'],
-  name: 'Kraken',
-}, {
   homepage: 'https://taro.zone/',
   repository: 'https://github.com/NervJS/taro',
   icon: 'taro.png',
   keywords: ['taro', 'nerv', 'react'],
   name: 'Taro',
 }, {
+  homepage: 'https://openkraken.com/',
+  repository: 'https://github.com/openkraken/kraken',
+  icon: 'kraken.png',
+  keywords: ['kraken', 'flutter'],
+  name: 'Kraken',
+}, {
+  homepage: 'https://doc.weex.io/',
+  repository: 'https://github.com/alibaba/weex',
+  icon: 'weex.png',
+  keywords: ['weex', 'vue'],
+  name: 'Weex',
+}, {
   homepage: 'https://rax.js.org/',
   repository: 'https://github.com/alibaba/rax',
   icon: 'rax.png',
   keywords: ['rax'],
   name: 'Rax',
+}, {
+  homepage: 'https://hippyjs.org/#/',
+  repository: 'https://github.com/Tencent/Hippy',
+  icon: 'hippy.png',
+  keywords: ['hippyjs', 'vue', 'react'],
+  name: 'Hippy',
 }, {
   homepage: 'https://cml.js.org/',
   repository: 'https://github.com/didi/chameleon',
