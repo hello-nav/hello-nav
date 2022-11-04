@@ -132,6 +132,12 @@ export default <AppItem[]> [{
   keywords: ['nuxt', 'vue'],
   name: 'Nuxt',
 }, {
+  homepage: 'https://qwik.builder.io/',
+  repository: 'https://github.com/BuilderIO/qwik',
+  icon: 'qwik.png',
+  keywords: ['qwik'],
+  name: 'Qwik',
+}, {
   homepage: 'https://electronjs.org/',
   repository: 'https://github.com/electron/electron',
   icon: 'electron.png',
