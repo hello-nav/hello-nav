@@ -42,7 +42,7 @@ export default<AppItem[]> [{
   name: 'Nest',
 }, {
   homepage: 'https://adonisjs.com/',
-  repository: 'https://github.com/adonisjs/adonis-framework',
+  repository: 'https://github.com/adonisjs/core',
   icon: 'adonis.png',
   keywords: ['adonis'],
   name: 'Adonis',
@@ -78,7 +78,7 @@ export default<AppItem[]> [{
   name: 'Restify',
 }, {
   homepage: 'https://loopback.io/',
-  repository: 'https://github.com/strongloop/loopback-next',
+  repository: 'https://github.com/loopbackio/loopback-next',
   icon: 'loopback.png',
   keywords: ['loopback'],
   name: 'LoopBack',

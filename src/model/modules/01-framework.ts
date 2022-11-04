@@ -12,7 +12,7 @@ export default <AppItem[]> [{
   name: 'React',
 }, {
   homepage: 'https://reasonml.github.io/',
-  repository: 'https://github.com/facebook/reason',
+  repository: 'https://github.com/reasonml/reason',
   icon: 'reason.png',
   keywords: ['reason'],
   name: 'Reason',
@@ -114,7 +114,7 @@ export default <AppItem[]> [{
   name: 'Imba',
 }, {
   homepage: 'https://nextjs.org/',
-  repository: 'https://github.com/zeit/next.js',
+  repository: 'https://github.com/vercel/next.js',
   icon: 'next.png',
   keywords: ['next', 'react'],
   name: 'Next',
@@ -138,7 +138,7 @@ export default <AppItem[]> [{
   keywords: ['qwik'],
   name: 'Qwik',
 }, {
-  homepage: 'https://electronjs.org/',
+  homepage: 'https://www.electronjs.org/',
   repository: 'https://github.com/electron/electron',
   icon: 'electron.png',
   keywords: ['electron'],
@@ -174,7 +174,7 @@ export default <AppItem[]> [{
   keywords: ['flutter'],
   name: 'Flutter',
 }, {
-  homepage: 'https://taro.zone/',
+  homepage: 'https://taro.jd.com/',
   repository: 'https://github.com/NervJS/taro',
   icon: 'taro.png',
   keywords: ['taro', 'nerv', 'react'],
@@ -217,7 +217,7 @@ export default <AppItem[]> [{
   name: 'Gridsome',
 }, {
   homepage: 'https://react-static.js.org',
-  repository: 'hhttps://github.com/react-static/react-static',
+  repository: 'https://github.com/react-static/react-static',
   icon: 'react-static.png',
   keywords: ['react-static', 'react'],
   name: 'ReactStatic',

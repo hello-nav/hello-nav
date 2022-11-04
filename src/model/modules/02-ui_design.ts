@@ -42,7 +42,7 @@ export default<AppItem[]> [{
   name: 'Antd Vue',
 }, {
   homepage: 'https://www.naiveui.com/',
-  repository: 'https://github.com/TuSimple/naive-ui',
+  repository: 'https://github.com/tusen-ai/naive-ui',
   icon: 'naiveui.png',
   keywords: ['naiveui', 'vue'],
   name: 'Naive UI',
@@ -121,7 +121,7 @@ export default<AppItem[]> [{
   name: 'Ant Design',
 }, {
   homepage: 'https://material-ui.com/',
-  repository: 'https://github.com/mui-org/material-ui',
+  repository: 'https://github.com/mui/material-ui',
   icon: 'material-ui.png',
   keywords: ['materialui', 'react'],
   name: 'Material UI',
@@ -200,7 +200,7 @@ export default<AppItem[]> [{
   name: 'Flutter Go',
 }, {
   homepage: 'https://echarts.apache.org/',
-  repository: 'https://github.com/apache/incubator-echarts',
+  repository: 'https://github.com/apache/echarts',
   icon: 'echarts.png',
   keywords: ['echarts'],
   name: 'ECharts',

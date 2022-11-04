@@ -83,7 +83,7 @@ export default<AppItem[]> [{
   name: 'UNPKG',
 }, {
   homepage: 'https://esm.sh/',
-  repository: 'https://github.com/esm-dev/esm.sh',
+  repository: 'https://github.com/ije/esm.sh',
   icon: 'esm-cdn.png',
   keywords: ['esm', 'cdn'],
   name: 'ESM',
@@ -111,7 +111,7 @@ export default<AppItem[]> [{
   keywords: ['stack overflow'],
   name: 'StackOverflow',
 }, {
-  homepage: 'https://www.caniuse.com/',
+  homepage: 'https://caniuse.com/',
   repository: 'https://github.com/fyrd/caniuse',
   icon: 'caniuse.png',
   keywords: ['caniuse'],

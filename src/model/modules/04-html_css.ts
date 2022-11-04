@@ -23,7 +23,7 @@ export default<AppItem[]> [{
   name: 'Sass',
 }, {
   homepage: 'http://lesscss.org/',
-  repository: 'https://github.com/less/less-docs',
+  repository: 'https://github.com/less/less.js',
   icon: 'less.png',
   keywords: ['less', 'css'],
   name: 'Less',
@@ -86,7 +86,7 @@ export default<AppItem[]> [{
   name: 'StyledComponents',
 }, {
   homepage: 'https://vanilla-extract.style/',
-  repository: 'https://github.com/seek-oss/vanilla-extract',
+  repository: 'https://github.com/vanilla-extract-css/vanilla-extract',
   icon: 'vanilla-extract-style.png',
   keywords: ['vanilla-extract', 'css'],
   name: 'VanillaExtract',
@@ -124,7 +124,7 @@ export default<AppItem[]> [{
   darkInvert: true,
 }, {
   homepage: 'https://stitches.dev/',
-  repository: 'https://github.com/modulz/stitches',
+  repository: 'https://github.com/stitchesjs/stitches',
   icon: 'stitches.png',
   keywords: ['stitches', 'css'],
   name: 'Stitches',

@@ -29,11 +29,11 @@ export default<AppItem[]> [{
   keywords: ['parcel'],
   name: 'Parcel',
 }, {
-  homepage: 'https://www.pika.dev/',
-  repository: 'https://github.com/pikapkg/web',
-  icon: 'pika.png',
-  keywords: ['pika'],
-  name: 'Pika',
+  homepage: 'https://www.snowpack.dev/',
+  repository: 'https://github.com/FredKSchott/snowpack',
+  icon: 'snowpack.png',
+  keywords: ['snowpack'],
+  name: 'Snowpack',
 }, {
   homepage: 'https://astro.build/',
   repository: 'https://github.com/withastro/astro',
@@ -48,7 +48,7 @@ export default<AppItem[]> [{
   name: 'WMR',
 }, {
   homepage: 'https://prepack.io/',
-  repository: 'https://github.com/facebook/prepack',
+  repository: 'https://github.com/facebookarchive/prepack',
   icon: 'prepack.png',
   keywords: ['prepack'],
   name: 'Prepack',
@@ -170,7 +170,7 @@ export default<AppItem[]> [{
   name: 'RxJS',
 }, {
   homepage: 'https://pinia.vuejs.org/',
-  repository: 'https://github.com/posva/pinia',
+  repository: 'https://github.com/vuejs/pinia',
   icon: 'pinia.png',
   keywords: ['pinia'],
   name: 'Pinia',
@@ -182,7 +182,7 @@ export default<AppItem[]> [{
   name: 'Redux',
 }, {
   homepage: 'https://reacttraining.com/react-router/',
-  repository: 'https://github.com/ReactTraining/react-router',
+  repository: 'https://github.com/remix-run/react-router',
   icon: 'react-router.png',
   keywords: ['reactrouter'],
   name: 'ReactRouter',
@@ -315,7 +315,7 @@ export default<AppItem[]> [{
   keywords: ['cypress'],
   name: 'Cypress',
 }, {
-  homepage: 'https://ava.li/',
+  homepage: 'https://avajs.dev/',
   repository: 'https://github.com/avajs/ava',
   icon: 'ava.png',
   keywords: ['ava'],
@@ -354,7 +354,7 @@ export default<AppItem[]> [{
   darkInvert: true,
 }, {
   homepage: 'https://pptr.dev/',
-  repository: 'https://github.com/GoogleChrome/puppeteer',
+  repository: 'https://github.com/puppeteer/puppeteer',
   icon: 'puppeteer.png',
   keywords: ['pptr', 'puppeteer'],
   name: 'Puppeteer',
