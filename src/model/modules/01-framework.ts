@@ -156,8 +156,8 @@ export default <AppItem[]> [{
   keywords: ['tauri'],
   name: 'Tauri',
 }, {
-  homepage: 'https://weex.apache.org/',
-  repository: 'https://github.com/apache/incubator-weex',
+  homepage: 'https://doc.weex.io/',
+  repository: 'https://github.com/alibaba/weex',
   icon: 'weex.png',
   keywords: ['weex', 'vue'],
   name: 'Weex',
