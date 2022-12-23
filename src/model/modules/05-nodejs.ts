@@ -135,4 +135,12 @@ export default <AppItem[]>[
     name: 'Hemera',
     darkInvert: true,
   },
+  {
+    homepage: 'https://pm2.keymetrics.io/', // https://pm2.io/
+    repository: 'https://github.com/Unitech/pm2',
+    icon: 'pm2.png',
+    keywords: ['pm2'],
+    name: 'PM2',
+    darkInvert: true,
+  },
 ];

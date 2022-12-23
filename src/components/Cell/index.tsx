@@ -1,5 +1,5 @@
-import "./index.css";
-import gitHubIcon from "../../assets/images/github.png";
+import './index.css';
+import gitHubIcon from '../../assets/images/github.png';
 
 function onCornerClick(e: React.SyntheticEvent, repository: string) {
   e.preventDefault();
@@ -8,7 +8,9 @@ function onCornerClick(e: React.SyntheticEvent, repository: string) {
 }
 
 function getImgSrc(fileName: string): string {
-  return new URL(`../../assets/icons/${fileName}`, import.meta.url).href;
+  return /^(http|https)/.test(fileName)
+    ? fileName
+    : new URL(`../../assets/icons/${fileName}`, import.meta.url).href;
 }
 
 const Cell = ({ homepage, icon, repository, name, darkInvert }: AppItem) => (
@@ -17,7 +19,7 @@ const Cell = ({ homepage, icon, repository, name, darkInvert }: AppItem) => (
       <div className="img-box">
         <img
           src={getImgSrc(icon)}
-          className={darkInvert ? "dark-invert" : ""}
+          className={darkInvert ? 'dark-invert' : ''}
           alt={name}
         />
       </div>
@@ -25,7 +27,7 @@ const Cell = ({ homepage, icon, repository, name, darkInvert }: AppItem) => (
       {repository && (
         <div
           onKeyDown={() => {}}
-          onClick={(e) => onCornerClick(e, repository)}
+          onClick={e => onCornerClick(e, repository)}
           className="corner"
         >
           <div className="corner-icon-wrap">
