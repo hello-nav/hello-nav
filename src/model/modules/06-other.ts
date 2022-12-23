@@ -113,10 +113,29 @@ export default <AppItem[]>[
     name: 'MongoDB',
   },
   {
+    homepage: 'http://www.mongoosejs.net/',
+    repository: 'https://github.com/Automattic/mongoose',
+    icon: 'mongoose.png',
+    keywords: ['mongodb', 'mongoose', 'mongoosejs'],
+    name: 'Mongoose',
+  },
+  {
     homepage: 'https://v8.dev/',
     repository: 'https://github.com/v8/v8',
     icon: 'v8.png',
     keywords: ['v8'],
     name: 'V8',
+  },
+  {
+    homepage: [
+      { href: 'https://markdown-it.github.io/', title: 'MarkdownIt' },
+      { href: 'http://markdown.p2hp.com/basic-syntax/', title: 'Markdown' },
+      { href: 'http://www.markdown.cn/', title: 'Markdown' },
+    ],
+    repository: 'https://github.com/markdown-it/markdown-it',
+    icon: 'markdown.png',
+    keywords: ['markdown'],
+    name: 'Markdown',
+    darkInvert: true,
   },
 ];

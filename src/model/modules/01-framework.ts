@@ -7,7 +7,14 @@ export default <AppItem[]>[
     name: 'Vue',
   },
   {
-    homepage: 'https://reactjs.org/',
+    homepage: [
+      { href: 'https://reactjs.org/', title: '英文版官网' },
+      { href: 'https://zh-hans.reactjs.org/', title: '中文版官网' },
+      {
+        href: 'https://beta.reactjs.org/learn/importing-and-exporting-components',
+        title: '英文版新官网',
+      },
+    ],
     repository: 'https://github.com/facebook/react/',
     icon: 'react.png',
     keywords: ['react'],
@@ -357,6 +364,13 @@ export default <AppItem[]>[
       'microapp',
     ],
     name: '字节小程序',
+  },
+  {
+    homepage: 'https://uniapp.dcloud.net.cn/',
+    repository: 'https://github.com/dcloudio/uni-app',
+    icon: 'uniapp.png',
+    keywords: ['app', 'uni', 'uniapp', 'uni-app'],
+    name: 'UNI-APP',
   },
   {
     homepage: 'https://www.quickapp.cn/quickAppShow',
