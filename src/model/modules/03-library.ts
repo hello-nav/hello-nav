@@ -5,6 +5,12 @@ export default<AppItem[]> [{
   keywords: ['webpack'],
   name: 'Webpack',
 }, {
+  homepage: 'https://turbo.build/pack/',
+  repository: 'https://github.com/vercel/turbo',
+  icon: 'turbopack.png',
+  keywords: ['turbopack'],
+  name: 'Turbopack',
+}, {
   homepage: 'https://esbuild.github.io/',
   repository: 'https://github.com/evanw/esbuild',
   icon: 'esbuild.png',
@@ -205,6 +211,12 @@ export default<AppItem[]> [{
   keywords: ['lerna'],
   name: 'Lerna',
   darkInvert: true,
+}, {
+  homepage: 'https://turbo.build/repo/',
+  repository: 'https://github.com/vercel/turbo',
+  icon: 'turborepo.png',
+  keywords: ['turborepo'],
+  name: 'Turborepo',
 }, {
   homepage: 'https://pre-commit.com/',
   repository: 'https://github.com/pre-commit/pre-commit',
