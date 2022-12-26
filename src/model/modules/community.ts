@@ -1,5 +1,11 @@
 export default <AppItem[]>[
   {
+    homepage: 'https://www.5cv.top/',
+    icon: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/aa44f5e2-c1bb-4f33-b201-b9a86ab02459.ico',
+    keywords: [],
+    name: '导航',
+  },
+  {
     homepage: 'https://juejin.im/',
     repository: 'https://github.com/xitu',
     icon: 'juejin.png',

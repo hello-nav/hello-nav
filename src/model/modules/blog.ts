@@ -6,6 +6,18 @@ export default <AppItem[]>[
     name: 'w3cplus',
   },
   {
+    homepage: 'https://www.w3cschool.cn/zobyhd/48nutozt.html',
+    icon: 'https://7n.w3cschool.cn/statics/images/favicon.ico',
+    keywords: [],
+    name: 'w3cschool',
+  },
+  {
+    homepage: 'https://www.ruanyifeng.com/',
+    icon: 'ruanyifeng.ico',
+    keywords: ['blog'],
+    name: '阮一峰',
+  },
+  {
     homepage: 'https://www.yueluo.club/',
     icon: 'https://img.yueluo.club/personal/yueluo.png',
     keywords: ['blog'],
@@ -28,5 +40,17 @@ export default <AppItem[]>[
     icon: 'https://blog.zeruns.tech/favicon.ico',
     keywords: ['blog'],
     name: 'Zeruns',
+  },
+  {
+    homepage: 'http://www.javashuo.com/',
+    icon: 'javashuo.ico',
+    keywords: ['blog'],
+    name: 'javashuo',
+  },
+  {
+    homepage: 'http://muyiy.cn/',
+    icon: 'https://muyiy.cn/favicon.ico',
+    keywords: ['blog'],
+    name: '木易杨',
   },
 ];
