@@ -205,7 +205,13 @@ export default <AppItem[]>[
     name: 'NG Zorro',
   },
   {
-    homepage: 'https://getbootstrap.com/',
+    homepage: [
+      { href: 'https://getbootstrap.com/', title: '官网' },
+      {
+        href: 'https://www.bootcss.com/',
+        title: '中文网',
+      },
+    ],
     repository: 'https://github.com/twbs/bootstrap',
     icon: 'bootstrap.png',
     keywords: ['bootstrap', 'ui'],
