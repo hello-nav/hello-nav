@@ -305,4 +305,10 @@ export default <AppItem[]>[
     keywords: ['iconpark'],
     name: 'IconPark',
   },
+  {
+    homepage: 'https://uiverse.io/',
+    icon: 'https://uiverse.io/build/_assets/logo-OR7QQX33.svg',
+    keywords: ['uiverse'],
+    name: 'uiverse',
+  },
 ];

@@ -43,4 +43,37 @@ export default <AppItem[]>[
     keywords: ['stack overflow'],
     name: 'StackOverflow',
   },
+  {
+    homepage: 'https://www.yuque.com/',
+    icon: 'yuque.svg',
+    keywords: ['yuque', '语雀'],
+    name: '语雀',
+  },
+  {
+    homepage: [
+      {
+        href: 'https://ke.qq.com/',
+        title: '腾讯课堂',
+      },
+      {
+        href: 'https://cloud.tencent.com/edu/learning',
+        title: '腾讯云',
+      },
+    ],
+    icon: 'https://cloud.tencent.com/favicon.ico',
+    keywords: [],
+    name: '腾讯课堂',
+  },
+  {
+    homepage: 'https://www.imooc.com/',
+    icon: 'https://www.imooc.com/favicon.ico',
+    keywords: [],
+    name: '慕课网',
+  },
+  {
+    homepage: 'https://www.itying.com/',
+    icon: 'https://www.itying.com/animated_favicon.gif',
+    keywords: [],
+    name: 'IT营',
+  },
 ];

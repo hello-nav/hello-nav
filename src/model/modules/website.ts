@@ -248,4 +248,10 @@ export default <AppItem[]>[
     keywords: ['网道', 'wang', 'doc', 'wangdoc'],
     name: '网道',
   },
+  {
+    homepage: 'https://support.dmeng.net/upgrade-your-browser.html',
+    icon: 'upgrade-browser.png',
+    keywords: ['升级', '浏览器', '升级浏览器'],
+    name: '升级浏览器',
+  },
 ];

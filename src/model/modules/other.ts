@@ -127,15 +127,9 @@ export default <AppItem[]>[
     name: 'V8',
   },
   {
-    homepage: [
-      { href: 'https://markdown-it.github.io/', title: 'MarkdownIt' },
-      { href: 'http://markdown.p2hp.com/basic-syntax/', title: 'Markdown' },
-      { href: 'http://www.markdown.cn/', title: 'Markdown' },
-    ],
-    repository: 'https://github.com/markdown-it/markdown-it',
-    icon: 'markdown.png',
-    keywords: ['markdown'],
-    name: 'Markdown',
-    darkInvert: true,
+    homepage: 'https://cn.serverless.com/',
+    icon: 'https://uploads-ssl.webflow.com/612dc053b05ed1788ee00cd8/620d418923218e552502b236_6182addc1ae46f185d517c7f_console-icon-outline.svg',
+    keywords: ['serverless'],
+    name: 'serverless',
   },
 ];

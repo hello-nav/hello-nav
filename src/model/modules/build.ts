@@ -112,7 +112,16 @@ export default <AppItem[]>[
     name: 'Babel',
   },
   {
-    homepage: 'https://eslint.org/',
+    homepage: [
+      {
+        href: 'https://eslint.org/',
+        title: '英文官网',
+      },
+      {
+        href: 'https://eslint.bootcss.com/',
+        title: '中文官网',
+      },
+    ],
     repository: 'https://github.com/eslint/eslint',
     icon: 'eslint.png',
     keywords: ['eslint'],
@@ -196,5 +205,20 @@ export default <AppItem[]>[
     icon: 'jest.png',
     keywords: ['jest'],
     name: 'Jest',
+  },
+  {
+    homepage: [
+      {
+        href: 'https://astexplorer.net/',
+        title: '链接1',
+      },
+      {
+        href: 'https://resources.jointjs.com/demos/rappid/apps/Ast/index.html',
+        title: '链接2',
+      },
+    ],
+    icon: 'https://astexplorer.net/favicon.png',
+    keywords: ['ast'],
+    name: 'ast',
   },
 ];

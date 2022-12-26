@@ -14,6 +14,10 @@ export default <AppItem[]>[
         href: 'https://beta.reactjs.org/learn/importing-and-exporting-components',
         title: '英文版新官网',
       },
+      {
+        href: 'https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/',
+        title: '生命周期',
+      },
     ],
     repository: 'https://github.com/facebook/react/',
     icon: 'react.png',
