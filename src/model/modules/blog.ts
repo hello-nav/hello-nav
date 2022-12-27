@@ -48,9 +48,15 @@ export default <AppItem[]>[
     name: 'javashuo',
   },
   {
-    homepage: 'http://muyiy.cn/',
+    homepage: 'https://muyiy.cn/',
     icon: 'https://muyiy.cn/favicon.ico',
     keywords: ['blog'],
     name: '木易杨',
+  },
+  {
+    homepage: 'https://www.yunyoujun.cn/',
+    icon: 'https://www.yunyoujun.cn/favicon.svg',
+    keywords: ['blog'],
+    name: '云游君',
   },
 ];
