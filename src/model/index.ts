@@ -7,6 +7,7 @@ function getModules(context: Record<string, AppItem[]>): CateItem[] {
     'FRAMEWORK',
     'UI/DESIGN',
     'LIBRARY',
+    'PLUGIN',
     'NODEJS',
     'BUILD',
     'HTML/CSS',
