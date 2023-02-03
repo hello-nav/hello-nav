@@ -1,5 +1,5 @@
 export default<AppItem[]> [{
-  homepage: 'https://nodejs.org',
+  homepage: 'https://nodejs.dev/',
   repository: 'https://github.com/nodejs/node/',
   icon: 'nodejs.png',
   keywords: ['nodejs'],
