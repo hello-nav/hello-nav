@@ -186,7 +186,7 @@ export default <AppItem[]> [{
   keywords: ['kraken', 'flutter'],
   name: 'Kraken',
 }, {
-  homepage: 'https://doc.weex.io/',
+  homepage: 'https://weexapp.com/',
   repository: 'https://github.com/alibaba/weex',
   icon: 'weex.png',
   keywords: ['weex', 'vue'],
