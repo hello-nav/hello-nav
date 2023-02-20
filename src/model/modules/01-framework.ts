@@ -126,7 +126,7 @@ export default <AppItem[]> [{
   name: 'Remix',
   darkInvert: true,
 }, {
-  homepage: 'https://nuxtjs.org/',
+  homepage: 'https://nuxt.com/',
   repository: 'https://github.com/nuxt/nuxt.js',
   icon: 'nuxt.png',
   keywords: ['nuxt', 'vue'],
