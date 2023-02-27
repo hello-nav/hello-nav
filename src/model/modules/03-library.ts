@@ -125,6 +125,12 @@ export default<AppItem[]> [{
   keywords: ['prettier'],
   name: 'Prettier',
 }, {
+  homepage: 'https://rome.tools/',
+  repository: 'https://github.com/rome/tools',
+  icon: 'rome.png',
+  keywords: ['rome'],
+  name: 'Rome',
+}, {
   homepage: 'https://www.typescriptlang.org/',
   repository: 'https://github.com/Microsoft/TypeScript',
   icon: 'typescript.png',
