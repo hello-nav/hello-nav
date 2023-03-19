@@ -106,6 +106,10 @@
   transition: filter 0.3s;
 }
 
+.cell img.less-radius {
+  border-radius: 4px;
+}
+
 .cell .title {
   overflow: hidden;
   text-overflow: ellipsis;

@@ -11,6 +11,12 @@ export default<AppItem[]> [{
   keywords: ['turbopack'],
   name: 'Turbopack',
 }, {
+  homepage: 'https://www.rspack.dev/',
+  repository: 'https://github.com/web-infra-dev/rspack',
+  icon: 'rspack.png',
+  keywords: ['rspack'],
+  name: 'Rspack',
+}, {
   homepage: 'https://esbuild.github.io/',
   repository: 'https://github.com/evanw/esbuild',
   icon: 'esbuild.png',
@@ -130,6 +136,8 @@ export default<AppItem[]> [{
   icon: 'rome.png',
   keywords: ['rome'],
   name: 'Rome',
+  darkInvert: true,
+  lessRadius: true,
 }, {
   homepage: 'https://www.typescriptlang.org/',
   repository: 'https://github.com/Microsoft/TypeScript',
@@ -389,11 +397,18 @@ export default<AppItem[]> [{
   keywords: ['socketio'],
   name: 'SocketIO',
 }, {
-  homepage: 'http://docs.sequelizejs.com/',
+  homepage: 'https://sequelize.org/',
   repository: 'https://github.com/sequelize/sequelize',
   icon: 'sequelize.png',
-  keywords: ['sequelize'],
+  keywords: ['sequelize', 'orm'],
   name: 'Sequelize',
+}, {
+  homepage: 'https://www.prisma.io/',
+  repository: 'https://github.com/prisma/prisma',
+  icon: 'prisma.png',
+  keywords: ['prisma', 'orm'],
+  name: 'Prisma',
+  darkInvert: true,
 }, {
   homepage: 'https://webassembly.org/',
   repository: 'https://github.com/WebAssembly',

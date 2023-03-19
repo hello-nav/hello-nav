@@ -11,13 +11,14 @@ function getImgSrc(fileName: string): string {
   return new URL(`../../assets/icons/${fileName}`, import.meta.url).href
 }
 
-const Cell = ({ homepage, icon, repository, name, darkInvert }: AppItem) => (
-  <li className="cell">
+const Cell = ({ homepage, icon, repository, name, darkInvert, lessRadius }: AppItem) => {
+  const imgClass = [darkInvert ? 'dark-invert' : '', lessRadius ? 'less-radius' : ''].join(' ')
+  return <li className="cell">
     <a className="app" href={homepage} title={name}>
       <div className="img-box">
         <img
           src={getImgSrc(icon)}
-          className={darkInvert ? 'dark-invert' : ''}
+          className={imgClass}
           alt={name}
         />
       </div>
@@ -40,6 +41,6 @@ const Cell = ({ homepage, icon, repository, name, darkInvert }: AppItem) => (
       )}
     </a>
   </li>
-)
+}
 
 export default Cell

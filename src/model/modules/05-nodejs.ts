@@ -115,4 +115,10 @@ export default<AppItem[]> [{
   keywords: ['hemera'],
   name: 'Hemera',
   darkInvert: true,
+}, {
+  homepage: 'https://libuv.org/',
+  repository: 'https://github.com/libuv/libuv',
+  icon: 'libuv.png',
+  keywords: ['libuv'],
+  name: 'libuv',
 }]

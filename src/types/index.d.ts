@@ -6,6 +6,7 @@ interface AppItem {
   icon: string
   keywords?: string[]
   darkInvert?: boolean
+  lessRadius?: boolean
 }
 
 interface CateItem {

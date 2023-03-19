@@ -72,6 +72,7 @@ export default<AppItem[]> [{
   icon: 'jss.png',
   keywords: ['jss', 'css'],
   name: 'JSS',
+  lessRadius: true,
 }, {
   homepage: 'https://emotion.sh/',
   repository: 'https://github.com/emotion-js/emotion',

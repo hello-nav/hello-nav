@@ -81,12 +81,14 @@ export default<AppItem[]> [{
   icon: 'unpkg.png',
   keywords: ['unpkg', 'cdn'],
   name: 'UNPKG',
+  darkInvert: true,
 }, {
   homepage: 'https://esm.sh/',
   repository: 'https://github.com/ije/esm.sh',
   icon: 'esm-cdn.png',
   keywords: ['esm', 'cdn'],
   name: 'ESM',
+  darkInvert: true,
 }, {
   homepage: 'https://www.bootcdn.cn/',
   repository: 'https://github.com/bootcdn',
