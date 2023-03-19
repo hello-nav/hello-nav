@@ -260,4 +260,9 @@ export default<AppItem[]> [{
   icon: 'iconpark.png',
   keywords: ['iconpark'],
   name: 'IconPark',
+}, {
+  homepage: 'https://www.figma.com/',
+  icon: 'figma.png',
+  keywords: ['figma'],
+  name: 'Figma',
 }]
