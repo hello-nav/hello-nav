@@ -5,7 +5,7 @@ export default <AppItem[]> [{
   keywords: ['vue'],
   name: 'Vue',
 }, {
-  homepage: 'https://reactjs.org/',
+  homepage: 'https://react.dev/',
   repository: 'https://github.com/facebook/react/',
   icon: 'react.png',
   keywords: ['react'],
