@@ -4,6 +4,7 @@ export default <AppItem[]> [{
   icon: 'vue.png',
   keywords: ['vue'],
   name: 'Vue',
+  lessRadius: true,
 }, {
   homepage: 'https://react.dev/',
   repository: 'https://github.com/facebook/react/',
@@ -70,12 +71,6 @@ export default <AppItem[]> [{
   icon: 'svelte.png',
   keywords: ['svelte'],
   name: 'Svelte',
-}, {
-  homepage: 'https://sapper.svelte.dev/',
-  repository: 'https://github.com/sveltejs/sapper',
-  icon: 'sapper.png',
-  keywords: ['sapper'],
-  name: 'Sapper',
 }, {
   homepage: 'https://yew.rs',
   repository: 'https://github.com/yewstack/yew',
