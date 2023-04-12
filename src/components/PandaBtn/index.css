@@ -10,7 +10,7 @@
   overflow: hidden;
   cursor: pointer;
   backdrop-filter: blur(3px);
-  will-change: background;
+  will-change: background, top, left, width, height;
 }
 .panda-btn:hover {
   background-color: rgba(230, 230, 230, 1);
@@ -24,23 +24,23 @@
 }
 .panda-btn::before {
   background-color: rgba(119, 119, 119, 0.618);
-  animation: toggle-before 0.3s 0.3s forwards;
+  animation: toggle-before 0.45s 0.05s forwards;
   z-index: 2;
 }
 .panda-btn::after {
   background-color: #e6e6e6;
-  animation: toggle-after 0.3s;
+  animation: toggle-after 0.45s;
   z-index: 1;
 }
 .panda-btn.theme--dark {
   background-color: rgba(119, 119, 119, 0.618);
 }
 .panda-btn.theme--dark::before {
-  animation: toggle-before--dark 0.3s forwards;
+  animation: toggle-before--dark 0.45s forwards;
 }
 .panda-btn.theme--dark::after {
   z-index: 3;
-  animation: toggle-after--dark 0.3s 0.3s forwards;
+  animation: toggle-after--dark 0.45s 0.05s forwards;
 }
 @keyframes toggle {
   to {
