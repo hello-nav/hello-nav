@@ -106,7 +106,6 @@ export default<AppItem[]> [{
   icon: 'vux.png',
   keywords: ['vux', 'vue', 'mobile', 'ui'],
   name: 'VUX',
-  darkInvert: true,
 }, {
   homepage: 'https://at-ui.github.io/at-ui/',
   repository: 'https://github.com/at-ui/at-ui',
@@ -237,12 +236,6 @@ export default<AppItem[]> [{
   keywords: ['useanimations'],
   name: 'UseAnimations',
 }, {
-  homepage: 'https://remixicon.com/',
-  repository: 'https://github.com/Remix-Design/RemixIcon',
-  icon: 'remixicon.png',
-  keywords: ['remixicon'],
-  name: 'RemixIcon',
-}, {
   homepage: 'https://feathericons.com/',
   repository: 'https://github.com/feathericons/feather',
   icon: 'feather.png',
@@ -260,6 +253,19 @@ export default<AppItem[]> [{
   icon: 'iconpark.png',
   keywords: ['iconpark'],
   name: 'IconPark',
+}, {
+  homepage: 'https://remixicon.com/',
+  repository: 'https://github.com/Remix-Design/RemixIcon',
+  icon: 'remixicon.png',
+  keywords: ['remixicon'],
+  name: 'RemixIcon',
+}, {
+  homepage: 'https://icones.js.org/',
+  repository: 'https://github.com/antfu/icones',
+  icon: 'icones.png',
+  keywords: ['icones', 'Icônes'],
+  name: 'Icônes',
+  darkInvert: true,
 }, {
   homepage: 'https://www.figma.com/',
   icon: 'figma.png',

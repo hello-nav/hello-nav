@@ -119,7 +119,6 @@ export default <AppItem[]> [{
   icon: 'remix.png',
   keywords: ['remix'],
   name: 'Remix',
-  darkInvert: true,
 }, {
   homepage: 'https://nuxt.com/',
   repository: 'https://github.com/nuxt/nuxt.js',

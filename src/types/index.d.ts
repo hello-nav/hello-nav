@@ -5,8 +5,8 @@ interface AppItem {
   repository?: string
   icon: string
   keywords?: string[]
-  darkInvert?: boolean
-  lessRadius?: boolean
+  darkInvert?: true
+  lessRadius?: true
 }
 
 interface CateItem {
