@@ -1,0 +1,142 @@
+.cell {
+  text-align: center;
+  display: grid;
+  grid-template: 15px 1fr 15px / 10px 1fr 10px;
+  transform-origin: bottom;
+}
+
+.cell:hover {
+  animation: 2.5s 2s rock infinite;
+}
+
+.cell:hover .app {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.cell .app {
+  position: relative;
+  display: grid;
+  grid-area: 2 / 2;
+  grid-template: 70px 28px / 100%;
+  border-radius: 8px;
+  transform-origin: bottom;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.cell .app .corner {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  transition: 0.2s;
+  border-radius: 0 8px 0 8px;
+  background: linear-gradient(45deg, #eee 40%, #9e9e9e 50%, #2f3242 56%);
+}
+
+.cell .corner-icon-wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  bottom: 4px;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+
+.cell .corner-icon-wrap .corner-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  transform: rotate(45deg) translate(0px, 10px);
+  transition: 0.2s 0.5s;
+}
+
+.cell .app:hover {
+  animation: none;
+  transition: 0s;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.cell .app:hover .corner {
+  width: 22px;
+  height: 22px;
+  transition: 0.2s 0.5s;
+}
+
+.cell .app .corner:hover {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.cell .app .corner:hover .corner-icon {
+  transform: rotate(45deg) translate(0px, 6px);
+  transition: 0.2s;
+}
+
+.cell .app .corner:active {
+  width: 32px;
+  height: 32px;
+  transition: 0.1s;
+}
+
+.cell .app .corner:active .corner-icon {
+  transform: rotate(45deg) translate(0px, 5px);
+}
+
+.cell .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  width: 50px;
+  height: fit-content;
+  max-height: 50px;
+  border-radius: 11px;
+  transition: filter 0.3s;
+}
+
+.cell img.less-radius {
+  border-radius: 4px;
+}
+
+.cell .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 4px;
+  font-size: 14px;
+  color: #504f4f;
+}
+
+@keyframes rock {
+  75% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(-4deg);
+  }
+
+  85% {
+    transform: rotate(3deg);
+  }
+
+  90% {
+    transform: rotate(-2deg);
+  }
+
+  95% {
+    transform: rotate(1deg);
+  }
+}
