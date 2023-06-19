@@ -14,13 +14,13 @@ export default<AppItem[]> [{
   homepage: 'http://v4.iviewui.com/',
   repository: 'https://github.com/view-design/ViewUI',
   icon: 'iview.png',
-  keywords: ['iview-ui', 'vue'],
+  keywords: ['iview-ui', 'vue', 'ui'],
   name: 'View UI',
 }, {
   homepage: 'https://www.iviewui.com/',
   repository: 'https://github.com/view-design/ViewUIPlus',
   icon: 'iview.png',
-  keywords: ['iview-ui-plus', 'vue3'],
+  keywords: ['iview-ui-plus', 'vue3', 'ui'],
   name: 'View UI Plus',
 }, {
   homepage: 'https://vuetifyjs.com/',
@@ -44,7 +44,7 @@ export default<AppItem[]> [{
   homepage: 'https://www.naiveui.com/',
   repository: 'https://github.com/tusen-ai/naive-ui',
   icon: 'naiveui.png',
-  keywords: ['naiveui', 'vue'],
+  keywords: ['naiveui', 'vue', 'ui'],
   name: 'Naive UI',
 }, {
   homepage: 'https://tdesign.tencent.com/',
@@ -110,7 +110,7 @@ export default<AppItem[]> [{
   homepage: 'https://at-ui.github.io/at-ui/',
   repository: 'https://github.com/at-ui/at-ui',
   icon: 'at-ui.png',
-  keywords: ['atui', 'vue'],
+  keywords: ['atui', 'vue', 'ui'],
   name: 'At UI',
 }, {
   homepage: 'https://ant.design/',
@@ -122,21 +122,33 @@ export default<AppItem[]> [{
   homepage: 'https://material-ui.com/',
   repository: 'https://github.com/mui/material-ui',
   icon: 'material-ui.png',
-  keywords: ['materialui', 'react'],
+  keywords: ['materialui', 'react', 'ui'],
   name: 'Material UI',
-}, {
-  homepage: 'https://semi.design/',
-  repository: 'https://github.com/DouyinFE/semi-design',
-  icon: 'semi.png',
-  keywords: ['semi', 'react', 'ui'],
-  name: 'Semi Design',
-  darkInvert: true,
 }, {
   homepage: 'https://chakra-ui.com/',
   repository: 'https://github.com/chakra-ui/chakra-ui',
   icon: 'chakra.png',
-  keywords: ['chakra', 'react', 'ui'],
+  keywords: ['chakraui', 'react', 'ui'],
   name: 'Chakra UI',
+}, {
+  homepage: 'https://ui.shadcn.com/',
+  repository: 'https://github.com/shadcn/ui',
+  icon: 'shadcnui.png',
+  keywords: ['shadcnui', 'react', 'ui'],
+  name: 'Shadcn UI',
+}, {
+  homepage: 'https://www.radix-ui.com/',
+  repository: 'https://github.com/radix-ui',
+  icon: 'radixui.png',
+  keywords: ['radix', 'react', 'ui'],
+  name: 'Radix UI',
+}, {
+  homepage: 'https://semi.design/',
+  repository: 'https://github.com/DouyinFE/semi-design',
+  icon: 'semi.png',
+  keywords: ['semidesign', 'react', 'ui'],
+  name: 'Semi Design',
+  darkInvert: true,
 }, {
   homepage: 'https://rsuitejs.com/',
   repository: 'https://github.com/rsuite/rsuite',
@@ -185,6 +197,12 @@ export default<AppItem[]> [{
   icon: 'luluui.png',
   keywords: ['luluui'],
   name: 'LuLu UI',
+}, {
+  homepage: 'https://headlessui.com/',
+  repository: 'https://github.com/tailwindlabs/headlessui',
+  icon: 'headlessui.png',
+  keywords: ['headlessui', 'vue', 'react', 'ui'],
+  name: 'Headless UI',
 }, {
   homepage: 'https://storybook.js.org/',
   repository: 'https://github.com/storybookjs/storybook',
@@ -263,7 +281,7 @@ export default<AppItem[]> [{
   homepage: 'https://icones.js.org/',
   repository: 'https://github.com/antfu/icones',
   icon: 'icones.png',
-  keywords: ['icones', 'Icônes'],
+  keywords: ['icones', 'icônes'],
   name: 'Icônes',
   darkInvert: true,
 }, {
