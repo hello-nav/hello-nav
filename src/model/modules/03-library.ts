@@ -299,6 +299,24 @@ export default<AppItem[]> [{
   keywords: ['faker'],
   name: 'faker',
 }, {
+  homepage: 'https://react-hook-form.com/',
+  repository: 'https://github.com/react-hook-form/react-hook-form',
+  icon: 'react-hook-form.png',
+  keywords: ['react-hook-form'],
+  name: 'ReactHookForm',
+}, {
+  homepage: 'https://www.embla-carousel.com/',
+  repository: 'https://github.com/davidjerleke/embla-carousel',
+  icon: 'embla-carousel.png',
+  keywords: ['embla-carousel'],
+  name: 'EmblaCarousel',
+}, {
+  homepage: 'https://zod.dev/',
+  repository: 'https://github.com/colinhacks/zod',
+  icon: 'zod.png',
+  keywords: ['zod'],
+  name: 'Zod',
+}, {
   homepage: 'https://momentjs.com/',
   repository: 'https://github.com/moment/moment',
   icon: 'moment.png',
