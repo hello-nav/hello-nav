@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   axios:
     specifier: ^1.1.3
@@ -28,8 +32,8 @@ devDependencies:
     specifier: ^4.6.3
     version: 4.7.4
   vite:
-    specifier: ^2.9.9
-    version: 2.9.13
+    specifier: ^2.9.16
+    version: 2.9.16
   vite-plugin-glob:
     specifier: ^0.3.2
     version: 0.3.2
@@ -1068,8 +1072,8 @@ packages:
       ufo: 0.8.4
     dev: true
 
-  /vite@2.9.13:
-    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
+  /vite@2.9.16:
+    resolution: {integrity: sha512-X+6q8KPyeuBvTQV8AVSnKDvXoBMnTx8zxh54sOwmmuOdxkjMmEJXH2UEchA+vTMps1xw9vL64uwJOWryULg7nA==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
