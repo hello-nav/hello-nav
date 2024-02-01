@@ -278,6 +278,12 @@ export default<AppItem[]> [{
   keywords: ['remixicon'],
   name: 'RemixIcon',
 }, {
+  homepage: 'https://tabler.io/icons',
+  repository: 'https://github.com/tabler/tabler',
+  icon: 'tabler.png',
+  keywords: ['tablericons'],
+  name: 'TablerIcons',
+}, {
   homepage: 'https://icones.js.org/',
   repository: 'https://github.com/antfu/icones',
   icon: 'icones.png',

@@ -131,14 +131,6 @@ export default<AppItem[]> [{
   keywords: ['prettier'],
   name: 'Prettier',
 }, {
-  homepage: 'https://rome.tools/',
-  repository: 'https://github.com/rome/tools',
-  icon: 'rome.png',
-  keywords: ['rome'],
-  name: 'Rome',
-  darkInvert: true,
-  lessRadius: true,
-}, {
   homepage: 'https://www.typescriptlang.org/',
   repository: 'https://github.com/Microsoft/TypeScript',
   icon: 'typescript.png',
@@ -169,7 +161,6 @@ export default<AppItem[]> [{
   icon: 'ts-node.png',
   keywords: ['ts-node'],
   name: 'TSNode',
-  darkInvert: true,
 }, {
   homepage: 'https://terser.org/',
   repository: 'https://github.com/terser/terser',
@@ -249,6 +240,13 @@ export default<AppItem[]> [{
   icon: 'vueuse.png',
   keywords: ['vueuse'],
   name: 'VueUse',
+}, {
+  homepage: 'https://inhiblabcore.github.io/docs/hooks/',
+  repository: 'https://github.com//InhiblabCore/vue-hooks-plus',
+  icon: 'vue-hooks-plus.png',
+  keywords: ['vuehooksplus'],
+  name: 'VueHooks Plus',
+  lessRadius: true,
 }, {
   homepage: 'https://ahooks.js.org/',
   repository: 'https://github.com/alibaba/hooks',
