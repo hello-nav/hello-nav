@@ -115,8 +115,17 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   padding: 0 4px;
+  line-height: 18px;
   font-size: 14px;
   color: #504f4f;
+}
+
+.cell .title[data-size="small"] {
+  font-size: 13px;
+}
+
+.cell .title[data-size="mini"] {
+  font-size: 12px;
 }
 
 @keyframes rock {

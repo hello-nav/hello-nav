@@ -13,6 +13,7 @@ function getImgSrc(fileName: string): string {
 
 const Cell = ({ homepage, icon, repository, name, darkInvert, lessRadius }: AppItem) => {
   const imgClass = [darkInvert ? 'dark-invert' : '', lessRadius ? 'less-radius' : ''].join(' ')
+  const size = name.length > 10 ? name.length > 12 ? 'mini' : 'small' : 'normal'
   return <li className="cell">
     <a className="app" href={homepage} title={name}>
       <div className="img-box">
@@ -22,7 +23,7 @@ const Cell = ({ homepage, icon, repository, name, darkInvert, lessRadius }: AppI
           alt={name}
         />
       </div>
-      <p className="title">{name}</p>
+      <p className="title" data-size={size}>{name}</p>
       {repository && (
         <div
           onKeyDown={() => {}}
