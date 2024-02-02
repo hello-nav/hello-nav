@@ -4,6 +4,10 @@
 
 [https://hello-nav.github.io](https://hello-nav.github.io)
 
+[https://hello-nav.netlify.app](https://hello-nav.netlify.app)
+
+[https://hello-nav.vercel.app](https://hello-nav.vercel.app)
+
 ## 🗺 Features
 
 - 200+ Apps
