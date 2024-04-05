@@ -291,8 +291,49 @@ export default<AppItem[]> [{
   name: 'Icônes',
   darkInvert: true,
 }, {
+  homepage: 'https://smashicons.com/',
+  repository: 'https://github.com/Smashicons',
+  icon: 'smashicons.png',
+  keywords: ['smashicons'],
+  name: 'Smashicons',
+}, {
   homepage: 'https://www.figma.com/',
+  repository: 'https://github.com/figma',
   icon: 'figma.png',
   keywords: ['figma'],
   name: 'Figma',
+}, {
+  homepage: 'https://dribbble.com/',
+  repository: 'https://github.com/dribbble',
+  icon: 'dribbble.png',
+  keywords: ['dribbble'],
+  name: 'Dribbble',
+}, {
+  homepage: 'https://www.pinterest.com/',
+  repository: 'https://github.com/pinterest',
+  icon: 'pinterest.png',
+  keywords: ['pinterest'],
+  name: 'Pinterest',
+}, {
+  homepage: 'https://www.behance.net/',
+  repository: 'https://github.com/behance',
+  icon: 'behance.png',
+  keywords: ['behance'],
+  name: 'Behance',
+}, {
+  homepage: 'https://craftwork.design/',
+  icon: 'craftwork.png',
+  keywords: ['craftwork'],
+  name: 'Craftwork',
+}, {
+  homepage: 'https://discover.gumroad.com/',
+  repository: 'https://github.com/gumroad',
+  icon: 'gumroad.png',
+  keywords: ['gumroad'],
+  name: 'Gumroad',
+}, {
+  homepage: 'https://www.ui8.net/',
+  icon: 'ui8.png',
+  keywords: ['ui8'],
+  name: 'UI8',
 }]

@@ -187,11 +187,6 @@ export default<AppItem[]> [{
   keywords: ['zcool', '站酷'],
   name: '站酷',
 }, {
-  homepage: 'https://dribbble.com/',
-  icon: 'dribbble.png',
-  keywords: ['dribbble'],
-  name: 'Dribbble',
-}, {
   homepage: 'https://dev.to/',
   icon: 'devto.png',
   keywords: ['dev'],
