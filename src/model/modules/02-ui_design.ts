@@ -303,6 +303,18 @@ export default<AppItem[]> [{
   keywords: ['figma'],
   name: 'Figma',
 }, {
+  homepage: 'https://mastergo.com/',
+  repository:'https://github.com/mastergo-design',
+  icon: 'mastergo.png',
+  keywords: ['mastergo'],
+  name: 'MasterGo',
+}, {
+  homepage: 'https://js.design/',
+  repository: 'https://github.com/jsdesigndev',
+  icon: 'jishidesign.png',
+  keywords: ['jishidesign'],
+  name: '即时设计',
+}, {
   homepage: 'https://dribbble.com/',
   repository: 'https://github.com/dribbble',
   icon: 'dribbble.png',
