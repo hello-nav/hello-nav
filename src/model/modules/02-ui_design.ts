@@ -41,6 +41,12 @@ export default<AppItem[]> [{
   keywords: ['ant-design-vue', 'antdvue', 'ui'],
   name: 'Antd Vue',
 }, {
+  homepage: 'https://ui.nuxt.com/',
+  repository: 'https://github.com/nuxt/ui',
+  icon: 'nuxtui.png',
+  keywords: ['nuxtui', 'vue', 'ui'],
+  name: 'Nuxt UI',
+}, {
   homepage: 'https://www.naiveui.com/',
   repository: 'https://github.com/tusen-ai/naive-ui',
   icon: 'naiveui.png',
