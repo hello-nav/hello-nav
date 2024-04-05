@@ -257,7 +257,7 @@ export default<AppItem[]> [{
 }, {
   homepage: 'https://useanimations.com/',
   icon: 'useanimations.png',
-  keywords: ['useanimations'],
+  keywords: ['useanimations', 'icon'],
   name: 'UseAnimations',
 }, {
   homepage: 'https://feathericons.com/',
@@ -289,6 +289,12 @@ export default<AppItem[]> [{
   icon: 'tabler.png',
   keywords: ['tablericons'],
   name: 'TablerIcons',
+}, {
+  homepage: 'https://streamlinehq.com/',
+  repository: 'https://github.com/webalys-hq',
+  icon: 'streamline.png',
+  keywords: ['streamline', 'icon'],
+  name: 'Streamline',
 }, {
   homepage: 'https://icones.js.org/',
   repository: 'https://github.com/antfu/icones',

@@ -47,6 +47,11 @@ export default<AppItem[]> [{
   keywords: ['tailwindcss', 'css'],
   name: 'TailwindCSS',
 }, {
+  homepage: 'https://uicolors.app/',
+  icon: 'uicolors.png',
+  keywords: ['uicolors', 'css'],
+  name: 'uicolors',
+}, {
   homepage: 'https://goober.rocks/',
   repository: 'https://github.com/cristianbote/goober',
   icon: 'goober.png',
