@@ -327,6 +327,16 @@ export default<AppItem[]> [{
   keywords: ['jishidesign'],
   name: '即时设计',
 }, {
+  homepage: 'https://www.zcool.com.cn/',
+  icon: 'zcool.png',
+  keywords: ['zcool', '站酷'],
+  name: '站酷',
+}, {
+  homepage: 'https://huaban.com/',
+  icon: 'huaban.png',
+  keywords: ['huaban', '花瓣'],
+  name: '花瓣',
+}, {
   homepage: 'https://dribbble.com/',
   repository: 'https://github.com/dribbble',
   icon: 'dribbble.png',

@@ -177,16 +177,6 @@ export default<AppItem[]> [{
   keywords: ['tinypng'],
   name: 'TinyPNG',
 }, {
-  homepage: 'https://huaban.com/',
-  icon: 'huaban.png',
-  keywords: ['huaban', '花瓣'],
-  name: '花瓣',
-}, {
-  homepage: 'https://www.zcool.com.cn/',
-  icon: 'zcool.png',
-  keywords: ['zcool', '站酷'],
-  name: '站酷',
-}, {
   homepage: 'https://dev.to/',
   icon: 'devto.png',
   keywords: ['dev'],
