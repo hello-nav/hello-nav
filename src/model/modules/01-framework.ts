@@ -111,8 +111,8 @@ export default <AppItem[]> [{
   homepage: 'https://nextjs.org/',
   repository: 'https://github.com/vercel/next.js',
   icon: 'next.png',
-  keywords: ['next', 'react'],
-  name: 'Next',
+  keywords: ['next.js', 'react'],
+  name: 'Next.js',
 }, {
   homepage: 'https://remix.run/',
   repository: 'https://github.com/remix-run/remix',
