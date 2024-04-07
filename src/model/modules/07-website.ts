@@ -17,6 +17,13 @@ export default<AppItem[]> [{
   keywords: ['微软', 'Microsoft'],
   name: 'Microsoft',
 }, {
+  homepage: 'https://openai.com/',
+  repository: 'https://github.com/openai',
+  icon: 'openai.png',
+  keywords: ['openai'],
+  name: 'OpenAI',
+  darkInvert: true,
+}, {
   homepage: 'https://about.facebook.com/meta',
   repository: 'https://github.com/facebook',
   icon: 'meta.png',
@@ -158,6 +165,7 @@ export default<AppItem[]> [{
   icon: 'codesandbox.png',
   keywords: ['codesandbox'],
   name: 'CodeSandbox',
+  darkInvert: true,
 }, {
   homepage: 'https://github.com/jsfiddle',
   repository: 'https://jsfiddle.net/',
