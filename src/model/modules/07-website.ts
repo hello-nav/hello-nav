@@ -193,6 +193,17 @@ export default<AppItem[]> [{
   keywords: ['smashing-magazine'],
   name: 'SmashingMagazine',
 }, {
+  homepage: 'https://www.yuque.com/',
+  repository: 'https://github.com/yuque',
+  icon: 'yuque.png',
+  keywords: ['语雀', 'yuque'],
+  name: '语雀',
+}, {
+  homepage: 'https://www.feishu.cn/',
+  icon: 'feishu.png',
+  keywords: ['飞书', 'feishu'],
+  name: '飞书',
+}, {
   homepage: 'https://juejin.im/',
   repository: 'https://github.com/xitu',
   icon: 'juejin.png',
@@ -205,6 +216,7 @@ export default<AppItem[]> [{
   name: '思否',
 }, {
   homepage: 'https://www.zhihu.com/',
+  repository: 'https://github.com/zhihu',
   icon: 'zhihu.png',
   keywords: ['知乎', 'zhihu'],
   name: '知乎',
