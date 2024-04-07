@@ -64,6 +64,7 @@ export default<AppItem[]> [{
   icon: 'fastify.png',
   keywords: ['fastify'],
   name: 'Fastify',
+  darkInvert: true,
 }, {
   homepage: 'https://tinyhttp.v1rtl.site/',
   repository: 'https://github.com/restify/node-restify',

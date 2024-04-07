@@ -24,6 +24,12 @@ export default<AppItem[]> [{
   name: 'OpenAI',
   darkInvert: true,
 }, {
+  homepage: 'https://x.com/',
+  repository: 'https://github.com/twitter',
+  icon: 'x.png',
+  keywords: ['x', 'twitter'],
+  name: 'X',
+}, {
   homepage: 'https://about.facebook.com/meta',
   repository: 'https://github.com/facebook',
   icon: 'meta.png',
@@ -54,7 +60,7 @@ export default<AppItem[]> [{
   name: 'NPM',
 }, {
   homepage: 'https://yarnpkg.com/',
-  repository: 'https://github.com/yarnpkg/yarn',
+  repository: 'https://github.com/yarnpkg/berry',
   icon: 'yarn.png',
   keywords: ['yarn'],
   name: 'Yarn',

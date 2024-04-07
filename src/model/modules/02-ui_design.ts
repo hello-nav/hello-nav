@@ -148,6 +148,7 @@ export default<AppItem[]> [{
   icon: 'radixui.png',
   keywords: ['radix', 'react', 'ui'],
   name: 'Radix UI',
+  darkInvert:true,
 }, {
   homepage: 'https://semi.design/',
   repository: 'https://github.com/DouyinFE/semi-design',
@@ -289,12 +290,14 @@ export default<AppItem[]> [{
   icon: 'iconpark.png',
   keywords: ['iconpark'],
   name: 'IconPark',
+  lessRadius: true,
 }, {
   homepage: 'https://remixicon.com/',
   repository: 'https://github.com/Remix-Design/RemixIcon',
   icon: 'remixicon.png',
   keywords: ['remixicon'],
   name: 'RemixIcon',
+  lessRadius: true,
 }, {
   homepage: 'https://tabler.io/icons',
   repository: 'https://github.com/tabler/tabler',

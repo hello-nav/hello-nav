@@ -114,6 +114,12 @@ export default <AppItem[]> [{
   keywords: ['next.js', 'react'],
   name: 'Next.js',
 }, {
+  homepage: 'https://astro.build/',
+  repository: 'https://github.com/withastro/astro',
+  icon: 'astro.png',
+  keywords: ['astro'],
+  name: 'Astro',
+}, {
   homepage: 'https://remix.run/',
   repository: 'https://github.com/remix-run/remix',
   icon: 'remix.png',

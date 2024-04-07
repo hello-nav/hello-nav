@@ -47,12 +47,6 @@ export default<AppItem[]> [{
   keywords: ['snowpack'],
   name: 'Snowpack',
 }, {
-  homepage: 'https://astro.build/',
-  repository: 'https://github.com/withastro/astro',
-  icon: 'astro.png',
-  keywords: ['astro'],
-  name: 'Astro',
-}, {
   homepage: 'https://wmr.dev/',
   repository: 'https://github.com/preactjs/wmr',
   icon: 'wmr.png',
@@ -118,6 +112,7 @@ export default<AppItem[]> [{
   icon: 'jshint.png',
   keywords: ['jshint'],
   name: 'JSHint',
+  lessRadius: true,
 }, {
   homepage: 'https://flow.org/',
   repository: 'https://github.com/facebook/flow',
@@ -130,6 +125,7 @@ export default<AppItem[]> [{
   icon: 'prettier.png',
   keywords: ['prettier'],
   name: 'Prettier',
+  lessRadius: true,
 }, {
   homepage: 'https://www.typescriptlang.org/',
   repository: 'https://github.com/Microsoft/TypeScript',
@@ -192,7 +188,7 @@ export default<AppItem[]> [{
   keywords: ['redux'],
   name: 'Redux',
 }, {
-  homepage: 'https://reacttraining.com/react-router/',
+  homepage: 'https://reactrouter.com/',
   repository: 'https://github.com/remix-run/react-router',
   icon: 'react-router.png',
   keywords: ['reactrouter'],
@@ -394,6 +390,7 @@ export default<AppItem[]> [{
   keywords: ['threejs', 'three.js'],
   name: 'ThreeJS',
   darkInvert: true,
+  lessRadius: true,
 }, {
   homepage: 'https://pptr.dev/',
   repository: 'https://github.com/puppeteer/puppeteer',
@@ -412,6 +409,7 @@ export default<AppItem[]> [{
   icon: 'socket-io.png',
   keywords: ['socketio'],
   name: 'SocketIO',
+  darkInvert: true,
 }, {
   homepage: 'https://sequelize.org/',
   repository: 'https://github.com/sequelize/sequelize',
