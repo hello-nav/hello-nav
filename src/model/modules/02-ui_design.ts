@@ -162,7 +162,7 @@ export default<AppItem[]> [{
   keywords: ['rsuite', 'react suite', 'ui'],
   name: 'React Suite',
 }, {
-  homepage: 'https://taro-ui.jd.com/',
+  homepage: 'https://taro-ui.taro.zone',
   repository: 'https://github.com/NervJS/taro-ui',
   icon: 'taro.png',
   keywords: ['taro', 'react', '小程序', 'ui', 'mobile'],
@@ -222,13 +222,25 @@ export default<AppItem[]> [{
   keywords: ['fluttergo'],
   name: 'Flutter Go',
 }, {
+  homepage: 'https://www.chartjs.org/',
+  repository: 'https://github.com/chartjs/Chart.js',
+  icon: 'chartjs.png',
+  keywords: ['chartjs', 'chart.js'],
+  name: 'Chart.js',
+}, {
   homepage: 'https://echarts.apache.org/',
   repository: 'https://github.com/apache/echarts',
   icon: 'echarts.png',
   keywords: ['echarts'],
   name: 'ECharts',
 }, {
-  homepage: 'https://antv.alipay.com/',
+  homepage: 'https://airbnb.io/visx',
+  repository: 'https://github.com/airbnb/visx',
+  icon: 'visx.png',
+  keywords: ['visx', 'charts'],
+  name: 'Visx',
+}, {
+  homepage: 'https://antv.antgroup.com/',
   repository: 'https://github.com/antvis/',
   icon: 'antv.png',
   keywords: ['antv', 'charts'],

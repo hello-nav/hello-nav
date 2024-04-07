@@ -168,7 +168,7 @@ export default <AppItem[]> [{
   keywords: ['flutter'],
   name: 'Flutter',
 }, {
-  homepage: 'https://taro.jd.com/',
+  homepage: 'https://taro.zone/',
   repository: 'https://github.com/NervJS/taro',
   icon: 'taro.png',
   keywords: ['taro', 'nerv', 'react'],
