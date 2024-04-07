@@ -54,7 +54,7 @@ export default <AppItem[]> [{
   keywords: ['icejs', 'react'],
   name: 'Ice',
 }, {
-  homepage: 'https://angular.io/',
+  homepage: 'https://angular.dev/',
   repository: 'https://github.com/angular/angular',
   icon: 'angular.png',
   keywords: ['angular'],
