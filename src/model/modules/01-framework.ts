@@ -120,17 +120,17 @@ export default <AppItem[]> [{
   keywords: ['next.js', 'react'],
   name: 'Next.js',
 }, {
+  homepage: 'https://nuxt.com/',
+  repository: 'https://github.com/nuxt/nuxt.js',
+  icon: 'nuxt.png',
+  keywords: ['nuxt', 'vue'],
+  name: 'Nuxt',
+}, {
   homepage: 'https://astro.build/',
   repository: 'https://github.com/withastro/astro',
   icon: 'astro.png',
   keywords: ['astro'],
   name: 'Astro',
-}, {
-  homepage: 'https://redwoodjs.com/',
-  repository: 'https://github.com/redwoodjs/redwood',
-  icon: 'redwoodjs.png',
-  keywords: ['redwoodjs'],
-  name: 'Redwood',
 }, {
   homepage: 'https://remix.run/',
   repository: 'https://github.com/remix-run/remix',
@@ -138,17 +138,17 @@ export default <AppItem[]> [{
   keywords: ['remix'],
   name: 'Remix',
 }, {
-  homepage: 'https://nuxt.com/',
-  repository: 'https://github.com/nuxt/nuxt.js',
-  icon: 'nuxt.png',
-  keywords: ['nuxt', 'vue'],
-  name: 'Nuxt',
-}, {
   homepage: 'https://qwik.builder.io/',
   repository: 'https://github.com/BuilderIO/qwik',
   icon: 'qwik.png',
   keywords: ['qwik'],
   name: 'Qwik',
+}, {
+  homepage: 'https://redwoodjs.com/',
+  repository: 'https://github.com/redwoodjs/redwood',
+  icon: 'redwoodjs.png',
+  keywords: ['redwoodjs'],
+  name: 'Redwood',
 }, {
   homepage: 'https://www.electronjs.org/',
   repository: 'https://github.com/electron/electron',
@@ -222,6 +222,30 @@ export default <AppItem[]> [{
   keywords: ['chameleon'],
   name: 'Chameleon',
 }, {
+  homepage: 'https://docusaurus.io/',
+  repository: 'https://github.com/facebook/docusaurus',
+  icon: 'docusaurus.png',
+  keywords: ['docusaurus'],
+  name: 'Docusaurus',
+}, {
+  homepage: 'https://vuepress.vuejs.org/',
+  repository: 'https://github.com/vuejs/vuepress',
+  icon: 'vuepress.png',
+  keywords: ['vuepress'],
+  name: 'VuePress',
+}, {
+  homepage: 'https://vitepress.dev/',
+  repository: 'https://github.com/vuejs/vitepress',
+  icon: 'vitepress.png',
+  keywords: ['vitepress'],
+  name: 'VitePress',
+}, {
+  homepage: 'https://d.umijs.org/',
+  repository: 'https://github.com/umijs/dumi',
+  icon: 'dumi.png',
+  keywords: ['dumi'],
+  name: 'Dumi',
+}, {
   homepage: 'https://gridsome.org/',
   repository: 'https://github.com/gridsome/gridsome',
   icon: 'gridsome.png',
@@ -239,12 +263,6 @@ export default <AppItem[]> [{
   icon: 'hugo.png',
   keywords: ['hugo'],
   name: 'Hugo',
-}, {
-  homepage: 'https://docusaurus.io/',
-  repository: 'https://github.com/facebook/docusaurus',
-  icon: 'docusaurus.png',
-  keywords: ['docusaurus'],
-  name: 'Docusaurus',
 }, {
   homepage: 'https://jekyllrb.com/',
   repository: 'https://github.com/jekyll/jekyll',

@@ -187,6 +187,13 @@ export default<AppItem[]> [{
   keywords: ['taro', 'react', '小程序', 'ui', 'mobile'],
   name: 'Taro UI',
 }, {
+  homepage: 'https://tamagui.dev/',
+  repository: 'https://github.com/tamagui/tamagui',
+  icon: 'tamagui.png',
+  keywords: ['tamagui', 'react-native', 'ui'],
+  name: 'Tamagui',
+  darkInvert: true,
+}, {
   homepage: 'https://floatui.com/',
   repository: 'https://github.com/MarsX-dev/floatui',
   icon: 'floatui.png',
@@ -288,6 +295,12 @@ export default<AppItem[]> [{
   icon: 'visx.png',
   keywords: ['visx', 'charts'],
   name: 'Visx',
+}, {
+  homepage: 'https://www.tremor.so/',
+  repository: 'https://github.com/tremorlabs/tremor',
+  icon: 'tremor.png',
+  keywords: ['tremor', 'charts'],
+  name: 'Tremor',
 }, {
   homepage: 'https://antv.antgroup.com/',
   repository: 'https://github.com/antvis/',
