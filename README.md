@@ -10,7 +10,7 @@
 
 ## 🗺 Features
 
-- 200+ Apps
+- 300+ Apps
 - App search with keywords
 - List or category view
 - Github link
