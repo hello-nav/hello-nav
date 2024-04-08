@@ -71,6 +71,12 @@ export default<AppItem[]> [{
   keywords: ['museui', 'vue', 'ui'],
   name: 'Muse UI',
 }, {
+  homepage: 'https://www.radix-vue.com/',
+  repository: 'https://github.com/radix-vue/radix-vue',
+  icon: 'radix-vue.png',
+  keywords: ['radix-vue', 'vue', 'ui'],
+  name: 'Radix Vue',
+}, {
   homepage: 'https://vusion.github.io/cloud-ui/',
   repository: 'https://github.com/vusion/cloud-ui',
   icon: 'vusion.png',
@@ -137,6 +143,18 @@ export default<AppItem[]> [{
   keywords: ['chakraui', 'react', 'ui'],
   name: 'Chakra UI',
 }, {
+  homepage: 'https://zagjs.com/',
+  repository: 'https://github.com/chakra-ui/zag',
+  icon: 'zag.png',
+  keywords: ['zag', 'ui'],
+  name: 'Zag',
+}, {
+  homepage: 'https://ark-ui.com/',
+  repository: 'https://github.com/chakra-ui/ark',
+  icon: 'ark-ui.png',
+  keywords: ['ark', 'ui'],
+  name: 'Ark UI',
+}, {
   homepage: 'https://ui.shadcn.com/',
   repository: 'https://github.com/shadcn/ui',
   icon: 'shadcnui.png',
@@ -169,6 +187,18 @@ export default<AppItem[]> [{
   keywords: ['taro', 'react', '小程序', 'ui', 'mobile'],
   name: 'Taro UI',
 }, {
+  homepage: 'https://floatui.com/',
+  repository: 'https://github.com/MarsX-dev/floatui',
+  icon: 'floatui.png',
+  keywords: ['floatui', 'react', 'ui'],
+  name: 'Float UI',
+}, {
+  homepage: 'https://www.lemonsqueezy.com/wedges',
+  repository: 'https://github.com/lmsqueezy/wedges',
+  icon: 'wedges.png',
+  keywords: ['wedges', 'react', 'ui'],
+  name: 'Wedges',
+}, {
   homepage: 'https://nsfi.github.io/ppfish-components/',
   repository: 'https://github.com/NSFI/ppfish-components',
   icon: 'fish.png',
@@ -181,17 +211,35 @@ export default<AppItem[]> [{
   keywords: ['ossa', 'react', 'mobile', 'ui'],
   name: 'OSSA',
 }, {
-  homepage: 'https://ng-alain.com/zh',
+  homepage: 'https://ng-alain.com/',
   repository: 'https://github.com/ng-alain/ng-alain/',
   icon: 'ng-alain.png',
   keywords: ['angular', 'ui', 'ngalain'],
   name: 'NG Alain',
 }, {
-  homepage: 'https://ng.ant.design',
+  homepage: 'https://ng.ant.design/',
   repository: 'https://github.com/NG-ZORRO/ng-zorro-antd',
   icon: 'zorro.png',
   keywords: ['angular', 'ui', 'ng-zorro-antd'],
   name: 'NG Zorro',
+}, {
+  homepage: 'https://melt-ui.com/',
+  repository: 'https://github.com/melt-ui/melt-ui',
+  icon: 'meltui.png',
+  keywords: ['meltui', 'ui', 'svelte'],
+  name: 'Melt UI',
+}, {
+  homepage: 'https://radix-svelte.com/',
+  repository: 'https://github.com/radix-svelte/radix-svelte',
+  icon: 'radix-svelte.png',
+  keywords: ['radix-svelte', 'ui', 'svelte'],
+  name: 'Radix Svelte',
+}, {
+  homepage: 'https://daisyui.com/',
+  repository: 'https://github.com/saadeghi/daisyui',
+  icon: 'daisyui.png',
+  keywords: ['daisyui', 'ui'],
+  name: 'DaisyUI',
 }, {
   homepage: 'https://getbootstrap.com/',
   repository: 'https://github.com/twbs/bootstrap',

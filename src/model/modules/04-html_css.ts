@@ -97,6 +97,24 @@ export default<AppItem[]> [{
   keywords: ['vanilla-extract', 'css'],
   name: 'VanillaExtract',
 }, {
+  homepage: 'https://panda-css.com/',
+  repository: 'https://github.com/chakra-ui/panda',
+  icon: 'panda-css.png',
+  keywords: ['panda-css'],
+  name: 'panda-css',
+}, {
+  homepage: 'https://open-props.style/',
+  repository: 'https://github.com/argyleink/open-props',
+  icon: 'open-props.png',
+  keywords: ['open-props'],
+  name: 'Open Props',
+}, {
+  homepage: 'https://stylexjs.com/',
+  repository: 'https://github.com/facebook/stylex',
+  icon: 'stylex.png',
+  keywords: ['stylex'],
+  name: 'Stylex',
+}, {
   homepage: 'https://windicss.org/',
   repository: 'https://github.com/windicss/windicss',
   icon: 'windicss.png',

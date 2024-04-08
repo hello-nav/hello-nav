@@ -60,6 +60,12 @@ export default <AppItem[]> [{
   keywords: ['angular'],
   name: 'Angular',
 }, {
+  homepage: 'https://analogjs.org/',
+  repository: 'https://github.com/analogjs/analog',
+  icon: 'analog.png',
+  keywords: ['analog', 'angular'],
+  name: 'Analog',
+}, {
   homepage: 'https://www.solidjs.com/',
   repository: 'https://github.com/solidjs/solid',
   icon: 'solidjs.png',
@@ -119,6 +125,12 @@ export default <AppItem[]> [{
   icon: 'astro.png',
   keywords: ['astro'],
   name: 'Astro',
+}, {
+  homepage: 'https://redwoodjs.com/',
+  repository: 'https://github.com/redwoodjs/redwood',
+  icon: 'redwoodjs.png',
+  keywords: ['redwoodjs'],
+  name: 'Redwood',
 }, {
   homepage: 'https://remix.run/',
   repository: 'https://github.com/remix-run/remix',

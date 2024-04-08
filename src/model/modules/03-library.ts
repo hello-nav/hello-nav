@@ -274,6 +274,12 @@ export default<AppItem[]> [{
   keywords: ['zepto'],
   name: 'Zepto',
 }, {
+  homepage: 'https://floating-ui.com/',
+  repository: 'https://github.com/floating-ui/floating-ui',
+  icon: 'floating-ui.png',
+  keywords: ['floating-ui'],
+  name: 'Floating UI',
+}, {
   homepage: 'https://axios-http.com/',
   repository: 'https://github.com/axios/axios',
   icon: 'axios.png',
@@ -329,17 +335,29 @@ export default<AppItem[]> [{
   keywords: ['date-fns'],
   name: 'DateFNS',
 }, {
-  homepage: 'https://mochajs.org/',
-  repository: 'https://github.com/mochajs/mocha',
-  icon: 'mocha.png',
-  keywords: ['mocha'],
-  name: 'Mocha',
+  homepage: 'https://playwright.dev/',
+  repository: 'https://github.com/microsoft/playwright',
+  icon: 'playwright.png',
+  keywords: ['playwright'],
+  name: 'playwright',
 }, {
   homepage: 'https://jestjs.io/',
   repository: 'https://github.com/facebook/jest',
   icon: 'jest.png',
   keywords: ['jest'],
   name: 'Jest',
+}, {
+  homepage: 'https://mochajs.org/',
+  repository: 'https://github.com/mochajs/mocha',
+  icon: 'mocha.png',
+  keywords: ['mocha'],
+  name: 'Mocha',
+}, {
+  homepage: 'https://vitest.dev/',
+  repository: 'https://github.com/vitest-dev/vitest',
+  icon: 'vitest.png',
+  keywords: ['vitest'],
+  name: 'Vitest',
 }, {
   homepage: 'https://testing-library.com/',
   repository: 'https://github.com/testing-library',
