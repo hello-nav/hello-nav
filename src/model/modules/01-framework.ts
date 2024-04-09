@@ -258,6 +258,12 @@ export default <AppItem[]> [{
   keywords: ['react-static', 'react'],
   name: 'ReactStatic',
 }, {
+  homepage: 'https://abelljs.org/',
+  repository: 'https://github.com/abelljs/abell',
+  icon: 'abell.png',
+  keywords: ['abell'],
+  name: 'Abell',
+}, {
   homepage: 'https://gohugo.io/',
   repository: 'https://github.com/gohugoio/hugo',
   icon: 'hugo.png',

@@ -206,6 +206,13 @@ export default<AppItem[]> [{
   keywords: ['apollographql'],
   name: 'Apollo',
 }, {
+  homepage: 'https://nx.dev/',
+  repository: 'https://github.com/nrwl/nx',
+  icon: 'nx.png',
+  keywords: ['nx'],
+  name: 'Nx',
+  darkInvert: true,
+}, {
   homepage: 'https://lerna.js.org/',
   repository: 'https://github.com/lerna/lerna',
   icon: 'lerna.png',
