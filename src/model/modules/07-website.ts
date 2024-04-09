@@ -36,6 +36,12 @@ export default<AppItem[]> [{
   keywords: ['facebook', 'meta'],
   name: 'Meta',
 }, {
+  homepage: 'https://www.youtube.com/',
+  repository: 'https://github.com/youtube',
+  icon: 'youtube.png',
+  keywords: ['youtube'],
+  name: 'YouTube',
+}, {
   homepage: 'https://github.com/',
   repository: 'https://github.com/github',
   icon: 'github.png',
