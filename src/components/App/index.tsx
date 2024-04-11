@@ -7,10 +7,7 @@ import Footer from '../Footer'
 import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
 
 const CATEGORY_TYPES: CategoryTypes = ['category', 'list']
-const ContainWithNotFind = WithError<ContainWrapProp>(
-  ContainWrap,
-  'Ooops! Can not find it here...',
-)
+const ContainWithNotFind = WithError<ContainWrapProp>(ContainWrap, 'Ooops! Can not find it here...')
 
 const libraryMap: LibraryMap = {
   category: libraryTree,
@@ -24,16 +21,15 @@ const libraryMap: LibraryMap = {
 const filterListByKey = (list: AppItem[], key: string) =>
   list.filter(app => (app.keywords as string[]).some(k => k.includes(key)))
 
-const genFilterByList =
-  (list: (AppItem | CateItem)[]) => (filterKey: string) => {
-    if (window.localStorage.__CATEGORY_TYPE__ === 'list') {
-      return filterListByKey(list as AppItem[], filterKey)
-    }
-    return (list as CateItem[]).map(cate => ({
-      title: cate.title,
-      children: filterListByKey(cate.children, filterKey),
-    }))
+const genFilterByList = (list: (AppItem | CateItem)[]) => (filterKey: string) => {
+  if (window.localStorage.__CATEGORY_TYPE__ === 'list') {
+    return filterListByKey(list as AppItem[], filterKey)
   }
+  return (list as CateItem[]).map(cate => ({
+    title: cate.title,
+    children: filterListByKey(cate.children, filterKey),
+  }))
+}
 const filtersMap: FiltersMap = CATEGORY_TYPES.reduce((res: any, key) => {
   res[key] = genFilterByList(libraryMap[key])
   return res
@@ -55,9 +51,7 @@ const toggleType = (setType: any, setList: any, type?: CategoryType) => {
 
 function App() {
   const { __CATEGORY_TYPE__ } = window.localStorage
-  const [type, setType] = useState<CategoryType>(
-    __CATEGORY_TYPE__ || CATEGORY_TYPES[0],
-  )
+  const [type, setType] = useState<CategoryType>(__CATEGORY_TYPE__ || CATEGORY_TYPES[0])
   if (!__CATEGORY_TYPE__) {
     window.localStorage.__CATEGORY_TYPE__ = type
   }
@@ -66,27 +60,21 @@ function App() {
   const [filterKey, setFilterKey] = useState<string>('')
   typeIndex = CATEGORY_TYPES.indexOf(type)
 
-  const newFilterKey = filterKey
-    .trim()
-    .toLowerCase()
-    .replace(IGNORE_KEYWORD_REG, '')
+  const newFilterKey = filterKey.trim().toLowerCase().replace(IGNORE_KEYWORD_REG, '')
   if (oldFilterKey !== newFilterKey) {
     setList(filtersMap[type](newFilterKey))
     oldFilterKey = newFilterKey
   }
 
   const hasData =
-    type === 'category'
-      ? (list as CateItem[]).filter(cate => cate.children.length).length
-      : (list as AppItem[]).length
+    type === 'category' ? (list as CateItem[]).filter(cate => cate.children.length).length : (list as AppItem[]).length
 
   return (
     <div className="body">
       <ActionBar
         filterKey={filterKey}
-        onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
-          setFilterKey(e.target.value)
-        }
+        onInput={(e: React.ChangeEvent<HTMLInputElement>) => setFilterKey(e.target.value)}
+        onClear={() => setFilterKey('')}
         type={type}
         toggleType={() => toggleType(setType, setList)}
       />

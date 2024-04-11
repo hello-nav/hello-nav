@@ -1,7 +1,7 @@
 import PandaBtn from '../PandaBtn'
 import './index.less'
 
-function ActionBar({ filterKey, onInput, toggleType, type }: FilterProps) {
+function ActionBar({ filterKey, onInput, toggleType, type, onClear }: FilterProps) {
   return (
     <div className="filter-bar">
       <span className="filter-bar__btn">
@@ -25,7 +25,7 @@ function ActionBar({ filterKey, onInput, toggleType, type }: FilterProps) {
           <svg className="icon search-icon" aria-hidden="true">
             <use href="#icon-search" />
           </svg>
-          <svg className="icon clear-icon" aria-hidden="true">
+          <svg className="icon clear-icon" aria-hidden="true" onClick={onClear}>
             <use href="#icon-close" />
           </svg>
         </div>

@@ -29,13 +29,14 @@ interface FiltersMap {
 
 interface FilterProps {
   onInput(e: React.FormEvent): void
+  onClear(): void
   filterKey: string
   toggleType: any
   type: string
 }
 
 interface ContainWrapProp {
-  list: AppItem[] | CateItem[],
+  list: AppItem[] | CateItem[]
   type: string
 }
 
