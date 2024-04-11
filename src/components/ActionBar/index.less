@@ -66,7 +66,8 @@
       &:hover {
         background-size: var(--nav-action-item-bg-size-hover);
       }
-      &:focus {
+      &:focus,
+      &:not([value='']) {
         width: 210px;
         padding-left: 15px;
         padding-right: 28px;
