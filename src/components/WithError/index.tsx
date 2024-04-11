@@ -1,4 +1,4 @@
-import './index.css'
+import './index.less'
 
 function WithError<T>(Component: React.ComponentType<T | any>, text: string) {
   return ({ isError, ...props }: WithErrorProps) =>

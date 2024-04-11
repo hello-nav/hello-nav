@@ -1,0 +1,66 @@
+.panda-btn {
+  position: relative;
+  width: var(--nav-action-item-size);
+  height: var(--nav-action-item-size);
+  background: var(--nav-panda-primary-bg);
+  border-radius: var(--nav-action-item-size);
+  transition: background 0.3s 0.1s cubic-bezier(0.6, 0.6, 0, 1);
+  overflow: hidden;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    border-radius: var(--nav-action-item-size);
+    transition: background 0.3s cubic-bezier(0.6, 0.6, 0, 1);
+    animation-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+  }
+  &::before {
+    animation-name: toggle-after;
+    animation-delay: 0s;
+    background: var(--nav-panda-primary-bg);
+  }
+  &::after {
+    animation-name: toggle-before;
+    animation-delay: 0.15s;
+    background: var(--nav-panda-secondary-bg);
+  }
+  &.active {
+    background: var(--nav-panda-secondary-bg);
+    &::before {
+      animation-name: toggle-before;
+      animation-delay: 0.15s;
+      background: var(--nav-panda-primary-bg);
+      z-index: 1;
+    }
+    &::after {
+      animation-name: toggle-after;
+      animation-delay: 0s;
+      background: var(--nav-panda-secondary-bg);
+    }
+  }
+}
+
+@keyframes toggle-before {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(0.35);
+  }
+}
+@keyframes toggle-after {
+  from {
+    transform: scale(0.35);
+  }
+  to {
+    transform: scale(1);
+  }
+}

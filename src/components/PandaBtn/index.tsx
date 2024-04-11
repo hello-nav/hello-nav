@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './index.css'
+import './index.less'
 
 interface PandaBtnProps {
   onClick?: (event: React.SyntheticEvent) => void
@@ -18,16 +18,13 @@ function toggleTheme(isStatusTrue: boolean) {
   }
   const themeMateEle = document.querySelector('meta[name="theme-color"]')
   if (themeMateEle) {
-    themeMateEle.setAttribute(
-      'content',
-      isStatusTrue ? '#f6f7f9' : 'rgba(45, 46, 48, 0.9)',
-    )
+    themeMateEle.setAttribute('content', isStatusTrue ? '#f6f7f9' : 'rgba(45, 46, 48, 0.9)')
   }
 }
 
 export default function PandaBtn({ onClick }: PandaBtnProps) {
   const [status, setStatus] = useState(!!window.localStorage.__THEME__)
-  const classNames = ['panda-btn', status && STATUS_CLASS_NAME].join(' ')
+  const classNames = ['panda-btn', status ? 'active' : ''].join(' ')
 
   const handleClick: React.MouseEventHandler = e => {
     toggleTheme(status)
@@ -37,7 +34,5 @@ export default function PandaBtn({ onClick }: PandaBtnProps) {
     }
   }
 
-  return (
-    <span className={classNames} onClick={handleClick} onKeyDown={() => {}} />
-  )
+  return <span className={classNames} onClick={handleClick} onKeyDown={() => {}} />
 }

@@ -1,72 +1,34 @@
-@darkBg: {
-  background-color: rgba(45, 46, 48, 0.8);
-};
+:root.theme--dark {
+  --nav-bg-primary: #292929;
+  --nav-bg-regular: #1e1e1e;
 
-@darkBgHover: {
-  background-color: rgba(45, 46, 48, 0.9);
-};
+  --nav-color-primary: #c6c6c6;
+  --nav-color-regular: #a0a0a0;
+  --nav-color-secondary: #808080;
 
-.theme--dark {
-  background-color: #1f2022;
-  & body {
-    background-color: #1f2022;
-  }
-  .search-input {
-    @darkBg();
-    border-color: #2a2b2d;
-    color: #c5c5c5;
-    &:hover {
-      @darkBgHover();
-    }
-  }
-  .filter-bar__toggle-btn {
-    @darkBg();
-    border-color: #2a2b2d;
-    &:hover,
-    &:active {
-      @darkBgHover();
-    }
-  }
-  .category-item__title {
-    color: #a7a7a7;
-  }
-  .cell {
-    .app {
-      background-color: #27272a;
-      &:hover {
-        background-color: rgba(39, 39, 42, 0.6);
-      }
-      img {
-        &.dark-invert {
-          filter: brightness(0.7) invert(0.6);
-        }
-        filter: brightness(0.8);
-      }
-      .corner {
-        background: linear-gradient(
-          45deg,
-          #333333 40%,
-          #636363 50%,
-          #1e2022 56%
-        );
-      }
-      .title {
-        color: #c1c1c1;
-      }
-    }
-  }
-  .footer__wrap {
-    color: #c1c1c1;
-  }
-  .logo {
-    filter: brightness(0.6) grayscale(1);
-    &:hover {
-      filter: brightness(0.8);
-    }
-  }
-  .bener-link {
-    color: #efefef;
-  }
+  --nav-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+
+  --nav-filter-bg: rgba(60, 60, 60, 0.6);
+  --nav-filter-bg-hover: rgba(60, 60, 60, 0.8);
+
+  --nav-header-color: var(--nav-color-primary);
+
+  --nav-action-item-bg: linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.08));
+  --nav-action-item-bg-size: 200% 200%;
+  --nav-action-item-bg-size-hover: 100% 100%;
+  --nav-action-item-size: 32px;
+
+  --nav-panda-primary-bg: var(--nav-color-regular);
+  --nav-panda-secondary-bg: #434343;
+
+  --nav-app-bg: var(--nav-bg-primary);
+  --nav-app-bg-hover: rgba(39, 39, 39, 0.6);
+
+  --nav-app-logo-filter: brightness(0.8);
+  --nav-app-logo-filter-invert: brightness(0.7) invert(0.6);
+
+  --nav-app-corner-bg: linear-gradient(45deg, #333333 40%, #636363 50%, #1e2022 56%);
+
+  --nav-logo-filter: opacity(0.4) grayscale(1);
+  --nav-logo-filter-hover: opacity(1) brightness(0.8);
 }
-
-

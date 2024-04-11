@@ -1,16 +1,12 @@
 import PandaBtn from '../PandaBtn'
-import './index.css'
+import './index.less'
 
 function ActionBar({ filterKey, onInput, toggleType, type }: FilterProps) {
   return (
     <div className="filter-bar">
       <span className="filter-bar__btn">
         <PandaBtn />
-        <span
-          className="filter-bar__toggle-btn"
-          onClick={toggleType}
-          onKeyDown={() => {}}
-        >
+        <span className="filter-bar__toggle-btn" onClick={toggleType} onKeyDown={() => {}}>
           <svg className={`icon ${type}-icon`} aria-hidden="true">
             <use href={`#icon-${type}`} />
           </svg>

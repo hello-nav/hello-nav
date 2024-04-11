@@ -1,11 +1,8 @@
-import './index.css'
+import './index.less'
 
 const Footer = () => (
   <div className="footer__wrap">
-    <a
-      href="https://github.com/hello-nav/hello-nav"
-      className="logo vertical-center"
-    >
+    <a href="https://github.com/hello-nav/hello-nav" className="logo vertical-center">
       hello-nav github
     </a>
     <div className="footer__copyright">
@@ -17,10 +14,7 @@ const Footer = () => (
         with
         <span className="heart"> ❤</span>
       </span>
-      <p>
-        &copy;2018-
-        {new Date().getFullYear()}
-      </p>
+      <p>&copy;2018-{new Date().getFullYear()} Hello Nav</p>
     </div>
   </div>
 )

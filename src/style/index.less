@@ -1,7 +1,9 @@
+@import url('./theme/light.less');
+@import url('./theme/dark.less');
+
 @font-face {
   font-family: 'bi';
-  src: url('./assets/fonts/bi.woff') format('woff'),
-      url('./assets/fonts/bi.ttf');
+  src: url('../assets/fonts/bi.woff') format('woff'), url('../assets/fonts/bi.ttf');
 }
 
 * {
@@ -12,15 +14,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  background: var(--nav-bg-regular);
+}
+
 body {
-  background: #f6f7f9;
+  background: var(--nav-bg-regular);
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: .3s;
+  transition: 0.3s;
   transition-property: background, color;
 }
 
@@ -31,8 +36,8 @@ body:before {
   left: 0;
   width: 100%;
   height: 50px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
-  z-index: 2019;
+  box-shadow: 0 0 30px rgba(22, 22, 22, 0.2);
+  z-index: 2024;
 }
 
 h1 {
@@ -42,6 +47,7 @@ h1 {
   text-indent: -99999px;
   overflow: hidden;
   visibility: hidden;
+  font-family: 'bi';
 }
 
 .icon {

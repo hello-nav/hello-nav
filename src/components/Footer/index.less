@@ -1,0 +1,37 @@
+.footer__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  margin-top: 70px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: var(--nav-color-secondary);
+  .footer__copyright {
+    text-align: left;
+    opacity: 0.8;
+  }
+  .logo {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    font-size: 0;
+    background: url('/favicon/favicon-512.png') center/cover;
+    color: transparent;
+    filter: var(--nav-logo-filter);
+    transition: 0.4s;
+    &:hover {
+      filter: var(--nav-logo-filter-hover);
+    }
+  }
+  .heart {
+    color: #f44336;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .bener-link {
+    color: var(--nav-color-secondary);
+  }
+}

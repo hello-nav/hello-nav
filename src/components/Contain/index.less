@@ -1,0 +1,29 @@
+.contain-wrap {
+  padding: 80px 4vw 0;
+  .category-item {
+    margin-bottom: 55px;
+    &__title {
+      font-size: 36px;
+      font-style: italic;
+      font-weight: bold;
+      font-family: 'bi';
+      margin-bottom: 15px;
+      color: var(--nav-header-color);
+    }
+    .app-list {
+      justify-content: center;
+    }
+  }
+  .app-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 120px);
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contain-wrap {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
