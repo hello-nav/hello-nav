@@ -60,14 +60,26 @@
       }
     }
   </script>
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?7bd2456d52ffdb252b118e885584a4b1";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
+  <script type="module">
+    if (import.meta.env.PROD) {
+      if (import.meta.env.VITE_BAIDU_KEY) {
+        window._hmt = window._hmt || [];
+        const hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?" + import.meta.env.VITE_BAIDU_KEY;
+        document.head.appendChild(hm);
+      };
+      if (import.meta.env.VITE_GOOGLE_KEY) {
+        const gs = document.createElement('script');
+        gs.src = 'https://www.googletagmanager.com/gtag/js?id=' + import.meta.env.VITE_GOOGLE_KEY;
+        gs.async = true;
+        document.head.appendChild(gs);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function gtag () { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', import.meta.env.VITE_GOOGLE_KEY);
+      };
+    }
   </script>
 </head>
 
