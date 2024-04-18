@@ -47,6 +47,12 @@ export default<AppItem[]> [{
   keywords: ['tailwindcss', 'css'],
   name: 'TailwindCSS',
 }, {
+  homepage: 'https://unocss.dev/',
+  repository: 'https://github.com/unocss/unocss',
+  icon: 'unocss.png',
+  keywords: ['unocss'],
+  name: 'UnoCSS',
+}, {
   homepage: 'https://uicolors.app/',
   icon: 'uicolors.png',
   keywords: ['uicolors', 'css'],
