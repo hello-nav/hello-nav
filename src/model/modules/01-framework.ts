@@ -240,6 +240,12 @@ export default <AppItem[]> [{
   keywords: ['vitepress'],
   name: 'VitePress',
 }, {
+  homepage: 'https://starlight.astro.build/',
+  repository: 'https://github.com/withastro/starlight',
+  icon: 'starlight.png',
+  keywords: ['starlight'],
+  name: 'Starlight',
+}, {
   homepage: 'https://d.umijs.org/',
   repository: 'https://github.com/umijs/dumi',
   icon: 'dumi.png',
