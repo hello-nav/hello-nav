@@ -2,7 +2,11 @@
 
 ## A navigation for developer
 
+Pick the link that you visit the fastest：
+
 [https://hello-nav.github.io](https://hello-nav.github.io)
+
+[https://hello-nav.zeabur.app](https://hello-nav.zeabur.app)
 
 [https://hello-nav.netlify.app](https://hello-nav.netlify.app)
 
