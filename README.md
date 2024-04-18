@@ -21,8 +21,6 @@
 
 ![hello-nav](./doc/images/hello-nav.png)
 
-![hello-nav-search](./doc/images/hello-nav-search.png)
-
 ![hello-nav-dark](./doc/images/hello-nav-dark.png)
 
 ## 👩🏻‍💻 Develop & Build
