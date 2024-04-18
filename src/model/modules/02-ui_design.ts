@@ -435,6 +435,14 @@ export default<AppItem[]> [{
   icon: 'craftwork.png',
   keywords: ['craftwork'],
   name: 'Craftwork',
+  darkInvert:true,
+}, {
+  homepage: 'https://mobbin.com/',
+  repository:'https://github.com/mobbin',
+  icon: 'mobbin.png',
+  keywords: ['mobbin'],
+  name: 'Mobbin',
+  darkInvert:true,
 }, {
   homepage: 'https://discover.gumroad.com/',
   repository: 'https://github.com/gumroad',
