@@ -313,10 +313,10 @@ export default <AppItem[]> [{
 }, {
   homepage: 'https://q.qq.com/',
   icon: 'qqmp.png',
-  keywords: ['qq小程序', 'qq', 'xiaochengxu', 'miniapp', 'microapp'],
-  name: 'QQ小程序',
+  keywords: ['qq开放平台', 'qq', 'xiaochengxu', 'miniapp', 'microapp'],
+  name: 'QQ开放平台',
 }, {
-  homepage: 'https://mini.open.alipay.com/channel/miniIndex.htm',
+  homepage: 'https://open.alipay.com/',
   icon: 'alipaymp.png',
   keywords: ['支付宝小程序', 'zhifubao', 'alipay', 'xiaochengxu', 'miniapp', 'microapp'],
   name: '支付宝小程序',
@@ -326,17 +326,22 @@ export default <AppItem[]> [{
   keywords: ['京东小程序', 'jingdong', 'jdmp', 'xiaochengxu', 'miniapp', 'microapp'],
   name: '京东小程序',
 }, {
-  homepage: 'https://smartprogram.baidu.com/developer/index.html',
+  homepage: 'https://smartprogram.baidu.com/',
   icon: 'bdmp.png',
   keywords: ['百度智能小程序', 'baidu', 'xiaochengxu', 'miniapp', 'microapp'],
   name: '智能小程序',
 }, {
-  homepage: 'https://microapp.bytedance.com/',
+  homepage: 'https://open.microapp.bytedance.com/',
   icon: 'bytemp.png',
   keywords: ['字节小程序', '字节跳动小程序', 'bytedance', 'xiaochengxu', 'miniapp', 'microapp'],
   name: '字节小程序',
 }, {
-  homepage: 'https://www.quickapp.cn/quickAppShow',
+  homepage: 'https://developer.open-douyin.com/',
+  icon: 'douyin.png',
+  keywords: ['抖音开放平台', 'douyin', 'xiaochengxu', 'miniapp', 'microapp'],
+  name: '抖音开放平台',
+}, {
+  homepage: 'https://www.quickapp.cn/',
   icon: 'kyy.png',
   keywords: ['快应用', 'kuaiyingyong'],
   name: '快应用',
