@@ -58,6 +58,7 @@ export default <AppItem[]>[
   },
   {
     homepage: 'https://gitlab.com/',
+    repository: 'https://github.com/gitlabhq',
     icon: 'gitlab.png',
     keywords: ['gitlab'],
     name: 'GitLab',
