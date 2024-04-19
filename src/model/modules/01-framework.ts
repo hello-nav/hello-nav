@@ -162,7 +162,7 @@ export default <AppItem[]> [{
   keywords: ['ionic'],
   name: 'Ionic',
 }, {
-  homepage: 'https://tauri.studio/',
+  homepage: 'https://tauri.app/',
   repository: 'https://github.com/tauri-apps/tauri',
   icon: 'tauri.png',
   keywords: ['tauri'],
