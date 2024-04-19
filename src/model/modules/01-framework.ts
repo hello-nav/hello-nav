@@ -168,6 +168,7 @@ export default <AppItem[]>[
     icon: 'remix.png',
     keywords: ['remix'],
     name: 'Remix',
+    darkInvert: true,
   },
   {
     homepage: 'https://qwik.builder.io/',
@@ -406,6 +407,7 @@ export default <AppItem[]>[
     icon: 'douyin.png',
     keywords: ['抖音开放平台', 'douyin', 'xiaochengxu', 'miniapp', 'microapp'],
     name: '抖音开放平台',
+    darkInvert: true,
   },
   {
     homepage: 'https://www.quickapp.cn/',
