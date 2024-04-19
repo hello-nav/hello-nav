@@ -12,6 +12,8 @@ Pick the link that you visit the fastest：
 
 [https://hello-nav.vercel.app](https://hello-nav.vercel.app)
 
+[https://hello-nav.pages.dev](https://hello-nav.pages.dev)
+
 ## 🗺 Features
 
 - 300+ Apps
