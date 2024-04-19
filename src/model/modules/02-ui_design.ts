@@ -276,6 +276,13 @@ export default <AppItem[]>[
     name: 'Melt UI',
   },
   {
+    homepage: 'https://stdf.design/',
+    repository: 'https://github.com/any-tdf/stdf',
+    icon: 'stdf.png',
+    keywords: ['stdf', 'ui', 'svelte'],
+    name: 'STDF',
+  },
+  {
     homepage: 'https://radix-svelte.com/',
     repository: 'https://github.com/radix-svelte/radix-svelte',
     icon: 'radix-svelte.png',
