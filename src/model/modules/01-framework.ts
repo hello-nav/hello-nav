@@ -78,6 +78,12 @@ export default <AppItem[]> [{
   keywords: ['ember'],
   name: 'Ember',
 }, {
+  homepage: 'https://lit.dev/',
+  repository: 'https://github.com/lit/lit',
+  icon: 'lit.png',
+  keywords: ['lit'],
+  name: 'Lit',
+}, {
   homepage: 'https://reasonml.github.io/',
   repository: 'https://github.com/reasonml/reason',
   icon: 'reason.png',
