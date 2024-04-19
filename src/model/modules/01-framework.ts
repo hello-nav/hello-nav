@@ -199,6 +199,13 @@ export default <AppItem[]>[
     name: 'Ionic',
   },
   {
+    homepage: 'https://capacitorjs.com/',
+    repository: 'https://github.com/ionic-team/capacitor',
+    icon: 'capacitor.png',
+    keywords: ['capacitor'],
+    name: 'Capacitor',
+  },
+  {
     homepage: 'https://tauri.app/',
     repository: 'https://github.com/tauri-apps/tauri',
     icon: 'tauri.png',
