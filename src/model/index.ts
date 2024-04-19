@@ -7,12 +7,9 @@ function getModules(context: Record<string, AppItem[]>): CateItem[] {
   }))
 }
 
-const context: Record<string, AppItem[]> = import.meta.importGlob(
-  './modules/*.ts',
-  {
-    eager: true,
-    import: 'default',
-  },
-)
+const context: Record<string, AppItem[]> = import.meta.importGlob('./modules/*.ts', {
+  eager: true,
+  import: 'default',
+})
 
-export default <CateItem[]> getModules(context)
+export default <CateItem[]>getModules(context)

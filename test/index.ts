@@ -11,16 +11,20 @@ moduleNames.forEach(fileName => {
   const module = require(resolve(modulesPath, fileName))
   module.default.forEach(app => {
     if (app.homepage) {
-      pQueue.push(axios.get(app.homepage).catch(() => {
-        console.error(app.homepage)
-        errLinks.push(app.homepage)
-      }))
+      pQueue.push(
+        axios.get(app.homepage).catch(() => {
+          console.error(app.homepage)
+          errLinks.push(app.homepage)
+        }),
+      )
     }
     if (app.repository) {
-      pQueue.push(axios.get(app.repository).catch(() => {
-        console.error(app.repository)
-        errLinks.push(app.repository)
-      }))
+      pQueue.push(
+        axios.get(app.repository).catch(() => {
+          console.error(app.repository)
+          errLinks.push(app.repository)
+        }),
+      )
     }
   })
 })
@@ -28,5 +32,3 @@ moduleNames.forEach(fileName => {
 Promise.all(pQueue).then(() => {
   fs.writeFileSync('./error-links.txt', errLinks.join('\n'), 'utf-8')
 })
-
-
