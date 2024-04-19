@@ -443,6 +443,13 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://iconify.design/',
+    repository: 'https://github.com/iconify/iconify',
+    icon: 'iconify.png',
+    keywords: ['iconify'],
+    name: 'Iconify',
+  },
+  {
     homepage: 'https://smashicons.com/',
     repository: 'https://github.com/Smashicons',
     icon: 'smashicons.png',
