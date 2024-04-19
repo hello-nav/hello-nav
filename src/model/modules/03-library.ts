@@ -300,6 +300,13 @@ export default <AppItem[]>[
     name: 'Ahooks',
   },
   {
+    homepage: 'https://vue-vine.dev/',
+    repository: 'https://github.com/vue-vine/vue-vine',
+    icon: 'vue-vine.png',
+    keywords: ['vue-vine'],
+    name: 'Vue Vine',
+  },
+  {
     homepage: 'https://dojotoolkit.org/',
     repository: 'https://github.com/dojo/dojo',
     icon: 'dojo.png',

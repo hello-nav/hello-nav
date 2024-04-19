@@ -276,6 +276,13 @@ export default <AppItem[]>[
     name: 'Melt UI',
   },
   {
+    homepage: 'https://ikun-ui.netlify.app/',
+    repository: 'https://github.com/ikun-svelte/ikun-ui',
+    icon: 'ikun-ui.png',
+    keywords: ['ikun-ui', 'ui', 'svelte'],
+    name: 'IKun UI',
+  },
+  {
     homepage: 'https://stdf.design/',
     repository: 'https://github.com/any-tdf/stdf',
     icon: 'stdf.png',
