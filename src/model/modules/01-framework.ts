@@ -12,12 +12,6 @@ export default <AppItem[]> [{
   keywords: ['react'],
   name: 'React',
 }, {
-  homepage: 'https://reasonml.github.io/',
-  repository: 'https://github.com/reasonml/reason',
-  icon: 'reason.png',
-  keywords: ['reason'],
-  name: 'Reason',
-}, {
   homepage: 'https://preactjs.com/',
   repository: 'https://github.com/preactjs/preact',
   icon: 'preactjs.png',
@@ -29,12 +23,6 @@ export default <AppItem[]> [{
   icon: 'infernojs.png',
   keywords: ['infernojs', 'react'],
   name: 'Inferno',
-}, {
-  homepage: 'https://nerv.aotu.io/',
-  repository: 'https://github.com/NervJS/nerv',
-  icon: 'nervjs.png',
-  keywords: ['nervjs', 'react', '小程序'],
-  name: 'NervJS',
 }, {
   homepage: 'https://umijs.org/',
   repository: 'https://github.com/umijs/umi',
@@ -54,23 +42,17 @@ export default <AppItem[]> [{
   keywords: ['icejs', 'react'],
   name: 'Ice',
 }, {
+  homepage: 'https://nerv.aotu.io/',
+  repository: 'https://github.com/NervJS/nerv',
+  icon: 'nervjs.png',
+  keywords: ['nervjs', 'react', '小程序'],
+  name: 'NervJS',
+}, {
   homepage: 'https://angular.dev/',
   repository: 'https://github.com/angular/angular',
   icon: 'angular.png',
   keywords: ['angular'],
   name: 'Angular',
-}, {
-  homepage: 'https://analogjs.org/',
-  repository: 'https://github.com/analogjs/analog',
-  icon: 'analog.png',
-  keywords: ['analog', 'angular'],
-  name: 'Analog',
-}, {
-  homepage: 'https://www.solidjs.com/',
-  repository: 'https://github.com/solidjs/solid',
-  icon: 'solidjs.png',
-  keywords: ['solidjs'],
-  name: 'Solid',
 }, {
   homepage: 'https://svelte.dev/',
   repository: 'https://github.com/sveltejs/svelte',
@@ -78,17 +60,36 @@ export default <AppItem[]> [{
   keywords: ['svelte'],
   name: 'Svelte',
 }, {
+  homepage: 'https://www.solidjs.com/',
+  repository: 'https://github.com/solidjs/solid',
+  icon: 'solidjs.png',
+  keywords: ['solidjs'],
+  name: 'Solid',
+}, {
   homepage: 'https://yew.rs',
   repository: 'https://github.com/yewstack/yew',
   icon: 'yew.png',
   keywords: ['yew', 'rust', 'wasm'],
-  name: 'yew',
+  name: 'Yew',
 }, {
   homepage: 'https://emberjs.com/',
   repository: 'https://github.com/emberjs/ember.js/',
   icon: 'ember.png',
   keywords: ['ember'],
   name: 'Ember',
+}, {
+  homepage: 'https://reasonml.github.io/',
+  repository: 'https://github.com/reasonml/reason',
+  icon: 'reason.png',
+  keywords: ['reason'],
+  name: 'Reason',
+  lessRadius: true,
+}, {
+  homepage: 'https://analogjs.org/',
+  repository: 'https://github.com/analogjs/analog',
+  icon: 'analog.png',
+  keywords: ['analog', 'angular'],
+  name: 'Analog',
 }, {
   homepage: 'http://aurelia.io/',
   repository: 'https://github.com/aurelia/aurelia',
