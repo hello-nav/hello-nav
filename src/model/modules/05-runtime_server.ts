@@ -71,6 +71,13 @@ export default <AppItem[]>[
     name: 'Hapi',
   },
   {
+    homepage: 'https://elysiajs.com/',
+    repository: 'https://github.com/elysiajs/elysia',
+    icon: 'elysiajs.png',
+    keywords: ['elysia'],
+    name: 'Elysia',
+  },
+  {
     homepage: 'https://feathersjs.com/',
     repository: 'https://github.com/feathersjs/feathers',
     icon: 'feathers.png',
