@@ -20,6 +20,13 @@ export default <AppItem[]>[
     name: 'PostHTML',
   },
   {
+    homepage: 'https://htmx.org/',
+    repository: 'https://github.com/bigskysoftware/htmx',
+    icon: 'htmx.png',
+    keywords: ['htmx', 'html'],
+    name: 'htmx',
+  },
+  {
     homepage: 'http://sass-lang.com/',
     repository: 'https://github.com/sass/sass',
     icon: 'sass.png',
