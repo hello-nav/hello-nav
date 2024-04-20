@@ -7,11 +7,12 @@ export default <AppItem[]>[
     name: 'Pug',
   },
   {
-    //   homepage: 'https://jade-lang.com/',
-    //   icon: 'jade.png',
-    //   keywords: ['jade', 'html'],
-    //   name: 'Jade',
-    // }, {
+    homepage: 'https://jade-lang.com/',
+    icon: 'jade.png',
+    keywords: ['jade', 'html'],
+    name: 'Jade',
+  },
+  {
     homepage: 'https://posthtml.org/',
     repository: 'https://github.com/posthtml/posthtml',
     icon: 'post-html.png',

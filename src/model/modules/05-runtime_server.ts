@@ -7,6 +7,20 @@ export default <AppItem[]>[
     name: 'NodeJS',
   },
   {
+    homepage: 'https://deno.land/',
+    repository: 'https://github.com/denoland',
+    icon: 'deno.png',
+    keywords: ['deno'],
+    name: 'Deno',
+  },
+  {
+    homepage: 'https://bun.sh/',
+    repository: 'https://github.com/oven-sh/bun',
+    icon: 'bun.png',
+    keywords: ['bun'],
+    name: 'Bun',
+  },
+  {
     homepage: 'http://expressjs.com/',
     repository: 'https://github.com/expressjs/express',
     icon: 'express.png',

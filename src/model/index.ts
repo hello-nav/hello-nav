@@ -1,4 +1,4 @@
-const PATH_REG = /.*-([a-zA-Z_]+?)\.ts$/
+const PATH_REG = /^.*\d{2}-(.*)\.ts$/
 
 function getModules(context: Record<string, AppItem[]>): CateItem[] {
   return Object.keys(context).map((path: string) => ({
