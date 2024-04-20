@@ -52,7 +52,7 @@
       "density": 4
     }
   ],
-  "description": "A nav of technology stack",
+  "description": "A navigation for developer",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#f6f7f9",
