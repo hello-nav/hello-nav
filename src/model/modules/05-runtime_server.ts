@@ -33,6 +33,7 @@ export default <AppItem[]>[
     icon: 'express.png',
     keywords: ['express'],
     name: 'Express',
+    darkInvert: true,
   },
   {
     homepage: 'https://koajs.com/',
@@ -40,6 +41,7 @@ export default <AppItem[]>[
     icon: 'koa.png',
     keywords: ['koa'],
     name: 'Koa',
+    darkInvert: true,
   },
   {
     homepage: 'https://www.fastify.io/',
