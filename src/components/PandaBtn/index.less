@@ -4,7 +4,9 @@
   height: var(--nav-action-item-size);
   background: var(--nav-panda-primary-bg);
   border-radius: var(--nav-action-item-size);
-  transition: background 0.3s 0.1s cubic-bezier(0.6, 0.6, 0, 1);
+  transition:
+    background 0.3s 0.1s cubic-bezier(0.6, 0.6, 0, 1),
+    transform 0.3s cubic-bezier(0.6, 0.6, 0, 1);
   overflow: hidden;
   cursor: pointer;
   &::before,
@@ -31,6 +33,12 @@
     animation-name: toggle-before;
     animation-delay: 0.15s;
     background: var(--nav-panda-secondary-bg);
+  }
+  &:hover {
+    transform: scale(0.98);
+  }
+  &:active {
+    transform: scale(0.95);
   }
   &.active {
     background: var(--nav-panda-secondary-bg);

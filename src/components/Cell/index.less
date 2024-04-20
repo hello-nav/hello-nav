@@ -1,6 +1,8 @@
 .cell {
   display: grid;
   grid-template: 15px 1fr 15px / 10px 1fr 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
   .app {
     position: relative;
     display: grid;
@@ -8,7 +10,10 @@
     grid-template: 70px 28px / 100%;
     border-radius: 8px;
     transform-origin: bottom;
-    transition: 0.1s;
+    transition:
+      background 0.2s,
+      transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
+    backface-visibility: hidden;
     overflow: hidden;
     background: var(--nav-app-bg);
     &:hover {
@@ -34,7 +39,7 @@
         transition: filter 0.3s;
         filter: var(--nav-app-logo-filter);
         &.less-radius {
-          border-radius: 4px;
+          border-radius: 3px;
         }
         &.dark-invert {
           filter: var(--nav-app-logo-filter-invert);
@@ -115,6 +120,43 @@
           transform: rotate(45deg) translate(0px, 12px);
           transition: 0.2s 0.1s cubic-bezier(0.6, 0.6, 0, 1);
         }
+      }
+    }
+  }
+  .app-back {
+    width: 100px;
+    grid-area: 2 / 2;
+    border-radius: 8px;
+    transition:
+      all 0.3s,
+      transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
+    transform-origin: center;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background: var(--nav-app-bg);
+    color: var(--nav-color-primary);
+    .app-setting-head {
+      margin-top: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 5px;
+      font-size: 12px;
+    }
+    img {
+      width: 14px;
+      height: fit-content;
+      max-height: 50px;
+      border-radius: 4px;
+      margin-right: 4px;
+      transition: filter 0.3s;
+      vertical-align: text-top;
+      filter: var(--nav-app-logo-filter);
+      &.dark-invert {
+        filter: var(--nav-app-logo-filter-invert);
+      }
+      &.less-radius {
+        border-radius: 1px;
       }
     }
   }

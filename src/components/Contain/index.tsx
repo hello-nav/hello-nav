@@ -9,7 +9,7 @@ const Contain = (list: AppItem[]) => (
   </ul>
 )
 
-function ContainWrap({ list, type }: ContainWrapProp) {
+function ContainWrap({ list, type, isSetting }: ContainWrapProp) {
   let contain
   if (type === 'list') {
     contain = Contain(list as AppItem[])
@@ -27,7 +27,12 @@ function ContainWrap({ list, type }: ContainWrapProp) {
       return vmList
     }, [])
   }
-  return <div className="contain-wrap">{contain}</div>
+
+  const containClass = [
+    'contain-wrap',
+    isSetting ? 'reverse' : '',
+  ].join(' ')
+  return <div className={containClass}>{contain}</div>
 }
 
 export default ContainWrap

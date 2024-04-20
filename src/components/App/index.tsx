@@ -59,6 +59,7 @@ function App() {
   const [list, setList] = useState<(AppItem | CateItem)[]>(libraryMap[type])
   const [filterKey, setFilterKey] = useState<string>('')
   typeIndex = CATEGORY_TYPES.indexOf(type)
+  const [isSetting, setIsSetting] = useState(false)
 
   const newFilterKey = filterKey.trim().toLowerCase().replace(IGNORE_KEYWORD_REG, '')
   if (oldFilterKey !== newFilterKey) {
@@ -76,10 +77,12 @@ function App() {
         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setFilterKey(e.target.value)}
         onClear={() => setFilterKey('')}
         type={type}
+        isSetting={isSetting}
         toggleType={() => toggleType(setType, setList)}
+        toggleSetting={() => setIsSetting(!isSetting)}
       />
       <div className="main">
-        <ContainWithNotFind list={list} type={type} isError={!hasData} />
+        <ContainWithNotFind list={list} type={type} isSetting={isSetting} isError={!hasData} />
       </div>
       <Footer />
     </div>

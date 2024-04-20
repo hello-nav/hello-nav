@@ -32,12 +32,15 @@ interface FilterProps {
   onClear(): void
   filterKey: string
   toggleType: any
+  toggleSetting: any
   type: string
+  isSetting: boolean
 }
 
 interface ContainWrapProp {
   list: AppItem[] | CateItem[]
   type: string
+  isSetting: boolean
 }
 
 interface WithErrorProps {

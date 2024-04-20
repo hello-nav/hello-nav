@@ -40,6 +40,12 @@ const Cell = ({ homepage, icon, repository, name, darkInvert, lessRadius }: AppI
           </div>
         )}
       </a>
+      <div className="app-back">
+        <div className="app-setting-head" title={name}>
+          <img src={getImgSrc(icon)} className={imgClass} alt={name} />
+          {name}
+        </div>
+      </div>
     </li>
   )
 }
