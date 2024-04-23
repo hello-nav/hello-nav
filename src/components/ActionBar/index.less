@@ -16,9 +16,12 @@
   &:hover {
     background: var(--nav-filter-bg-hover);
   }
+  & > *:not(:last-child) {
+    margin-right: 6px;
+  }
   &__btn {
     display: flex;
-    & > * {
+    & > *:not(:last-child) {
       margin-right: 6px;
     }
   }
