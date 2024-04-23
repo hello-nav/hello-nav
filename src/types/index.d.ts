@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-interface AppItem {
+declare interface AppItem {
   name: string
   homepage: string
   repository?: string
@@ -7,40 +7,38 @@ interface AppItem {
   keywords?: string[]
   darkInvert?: true
   lessRadius?: true
+  favorite?: boolean
+  hidden?: boolean
 }
 
-interface CateItem {
+declare interface CateItem {
   title: string
   children: AppItem[]
 }
 
-type CategoryType = 'list' | 'category'
-type CategoryTypes = CategoryType[]
+declare type CategoryType = 'list' | 'category'
+declare type CategoryTypes = CategoryType[]
 
-interface LibraryMap {
+declare interface LibraryMap {
   list: AppItem[]
   category: CateItem[]
 }
 
-interface FiltersMap {
-  list(key: string): AppItem[]
-  category(key: string): CateItem[]
-}
-
-interface FilterProps {
+declare interface FilterProps {
   onInput(e: React.FormEvent): void
   onClear(): void
   filterKey: string
   toggleType: any
+  toggleSetting: any
   type: string
 }
 
-interface ContainWrapProp {
+declare interface ContainWrapProp {
   list: AppItem[] | CateItem[]
   type: string
 }
 
-interface WithErrorProps {
+declare interface WithErrorProps {
   isError: boolean
   [propName: string]: any
 }

@@ -8,7 +8,7 @@
   align-items: center;
   user-select: none;
   z-index: 2024;
-  color: var(--nav-color-regular);
+  color: var(--nav-filter-color);
   background: var(--nav-filter-bg);
   box-shadow: var(--nav-shadow);
   backdrop-filter: blur(20px);
@@ -31,7 +31,9 @@
     border-radius: 50%;
     background: var(--nav-action-item-bg);
     background-size: var(--nav-action-item-bg-size);
-    transition: 0.2s ease-in-out;
+    transition:
+      transform 0.3s cubic-bezier(0.6, 0.6, 0, 1),
+      all 0.3s;
     cursor: pointer;
     backdrop-filter: blur(2px);
     &:hover,
@@ -39,14 +41,16 @@
       background-size: var(--nav-action-item-bg-size-hover);
     }
     .icon {
-      font-size: 14px;
-    }
-    .list-icon {
       font-size: 15px;
     }
   }
   &__input-warp {
     position: relative;
+    &:hover {
+      .search-input {
+        background-size: var(--nav-action-item-bg-size-hover);
+      }
+    }
     .search-input {
       outline: none;
       height: var(--nav-action-item-size);
@@ -60,19 +64,16 @@
       color: var(--nav-color-primary);
       background: var(--nav-action-item-bg);
       background-size: var(--nav-action-item-bg-size);
-      transition: 0.3s ease-out;
+      transition: 0.4s cubic-bezier(0.6, 0.6, 0, 1);
       backdrop-filter: blur(3px);
       will-change: width, background, padding;
-      &:hover {
-        background-size: var(--nav-action-item-bg-size-hover);
-      }
       &:focus,
       &:not([value='']) {
         width: 210px;
         padding-left: 15px;
         padding-right: 28px;
         ~ .input-icon-wrap {
-          transform: translateX(220px);
+          transform: translateX(218px);
           .search-icon {
             opacity: 0;
           }
@@ -85,28 +86,32 @@
     .input-icon-wrap {
       position: absolute;
       top: 10px;
-      left: 11px;
+      left: 10px;
       border-radius: 50px;
       transform: translateX(0px);
       will-change: transform;
-      transition: transform 0.3s ease-out;
+      transition: transform 0.4s cubic-bezier(0.6, 0.6, 0, 1);
       .search-icon {
         opacity: 1;
         position: absolute;
         top: 0;
         left: 0;
         will-change: opacity;
-        transition: opacity 0.3s ease-out;
+        transition:
+          color 0.3s,
+          opacity 0.4s cubic-bezier(0.6, 0.6, 0, 1);
       }
       .clear-icon {
         opacity: 0;
         position: absolute;
         top: 0;
         left: 0;
-        font-size: 11px;
+        margin-top: -1px;
         z-index: 10;
         will-change: opacity;
-        transition: opacity 0.3s ease-out;
+        transition:
+          color 0.3s,
+          opacity 0.4s cubic-bezier(0.6, 0.6, 0, 1);
         cursor: pointer;
       }
     }

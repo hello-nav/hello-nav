@@ -20,11 +20,24 @@
     grid-template-columns: repeat(auto-fill, 120px);
     justify-content: center;
   }
+  &.reverse {
+    .app {
+      transform: rotateY(-180deg);
+    }
+    .app-back {
+      transform: rotateY(0deg);
+      background: var(--nav-app-bg-setting);
+    }
+    .app-placeholder {
+      transform: rotateY(0deg);
+      background: var(--nav-app-bg-setting);
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
   .contain-wrap {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 }
