@@ -8,7 +8,15 @@ import iconClear from '../../assets/images/icon-clear.svg'
 import { ReactSVG } from 'react-svg'
 import './index.less'
 
-function ActionBar({ filterKey, onInput, toggleType, toggleSetting, type, isSetting, onClear }: FilterProps) {
+function ActionBar({
+  filterKey,
+  type,
+  toggleType,
+  toggleSetting,
+  onInput,
+  onClear,
+  isSettingMode,
+}: FilterProps & { isSettingMode: boolean }) {
   return (
     <div className="filter-bar">
       <span className="filter-bar__btn">
@@ -17,7 +25,7 @@ function ActionBar({ filterKey, onInput, toggleType, toggleSetting, type, isSett
           <ReactSVG className="icon" src={type === 'list' ? iconList : iconCategory}></ReactSVG>
         </span>
         <span className="filter-bar__toggle-btn" onClick={toggleSetting} onKeyDown={() => {}}>
-          <ReactSVG className="icon setting-icon" src={isSetting ? iconSettingActive : iconSetting}></ReactSVG>
+          <ReactSVG className="icon setting-icon" src={isSettingMode ? iconSettingActive : iconSetting}></ReactSVG>
         </span>
       </span>
       <span className="filter-bar__input-warp">

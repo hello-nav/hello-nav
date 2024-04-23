@@ -8,7 +8,7 @@
   align-items: center;
   user-select: none;
   z-index: 2024;
-  color: var(--nav-color-regular);
+  color: var(--nav-filter-color);
   background: var(--nav-filter-bg);
   box-shadow: var(--nav-shadow);
   backdrop-filter: blur(20px);
@@ -40,18 +40,17 @@
     &:active {
       background-size: var(--nav-action-item-bg-size-hover);
     }
-    &:hover {
-      transform: scale(0.98);
-    }
-    &:active {
-      transform: scale(0.95);
-    }
     .icon {
       font-size: 15px;
     }
   }
   &__input-warp {
     position: relative;
+    &:hover {
+      .search-input {
+        background-size: var(--nav-action-item-bg-size-hover);
+      }
+    }
     .search-input {
       outline: none;
       height: var(--nav-action-item-size);
@@ -65,15 +64,9 @@
       color: var(--nav-color-primary);
       background: var(--nav-action-item-bg);
       background-size: var(--nav-action-item-bg-size);
-      transition: 0.5s cubic-bezier(0.6, 0.6, 0, 1);
+      transition: 0.4s cubic-bezier(0.6, 0.6, 0, 1);
       backdrop-filter: blur(3px);
       will-change: width, background, padding;
-      &:hover {
-        background-size: var(--nav-action-item-bg-size-hover);
-        ~ .input-icon-wrap {
-          transform: translateX(2px);
-        }
-      }
       &:focus,
       &:not([value='']) {
         width: 210px;
@@ -97,7 +90,7 @@
       border-radius: 50px;
       transform: translateX(0px);
       will-change: transform;
-      transition: transform 0.5s cubic-bezier(0.6, 0.6, 0, 1);
+      transition: transform 0.4s cubic-bezier(0.6, 0.6, 0, 1);
       .search-icon {
         opacity: 1;
         position: absolute;
@@ -106,7 +99,7 @@
         will-change: opacity;
         transition:
           color 0.3s,
-          opacity 0.5s cubic-bezier(0.6, 0.6, 0, 1);
+          opacity 0.4s cubic-bezier(0.6, 0.6, 0, 1);
       }
       .clear-icon {
         opacity: 0;
@@ -118,7 +111,7 @@
         will-change: opacity;
         transition:
           color 0.3s,
-          opacity 0.5s cubic-bezier(0.6, 0.6, 0, 1);
+          opacity 0.4s cubic-bezier(0.6, 0.6, 0, 1);
         cursor: pointer;
       }
     }

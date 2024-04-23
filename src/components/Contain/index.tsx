@@ -1,26 +1,32 @@
-import Cell from '../Cell'
+import Cell, { PlaceholderCell } from '../Cell'
 import './index.less'
 
-const Contain = (list: AppItem[]) => (
+const Contain = (list: AppItem[], cate: CateItem | null, isSettingMode: boolean) => (
   <ul className="app-list">
     {list.map(cell => (
-      <Cell {...cell} key={cell.name} />
+      <Cell
+        {...cell}
+        title={cate?.title}
+        isSettingMode={isSettingMode}
+        key={cell.name + (cell.favorite ? '_fav' : '') + (cell.hidden ? '_hid' : '')}
+      />
     ))}
+    {/* {isSettingMode && cate?.title !== 'favorites' && <PlaceholderCell key="empty" />} */}
   </ul>
 )
 
-function ContainWrap({ list, type, isSetting }: ContainWrapProp) {
+function ContainWrap({ list, type, isSettingMode }: ContainWrapProp & { isSettingMode: boolean }) {
   let contain
   if (type === 'list') {
-    contain = Contain(list as AppItem[])
+    contain = Contain(list as AppItem[], null, isSettingMode)
   } else {
     contain = (list as CateItem[]).reduce((vmList: React.ReactElement[], cate: CateItem) => {
-      const apps: AppItem[] = cate.children
+      const { children: apps } = cate
       if (apps.length) {
         vmList.push(
           <div className="category-item" key={cate.title}>
             <h2 className="category-item__title">{cate.title.toUpperCase()}</h2>
-            {Contain(apps)}
+            {Contain(apps, cate, isSettingMode)}
           </div>,
         )
       }
@@ -28,10 +34,7 @@ function ContainWrap({ list, type, isSetting }: ContainWrapProp) {
     }, [])
   }
 
-  const containClass = [
-    'contain-wrap',
-    isSetting ? 'reverse' : '',
-  ].join(' ')
+  const containClass = ['contain-wrap', isSettingMode ? 'reverse' : ''].join(' ')
   return <div className={containClass}>{contain}</div>
 }
 

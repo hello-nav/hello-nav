@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useContext, useEffect } from 'react'
+import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
+import { AppsContext } from '../../hooks/index'
 import libraryTree from '../../model'
 import ActionBar from '../ActionBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'
 import Footer from '../Footer'
-import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
 
 const CATEGORY_TYPES: CategoryTypes = ['category', 'list']
 const ContainWithNotFind = WithError<ContainWrapProp>(ContainWrap, "Oops! Couldn't find it here...")
@@ -21,8 +22,8 @@ const libraryMap: LibraryMap = {
 const filterListByKey = (list: AppItem[], key: string) =>
   list.filter(app => (app.keywords as string[]).some(k => k.includes(key)))
 
-const genFilterByList = (list: (AppItem | CateItem)[]) => (filterKey: string) => {
-  if (window.localStorage.__CATEGORY_TYPE__ === 'list') {
+const genFilteredByList = (list: (AppItem | CateItem)[], type: CategoryType, filterKey: string) => {
+  if (type === 'list') {
     return filterListByKey(list as AppItem[], filterKey)
   }
   return (list as CateItem[]).map(cate => ({
@@ -30,24 +31,8 @@ const genFilterByList = (list: (AppItem | CateItem)[]) => (filterKey: string) =>
     children: filterListByKey(cate.children, filterKey),
   }))
 }
-const filtersMap: FiltersMap = CATEGORY_TYPES.reduce((res: any, key) => {
-  res[key] = genFilterByList(libraryMap[key])
-  return res
-}, {})
 
-let oldFilterKey = ''
 let typeIndex: number = 0
-const toggleType = (setType: any, setList: any, type?: CategoryType) => {
-  typeIndex = (typeIndex + 1) % 2
-  type = CATEGORY_TYPES[typeIndex]
-  window.localStorage.__CATEGORY_TYPE__ = type
-  setType(type)
-  if (oldFilterKey) {
-    setList(filtersMap[type](oldFilterKey))
-  } else {
-    setList(libraryMap[type])
-  }
-}
 
 function App() {
   const { __CATEGORY_TYPE__ } = window.localStorage
@@ -55,20 +40,39 @@ function App() {
   if (!__CATEGORY_TYPE__) {
     window.localStorage.__CATEGORY_TYPE__ = type
   }
-
-  const [list, setList] = useState<(AppItem | CateItem)[]>(libraryMap[type])
   const [filterKey, setFilterKey] = useState<string>('')
-  typeIndex = CATEGORY_TYPES.indexOf(type)
-  const [isSetting, setIsSetting] = useState(false)
-
   const newFilterKey = filterKey.trim().toLowerCase().replace(IGNORE_KEYWORD_REG, '')
-  if (oldFilterKey !== newFilterKey) {
-    setList(filtersMap[type](newFilterKey))
-    oldFilterKey = newFilterKey
+
+  const { favoriteApps } = useContext(AppsContext)
+  const libraries: (AppItem | CateItem)[] =
+    type === 'category'
+      ? [
+          {
+            title: 'favorites',
+            children: favoriteApps,
+          },
+          ...libraryMap[type],
+        ]
+      : [...favoriteApps, ...libraryMap[type]]
+
+  let filteredLibraries = genFilteredByList(libraries, type, newFilterKey)
+
+  useEffect(() => {
+    window.localStorage.__CATEGORY_TYPE__ = type
+  }, [type])
+
+  typeIndex = CATEGORY_TYPES.indexOf(type)
+  const [isSettingMode, setIsSettingMode] = useState(false)
+
+  function toggleType() {
+    typeIndex = (typeIndex + 1) % 2
+    setType(CATEGORY_TYPES[typeIndex])
   }
 
   const hasData =
-    type === 'category' ? (list as CateItem[]).filter(cate => cate.children.length).length : (list as AppItem[]).length
+    type === 'list'
+      ? (filteredLibraries as AppItem[]).length
+      : (filteredLibraries as CateItem[]).some(cate => cate.children.length)
 
   return (
     <div className="body">
@@ -77,12 +81,12 @@ function App() {
         onInput={(e: React.ChangeEvent<HTMLInputElement>) => setFilterKey(e.target.value)}
         onClear={() => setFilterKey('')}
         type={type}
-        isSetting={isSetting}
-        toggleType={() => toggleType(setType, setList)}
-        toggleSetting={() => setIsSetting(!isSetting)}
+        isSettingMode={isSettingMode}
+        toggleType={toggleType}
+        toggleSetting={() => setIsSettingMode(!isSettingMode)}
       />
       <div className="main">
-        <ContainWithNotFind list={list} type={type} isSetting={isSetting} isError={!hasData} />
+        <ContainWithNotFind list={filteredLibraries} type={type} isSettingMode={isSettingMode} isError={!hasData} />
       </div>
       <Footer />
     </div>
