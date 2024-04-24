@@ -14,7 +14,7 @@ const Footer = () => (
         with
         <span className="heart"> ❤</span>
       </span>
-      <p>&copy;2018-{new Date().getFullYear()} Hello Nav</p>
+      <p>&copy;2018-{new Date().getFullYear()} Hello Nav.</p>
     </div>
   </div>
 )
