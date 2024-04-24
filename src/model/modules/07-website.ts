@@ -275,6 +275,14 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://medium.com/',
+    repository: 'https://github.com/Medium',
+    icon: 'medium.png',
+    keywords: ['medium'],
+    name: 'Medium',
+    darkInvert: true,
+  },
+  {
     homepage: 'https://css-tricks.com/',
     icon: 'css-tricks.png',
     keywords: ['css-tricks'],
@@ -285,6 +293,13 @@ export default <AppItem[]>[
     icon: 'smashing-magazine.png',
     keywords: ['smashing-magazine'],
     name: 'SmashingMagazine',
+  },
+  {
+    homepage: 'https://www.producthunt.com/',
+    repository: 'https://github.com/producthunt',
+    icon: 'producthunt.png',
+    keywords: ['producthunt'],
+    name: 'Product Hunt',
   },
   {
     homepage: 'https://www.yuque.com/',
