@@ -349,6 +349,13 @@ export default <AppItem[]>[
     name: 'Floating UI',
   },
   {
+    homepage: 'https://sli.dev/',
+    repository: 'https://github.com/slidevjs/slidev',
+    icon: 'slidev.png',
+    keywords: ['slidev'],
+    name: 'Slidev',
+  },
+  {
     homepage: 'https://axios-http.com/',
     repository: 'https://github.com/axios/axios',
     icon: 'axios.png',
@@ -482,6 +489,13 @@ export default <AppItem[]>[
     icon: 'hljs.png',
     keywords: ['highlightjs', 'highlight.js', 'hljs'],
     name: 'HighlightJS',
+  },
+  {
+    homepage: 'https://shiki.style/',
+    repository: 'https://github.com/shikijs/shiki',
+    icon: 'shiki.png',
+    keywords: ['shiki', 'highlight'],
+    name: 'Shiki',
   },
   {
     homepage: 'http://logic-flow.org/',
