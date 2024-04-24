@@ -3,7 +3,7 @@ import gitHubIcon from '../../assets/images/github.svg'
 
 const Message = ({ filterKey }: { filterKey: string }) => (
   <>
-    Oops! Couldn`t find it here...
+    Oops! Couldn't find it here...
     <div className="error-tips">
       Try searching on{' '}
       <a href={`https://github.com/search?q=${filterKey}`} target="_blank">
