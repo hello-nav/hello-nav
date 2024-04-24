@@ -297,6 +297,13 @@ export default <AppItem[]>[
     name: 'Radix Svelte',
   },
   {
+    homepage: 'https://www.bits-ui.com/',
+    repository: 'https://github.com/huntabyte/bits-ui',
+    icon: 'bits-ui.png',
+    keywords: ['bits-ui', 'svelte'],
+    name: 'Bits UI',
+  },
+  {
     homepage: 'https://daisyui.com/',
     repository: 'https://github.com/saadeghi/daisyui',
     icon: 'daisyui.png',

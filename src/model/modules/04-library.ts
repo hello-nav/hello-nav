@@ -349,6 +349,13 @@ export default <AppItem[]>[
     name: 'Floating UI',
   },
   {
+    homepage: 'https://svelte-sonner.vercel.app/',
+    repository: 'https://github.com/wobsoriano/svelte-sonner',
+    icon: 'svelte-sonner.png',
+    keywords: ['svelte-sonner'],
+    name: 'Svelte Sonner',
+  },
+  {
     homepage: 'https://sli.dev/',
     repository: 'https://github.com/slidevjs/slidev',
     icon: 'slidev.png',
