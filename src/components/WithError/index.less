@@ -3,7 +3,8 @@
   text-align: center;
   margin-top: 25vh;
   font-size: 24px;
-  color: var(--nav-color-primary);
+  color: var(--nav-color-regular);
+  transition: color 0.3s;
   .error-tips {
     font-size: 20px;
     margin-top: 8px;
@@ -16,7 +17,7 @@
     padding: 0 4px;
     border-radius: 6px;
     text-decoration: underline;
-    color: currentColor;
+    color: var(--nav-color-regular);
     transition:
       color 0.1s,
       background 0.1s;
@@ -40,4 +41,8 @@
       }
     }
   }
+}
+
+.result-tips {
+  color: var(--nav-color-secondary);
 }

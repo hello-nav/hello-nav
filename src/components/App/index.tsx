@@ -70,10 +70,10 @@ function App() {
     setType(CATEGORY_TYPES[typeIndex])
   }
 
-  const hasData =
+  const resultAppCount =
     type === 'list'
       ? (filteredLibraries as AppItem[]).length
-      : (filteredLibraries as CateItem[]).some(cate => cate.children.length)
+      : (filteredLibraries as CateItem[]).reduce((c, cate) => c + cate.children.length, 0)
 
   return (
     <div className="body">
@@ -90,9 +90,10 @@ function App() {
         <ContainWithNotFind
           list={filteredLibraries}
           type={type}
-          isSettingMode={isSettingMode}
           filterKey={filterKey}
-          isError={!hasData}
+          isSettingMode={isSettingMode}
+          resultAppCount={resultAppCount}
+          isError={!resultAppCount}
         />
       </div>
       <Footer />

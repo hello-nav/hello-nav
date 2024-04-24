@@ -1,4 +1,4 @@
-export const IGNORE_KEYWORD_REG = /[ -_.]/g
+export const IGNORE_KEYWORD_REG = /[\s-_\.]/g
 
 export function transformAppKeyWords(app: AppItem): void {
   if (!Array.isArray(app.keywords) || !app.keywords.length) {
