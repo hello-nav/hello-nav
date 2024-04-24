@@ -66,6 +66,13 @@ export default <AppItem[]>[
     name: 'Adonis',
   },
   {
+    homepage: 'https://hono.dev/',
+    repository: 'https://github.com/honojs/hono',
+    icon: 'hono.png',
+    keywords: ['hono'],
+    name: 'Hono',
+  },
+  {
     homepage: 'https://hapijs.com/',
     repository: 'https://github.com/hapijs/hapi',
     icon: 'hapi.png',

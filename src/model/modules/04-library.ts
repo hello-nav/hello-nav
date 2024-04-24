@@ -42,6 +42,13 @@ export default <AppItem[]>[
     name: 'Rollup',
   },
   {
+    homepage: 'https://rolldown.rs/',
+    repository: 'https://github.com/rolldown/rolldown',
+    icon: 'rolldown.png',
+    keywords: ['rolldown'],
+    name: 'Rolldown',
+  },
+  {
     homepage: 'https://parceljs.org/',
     repository: 'https://github.com/parcel-bundler/parcel',
     icon: 'parcel.png',
