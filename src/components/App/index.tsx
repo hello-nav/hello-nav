@@ -1,5 +1,7 @@
 import { useState, useContext, useEffect } from 'react'
+import { ReactSVG } from 'react-svg'
 import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
+import gitHubIcon from '../../assets/images/github.svg'
 import { AppsContext } from '../../hooks/index'
 import libraryTree from '../../model'
 import ActionBar from '../ActionBar'
@@ -8,7 +10,19 @@ import WithError from '../WithError'
 import Footer from '../Footer'
 
 const CATEGORY_TYPES: CategoryTypes = ['category', 'list']
-const ContainWithNotFind = WithError<ContainWrapProp>(ContainWrap, "Oops! Couldn't find it here...")
+const Message = ({ filterKey }: { filterKey: string }) => (
+  <>
+    Oops! Couldn`t find it here...
+    <div className="error-tips">
+      Try searching on{' '}
+      <a href={`https://github.com/search?q=${filterKey}`} target="_blank">
+        <ReactSVG className="icon" width={18} height={18} src={gitHubIcon}></ReactSVG> GitHub
+      </a>
+      .
+    </div>
+  </>
+)
+const ContainWithNotFind = WithError<ContainWrapProp>(ContainWrap, Message)
 
 const libraryMap: LibraryMap = {
   category: libraryTree,
@@ -86,7 +100,13 @@ function App() {
         toggleSetting={() => setIsSettingMode(!isSettingMode)}
       />
       <div className="main">
-        <ContainWithNotFind list={filteredLibraries} type={type} isSettingMode={isSettingMode} isError={!hasData} />
+        <ContainWithNotFind
+          list={filteredLibraries}
+          type={type}
+          isSettingMode={isSettingMode}
+          filterKey={filterKey}
+          isError={!hasData}
+        />
       </div>
       <Footer />
     </div>

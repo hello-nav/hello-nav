@@ -1,7 +1,43 @@
 .err-message {
   line-height: 30px;
   text-align: center;
-  margin-top: 200px;
-  font-size: 20px;
-  color: var(--nav-color-secondary);
+  margin-top: 25vh;
+  font-size: 24px;
+  color: var(--nav-color-primary);
+  .error-tips {
+    font-size: 20px;
+    margin-top: 8px;
+    color: var(--nav-color-secondary);
+  }
+  a {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: bottom;
+    padding: 0 4px;
+    border-radius: 6px;
+    text-decoration: underline;
+    color: currentColor;
+    transition:
+      color 0.1s,
+      background 0.1s;
+    &:hover {
+      background: var(--nav-bg-secondary);
+      color: var(--nav-color-primary);
+      .icon {
+        fill: var(--nav-color-primary);
+      }
+    }
+    .icon {
+      display: inline-block;
+      color: var(--nav-color-regular);
+      transition: color 0.1s;
+      margin-right: 2px;
+      > div {
+        height: 100%;
+        svg {
+          vertical-align: top;
+        }
+      }
+    }
+  }
 }
