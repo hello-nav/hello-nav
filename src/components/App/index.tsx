@@ -1,27 +1,14 @@
 import { useState, useContext, useEffect } from 'react'
-import { ReactSVG } from 'react-svg'
 import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
-import gitHubIcon from '../../assets/images/github.svg'
 import { AppsContext } from '../../hooks/index'
 import libraryTree from '../../model'
 import ActionBar from '../ActionBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'
+import Message from '../WithError/Message'
 import Footer from '../Footer'
 
 const CATEGORY_TYPES: CategoryTypes = ['category', 'list']
-const Message = ({ filterKey }: { filterKey: string }) => (
-  <>
-    Oops! Couldn`t find it here...
-    <div className="error-tips">
-      Try searching on{' '}
-      <a href={`https://github.com/search?q=${filterKey}`} target="_blank">
-        <ReactSVG className="icon" width={18} height={18} src={gitHubIcon}></ReactSVG> GitHub
-      </a>
-      .
-    </div>
-  </>
-)
 const ContainWithNotFind = WithError<ContainWrapProp>(ContainWrap, Message)
 
 const libraryMap: LibraryMap = {
