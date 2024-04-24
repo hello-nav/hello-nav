@@ -1,5 +1,5 @@
 ---
-name: request-app
+name: Request app
 about: Request app(s)
 title: Request (app-name)
 labels: request
