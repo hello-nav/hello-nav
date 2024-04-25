@@ -33,14 +33,14 @@ const genFilteredByList = (list: (AppItem | CateItem)[], type: CategoryType, fil
   }))
 }
 
-let typeIndex: number = 0
-
 function App() {
   const { __CATEGORY_TYPE__ } = window.localStorage
   const [type, setType] = useState<CategoryType>(__CATEGORY_TYPE__ || CATEGORY_TYPES[0])
   if (!__CATEGORY_TYPE__) {
     window.localStorage.__CATEGORY_TYPE__ = type
   }
+
+  const [isSettingMode, setIsSettingMode] = useState(false)
   const [filterKey, setFilterKey] = useState<string>('')
   const newFilterKey = filterKey.trim().toLowerCase().replace(IGNORE_KEYWORD_REG, '')
 
@@ -62,12 +62,9 @@ function App() {
     window.localStorage.__CATEGORY_TYPE__ = type
   }, [type])
 
-  typeIndex = CATEGORY_TYPES.indexOf(type)
-  const [isSettingMode, setIsSettingMode] = useState(false)
-
   function toggleType() {
-    typeIndex = (typeIndex + 1) % 2
-    setType(CATEGORY_TYPES[typeIndex])
+    const typeIndex = CATEGORY_TYPES.indexOf(type)
+    setType(CATEGORY_TYPES[(typeIndex + 1) % 2])
   }
 
   const resultAppCount =
