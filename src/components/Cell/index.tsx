@@ -15,7 +15,8 @@ function getImgSrc(fileName: string): string {
 
 const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boolean }) => {
   const { name, icon, homepage, repository, darkInvert, lessRadius, title } = appItem
-  const { favoriteAppNames, hiddenAppNames, toggleFavorite, toggleVisible } = useContext(AppsContext)
+  const { favoriteAppNames, hiddenAppNames, filterKey, moveLeft, moveRight, toggleFavorite, toggleVisible } =
+    useContext(AppsContext)
   const imgClass = [darkInvert ? 'dark-invert' : '', lessRadius ? 'less-radius' : ''].join(' ')
   const size =
     name.length > 11
@@ -58,14 +59,28 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
           </p>
         </div>
         <div className="app-setting-content">
-          {/* <div
-            className={`icon ${hiddenAppNames.includes(appItem.name) ? 'icon-hide' : 'icon-show'}`}
-            onClick={() => toggleVisible(appItem)}
-          ></div> */}
+          {/* {!appItem.favorite && (
+            <div
+              className={`icon ${hiddenAppNames.includes(appItem.name) ? 'icon-hide' : 'icon-show'}`}
+              onClick={() => toggleVisible(appItem)}
+            ></div>
+          )} */}
+          {appItem.favorite && !filterKey && (
+            <div
+              className={`icon icon-left ${appItem.first ? 'disabled' : ''}`}
+              onClick={() => moveLeft(appItem)}
+            ></div>
+          )}
           <div
             className={`icon ${appItem.favorite ? 'icon-favorite-active' : 'icon-favorite'}`}
             onClick={() => toggleFavorite(appItem)}
           ></div>
+          {appItem.favorite && !filterKey && (
+            <div
+              className={`icon icon-right ${appItem.final ? 'disabled' : ''}`}
+              onClick={() => moveRight(appItem)}
+            ></div>
+          )}
           {/* <div className="icon icon-edit" onClick={() => onEditApp(appItem)}></div> */}
         </div>
       </div>

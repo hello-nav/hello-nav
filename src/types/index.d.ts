@@ -9,6 +9,8 @@ declare interface AppItem {
   lessRadius?: true
   favorite?: boolean
   hidden?: boolean
+  first?: boolean
+  final?: boolean
 }
 
 declare interface CateItem {

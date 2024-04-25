@@ -5,10 +5,14 @@ const AppsContext = createContext({
   favoriteAppNames: [] as string[],
   setFavoriteApps: (apps: Array<AppItem>) => {},
   toggleFavorite: (app: AppItem) => {},
+  moveLeft: (app: AppItem) => {},
+  moveRight: (app: AppItem) => {},
   hiddenApps: [] as Array<AppItem>,
   hiddenAppNames: [] as string[],
   setHiddenApps: (apps: Array<AppItem>) => {},
   toggleVisible: (app: AppItem) => {},
+  filterKey: '' as string,
+  setFilterKey: (str: string) => {},
 })
 
 const AppsProvider = ({ children }: any) => {
@@ -17,7 +21,15 @@ const AppsProvider = ({ children }: any) => {
     let apps: Array<AppItem> = []
     try {
       apps = JSON.parse(localStorage.getItem('HELLO_NAV_FAVORITE')!) || []
-      apps.forEach(a => (a.favorite = true))
+      apps.forEach((a, i) => {
+        a.favorite = true
+        if (!i) {
+          a.first = true
+        }
+        if (i === apps.length - 1) {
+          a.final = true
+        }
+      })
     } catch (_) {}
     return apps
   })
@@ -30,14 +42,69 @@ const AppsProvider = ({ children }: any) => {
 
   const toggleFavorite = useCallback(
     (app: AppItem) => {
-      const list = Array.from(favoriteApps)
-      const index = list.findIndex(item => item.name === app.name)
+      const apps = Array.from(favoriteApps)
+      const index = apps.findIndex(item => item.name === app.name)
       if (index >= 0) {
-        list.splice(index, 1)
+        apps.splice(index, 1)
       } else {
-        list.push({ ...app, favorite: true })
+        apps.push({ ...app, favorite: true })
       }
-      setFavoriteApps(list)
+      apps.forEach((a, i) => {
+        delete a.first
+        delete a.final
+        if (!i) {
+          a.first = true
+        }
+        if (i === apps.length - 1) {
+          a.final = true
+        }
+      })
+      setFavoriteApps(apps)
+    },
+    [favoriteApps],
+  )
+
+  const moveLeft = useCallback(
+    (app: AppItem) => {
+      const apps = Array.from(favoriteApps)
+      const index = apps.findIndex(item => item.name === app.name)
+      if (index > 0) {
+        apps.splice(index, 1)
+        apps.splice(index - 1, 0, { ...app })
+        apps.forEach((a, i) => {
+          delete a.first
+          delete a.final
+          if (!i) {
+            a.first = true
+          }
+          if (i === apps.length - 1) {
+            a.final = true
+          }
+        })
+        setFavoriteApps(apps)
+      }
+    },
+    [favoriteApps],
+  )
+  const moveRight = useCallback(
+    (app: AppItem) => {
+      const apps = Array.from(favoriteApps)
+      const index = apps.findIndex(item => item.name === app.name)
+      if (index < apps.length - 1) {
+        apps.splice(index, 1)
+        apps.splice(index + 1, 0, { ...app })
+        apps.forEach((a, i) => {
+          delete a.first
+          delete a.final
+          if (!i) {
+            a.first = true
+          }
+          if (i === apps.length - 1) {
+            a.final = true
+          }
+        })
+        setFavoriteApps(apps)
+      }
     },
     [favoriteApps],
   )
@@ -72,15 +139,21 @@ const AppsProvider = ({ children }: any) => {
     [hiddenApps],
   )
 
+  const [filterKey, setFilterKey] = useState<string>('')
+
   const value = {
     favoriteApps,
     favoriteAppNames,
     setFavoriteApps,
     toggleFavorite,
+    moveLeft,
+    moveRight,
     hiddenApps,
     hiddenAppNames,
     setHiddenApps,
     toggleVisible,
+    filterKey,
+    setFilterKey,
   }
 
   return <AppsContext.Provider value={value}>{children}</AppsContext.Provider>

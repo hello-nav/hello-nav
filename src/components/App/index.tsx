@@ -41,10 +41,8 @@ function App() {
   }
 
   const [isSettingMode, setIsSettingMode] = useState(false)
-  const [filterKey, setFilterKey] = useState<string>('')
+  const { favoriteApps, filterKey, setFilterKey } = useContext(AppsContext)
   const newFilterKey = filterKey.trim().toLowerCase().replace(IGNORE_KEYWORD_REG, '')
-
-  const { favoriteApps } = useContext(AppsContext)
   const libraries: (AppItem | CateItem)[] =
     type === 'category'
       ? [
