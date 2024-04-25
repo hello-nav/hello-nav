@@ -1,6 +1,6 @@
 {
   "name": "hello-nav",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "author": "Bener",
   "private": true,
   "license": "MIT",
@@ -12,6 +12,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:ext": "npm run build && node ./scripts/build-ext.mjs",
     "preview": "vite preview",
     "lint": "prettier --write ."
   },
@@ -31,6 +32,7 @@
     "prettier": "^3.2.5",
     "typescript": "^4.6.3",
     "vite": "^2.9.16",
-    "vite-plugin-glob": "^0.3.2"
+    "vite-plugin-glob": "^0.3.2",
+    "zx": "^8.0.2"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "hello nav",
-  "short_name": "nav",
+  "name": "Hello Nav",
+  "short_name": "Hello Nav",
   "icons": [
     {
       "src": "/favicon/favicon-36.png",

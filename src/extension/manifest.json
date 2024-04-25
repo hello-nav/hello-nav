@@ -1,0 +1,14 @@
+{
+  "name": "Hello Nav",
+  "description": "A navigation for developer.",
+  "version": "1.0.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "./favicon/favicon-512.png",
+    "48": "./favicon/favicon-512.png",
+    "128": "./favicon/favicon-512.png"
+  },
+  "manifest_version": 3
+}

@@ -49,6 +49,9 @@ devDependencies:
   vite-plugin-glob:
     specifier: ^0.3.2
     version: 0.3.2
+  zx:
+    specifier: ^8.0.2
+    version: 8.0.2
 
 packages:
 
@@ -395,9 +398,34 @@ packages:
       tslib: 2.6.2
     dev: false
 
+  /@types/fs-extra@11.0.4:
+    resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
+    requiresBuild: true
+    dependencies:
+      '@types/jsonfile': 6.1.4
+      '@types/node': 18.11.9
+    dev: true
+    optional: true
+
+  /@types/jsonfile@6.1.4:
+    resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
+    requiresBuild: true
+    dependencies:
+      '@types/node': 18.11.9
+    dev: true
+    optional: true
+
   /@types/node@18.11.9:
     resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: true
+
+  /@types/node@20.12.7:
+    resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
+    requiresBuild: true
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+    optional: true
 
   /@types/prop-types@15.7.12:
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -1316,6 +1344,12 @@ packages:
     resolution: {integrity: sha512-/+BmBDe8GvlB2nIflWasLLAInjYG0bC9HRnfEpNi4sw77J2AJNnEVnTDReVrehoh825+Q/evF3THXTAweyam2g==}
     dev: true
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /update-browserslist-db@1.0.13(browserslist@4.23.0):
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
     hasBin: true
@@ -1371,4 +1405,13 @@ packages:
       rollup: 2.75.7
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /zx@8.0.2:
+    resolution: {integrity: sha512-3g+ePtPYmyrjRuASlJiUhkje1je4a47woML/fzTKBb9PA5BzRQbSswwyJ8nlFWJjA1ORRi6TMyAdhuz/jK+Gaw==}
+    engines: {node: '>= 16.0.0'}
+    hasBin: true
+    optionalDependencies:
+      '@types/fs-extra': 11.0.4
+      '@types/node': 20.12.7
     dev: true
