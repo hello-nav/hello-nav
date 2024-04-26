@@ -1,4 +1,6 @@
-![hello-nav](https://socialify.git.ci/hello-nav/hello-nav/image?description=1&descriptionEditable=A%20navigation%20for%20developer&font=Raleway&logo=https%3A%2F%2Fgithub.com%2Fhello-nav%2Fhello-nav%2Fblob%2Fmain%2Fpublic%2Ffavicon%2Ffavicon-512.png%3Fraw%3Dtrue&name=1&pattern=Plus&theme=Auto)
+<div align="center">
+  <img src="https://github.com/hello-nav/hello-nav/assets/19926530/d601ef5c-164c-4a93-9cb0-bc15f133ba45" />
+</div>
 
 ## A navigation for developer
 
