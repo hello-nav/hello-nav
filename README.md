@@ -6,11 +6,12 @@
 
 ## 🗺 Features
 
-- 300+ Apps
-- App search with keywords
-- List or category view
-- Github link
-- Offline
+- 300+ popular apps
+- Keyword Search
+- Quickly open GitHub links
+- List and Category display
+- Set favorites app
+- Chrome new-tab extension
 - Dark mode
 
 ## 🎨 Design
