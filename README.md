@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://github.com/hello-nav/hello-nav/assets/19926530/d601ef5c-164c-4a93-9cb0-bc15f133ba45" />
-</div>
+<div align="center"><img src="./doc/images/logo-text.png" /></div>
 
 ## A navigation for developer
 
