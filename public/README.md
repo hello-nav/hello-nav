@@ -1,5 +1,4 @@
-![hello-nav](https://raw.githubusercontent.com/hello-nav/hello-nav/main/doc/images/logo-text.png)
-
+<div align="center"><img src="https://raw.githubusercontent.com/hello-nav/hello-nav/main/doc/images/logo-text.png" /></div>
 
 # Hello Nav' website
 
