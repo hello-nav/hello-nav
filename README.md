@@ -1,6 +1,6 @@
 <div align="center"><img src="./doc/images/logo-text.png" /></div>
 
-## A navigation for developer
+## A pure navigation for developers
 
 [https://hello-nav.github.io](https://hello-nav.github.io)
 

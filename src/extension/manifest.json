@@ -1,6 +1,6 @@
 {
   "name": "Hello Nav",
-  "description": "A navigation for developer.",
+  "description": "A pure navigation for developers.",
   "version": "1.0.0",
   "chrome_url_overrides": {
     "newtab": "index.html"
