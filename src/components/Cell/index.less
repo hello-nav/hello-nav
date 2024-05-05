@@ -1,6 +1,6 @@
 .cell {
   display: grid;
-  grid-template: 15px 1fr 15px / 10px 1fr 10px;
+  grid-template: 10px 90px 10px / 10px 90px 10px;
   transform-style: preserve-3d;
   perspective: 500px;
   &.hide .app-back {
@@ -10,7 +10,7 @@
     position: relative;
     display: grid;
     grid-area: 2 / 2;
-    grid-template: 70px 28px / 100%;
+    grid-template: 6px 1fr 20px 10px / 1fr;
     border-radius: 8px;
     transform-origin: bottom;
     transition:
@@ -24,20 +24,21 @@
       box-shadow: var(--nav-shadow);
       animation: 2.5s 2s rock infinite;
       .corner {
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
         transition-duration: 0.3s;
         transition-delay: 0.1s;
       }
     }
     .img-box {
+      grid-area: 2 / 1;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        width: 50px;
-        height: fit-content;
-        max-height: 50px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
         border-radius: 11px;
         opacity: var(--nav-app-logo-op);
         transition: filter 0.3s;
@@ -51,11 +52,12 @@
       }
     }
     .title {
+      grid-area: 3 / 1;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       padding: 0 4px;
-      line-height: 18px;
+      line-height: 20px;
       font-size: 14px;
       color: var(--nav-color-primary);
       transition: color 0.3s;
@@ -87,8 +89,8 @@
         0px 2px 6px rgba(128, 128, 128, 0.08),
         0px 2px 2px rgba(58, 58, 58, 0.08);
       &:hover {
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
         transition-duration: 0.3s;
         .corner-icon-wrap {
           .corner-icon {
@@ -98,8 +100,8 @@
         }
       }
       &:active {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
         transition-duration: 0.2s;
         .corner-icon-wrap {
           .corner-icon {
@@ -119,8 +121,8 @@
           position: absolute;
           top: 0;
           right: 0;
-          width: 13px;
-          height: 13px;
+          width: 12px;
+          height: 12px;
           transform: rotate(45deg) translate(0px, 12px);
           transition: 0.2s 0.1s cubic-bezier(0.6, 0.6, 0, 1);
         }
@@ -130,9 +132,7 @@
   .app-back {
     display: grid;
     grid-area: 2 / 2;
-    grid-template-rows: 1fr 1fr;
-    width: 100px;
-    height: 98px;
+    grid-template-rows: 12px 1fr 22px 7px;
     border-radius: 8px;
     transition:
       color 0.3s,
@@ -144,13 +144,16 @@
     background: var(--nav-app-bg);
     color: var(--nav-color-primary);
     .app-setting-head {
-      padding: 14px 0 0;
+      display: grid;
+      grid-area: 2 / 1;
+      grid-template-rows: 1fr 1fr;
       font-size: 13px;
       img {
-        width: 26px;
-        height: fit-content;
-        max-height: 26px;
+        grid-area: 1 / 1;
+        width: 24px;
+        height: 24px;
         border-radius: 4px;
+        margin: auto;
         opacity: var(--nav-app-logo-op);
         transition: filter 0.3s;
         vertical-align: middle;
@@ -163,9 +166,11 @@
         }
       }
       .title {
-        line-height: 13px;
+        grid-area: 2 / 1;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 0 2px;
         overflow: hidden;
-        margin-top: 8px;
         text-overflow: ellipsis;
         white-space: nowrap;
         color: var(--nav-color-primary);
@@ -185,13 +190,14 @@
       }
     }
     .app-setting-content {
+      grid-area: 3 / 1;
       display: flex;
       justify-content: center;
       flex: 1;
-      margin-top: 5px;
       .icon {
+        user-select: none;
         padding: 3px;
-        font-size: 18px;
+        font-size: 16px;
         cursor: pointer;
         border-radius: 6px;
         font-family: 'iconfont';
