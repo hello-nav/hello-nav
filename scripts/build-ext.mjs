@@ -15,4 +15,6 @@ await $`rm -rf ${outputDir}/*`
 await $`cp -r ${distDir}/* ${outputDir}`
 await $`cp -rf ${extensionDir}/* ${outputDir}`
 
+await $`zip -r hello-nav.zip ./extension`
+
 console.log('🧩 Extension generation success!')
