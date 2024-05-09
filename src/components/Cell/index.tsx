@@ -3,9 +3,27 @@ import { AppsContext } from '../../hooks/index'
 import gitHubIcon from '../../assets/images/github.png'
 import './index.less'
 
-function onCornerClick(e: React.SyntheticEvent, repository: string) {
+function onClickApp(appItem: AppItem) {
+  try {
+    gtag('event', 'click', {
+      event_category: 'App',
+      event_label: 'app',
+      value: appItem.name,
+    })
+  } catch (e) {}
+}
+
+function onCornerClick(e: React.SyntheticEvent, appItem: AppItem) {
   e.preventDefault()
-  window.open(repository)
+  e.stopPropagation()
+  try {
+    gtag('event', 'click', {
+      event_category: 'App',
+      event_label: 'app-repo',
+      value: appItem.name,
+    })
+  } catch (e) {}
+  window.open(appItem.repository)
   return false
 }
 
@@ -36,7 +54,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
 
   return !isFavoriteApp ? (
     <li className={`cell ${isHiddenApp ? 'hide' : ''} ${appItem.favorite ? 'favorite' : ''}`}>
-      <a className="app" href={homepage} title={name}>
+      <a className="app" href={homepage} title={name} onClick={() => onClickApp(appItem)}>
         <div className="img-box">
           <img src={getImgSrc(icon)} className={imgClass} alt={name} />
         </div>
@@ -44,7 +62,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
           {name}
         </p>
         {repository && (
-          <div onKeyDown={() => {}} onClick={e => onCornerClick(e, repository)} className="corner">
+          <div onKeyDown={() => {}} onClick={e => onCornerClick(e, appItem)} className="corner">
             <div className="corner-icon-wrap">
               <img className="corner-icon" draggable={false} src={gitHubIcon} alt="" />
             </div>
