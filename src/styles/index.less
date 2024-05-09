@@ -1,0 +1,97 @@
+@import url('./theme/light.less');
+@import url('./theme/dark.less');
+@import url('../assets/fonts/iconfont/iconfont.css');
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('../assets/fonts/Barlow-ExtraBoldItalic.woff') format('woff'),
+    url('../assets/fonts/Barlow-ExtraBoldItalic.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background: var(--nav-bg-regular);
+}
+
+body {
+  background: var(--nav-bg-regular);
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.3s;
+  transition-property: background, color;
+}
+
+body:before {
+  opacity: 0;
+  content: '';
+  position: fixed;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 30px rgba(22, 22, 22, 0.2);
+  z-index: 2024;
+  transition: 0.3s;
+}
+
+body.scrolling:before {
+  opacity: 1;
+}
+
+h1 {
+  height: 0;
+  line-height: 0;
+  width: 0;
+  text-indent: -99999px;
+  overflow: hidden;
+  visibility: hidden;
+  font-family: 'Barlow';
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+#___gatsby {
+  display: flex;
+  flex-direction: column;
+  padding: 86px 0;
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#gatsby-focus-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  min-height: 300px;
+}
+
+.vertical-center {
+  vertical-align: middle;
+}
