@@ -41,6 +41,12 @@ pnpm run dev
 pnpm run build
 ```
 
+## 💬 Discussion
+
+Hello Nav wechat group:
+
+<img width="200" src="https://github.com/hello-nav/hello-nav/assets/19926530/8ce06d1b-eec4-4e91-84ec-c91076e1f2f6" />
+
 ## 📄 License
 
 Hello Nav is [MIT](https://github.com/hello-nav/hello-nav/blob/master/LICENSE) license.
