@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   user-select: none;
-  z-index: 2024;
+  z-index: 1;
   color: var(--nav-filter-color);
   background: var(--nav-filter-bg);
   box-shadow: var(--nav-shadow);
@@ -70,6 +70,7 @@
       transition: 0.4s cubic-bezier(0.6, 0.6, 0, 1);
       backdrop-filter: blur(3px);
       will-change: width, background, padding;
+      box-sizing: content-box;
       &:focus,
       &:not([value='']) {
         width: 210px;

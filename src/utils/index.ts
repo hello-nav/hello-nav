@@ -1,3 +1,6 @@
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
 export const IGNORE_KEYWORD_REG = /[\s-_\.]/g
 
 export function transformAppKeyWords(app: AppItem): void {
@@ -6,4 +9,8 @@ export function transformAppKeyWords(app: AppItem): void {
   } else {
     app.keywords = app.keywords.map(key => key.toLowerCase().replace(IGNORE_KEYWORD_REG, ''))
   }
+}
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
 }

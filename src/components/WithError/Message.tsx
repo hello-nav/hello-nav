@@ -1,5 +1,5 @@
 import { ReactSVG } from 'react-svg'
-import gitHubIcon from '../../assets/images/github.svg'
+import gitHubIcon from '@/assets/images/github.svg'
 
 const Message = ({ filterKey }: { filterKey: string }) => (
   <>

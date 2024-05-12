@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { AppsContext } from '../../hooks/index'
-import gitHubIcon from '../../assets/images/github.png'
+import { AppsContext } from '@/hooks/index'
+import gitHubIcon from '@/assets/images/github.png'
 import './index.less'
 
 function onClickApp(appItem: AppItem) {
