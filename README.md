@@ -1,4 +1,10 @@
-<div align="center"><img src="./doc/images/logo-text.png" /></div>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/hello-nav/hello-nav/assets/19926530/abeb4249-1c80-4a9f-af2a-8b21435a6636">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/hello-nav/hello-nav/assets/19926530/332edbfa-70ef-4456-b17b-32fa447904d0">
+    <img height="250" alt="Hello Nav" src="https://github.com/hello-nav/hello-nav/assets/19926530/09d9df38-35cd-49a8-be8b-b041087bdcc6">
+  </picture>
+</div>
 
 ## A pure navigation for developers
 
@@ -45,7 +51,7 @@ pnpm run build
 
 Hello Nav wechat group:
 
-<img width="200" src="https://github.com/hello-nav/hello-nav/assets/19926530/8ce06d1b-eec4-4e91-84ec-c91076e1f2f6" />
+<img width="200" src="https://github.com/hello-nav/hello-nav/assets/19926530/817cf299-84ab-4348-bdd7-98acbf13b4b0"/>
 
 ## 📄 License
 
