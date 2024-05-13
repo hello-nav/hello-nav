@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/hello-nav/hello-nav/assets/19926530/abeb4249-1c80-4a9f-af2a-8b21435a6636">
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/hello-nav/hello-nav/assets/19926530/332edbfa-70ef-4456-b17b-32fa447904d0">
-    <img height="250" alt="Hello Nav" src="https://github.com/hello-nav/hello-nav/assets/19926530/09d9df38-35cd-49a8-be8b-b041087bdcc6">
+    <img width="580" alt="Hello Nav" src="https://github.com/hello-nav/hello-nav/assets/19926530/09d9df38-35cd-49a8-be8b-b041087bdcc6">
   </picture>
 </div>
 
