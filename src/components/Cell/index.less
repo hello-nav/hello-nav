@@ -15,11 +15,11 @@
     border-radius: 8px;
     transform-origin: bottom;
     transition:
-      background 0.2s,
+      background 0.3s,
       transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
     backface-visibility: hidden;
     background: var(--nav-app-bg);
-    will-change: transform, background, color;
+    will-change: transform, background;
     &:hover {
       background: var(--nav-app-bg-hover);
       box-shadow: var(--nav-shadow);
@@ -137,16 +137,12 @@
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    transition:
-      color 0.3s,
-      background 0.3s,
-      transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
+    transition: transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
     transform-origin: center;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     background: var(--nav-app-bg);
-    color: var(--nav-color-primary);
-    will-change: transform, background, color;
+    will-change: transform, background;
     .app-setting-head {
       height: 36px;
       display: flex;
@@ -161,7 +157,9 @@
         border-radius: 4px;
         margin-right: 4px;
         opacity: var(--nav-app-logo-op);
-        transition: filter 0.3s;
+        transition:
+          opacity 0.3s,
+          filter 0.3s;
         vertical-align: middle;
         filter: none;
         &.less-radius {
@@ -177,6 +175,7 @@
         white-space: nowrap;
         color: var(--nav-color-primary);
         transition: color 0.3s;
+        will-change: color;
         // &[data-size='small'] {
         //   font-size: 13px;
         // }
@@ -203,6 +202,9 @@
         font-family: 'iconfont';
         vertical-align: top;
         line-height: 1;
+        will-change: color;
+        color: var(--nav-color-primary);
+        transition: color 0.3s;
         will-change: color;
         &:hover:not(.disabled) {
           background: var(--nav-app-icon-bg-hover);

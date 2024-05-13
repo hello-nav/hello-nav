@@ -26,15 +26,29 @@
   }
   &.flipped {
     .app {
+      transition: transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
       transform: rotateY(-180deg);
+      * {
+        transition: none !important;
+      }
     }
     .app-back {
+      transition:
+        background 0.3s,
+        transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
       transform: rotateY(0deg);
       background: var(--nav-app-bg-setting);
     }
     .app-placeholder {
       transform: rotateY(0deg);
       background: var(--nav-app-bg-setting);
+    }
+  }
+  &:not(.flipped) {
+    .app-back {
+      * {
+        transition: none !important;
+      }
     }
   }
 }
