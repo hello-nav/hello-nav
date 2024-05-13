@@ -12,7 +12,9 @@
   background: var(--nav-filter-bg);
   box-shadow: var(--nav-shadow);
   backdrop-filter: blur(20px);
-  transition: 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
   &:hover {
     background: var(--nav-filter-bg-hover);
   }
@@ -38,7 +40,6 @@
       transform 0.3s cubic-bezier(0.6, 0.6, 0, 1),
       all 0.3s;
     cursor: pointer;
-    backdrop-filter: blur(2px);
     &:hover,
     &:active {
       background-size: var(--nav-action-item-bg-size-hover);
@@ -68,7 +69,6 @@
       background: var(--nav-action-item-bg);
       background-size: var(--nav-action-item-bg-size);
       transition: 0.4s cubic-bezier(0.6, 0.6, 0, 1);
-      backdrop-filter: blur(3px);
       will-change: width, background, padding;
       box-sizing: content-box;
       &:focus,

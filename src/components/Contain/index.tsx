@@ -34,7 +34,7 @@ function ContainWrap({ list, type, isSettingMode }: ContainWrapProp & { isSettin
     }, [])
   }
 
-  const containClass = ['contain-wrap', isSettingMode ? 'reverse' : ''].join(' ')
+  const containClass = ['contain-wrap', isSettingMode ? 'flipped' : ''].join(' ')
   return <div className={containClass}>{contain}</div>
 }
 

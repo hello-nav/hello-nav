@@ -1,24 +1,25 @@
 .cell {
-  display: grid;
-  grid-template: 10px 90px 10px / 10px 90px 10px;
+  height: 90px;
+  position: relative;
   transform-style: preserve-3d;
   perspective: 500px;
   &.hide .app-back {
-    // animation: 0.7s app-reverse forwards cubic-bezier(0.6, 0.6, 0, 1);
+    // animation: 0.7s app-flipped forwards cubic-bezier(0.6, 0.6, 0, 1);
   }
   .app {
-    position: relative;
-    display: grid;
-    grid-area: 2 / 2;
-    grid-template: 6px 1fr 20px 10px / 1fr;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 6px 0 10px;
     border-radius: 8px;
     transform-origin: bottom;
     transition:
       background 0.2s,
       transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
     backface-visibility: hidden;
-    overflow: hidden;
     background: var(--nav-app-bg);
+    will-change: transform, background, color;
     &:hover {
       background: var(--nav-app-bg-hover);
       box-shadow: var(--nav-shadow);
@@ -31,7 +32,7 @@
       }
     }
     .img-box {
-      grid-area: 2 / 1;
+      height: 54px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,15 +53,16 @@
       }
     }
     .title {
-      grid-area: 3 / 1;
+      height: 20px;
+      line-height: 20px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       padding: 0 4px;
-      line-height: 20px;
       font-size: 14px;
       color: var(--nav-color-primary);
       transition: color 0.3s;
+      will-change: color;
     }
     .title[data-size='small'] {
       font-size: 13px;
@@ -88,6 +90,7 @@
       box-shadow:
         0px 2px 6px rgba(128, 128, 128, 0.08),
         0px 2px 2px rgba(58, 58, 58, 0.08);
+      will-change: background;
       &:hover {
         width: 26px;
         height: 26px;
@@ -130,9 +133,9 @@
     }
   }
   .app-back {
-    display: grid;
-    grid-area: 2 / 2;
-    grid-template-rows: 36px 1fr;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     transition:
       color 0.3s,
@@ -143,8 +146,9 @@
     backface-visibility: hidden;
     background: var(--nav-app-bg);
     color: var(--nav-color-primary);
+    will-change: transform, background, color;
     .app-setting-head {
-      grid-area: 1 / 1;
+      height: 36px;
       display: flex;
       justify-content: center;
       min-width: 100%;
@@ -176,6 +180,7 @@
         // &[data-size='small'] {
         //   font-size: 13px;
         // }
+        will-change: color;
         &[data-size='tiny'] {
           font-size: 11px;
         }
@@ -188,7 +193,6 @@
       }
     }
     .app-setting-content {
-      grid-area: 2 / 1;
       .icon {
         display: inline-block;
         user-select: none;
@@ -199,6 +203,7 @@
         font-family: 'iconfont';
         vertical-align: top;
         line-height: 1;
+        will-change: color;
         &:hover:not(.disabled) {
           background: var(--nav-app-icon-bg-hover);
         }
@@ -235,7 +240,6 @@
     align-items: center;
     width: 100px;
     height: 98px;
-    grid-area: 2 / 2;
     border-radius: 8px;
     font-size: 40px;
     transition:
@@ -246,7 +250,7 @@
     backface-visibility: hidden;
     background: var(--nav-app-bg);
     color: var(--nav-color-secondary);
-    animation: 0.8s app-reverse forwards cubic-bezier(0.6, 0.6, 0, 1);
+    animation: 0.8s app-flipped forwards cubic-bezier(0.6, 0.6, 0, 1);
     cursor: pointer;
     &:hover {
       background: var(--nav-bg-secondary) !important;
@@ -260,7 +264,7 @@
   }
 }
 
-@keyframes app-reverse {
+@keyframes app-flipped {
   0% {
     transform: rotateY(180deg);
   }

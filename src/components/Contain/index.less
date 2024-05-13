@@ -20,10 +20,11 @@
   }
   .app-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 110px);
+    grid-template-columns: repeat(auto-fill, 90px);
+    gap: 20px;
     justify-content: center;
   }
-  &.reverse {
+  &.flipped {
     .app {
       transform: rotateY(-180deg);
     }
