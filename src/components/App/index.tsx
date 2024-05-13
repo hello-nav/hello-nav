@@ -1,5 +1,5 @@
 import { useState, useContext, useEffect } from 'react'
-import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '@/utils'
+import { IGNORE_KEYWORD_REG, transformAppKeyWords, loadStorage, saveStorage } from '@/utils'
 import { AppsContext } from '@/hooks/index'
 import libraryTree from '@/model'
 import ActionBar from '../ActionBar'
@@ -7,6 +7,7 @@ import ContainWrap from '../Contain'
 import WithError from '../WithError'
 import Message from '../WithError/Message'
 import Footer from '../Footer'
+import EditingDialog from '../EditingDialog'
 
 const CATEGORY_TYPES: CategoryTypes = ['category', 'list']
 const ContainWithNotFind = WithError<ContainWrapProp>(ContainWrap, Message)
@@ -23,25 +24,25 @@ const libraryMap: LibraryMap = {
 const filterListByKey = (list: AppItem[], key: string) =>
   list.filter(app => (app.keywords as string[]).some(k => k.includes(key)))
 
-const genFilteredByList = (list: (AppItem | CateItem)[], type: CategoryType, filterKey: string) => {
+const genFilteredByList = (list: (AppItem | CateItem)[], type: CategoryType, key: string) => {
   if (type === 'list') {
-    return filterListByKey(list as AppItem[], filterKey)
+    return filterListByKey(list as AppItem[], key)
   }
   return (list as CateItem[]).map(cate => ({
     title: cate.title,
-    children: filterListByKey(cate.children, filterKey),
+    children: filterListByKey(cate.children, key),
   }))
 }
 
 function App() {
-  const { __CATEGORY_TYPE__ } = window.localStorage
-  const [type, setType] = useState<CategoryType>(__CATEGORY_TYPE__ || CATEGORY_TYPES[0])
-  if (!__CATEGORY_TYPE__) {
-    window.localStorage.__CATEGORY_TYPE__ = type
-  }
+  const __CATEGORY_TYPE__ = loadStorage('__CATEGORY_TYPE__', CATEGORY_TYPES[0])
+  const [type, setType] = useState<CategoryType>(__CATEGORY_TYPE__)
 
   const [isSettingMode, setIsSettingMode] = useState(false)
-  const { favoriteApps, filterKey, setFilterKey } = useContext(AppsContext)
+  const {
+    favorite: { favoriteApps },
+    filter: { filterKey, setFilterKey },
+  } = useContext(AppsContext)!
   const newFilterKey = filterKey.trim().toLowerCase().replace(IGNORE_KEYWORD_REG, '')
   const libraries: (AppItem | CateItem)[] =
     type === 'category'
@@ -57,7 +58,7 @@ function App() {
   let filteredLibraries = genFilteredByList(libraries, type, newFilterKey)
 
   useEffect(() => {
-    window.localStorage.__CATEGORY_TYPE__ = type
+    saveStorage('__CATEGORY_TYPE__', type)
   }, [type])
 
   function toggleType() {
@@ -92,6 +93,7 @@ function App() {
         />
       </div>
       <Footer />
+      <EditingDialog />
     </div>
   )
 }

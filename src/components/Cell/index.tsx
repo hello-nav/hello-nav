@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { AppsContext } from '@/hooks/index'
 import gitHubIcon from '@/assets/images/github.png'
+import IconButton from '@/components/IconButton'
 import './index.less'
 
 function onClickApp(appItem: AppItem) {
@@ -33,8 +34,10 @@ function getImgSrc(fileName: string): string {
 
 const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boolean }) => {
   const { name, icon, homepage, repository, darkInvert, lessRadius, title } = appItem
-  const { favoriteAppNames, hiddenAppNames, filterKey, moveLeft, moveRight, toggleFavorite, toggleVisible } =
-    useContext(AppsContext)
+  const { favoriteAppNames, moveLeft, moveRight, toggleFavorite } = useContext(AppsContext).favorite
+  const { filterKey } = useContext(AppsContext).filter
+  const { editApp } = useContext(AppsContext).editing
+
   const imgClass = [darkInvert ? 'dark-invert' : '', lessRadius ? 'less-radius' : ''].join(' ')
   const size =
     name.length > 11
@@ -49,11 +52,9 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
 
   const isFavoriteApp =
     (!title || title !== 'favorites') && !appItem.favorite && favoriteAppNames.includes(appItem.name)
-  const isHiddenApp = hiddenAppNames.includes(appItem.name)
-  const visible = isHiddenApp ? appItem.isSettingMode : true || isFavoriteApp
 
   return !isFavoriteApp ? (
-    <li className={`cell ${isHiddenApp ? 'hide' : ''} ${appItem.favorite ? 'favorite' : ''}`}>
+    <li className={`cell ${appItem.favorite ? 'favorite' : ''}`}>
       <a className="app" href={homepage} title={name} onClick={() => onClickApp(appItem)}>
         <div className="img-box">
           <img src={getImgSrc(icon)} className={imgClass} alt={name} />
@@ -83,23 +84,25 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
               onClick={() => toggleVisible(appItem)}
             ></div>
           )} */}
-          {appItem.favorite && !filterKey && (
-            <div
-              className={`icon icon-left ${appItem.first ? 'disabled' : ''}`}
+          <div>
+            <IconButton
+              name={appItem.favorite ? 'favorite-active' : 'favorite'}
+              onClick={() => toggleFavorite(appItem)}
+            ></IconButton>
+            <IconButton name="edit" onClick={() => editApp(appItem)}></IconButton>
+          </div>
+          <div>
+            <IconButton
+              name="left"
+              disabled={appItem.first || !!filterKey}
               onClick={() => moveLeft(appItem)}
-            ></div>
-          )}
-          <div
-            className={`icon ${appItem.favorite ? 'icon-favorite-active' : 'icon-favorite'}`}
-            onClick={() => toggleFavorite(appItem)}
-          ></div>
-          {appItem.favorite && !filterKey && (
-            <div
-              className={`icon icon-right ${appItem.final ? 'disabled' : ''}`}
+            ></IconButton>
+            <IconButton
+              name="right"
+              disabled={appItem.final || !!filterKey}
               onClick={() => moveRight(appItem)}
-            ></div>
-          )}
-          {/* <div className="icon icon-edit" onClick={() => onEditApp(appItem)}></div> */}
+            ></IconButton>
+          </div>
         </div>
       </div>
     </li>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { loadStorage, saveStorage } from '@/utils'
 import './index.less'
 
 interface PandaBtnProps {
@@ -11,10 +12,10 @@ function toggleTheme(isStatusTrue: boolean) {
   const pageClassList = document.documentElement.classList
   if (isStatusTrue) {
     pageClassList.remove(STATUS_CLASS_NAME)
-    window.localStorage.__THEME__ = ''
+    saveStorage('__THEME__', '')
   } else {
     pageClassList.add(STATUS_CLASS_NAME)
-    window.localStorage.__THEME__ = STATUS_CLASS_NAME
+    saveStorage('__THEME__', STATUS_CLASS_NAME)
   }
   const themeMateEle = document.querySelector('meta[name="theme-color"]')
   if (themeMateEle) {
@@ -23,7 +24,7 @@ function toggleTheme(isStatusTrue: boolean) {
 }
 
 export default function PandaBtn({ onClick }: PandaBtnProps) {
-  const [status, setStatus] = useState(!!window.localStorage.__THEME__)
+  const [status, setStatus] = useState(!!loadStorage('__THEME__', null))
   const classNames = ['panda-btn', status ? 'active' : ''].join(' ')
 
   const handleClick: React.MouseEventHandler = e => {

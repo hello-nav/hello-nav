@@ -14,3 +14,16 @@ export function transformAppKeyWords(app: AppItem): void {
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
+
+export const loadStorage = <T>(key: string, defaultValue: T): T => {
+  try {
+    const value = localStorage.getItem(key)
+    return value ? JSON.parse(value) : defaultValue
+  } catch (_) {
+    return defaultValue
+  }
+}
+
+export const saveStorage = <T>(key: string, value: T): void => {
+  localStorage.setItem(key, JSON.stringify(value))
+}
