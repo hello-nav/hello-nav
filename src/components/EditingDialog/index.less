@@ -13,10 +13,12 @@
 }
 .dialog-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 90px;
-  height: 90px;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 320px;
+  box-shadow: var(--nav-shadow);
+  transform: translate(-50%, -50%) rotateY(0deg);
   transition: 0.8s cubic-bezier(0.6, 0.6, 0, 1);
   transform-style: preserve-3d;
   .dialog-content-front {
@@ -29,6 +31,7 @@
     border-radius: 8px;
     backface-visibility: hidden;
     background: hsl(var(--background));
+    color: hsl(var(--foreground));
     form {
       text-align: left;
       padding: 20px;
@@ -44,8 +47,6 @@
     backface-visibility: hidden;
     background: var(--nav-app-bg-setting);
     transform: rotateY(180deg);
-    transition: transform 0.8s cubic-bezier(0.6, 0.6, 0, 1);
-    transform-origin: center;
     & > * {
       animation: fade-out 0.1s forwards;
     }

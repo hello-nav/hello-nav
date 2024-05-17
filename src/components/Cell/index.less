@@ -191,6 +191,9 @@
       }
     }
     .app-setting-content {
+      color: var(--nav-color-primary);
+      transition: color 0.3s;
+      will-change: color;
       .icon {
         display: inline-block;
         user-select: none;
@@ -201,9 +204,6 @@
         font-family: 'iconfont';
         vertical-align: top;
         line-height: 1;
-        color: var(--nav-color-primary);
-        transition: color 0.3s;
-        will-change: color;
         &:hover:not(.disabled) {
           background: var(--nav-app-icon-bg-hover);
         }

@@ -19,22 +19,18 @@ export default () => {
     dialogContentRef.current.animate(
       [
         {
+          offset: 0,
+          width: '90px',
+          height: '90px',
           left: modalPosi.left,
           top: modalPosi.top,
-          transform: `rotateY(${modalPosi.direction === 'right' ? '-' : ''}180deg)`,
-        },
-        {
-          width: '500px',
-          height: '320px',
-          top: '50%',
-          left: '50%',
-          transform: `translate(-50%, -50%) rotateY(0deg)`,
+          boxShadow: 'none',
+          transform: `translate(0, 0) rotateY(${modalPosi.direction === 'left' ? '' : '-'}180deg)`,
         },
       ],
       {
         duration: 600,
         easing: 'cubic-bezier(0.6, 0.6, 0, 1)',
-        fill: 'forwards',
       },
     )
   })
@@ -46,11 +42,13 @@ export default () => {
     const animation = dialogContentRef.current.animate(
       [
         {
+          offset: 1,
           width: '90px',
           height: '90px',
           left: modalPosi.left,
           top: modalPosi.top,
-          transform: `translate(0, 0) rotateY(${modalPosi.direction === 'left' ? '180' : '-180'}deg)`,
+          boxShadow: 'none',
+          transform: `translate(0, 0) rotateY(${modalPosi.direction === 'left' ? '' : '-'}180deg)`,
         },
       ],
       {
