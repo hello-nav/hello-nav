@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useRef } from 'react'
 import { AppsContext } from '@/hooks/index'
 import gitHubIcon from '@/assets/images/github.png'
 import IconButton from '@/components/IconButton'
@@ -38,6 +38,11 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
   const { filterKey } = useContext(AppsContext).filter
   const { editApp } = useContext(AppsContext).editing
 
+  const appBackRef = useRef<HTMLLIElement>(null)
+  const handleEditApp = () => {
+    editApp(appItem, appBackRef.current)
+  }
+
   const imgClass = [darkInvert ? 'dark-invert' : '', lessRadius ? 'less-radius' : ''].join(' ')
   const size =
     name.length > 11
@@ -54,7 +59,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
     (!title || title !== 'favorites') && !appItem.favorite && favoriteAppNames.includes(appItem.name)
 
   return !isFavoriteApp ? (
-    <li className={`cell ${appItem.favorite ? 'favorite' : ''}`}>
+    <li className={`cell ${appItem.favorite ? 'favorite' : ''}`} ref={appBackRef}>
       <a className="app" href={homepage} title={name} onClick={() => onClickApp(appItem)}>
         <div className="img-box">
           <img src={getImgSrc(icon)} className={imgClass} alt={name} />
@@ -89,7 +94,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
               name={appItem.favorite ? 'favorite-active' : 'favorite'}
               onClick={() => toggleFavorite(appItem)}
             ></IconButton>
-            <IconButton name="edit" onClick={() => editApp(appItem)}></IconButton>
+            <IconButton name="edit" onClick={handleEditApp}></IconButton>
           </div>
           <div>
             <IconButton

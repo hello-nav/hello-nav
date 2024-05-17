@@ -33,6 +33,9 @@ export const AppsContext = createContext<AppsContextValue>({
     appModel: { name: '', homepage: '', icon: '' },
     setAppModel: () => {},
     editApp: () => {},
+    submitApp: () => {},
+    modalPosi: {},
+    appRef: null,
   },
 })
 

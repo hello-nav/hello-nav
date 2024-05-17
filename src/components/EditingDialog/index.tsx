@@ -1,76 +1,111 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { AppsContext } from '@/hooks'
 import { cn } from '@/utils'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-// import {
-//   Drawer,
-//   DrawerClose,
-//   DrawerContent,
-//   DrawerDescription,
-//   DrawerFooter,
-//   DrawerHeader,
-//   DrawerTitle,
-//   DrawerTrigger,
-// } from '@/components/ui/drawer'
 import { Label } from '@/components/ui/label'
+import './index.less'
 
 export default () => {
-  const { open, setOpen, appModel, setAppModel } = useContext(AppsContext).editing
+  const { open, appModel, submitApp, setAppModel, modalPosi, appRef } = useContext(AppsContext).editing
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const dialogContentRef = useRef<HTMLDivElement>(null)
+  const dialogContentBackRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!dialogContentRef.current || !dialogContentBackRef.current || !appRef) return
+    dialogContentBackRef.current.innerHTML = appRef.querySelector('.app-back')!.innerHTML
+    document.body.style.overflow = 'hidden'
+    dialogContentRef.current.animate(
+      [
+        {
+          left: modalPosi.left,
+          top: modalPosi.top,
+          transform: `rotateY(${modalPosi.direction === 'right' ? '-' : ''}180deg)`,
+        },
+        {
+          width: '500px',
+          height: '320px',
+          top: '50%',
+          left: '50%',
+          transform: `translate(-50%, -50%) rotateY(0deg)`,
+        },
+      ],
+      {
+        duration: 600,
+        easing: 'cubic-bezier(0.6, 0.6, 0, 1)',
+        fill: 'forwards',
+      },
+    )
+  })
 
   function onSubmit() {
-    console.log(appModel)
+    if (!dialogContentRef.current || !dialogContentBackRef.current || !appRef) return
+    dialogRef.current!.classList.add('closing')
+    dialogContentBackRef.current!.classList.add('closing')
+    const animation = dialogContentRef.current.animate(
+      [
+        {
+          width: '90px',
+          height: '90px',
+          left: modalPosi.left,
+          top: modalPosi.top,
+          transform: `translate(0, 0) rotateY(${modalPosi.direction === 'left' ? '180' : '-180'}deg)`,
+        },
+      ],
+      {
+        duration: 600,
+        easing: 'cubic-bezier(0.6, 0.6, 0, 1)',
+        fill: 'forwards',
+      },
+    )
+
+    animation.finished.then(() => {
+      appRef.style.visibility = 'visible'
+      document.body.style.overflow = 'initial'
+      submitApp(appModel)
+    })
   }
-  return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Edit App</DialogTitle>
-        </DialogHeader>
-        <form className={cn('grid items-start gap-4')} onSubmit={e => e.preventDefault()}>
-          <div className="grid gap-2">
-            <Label htmlFor="name">Name</Label>
-            <Input
-              id="name"
-              value={appModel.name}
-              onChange={e =>
-                setAppModel({
-                  ...appModel,
-                  name: e.target.value,
-                })
-              }
-            />
-          </div>
-          <div className="grid gap-2">
-            <Label htmlFor="homepage">Homepage</Label>
-            <Input
-              id="Homepage"
-              value={appModel.homepage}
-              onChange={e =>
-                setAppModel({
-                  ...appModel,
-                  homepage: e.target.value,
-                })
-              }
-            />
-          </div>
-          <div className="grid gap-2">
-            <Label htmlFor="repository">Repository</Label>
-            <Input
-              id="Repository"
-              value={appModel.repository}
-              onChange={e =>
-                setAppModel({
-                  ...appModel,
-                  repository: e.target.value,
-                })
-              }
-            />
-          </div>
-          <Button onClick={() => onSubmit()}>Save</Button>
-        </form>
-      </DialogContent>
-    </Dialog>
-  )
+
+  return open ? (
+    <div className="dialog" ref={dialogRef}>
+      <div className="dialog-content" ref={dialogContentRef}>
+        <div className="dialog-content-front">
+          <form className={cn('grid items-start gap-4')} onSubmit={e => e.preventDefault()}>
+            <div className="grid gap-2">
+              <Label htmlFor="name">Name</Label>
+              <Input
+                id="name"
+                value={appModel.name}
+                onChange={e => setAppModel({ ...appModel, name: e.target.value })}
+              />
+            </div>
+            <div className="grid gap-2">
+              <Label htmlFor="homepage">Homepage</Label>
+              <Input
+                id="Homepage"
+                value={appModel.homepage}
+                onChange={e => setAppModel({ ...appModel, homepage: e.target.value })}
+              />
+            </div>
+            <div className="grid gap-2">
+              <Label htmlFor="repository">Repository</Label>
+              <Input
+                id="Repository"
+                value={appModel.repository}
+                onChange={e =>
+                  setAppModel({
+                    ...appModel,
+                    repository: e.target.value,
+                  })
+                }
+              />
+            </div>
+            <Button onClick={() => onSubmit()}>Save</Button>
+          </form>
+        </div>
+        <div className="dialog-content-back" ref={dialogContentBackRef}></div>
+      </div>
+    </div>
+  ) : null
 }

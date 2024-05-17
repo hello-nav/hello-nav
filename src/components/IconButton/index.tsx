@@ -8,7 +8,7 @@ export interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEl
 }
 
 const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
-  ({ className, name, disabled, onClick, ...props }) => {
+  ({ className, name, disabled, onClick, ...props }, ref) => {
     const handleOnClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       if (disabled) return
       onClick && onClick(e)
@@ -17,6 +17,7 @@ const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
       <button
         className={cn('icon', name ? 'icon-' + name : '', disabled ? 'disabled' : '', className)}
         onClick={e => handleOnClick(e)}
+        ref={ref}
         {...props}
       ></button>
     )

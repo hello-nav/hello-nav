@@ -44,3 +44,9 @@ declare interface WithErrorProps {
   isError: boolean
   [propName: string]: any
 }
+
+declare type Posi = {
+  left?: string
+  top?: string
+  direction?: string
+}
