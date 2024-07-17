@@ -52,6 +52,13 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://sailsjs.com/',
+    repository: 'https://github.com/balderdashy/sails',
+    icon: 'sails.png',
+    keywords: ['sails'],
+    name: 'Sails',
+  },
+  {
     homepage: 'https://eggjs.org/',
     repository: 'https://github.com/eggjs/egg/',
     icon: 'egg.png',
@@ -165,6 +172,13 @@ export default <AppItem[]>[
     keywords: ['hemera'],
     name: 'Hemera',
     darkInvert: true,
+  },
+  {
+    homepage: 'https://v8.dev/',
+    repository: 'https://github.com/v8/v8',
+    icon: 'v8.png',
+    keywords: ['v8'],
+    name: 'V8',
   },
   {
     homepage: 'https://libuv.org/',

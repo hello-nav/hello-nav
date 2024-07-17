@@ -111,6 +111,7 @@ export default <AppItem[]>[
     icon: 'inkline.png',
     keywords: ['inkline', 'vue', 'ui'],
     name: 'Inkline',
+    darkInvert: true,
   },
   {
     homepage: 'https://veui.dev/',

@@ -371,6 +371,13 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://swr.vercel.app/',
+    repository: 'https://github.com/vercel/swr',
+    icon: 'swr.png',
+    keywords: ['swr'],
+    name: 'SWR',
+  },
+  {
     homepage: 'http://mockjs.com/',
     repository: 'https://github.com/nuysoft/Mock',
     icon: 'mockjs.png',

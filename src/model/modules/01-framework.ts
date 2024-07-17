@@ -99,6 +99,13 @@ export default <AppItem[]>[
     name: 'Lit',
   },
   {
+    homepage: 'https://stimulus.hotwired.dev/',
+    repository: 'https://github.com/hotwired/stimulus',
+    icon: 'stimulus.png',
+    keywords: ['stimulus'],
+    name: 'Stimulus',
+  },
+  {
     homepage: 'https://reasonml.github.io/',
     repository: 'https://github.com/reasonml/reason',
     icon: 'reason.png',
@@ -178,11 +185,25 @@ export default <AppItem[]>[
     name: 'Qwik',
   },
   {
+    homepage: 'https://sst.dev/',
+    repository: 'https://github.com/sst/sst',
+    icon: 'sst.png',
+    keywords: ['sst'],
+    name: 'SST',
+  },
+  {
     homepage: 'https://redwoodjs.com/',
     repository: 'https://github.com/redwoodjs/redwood',
     icon: 'redwoodjs.png',
     keywords: ['redwoodjs'],
     name: 'Redwood',
+  },
+  {
+    homepage: 'https://fresh.deno.dev/',
+    repository: 'https://github.com/denoland/fresh',
+    icon: 'fresh.png',
+    keywords: ['fresh'],
+    name: 'Fresh',
   },
   {
     homepage: 'https://www.electronjs.org/',

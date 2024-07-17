@@ -39,13 +39,20 @@ export default <AppItem[]>[
     homepage: 'https://gemini.google.com/',
     icon: 'bard.png',
     keywords: ['bard', 'gemini', 'ai'],
-    name: 'Bard',
+    name: 'Gemini',
   },
   {
     homepage: 'https://www.perplexity.ai/',
     icon: 'perplexity.png',
     keywords: ['perplexity', 'ai'],
     name: 'Perplexity',
+  },
+  {
+    homepage: 'https://runwayml.com/',
+    icon: 'runway.png',
+    keywords: ['runway', 'ai'],
+    name: 'Runway',
+    darkInvert: true,
   },
   {
     homepage: 'https://kimi.moonshot.cn/',
@@ -184,6 +191,12 @@ export default <AppItem[]>[
     icon: 'mdn.png',
     keywords: ['mdn'],
     name: 'MDN',
+  },
+  {
+    homepage: 'https://web.dev/',
+    icon: 'webdev.png',
+    keywords: ['web dev'],
+    name: 'web.dev',
   },
   {
     homepage: 'https://javascript.info/',
