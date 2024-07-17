@@ -624,4 +624,11 @@ export default <AppItem[]>[
     keywords: ['ui8'],
     name: 'UI8',
   },
+  {
+    homepage: 'https://layers.to/',
+    icon: 'layers.png',
+    keywords: ['layers'],
+    name: 'Layers',
+    darkInvert: true,
+  },
 ]
