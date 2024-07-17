@@ -51,7 +51,8 @@ pnpm run build
 
 Hello Nav wechat group:
 
-<img width="200" src="https://github.com/hello-nav/hello-nav/assets/19926530/817cf299-84ab-4348-bdd7-98acbf13b4b0"/>
+<img width="200" src="https://github.com/hello-nav/hello-nav/assets/19926530/7348d452-dba6-460d-ae31-863b1ff10376"/>
+
 
 ## 📄 License
 
