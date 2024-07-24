@@ -56,6 +56,13 @@ export default <AppItem[]>[
     name: 'Parcel',
   },
   {
+    homepage: 'https://www.farmfe.org/',
+    repository: 'https://github.com/farm-fe/farm',
+    icon: 'farm.png',
+    keywords: ['farm'],
+    name: 'Farm',
+  },
+  {
     homepage: 'https://www.snowpack.dev/',
     repository: 'https://github.com/FredKSchott/snowpack',
     icon: 'snowpack.png',
@@ -131,6 +138,13 @@ export default <AppItem[]>[
     icon: 'eslint.png',
     keywords: ['eslint'],
     name: 'ESlint',
+  },
+  {
+    homepage: 'https://oxc.rs/',
+    repository: 'https://github.com/oxc-project/oxc',
+    icon: 'oxc.png',
+    keywords: ['oxc'],
+    name: 'Oxc',
   },
   {
     homepage: 'https://jshint.com/',
