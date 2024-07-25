@@ -8,7 +8,13 @@
 
 ## A pure navigation for developers
 
+### Website
+
 [https://hello-nav.github.io](https://hello-nav.github.io)
+
+### Chrome new-tab extension
+
+https://chromewebstore.google.com/detail/hello-nav/plcklfadokmohkcifkhlelmcilgnpmcd
 
 ## 🗺 Features
 
