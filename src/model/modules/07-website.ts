@@ -179,8 +179,14 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://www.skypack.dev/',
+    repository: 'https://github.com/skypackjs',
+    icon: 'skypack.png',
+    keywords: ['skypack', 'cdn'],
+    name: 'Skypack',
+  },
+  {
     homepage: 'https://www.bootcdn.cn/',
-    repository: 'https://github.com/bootcdn',
     icon: 'bootcdn.png',
     keywords: ['bootcdn', 'cdn'],
     name: 'BootCDN',
