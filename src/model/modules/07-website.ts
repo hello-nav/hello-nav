@@ -377,6 +377,12 @@ export default <AppItem[]>[
     name: '飞书',
   },
   {
+    homepage: 'https://www.xiaohongshu.com/',
+    icon: 'xhs.png',
+    keywords: ['小红书', 'xiaohongshu', 'xhs'],
+    name: '小红书',
+  },
+  {
     homepage: 'https://juejin.im/',
     repository: 'https://github.com/xitu',
     icon: 'juejin.png',
