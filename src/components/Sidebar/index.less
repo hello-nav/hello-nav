@@ -22,6 +22,9 @@
       margin-left: -5px;
       a {
         width: 155px;
+        .sidebar__title {
+          opacity: 1;
+        }
       }
       + .go-top {
         transform: scale(0) !important;
@@ -40,7 +43,6 @@
       transition:
         color 0.3s,
         width 0.4s;
-      transition-property: color, width;
       transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
       &:hover,
       &:active,
@@ -49,9 +51,12 @@
         // background-size: var(--nav-action-item-bg-size);
       }
       .sidebar__title {
+        opacity: 0;
         font-weight: bold;
         font-size: 12px;
         margin-left: 10px;
+        transition: opacity 0.3s;
+        transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
       }
       .icon {
         font-size: 18px;
@@ -84,7 +89,7 @@
     }
     &:hover,
     &:active {
-      background: var(--nav-panda-primary-bg-hover);
+      background: var(--nav-filter-bg-hover);
     }
   }
 }

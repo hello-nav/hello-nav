@@ -72,6 +72,7 @@ const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: b
               title={title.toUpperCase()}
               key={title}
               className={currentAnchor === title ? 'active' : ''}
+              draggable={false}
               onClick={e => goToAnchor(e, title)}
             >
               <div>
@@ -82,7 +83,13 @@ const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: b
           )
         })}
       </div>
-      <a href="#root" title="Go Top" className={`go-top ${showGoTop ? 'show' : ''}`} onClick={e => goTop(e)}>
+      <a
+        href="#root"
+        title="Go Top"
+        draggable={false}
+        className={`go-top ${showGoTop ? 'show' : ''}`}
+        onClick={e => goTop(e)}
+      >
         <ReactSVG className="icon" src={iconTop}></ReactSVG>
       </a>
     </div>
