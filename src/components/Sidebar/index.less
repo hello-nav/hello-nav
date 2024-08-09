@@ -1,51 +1,75 @@
 .sidebar {
   position: fixed;
   top: 50%;
-  left: 35px;
+  left: 30px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 2px;
   border-radius: 24px;
-  padding: 8px 7px;
+  padding: 7px 6px;
   background: var(--nav-filter-bg);
   box-shadow: var(--nav-shadow);
   backdrop-filter: blur(20px);
+  transition: 0.4s;
+  transition-property: left, padding;
+  transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
   &:hover {
+    padding: 11px;
+    left: 25px;
     a {
-      width: 140px;
+      width: 155px;
     }
   }
   a {
-    width: 18px;
+    box-sizing: border-box;
+    width: 34px;
     display: flex;
-    gap: 8px;
-    align-items: center;
     overflow: hidden;
+    line-height: 18px;
     padding: 8px;
     border-radius: 30px;
     color: var(--nav-filter-color);
-    transition: width 0.3s;
+    transition: 0.4s;
+    transition-property: width;
     transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
     &:hover,
     &:active,
     &.active {
       background: var(--nav-action-item-bg);
+      // background-size: var(--nav-action-item-bg-size);
     }
     .sidebar__title {
       font-weight: bold;
-      text-overflow: ellipsis;
-      overflow: hidden;
       font-size: 12px;
     }
   }
   .icon {
-    font-size: 17px;
+    font-size: 18px;
+    margin-right: 10px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .sidebar {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .sidebar {
+    left: 40px;
+    &:hover {
+      left: 35px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .sidebar {
+    left: 45px;
+    &:hover {
+      left: 40px;
+    }
   }
 }
