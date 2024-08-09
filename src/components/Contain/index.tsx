@@ -25,7 +25,9 @@ function ContainWrap({ list, type, isSettingMode }: ContainWrapProp & { isSettin
       if (apps.length) {
         vmList.push(
           <div className="category-item" key={cate.title}>
-            <h2 className="category-item__title">{cate.title.toUpperCase()}</h2>
+            <h2 className="category-item__title" id={cate.title}>
+              {cate.title.toUpperCase()}
+            </h2>
             {Contain(apps, cate, isSettingMode)}
           </div>,
         )
@@ -34,7 +36,7 @@ function ContainWrap({ list, type, isSettingMode }: ContainWrapProp & { isSettin
     }, [])
   }
 
-  const containClass = ['contain-wrap', isSettingMode ? 'reverse' : ''].join(' ')
+  const containClass = ['contain-wrap', type, isSettingMode ? 'reverse' : ''].join(' ')
   return <div className={containClass}>{contain}</div>
 }
 

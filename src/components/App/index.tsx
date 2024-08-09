@@ -6,6 +6,7 @@ import ActionBar from '../ActionBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'
 import Message from '../WithError/Message'
+import Sidebar from '../Sidebar'
 import Footer from '../Footer'
 
 const CATEGORY_TYPES: CategoryTypes = ['category', 'list']
@@ -91,6 +92,7 @@ function App() {
           isError={!resultAppCount}
         />
       </div>
+      {resultAppCount && <Sidebar list={filteredLibraries} type={type} hasFavorite={!!favoriteApps.length} />}
       <Footer />
     </div>
   )

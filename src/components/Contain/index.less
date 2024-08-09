@@ -1,7 +1,13 @@
 .contain-wrap {
   padding: 80px 3vw 0;
   margin-bottom: 55px;
+  &.category {
+    padding: 80px 5vw 0;
+  }
   .category-item {
+    &:last-child {
+      min-height: calc(100vh - 420px);
+    }
     &:not(:last-child) {
       margin-bottom: 50px;
     }
@@ -11,6 +17,7 @@
       font-style: normal;
       font-family: 'bi';
       margin-bottom: 15px;
+      scroll-margin-top: 180px;
       color: var(--nav-header-color);
       transition: color 0.3s;
     }
@@ -54,7 +61,7 @@
 
 @media screen and (max-width: 700px) {
   .contain-wrap {
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
   }
 }
