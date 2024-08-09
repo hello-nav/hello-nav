@@ -8,6 +8,7 @@ import iconUIDesign from '../../assets/images/icon-design.svg'
 import iconServer from '../../assets/images/icon-server.svg'
 import iconOther from '../../assets/images/icon-other.svg'
 import iconWebsite from '../../assets/images/icon-website.svg'
+import iconTop from '../../assets/images/icon-top.svg'
 import './index.less'
 
 const icons: any = {
@@ -23,10 +24,12 @@ const icons: any = {
 
 const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: boolean }) => {
   const [currentAnchor, setCurrentAnchor] = useState<string | null>(null)
+  const [showGoTop, setShowGoTop] = useState<boolean | null>(null)
   useEffect(() => {
     const anchors: NodeListOf<HTMLElement> = document.querySelectorAll('h2[id]')
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 240
+      setShowGoTop(scrollPosition >= 1000)
       let activeAnchor = null
       for (let i = 0; i < anchors.length; i++) {
         const anchor = anchors[i]
@@ -45,24 +48,43 @@ const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: b
     list = (list as CateItem[]).filter(v => v.title !== 'favorites')
   }
 
+  function goToAnchor(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) {
+    e.preventDefault()
+    const target = document.getElementById(id)
+    target && window.scrollTo({ top: target.offsetTop - 180, behavior: 'smooth' })
+    return false
+  }
+
+  function goTop(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return false
+  }
+
   return type === 'category' ? (
     <div className="sidebar">
-      {list.map(item => {
-        const { title } = item as CateItem
-        return (
-          <a
-            href={`#${title}`}
-            title={title.toUpperCase()}
-            key={title}
-            className={currentAnchor === title ? 'active' : ''}
-          >
-            <div>
-              <ReactSVG className="icon" src={icons[title]}></ReactSVG>
-            </div>
-            <div className="sidebar__title">{title.toUpperCase()}</div>
-          </a>
-        )
-      })}
+      <div className="navbar">
+        {list.map(item => {
+          const { title } = item as CateItem
+          return (
+            <a
+              href={`#${title}`}
+              title={title.toUpperCase()}
+              key={title}
+              className={currentAnchor === title ? 'active' : ''}
+              onClick={e => goToAnchor(e, title)}
+            >
+              <div>
+                <ReactSVG className="icon" src={icons[title]}></ReactSVG>
+              </div>
+              <div className="sidebar__title">{title.toUpperCase()}</div>
+            </a>
+          )
+        })}
+      </div>
+      <a href="#root" title="Go Top" className={`go-top ${showGoTop ? 'show' : ''}`} onClick={e => goTop(e)}>
+        <ReactSVG className="icon" src={iconTop}></ReactSVG>
+      </a>
     </div>
   ) : null
 }
