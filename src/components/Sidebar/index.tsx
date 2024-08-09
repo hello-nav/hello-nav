@@ -42,7 +42,7 @@ const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: b
     handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [hasFavorite])
+  }, [hasFavorite, type])
 
   if (!hasFavorite) {
     list = (list as CateItem[]).filter(v => v.title !== 'favorites')
