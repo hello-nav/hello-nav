@@ -15,7 +15,7 @@ jobs:
       - name: Build
         run: |
           npx pnpm i
-          echo "VITE_BAIDU_KEY=${{ secrets.BAIDU_KEY }}\nVITE_GOOGLE_KEY=${{ secrets.GOOGLE_KEY }}" > .env.production
+          echo "${{ secrets.ENV_PROD }}" > .env.production
           npm run build
 
       - name: Clone website repo
