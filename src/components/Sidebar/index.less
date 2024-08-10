@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: 2px;
     border-radius: 24px;
-    padding: 7px 6px;
+    padding: 8px 7px;
     background: var(--nav-filter-bg);
     box-shadow: var(--nav-shadow);
     backdrop-filter: blur(20px);
@@ -18,10 +18,11 @@
       padding 0.4s;
     transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
     &:hover {
-      padding: 11px;
-      margin-left: -5px;
+      padding: 8px 9px;
+      margin-left: -10px;
       a {
-        width: 155px;
+        width: 162px;
+        padding: 8px 12px;
         .sidebar__title {
           opacity: 1;
         }
@@ -42,6 +43,7 @@
       color: var(--nav-filter-color);
       transition:
         color 0.3s,
+        padding 0.4s,
         width 0.4s;
       transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
       &:hover,
@@ -55,7 +57,7 @@
         font-weight: bold;
         font-size: 12px;
         margin-left: 10px;
-        transition: opacity 0.3s;
+        transition: opacity 0.4s;
         transition-timing-function: cubic-bezier(0.6, 0.6, 0, 1);
       }
       .icon {
