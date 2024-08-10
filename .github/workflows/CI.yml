@@ -13,7 +13,10 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build
-        run: npx pnpm i && npm run build
+        run: |
+          npx pnpm i
+          echo "VITE_BAIDU_KEY=${{ secrets.BAIDU_KEY }}\nVITE_GOOGLE_KEY=${{ secrets.GOOGLE_KEY }}" > .env.production
+          npm run build
 
       - name: Clone website repo
         uses: GuillaumeFalourd/clone-github-repo-action@v1
