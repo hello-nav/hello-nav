@@ -28,9 +28,10 @@ https://chromewebstore.google.com/detail/hello-nav/plcklfadokmohkcifkhlelmcilgnp
 
 ## 🎨 Design
 
-![hello-nav](./doc/images/hello-nav.png)
+![截屏2024-08-11 01 17 22](https://github.com/user-attachments/assets/a67b5ab3-9ee7-41b1-8417-58fb8d9df9cf)
 
-![hello-nav-dark](./doc/images/hello-nav-dark.png)
+![截屏2024-08-11 01 19 19](https://github.com/user-attachments/assets/d7aacfc9-2ca9-4724-873d-5ee2658b65eb)
+
 
 ## 👩🏻‍💻 Develop & Build
 
