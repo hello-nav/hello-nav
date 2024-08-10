@@ -42,7 +42,7 @@ const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: b
     handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [hasFavorite, type])
+  }, [hasFavorite, type, list])
 
   if (!hasFavorite) {
     list = (list as CateItem[]).filter(v => v.title !== 'favorites')
@@ -64,24 +64,26 @@ const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: b
   return type === 'category' ? (
     <div className="sidebar">
       <div className="navbar">
-        {list.map(item => {
-          const { title } = item as CateItem
-          return (
-            <a
-              href={`#${title}`}
-              title={title.toUpperCase()}
-              key={title}
-              className={currentAnchor === title ? 'active' : ''}
-              draggable={false}
-              onClick={e => goToAnchor(e, title)}
-            >
-              <div>
-                <ReactSVG className="icon" src={icons[title]}></ReactSVG>
-              </div>
-              <div className="sidebar__title">{title.toUpperCase()}</div>
-            </a>
-          )
-        })}
+        {(list as CateItem[])
+          .filter(v => v.children.length)
+          .map(item => {
+            const { title } = item
+            return (
+              <a
+                href={`#${title}`}
+                title={title.toUpperCase()}
+                key={title}
+                className={currentAnchor === title ? 'active' : ''}
+                draggable={false}
+                onClick={e => goToAnchor(e, title)}
+              >
+                <div>
+                  <ReactSVG className="icon" src={icons[title]}></ReactSVG>
+                </div>
+                <div className="sidebar__title">{title.toUpperCase()}</div>
+              </a>
+            )
+          })}
       </div>
       <a
         href="#root"
