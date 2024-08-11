@@ -1,0 +1,23 @@
+{
+  "name": "@hello-nav/model",
+  "version": "1.0.0",
+  "author": "Bener",
+  "license": "MIT",
+  "description": "Hello Nav model",
+  "main": "./dist/hello-nav.umd.js",
+  "module": "./dist/hello-nav.es.js",
+  "keywords": [
+    "hello-nav"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "publish": "npm publish --access publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

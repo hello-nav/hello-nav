@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from 'react'
 import { IGNORE_KEYWORD_REG, transformAppKeyWords } from '../../utils'
 import { AppsContext } from '../../hooks/index'
-import libraryTree from '../../model'
+import libraryTree from '@hello-nav/model'
 import ActionBar from '../ActionBar'
 import ContainWrap from '../Contain'
 import WithError from '../WithError'

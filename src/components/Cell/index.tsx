@@ -27,10 +27,6 @@ function onCornerClick(e: React.SyntheticEvent, appItem: AppItem) {
   return false
 }
 
-function getImgSrc(fileName: string): string {
-  return new URL(`../../assets/icons/${fileName}`, import.meta.url).href
-}
-
 const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boolean }) => {
   const { name, icon, homepage, repository, darkInvert, lessRadius, title } = appItem
   const { favoriteAppNames, hiddenAppNames, filterKey, moveLeft, moveRight, toggleFavorite, toggleVisible } =
@@ -56,7 +52,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
     <li className={`cell ${isHiddenApp ? 'hide' : ''} ${appItem.favorite ? 'favorite' : ''}`}>
       <a className="app" href={homepage} title={name} onClick={() => onClickApp(appItem)}>
         <div className="img-box">
-          <img src={getImgSrc(icon)} className={imgClass} alt={name} />
+          <img src={icon} className={imgClass} alt={name} />
         </div>
         <p className="title" data-size={size}>
           {name}
@@ -71,7 +67,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
       </a>
       <div className="app-back">
         <div className="app-setting-head">
-          <img src={getImgSrc(icon)} className={imgClass} alt={name} />
+          <img src={icon} className={imgClass} alt={name} />
           <p className="title" data-size={size} title={name}>
             {name}
           </p>
