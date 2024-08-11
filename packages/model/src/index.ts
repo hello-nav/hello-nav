@@ -5,7 +5,7 @@ function getModules(context: Record<string, AppItem[]>): CateItem[] {
     title: path.replace(PATH_REG, (_, $1) => $1.replace('_', '/')),
     children: context[path].map(item => ({
       ...item,
-      icon: new URL(`./icons/${item.icon}`, import.meta.url).href,
+      icon: getIconUrl(item.icon),
     })),
   }))
 }
@@ -14,5 +14,13 @@ const context: Record<string, AppItem[]> = import.meta.importGlob('./module/*.ts
   eager: true,
   import: 'default',
 })
+
+function getIconUrl(filename: string): string {
+  if (typeof window !== 'undefined') {
+    return new URL(`../public/icons/${filename}`, import.meta.url).href
+  } else {
+    return `./icons/${filename}`
+  }
+}
 
 export default <CateItem[]>getModules(context)

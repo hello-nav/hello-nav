@@ -14,7 +14,6 @@
     "build": "tsc && vite build",
     "build:lib": "pnpm --filter @hello-nav/model run build",
     "build:ext": "npm run build && node ./scripts/build-ext.mjs",
-    "publish": "pnpm --filter @hello-nav/model run publish",
     "preview": "vite preview",
     "lint": "prettier --write ."
   },

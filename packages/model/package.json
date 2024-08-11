@@ -1,6 +1,6 @@
 {
   "name": "@hello-nav/model",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Bener",
   "license": "MIT",
   "description": "Hello Nav model",
@@ -11,8 +11,7 @@
   ],
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vite build",
-    "publish": "npm publish --access publish"
+    "build": "vite build"
   },
   "files": [
     "dist"

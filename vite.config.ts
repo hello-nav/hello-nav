@@ -11,5 +11,13 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 800,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          model: ['@hello-nav/model'],
+          lib: ['react', 'react-dom', 'react-svg'],
+        },
+      },
+    },
   },
 })
