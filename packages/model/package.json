@@ -4,8 +4,14 @@
   "author": "Bener",
   "license": "MIT",
   "description": "Hello Nav model",
-  "main": "./dist/hello-nav.umd.js",
-  "module": "./dist/hello-nav.es.js",
+  "main": "dist/hello-nav.umd.js",
+  "module": "dist/hello-nav.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hello-nav.es.js",
+      "require": "./dist/hello-nav.umd.js"
+    }
+  },
   "keywords": [
     "hello-nav"
   ],
