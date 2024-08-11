@@ -1,8 +1,9 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Bener",
   "private": true,
   "license": "MIT",
+  "description": "A purely front-end development navigation",
   "homepage": "https://hello-nav.github.io/",
   "keywords": [
     "hello-nav",
