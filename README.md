@@ -22,7 +22,7 @@ Add Hello Nav to your Chrome: [Chrome Web Store](https://chromewebstore.google.c
 - Easily Open GitHub Link
 - Powerful Keyword Search
 - Flexible List & Category Views
-- Mark Your favorite Apps
+- Mark Your Favorite Apps
 - Navigate Through Categories With Sidebar
 - Full Dark Mode Support
 - Chrome New-Tab Integration
