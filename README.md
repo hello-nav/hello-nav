@@ -39,6 +39,12 @@ Add Hello Nav to your Chrome: [Chrome Web Store](https://chromewebstore.google.c
   <img src="https://github.com/user-attachments/assets/c5614985-0608-4019-8484-d4b13566de5f" />
 </div>
 
+## ⚡️ Hello Nav on Raycast
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4acef06b-c99c-40a0-a3e5-a7b85d077cb8" />
+</div>
+
 ## 👩🏻‍💻 Development & Build Instructions
 
 > Note: pnpm is required!
