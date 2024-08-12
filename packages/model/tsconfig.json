@@ -13,7 +13,7 @@
     "moduleResolution": "Node",
     "isolatedModules": true,
     "outDir": "dist",
-    "types": ["vite-plugin-glob/client"]
+    "types": ["vite-plugin-glob/client", "../../src/types/index.d.ts"]
   },
   "include": ["src"],
   "references": [{ "path": "../../tsconfig.node.json" }]

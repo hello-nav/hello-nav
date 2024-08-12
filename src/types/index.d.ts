@@ -44,8 +44,3 @@ declare interface WithErrorProps {
   isError: boolean
   [propName: string]: any
 }
-
-declare module '@hello-nav/model' {
-  const value: CateItem[]
-  export default value
-}
