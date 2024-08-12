@@ -33,16 +33,16 @@ Add Hello Nav to your Chrome: [Chrome Web Store](https://chromewebstore.google.c
 
 ![image](https://github.com/user-attachments/assets/5755b9a1-4f94-48ed-a8f2-558025f555fc)
 
-## 🎩 Hello Nav on Alfred
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/c5614985-0608-4019-8484-d4b13566de5f" />
-</div>
-
 ## ⚡️ Hello Nav on Raycast
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4acef06b-c99c-40a0-a3e5-a7b85d077cb8" />
+</div>
+
+## 🎩 Hello Nav on Alfred
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c5614985-0608-4019-8484-d4b13566de5f" />
 </div>
 
 ## 👩🏻‍💻 Development & Build Instructions
