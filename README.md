@@ -36,7 +36,7 @@ Add Hello Nav to your Chrome: [Chrome Web Store](https://chromewebstore.google.c
 ## ⚡️ Hello Nav on Raycast
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/4acef06b-c99c-40a0-a3e5-a7b85d077cb8" />
+  <img src="https://github.com/user-attachments/assets/0902cef4-ebe3-419b-b9af-6241bf393a81" />
 </div>
 
 ## 🎩 Hello Nav on Alfred
