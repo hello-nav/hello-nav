@@ -392,6 +392,13 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://github.com/sindresorhus/ky',
+    repository: 'https://github.com/sindresorhus/ky',
+    icon: 'ky.png',
+    keywords: ['ky'],
+    name: 'Ky',
+  },
+  {
     homepage: 'https://swr.vercel.app/',
     repository: 'https://github.com/vercel/swr',
     icon: 'swr.png',
