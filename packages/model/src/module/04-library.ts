@@ -299,6 +299,13 @@ export default <AppItem[]>[
     name: 'Lodash',
   },
   {
+    homepage: 'https://radash-docs.vercel.app/',
+    repository: 'https://github.com/sodiray/radash',
+    icon: 'radash.png',
+    keywords: ['radash'],
+    name: 'Radash',
+  },
+  {
     homepage: 'https://vueuse.org/',
     repository: 'https://github.com/vueuse/vueuse',
     icon: 'vueuse.png',
