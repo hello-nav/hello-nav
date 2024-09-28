@@ -579,6 +579,14 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://orm.drizzle.team/',
+    repository: 'https://github.com/drizzle-team/drizzle-orm',
+    icon: 'drizzle.png',
+    keywords: ['drizzle', 'orm'],
+    name: 'Drizzle',
+    darkInvert: true,
+  },
+  {
     homepage: 'https://webassembly.org/',
     repository: 'https://github.com/WebAssembly',
     icon: 'webassembly.png',
