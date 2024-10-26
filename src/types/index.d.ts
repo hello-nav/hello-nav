@@ -1,46 +1,49 @@
-/* eslint-disable no-unused-vars */
-declare interface AppItem {
-  name: string
-  homepage: string
-  repository?: string
-  icon: string
-  keywords?: string[]
-  darkInvert?: true
-  lessRadius?: true
-  favorite?: boolean
-  hidden?: boolean
-  first?: boolean
-  final?: boolean
+declare global {
+  interface AppItem {
+    name: string
+    homepage: string
+    repository?: string
+    icon: string
+    keywords?: string[]
+    darkInvert?: true
+    lessRadius?: true
+    favorite?: boolean
+    hidden?: boolean
+    first?: boolean
+    final?: boolean
+  }
+
+  interface CateItem {
+    title: string
+    children: AppItem[]
+  }
+
+  type CategoryType = 'list' | 'category'
+  type CategoryTypes = CategoryType[]
+
+  interface LibraryMap {
+    list: AppItem[]
+    category: CateItem[]
+  }
+
+  interface FilterProps {
+    onInput(e: React.FormEvent): void
+    onClear(): void
+    filterKey: string
+    toggleType: any
+    toggleSetting: any
+    type: string
+  }
+
+  interface ContainWrapProp {
+    list: AppItem[] | CateItem[]
+    type: string
+  }
+
+  interface WithErrorProps {
+    isError: boolean
+    [propName: string]: any
+  }
 }
 
-declare interface CateItem {
-  title: string
-  children: AppItem[]
-}
-
-declare type CategoryType = 'list' | 'category'
-declare type CategoryTypes = CategoryType[]
-
-declare interface LibraryMap {
-  list: AppItem[]
-  category: CateItem[]
-}
-
-declare interface FilterProps {
-  onInput(e: React.FormEvent): void
-  onClear(): void
-  filterKey: string
-  toggleType: any
-  toggleSetting: any
-  type: string
-}
-
-declare interface ContainWrapProp {
-  list: AppItem[] | CateItem[]
-  type: string
-}
-
-declare interface WithErrorProps {
-  isError: boolean
-  [propName: string]: any
-}
+export {}

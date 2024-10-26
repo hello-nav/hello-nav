@@ -16,7 +16,8 @@
     "build:lib": "pnpm --filter @hello-nav/model run build",
     "build:ext": "npm run build && node ./scripts/build-ext.mjs",
     "preview": "vite preview",
-    "lint": "prettier --write ."
+    "lint": "prettier --write .",
+    "check": "tsc test/index.ts && node test/index.js"
   },
   "dependencies": {
     "@hello-nav/model": "workspace:*",

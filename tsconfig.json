@@ -17,6 +17,6 @@
     "jsx": "react-jsx",
     "types": ["vite-plugin-glob/client"]
   },
-  "include": ["src", "packages"],
+  "include": ["src", "packages", "test"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
