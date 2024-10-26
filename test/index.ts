@@ -58,3 +58,5 @@ async function checkUrls(urls: string[], poolSize = 10) {
 }
 
 checkUrls(urls)
+
+export {}
