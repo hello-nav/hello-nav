@@ -100,6 +100,13 @@ export default <AppItem[]>[
     name: 'YouTube',
   },
   {
+    homepage: 'https://www.bilibili.com/',
+    repository: 'https://github.com/bilibili',
+    icon: 'bilibili.png',
+    keywords: ['bilibili'],
+    name: '哔哩哔哩',
+  },
+  {
     homepage: 'https://github.com/',
     repository: 'https://github.com/github',
     icon: 'github.png',
