@@ -128,7 +128,7 @@ export default <AppItem[]>[
     name: 'Aurelia',
   },
   {
-    homepage: 'https://www.gatsbyjs.org/',
+    homepage: 'https://www.gatsbyjs.com/',
     repository: 'https://github.com/gatsbyjs/gatsby',
     icon: 'gatsby.png',
     keywords: ['gatsby'],
@@ -339,7 +339,7 @@ export default <AppItem[]>[
     name: 'Gridsome',
   },
   {
-    homepage: 'https://react-static.js.org',
+    homepage: 'https://github.com/react-static/react-static',
     repository: 'https://github.com/react-static/react-static',
     icon: 'react-static.png',
     keywords: ['react-static', 'react'],
