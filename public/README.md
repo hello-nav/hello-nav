@@ -20,14 +20,14 @@ Add Hello Nav to your Chrome: [Chrome Web Store](https://chromewebstore.google.c
 
 ## 🗺 Features
 
-- Access 300+ Popular Apps
-- Easily Open GitHub Link
-- Powerful Keyword Search
-- Flexible List & Category Views
-- Mark Your Favorite Apps
-- Navigate Through Categories With Sidebar
-- Full Dark Mode Support
-- Chrome New-Tab Integration
+- Effortlessly access over 300 curated apps
+- One-click navigation to GitHub links
+- Powerful and intuitive keyword search
+- Flexible list and category views, tailored to you
+- Instantly access your favorite apps with bookmarks
+- Elegant and efficient sidebar navigation
+- Full support for Dark Mode, easy on the eyes
+- Seamlessly integrated into Chrome’s new tab, ready for your next idea
 
 ## 🎨 Design Overview
 
