@@ -10,7 +10,8 @@
     "nav"
   ],
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run dev:lib & npm run dev:web",
+    "dev:web": "vite",
     "dev:lib": "pnpm --filter @hello-nav/model run dev",
     "build": "tsc && vite build",
     "build:lib": "pnpm --filter @hello-nav/model run build",

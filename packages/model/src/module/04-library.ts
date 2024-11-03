@@ -119,6 +119,27 @@ export default <AppItem[]>[
     name: 'CreateReactApp',
   },
   {
+    homepage: 'https://single-spa.js.org/',
+    repository: 'https://github.com/single-spa/single-spa',
+    icon: 'single-spa.png',
+    keywords: ['single-spa'],
+    name: 'SingleSPA',
+  },
+  {
+    homepage: 'https://qiankun.umijs.org',
+    repository: 'https://github.com/umijs/qiankun',
+    icon: 'qiankun.png',
+    keywords: ['qiankun', '乾坤'],
+    name: 'QianKun',
+  },
+  {
+    homepage: 'https://wujie-micro.github.io/doc/',
+    repository: 'https://github.com/Tencent/wujie',
+    icon: 'wujie.png',
+    keywords: ['wujie', '无界'],
+    name: 'WuJie',
+  },
+  {
     homepage: 'https://github.com/google/zx',
     repository: 'https://github.com/google/zx',
     icon: 'zx.png',
