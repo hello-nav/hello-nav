@@ -50,15 +50,7 @@
     }
 
   </style>
-  <script>
-    if (document.documentElement) {
-      var themeClassName = window.localStorage && window.localStorage.__THEME__ || 'none'
-      document.documentElement.className = themeClassName
-      if (themeClassName === 'theme--dark') {
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', 'rgba(45, 46, 48, 0.9)')
-      }
-    }
-  </script>
+  <script src="/setup.js"></script>
   <script type="module">
     if (import.meta.env.PROD) {
       if (import.meta.env.VITE_BAIDU_KEY) {
