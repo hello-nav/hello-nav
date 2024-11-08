@@ -255,13 +255,6 @@ export default <AppItem[]>[
     name: 'VuePress',
   },
   {
-    homepage: 'https://github.com/react-static/react-static',
-    repository: 'https://github.com/react-static/react-static',
-    icon: 'react-static.png',
-    keywords: ['react-static', 'react'],
-    name: 'ReactStatic',
-  },
-  {
     homepage: 'https://starlight.astro.build/',
     repository: 'https://github.com/withastro/starlight',
     icon: 'starlight.png',
@@ -274,6 +267,20 @@ export default <AppItem[]>[
     icon: 'dumi.png',
     keywords: ['dumi'],
     name: 'Dumi',
+  },
+  {
+    homepage: 'https://rspress.dev/',
+    repository: 'https://github.com/web-infra-dev/rspress',
+    icon: 'rspress.png',
+    keywords: ['rspress'],
+    name: 'Rspress',
+  },
+  {
+    homepage: 'https://github.com/react-static/react-static',
+    repository: 'https://github.com/react-static/react-static',
+    icon: 'react-static.png',
+    keywords: ['react-static', 'react'],
+    name: 'ReactStatic',
   },
   {
     homepage: 'https://flutter.dev/',

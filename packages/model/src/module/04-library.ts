@@ -639,7 +639,7 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
-    homepage: 'https://github.com/google/zx',
+    homepage: 'https://google.github.io/zx/',
     repository: 'https://github.com/google/zx',
     icon: 'zx.png',
     keywords: ['zx'],
