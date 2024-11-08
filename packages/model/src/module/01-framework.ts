@@ -127,7 +127,6 @@ export default <AppItem[]>[
     keywords: ['aurelia'],
     name: 'Aurelia',
   },
-
   {
     homepage: 'https://nextjs.org/',
     repository: 'https://github.com/vercel/next.js',
@@ -172,6 +171,13 @@ export default <AppItem[]>[
     name: 'Analog',
   },
   {
+    homepage: 'https://dojotoolkit.org/',
+    repository: 'https://github.com/dojo/dojo',
+    icon: 'dojo.png',
+    keywords: ['dojo'],
+    name: 'Dojo',
+  },
+  {
     homepage: 'https://sst.dev/',
     repository: 'https://github.com/sst/sst',
     icon: 'sst.png',
@@ -192,7 +198,6 @@ export default <AppItem[]>[
     keywords: ['imba'],
     name: 'Imba',
   },
-
   {
     homepage: 'https://gohugo.io/',
     repository: 'https://github.com/gohugoio/hugo',

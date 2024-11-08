@@ -92,7 +92,7 @@ function App() {
           isError={!resultAppCount}
         />
       </div>
-      {resultAppCount && <Sidebar list={filteredLibraries} type={type} hasFavorite={!!favoriteApps.length} />}
+      {resultAppCount ? <Sidebar list={filteredLibraries} type={type} hasFavorite={!!favoriteApps.length} /> : null}
       <Footer />
     </div>
   )

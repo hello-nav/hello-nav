@@ -187,4 +187,32 @@ export default <AppItem[]>[
     keywords: ['libuv'],
     name: 'libuv',
   },
+  {
+    homepage: 'https://pm2.keymetrics.io/docs/usage/quick-start/',
+    repository: 'https://github.com/Unitech/pm2',
+    icon: 'pm2.png',
+    keywords: ['pm2'],
+    name: 'PM2',
+  },
+  {
+    homepage: 'https://nodemon.io/',
+    repository: 'https://github.com/remy/nodemon/',
+    icon: 'nodemon.png',
+    keywords: ['nodemon'],
+    name: 'Nodemon',
+  },
+  {
+    homepage: 'https://typestrong.org/ts-node/',
+    repository: 'https://github.com/TypeStrong/ts-node',
+    icon: 'ts-node.png',
+    keywords: ['ts-node'],
+    name: 'TSNode',
+  },
+  {
+    homepage: 'https://tsx.is/',
+    repository: 'https://github.com/privatenumber/tsx',
+    icon: 'tsx.png',
+    keywords: ['tsx'],
+    name: 'tsx',
+  },
 ]

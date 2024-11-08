@@ -390,6 +390,27 @@ export default <AppItem[]>[
     name: 'Flutter Go',
   },
   {
+    homepage: 'https://floating-ui.com/',
+    repository: 'https://github.com/floating-ui/floating-ui',
+    icon: 'floating-ui.png',
+    keywords: ['floating-ui'],
+    name: 'Floating UI',
+  },
+  {
+    homepage: 'https://svelte-sonner.vercel.app/',
+    repository: 'https://github.com/wobsoriano/svelte-sonner',
+    icon: 'svelte-sonner.png',
+    keywords: ['svelte-sonner'],
+    name: 'Svelte Sonner',
+  },
+  {
+    homepage: 'https://www.embla-carousel.com/',
+    repository: 'https://github.com/davidjerleke/embla-carousel',
+    icon: 'embla-carousel.png',
+    keywords: ['embla-carousel'],
+    name: 'EmblaCarousel',
+  },
+  {
     homepage: 'https://www.chartjs.org/',
     repository: 'https://github.com/chartjs/Chart.js',
     icon: 'chartjs.png',
@@ -423,6 +444,13 @@ export default <AppItem[]>[
     icon: 'antv.png',
     keywords: ['antv', 'charts'],
     name: 'AntV',
+  },
+  {
+    homepage: 'http://logic-flow.org/',
+    repository: 'https://github.com/didi/LogicFlow',
+    icon: 'logic-flow.png',
+    keywords: ['logic-flow'],
+    name: 'LogicFlow',
   },
   {
     homepage: 'http://www.iconfont.cn/',
