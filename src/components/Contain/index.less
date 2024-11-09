@@ -18,8 +18,21 @@
       font-family: 'bi';
       margin-bottom: 15px;
       scroll-margin-top: 180px;
-      color: var(--nav-header-color);
-      transition: color 0.3s;
+      @media screen and (min-width: 2000px) {
+        font-size: 42px;
+      }
+      &-link {
+        display: inline-block;
+        background: var(--nav-header-gradient-color);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: var(--nav-header-color);
+        transition: opacity 0.3s;
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
     .app-list {
       justify-content: center;

@@ -26,7 +26,9 @@ function ContainWrap({ list, type, isSettingMode }: ContainWrapProp & { isSettin
         vmList.push(
           <div className="category-item" key={cate.title}>
             <h2 className="category-item__title" id={cate.title}>
-              {cate.title.toUpperCase()}
+              <a href={'#' + cate.title} className="category-item__title-link">
+                {cate.title.toUpperCase()}
+              </a>
             </h2>
             {Contain(apps, cate, isSettingMode)}
           </div>,
