@@ -1,7 +1,7 @@
 {
   "name": "Hello Nav",
   "description": "A purely front-end development navigation",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },

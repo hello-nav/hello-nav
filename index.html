@@ -52,7 +52,7 @@
   </style>
   <script src="/setup.js"></script>
   <script type="module">
-    if (import.meta.env.PROD) {
+    if (import.meta.env.PROD && !import.meta.env.VITE_EXT) {
       if (import.meta.env.VITE_BAIDU_KEY) {
         window._hmt = window._hmt || [];
         const hm = document.createElement("script");

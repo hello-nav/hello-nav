@@ -1,5 +1,5 @@
 {
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "Bener",
   "private": true,
   "license": "MIT",
@@ -15,7 +15,7 @@
     "dev:lib": "pnpm --filter @hello-nav/model run dev",
     "build": "tsc && vite build",
     "build:lib": "pnpm --filter @hello-nav/model run build",
-    "build:ext": "npm run build && node ./scripts/build-ext.mjs",
+    "build:ext": "cross-env VITE_EXT=true npm run build && node ./scripts/build-ext.mjs",
     "preview": "vite preview",
     "lint": "prettier --write .",
     "check": "tsc test/index.ts && node test/index.js"
@@ -33,6 +33,7 @@
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
     "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "less": "^4.2.0",
     "prettier": "^3.2.5",
