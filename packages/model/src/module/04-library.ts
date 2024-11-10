@@ -564,6 +564,13 @@ export default <AppItem[]>[
     name: 'Shiki',
   },
   {
+    homepage: 'https://gsap.com/',
+    repository: 'https://github.com/greensock/GSAP',
+    icon: 'greensock.png',
+    keywords: ['greensock', 'gsap'],
+    name: 'GreenSock',
+  },
+  {
     homepage: 'https://threejs.org/',
     repository: 'https://github.com/mrdoob/three.js/',
     icon: 'three.js.png',
@@ -571,6 +578,20 @@ export default <AppItem[]>[
     name: 'ThreeJS',
     darkInvert: true,
     lessRadius: true,
+  },
+  {
+    homepage: 'https://tresjs.org/',
+    repository: 'https://github.com/Tresjs/tres',
+    icon: 'tresjs.png',
+    keywords: ['tresjs'],
+    name: 'TresJS',
+  },
+  {
+    homepage: 'https://www.remotion.dev/',
+    repository: 'https://github.com/remotion-dev/remotion',
+    icon: 'remotion.png',
+    keywords: ['remotion'],
+    name: 'Remotion',
   },
   {
     homepage: 'https://www.prisma.io/',

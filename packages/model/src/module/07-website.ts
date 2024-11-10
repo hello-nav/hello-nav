@@ -121,6 +121,12 @@ export default <AppItem[]>[
     name: 'GitLab',
   },
   {
+    homepage: 'https://gitee.com/',
+    icon: 'gitee.png',
+    keywords: ['gitee'],
+    name: 'Gitee',
+  },
+  {
     homepage: 'https://git-scm.com/',
     repository: 'https://github.com/git/git',
     icon: 'git.png',
@@ -230,6 +236,19 @@ export default <AppItem[]>[
     icon: 'caniuse.png',
     keywords: ['caniuse'],
     name: 'Can I use',
+  },
+  {
+    homepage: 'https://regexr.com/',
+    repository: 'https://github.com/gskinner/regexr',
+    icon: 'regexr.png',
+    keywords: ['regexr'],
+    name: 'RegExr',
+  },
+  {
+    homepage: 'https://regex101.com/',
+    icon: 'regex101.png',
+    keywords: ['regex101'],
+    name: 'Regex101',
   },
   {
     homepage: 'https://travis-ci.org/',

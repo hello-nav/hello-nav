@@ -255,6 +255,13 @@ export default <AppItem[]>[
     name: 'VuePress',
   },
   {
+    homepage: 'https://www.11ty.dev/',
+    repository: 'https://github.com/11ty/eleventy',
+    icon: 'eleventy.png',
+    keywords: ['eleventy', '11ty'],
+    name: 'Eleventy',
+  },
+  {
     homepage: 'https://starlight.astro.build/',
     repository: 'https://github.com/withastro/starlight',
     icon: 'starlight.png',

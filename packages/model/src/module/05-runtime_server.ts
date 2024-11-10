@@ -145,6 +145,13 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://h3.unjs.io/',
+    repository: 'https://github.com/unjs/h3',
+    icon: 'h3.png',
+    keywords: ['h3'],
+    name: 'h3',
+  },
+  {
     homepage: 'https://tinyhttp.v1rtl.site/',
     repository: 'https://github.com/tinyhttp/tinyhttp',
     icon: 'tinyhttp.png',

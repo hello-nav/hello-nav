@@ -383,6 +383,13 @@ export default <AppItem[]>[
     name: 'Storybook',
   },
   {
+    homepage: 'https://ladle.dev/',
+    repository: 'https://github.com/tajo/ladle',
+    icon: 'ladle.png',
+    keywords: ['ladle'],
+    name: 'Ladle',
+  },
+  {
     homepage: 'https://flutter-go.pub/',
     repository: 'https://github.com/alibaba/flutter-go/',
     icon: 'flutter-go.png',
@@ -444,6 +451,14 @@ export default <AppItem[]>[
     icon: 'antv.png',
     keywords: ['antv', 'charts'],
     name: 'AntV',
+  },
+  {
+    homepage: 'https://d3js.org/',
+    repository: 'https://github.com/d3/d3',
+    icon: 'd3.png',
+    keywords: ['d3', 'charts'],
+    name: 'D3',
+    lessRadius: true,
   },
   {
     homepage: 'http://logic-flow.org/',
@@ -588,8 +603,21 @@ export default <AppItem[]>[
     homepage: 'https://js.design/',
     repository: 'https://github.com/jsdesigndev',
     icon: 'jishidesign.png',
-    keywords: ['jishidesign'],
+    keywords: ['jishidesign', '即时设计'],
     name: '即时设计',
+  },
+  {
+    homepage: 'https://modao.cc/',
+    icon: 'modao.png',
+    keywords: ['modao'],
+    name: '墨刀',
+    lessRadius: true,
+  },
+  {
+    homepage: 'https://www.processon.com/',
+    icon: 'processon.png',
+    keywords: ['processon'],
+    name: 'ProcessOn',
   },
   {
     homepage: 'https://www.zcool.com.cn/',
