@@ -5,10 +5,8 @@ import './index.less'
 
 function onClickApp(appItem: AppItem) {
   try {
-    gtag('event', 'click', {
-      event_category: 'App',
-      event_label: 'app',
-      value: appItem.name,
+    gtag('event', `click-link_${appItem.name.replace(/ /g, '-')}`, {
+      value: appItem.name.replace(/ /g, '-'),
     })
   } catch (e) {}
 }
@@ -17,10 +15,8 @@ function onCornerClick(e: React.SyntheticEvent, appItem: AppItem) {
   e.preventDefault()
   e.stopPropagation()
   try {
-    gtag('event', 'click', {
-      event_category: 'App',
-      event_label: 'app-repo',
-      value: appItem.name,
+    gtag('event', `click-repo-link_${appItem.name.replace(/ /g, '-')}`, {
+      value: appItem.name.replace(/ /g, '-'),
     })
   } catch (e) {}
   window.open(appItem.repository)
