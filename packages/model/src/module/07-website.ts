@@ -84,6 +84,7 @@ export default <AppItem[]>[
     icon: 'x.png',
     keywords: ['x', 'twitter'],
     name: 'X',
+    darkInvert: true,
   },
   {
     homepage: 'https://about.facebook.com/meta',
@@ -112,6 +113,7 @@ export default <AppItem[]>[
     icon: 'github.png',
     keywords: ['github'],
     name: 'GitHub',
+    darkInvert: true,
   },
   {
     homepage: 'https://gitlab.com/',
@@ -313,11 +315,34 @@ export default <AppItem[]>[
     name: 'Vercel',
   },
   {
-    homepage: 'https://firebase.google.cn/',
+    homepage: 'https://firebase.google.com/',
     repository: 'https://github.com/firebase/',
     icon: 'firebase.png',
     keywords: ['firebase'],
     name: 'Firebase',
+  },
+  {
+    homepage: 'https://render.com/',
+    repository: 'https://github.com/renderinc',
+    icon: 'render.png',
+    keywords: ['render'],
+    name: 'Render',
+    lessRadius: true,
+    darkInvert: true,
+  },
+  {
+    homepage: 'https://supabase.com/',
+    repository: 'https://github.com/supabase/supabase',
+    icon: 'supabase.png',
+    keywords: ['supabase'],
+    name: 'Supabase',
+  },
+  {
+    homepage: 'https://neon.tech/',
+    repository: 'https://github.com/neondatabase/neon',
+    icon: 'neon.png',
+    keywords: ['neon'],
+    name: 'Neon',
   },
   {
     homepage: 'https://stackblitz.com/',

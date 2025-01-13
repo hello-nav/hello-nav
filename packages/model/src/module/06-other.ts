@@ -165,6 +165,13 @@ export default <AppItem[]>[
     name: 'MySQL',
   },
   {
+    homepage: 'https://www.postgresql.org/',
+    repository: 'https://github.com/postgres/postgres',
+    icon: 'postgresql.png',
+    keywords: ['postgresql'],
+    name: 'PostgreSQL',
+  },
+  {
     homepage: 'https://www.mongodb.com/',
     repository: 'https://github.com/mongodb',
     icon: 'mongodb.png',
