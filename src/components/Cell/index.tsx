@@ -23,21 +23,38 @@ function onCornerClick(e: React.SyntheticEvent, appItem: AppItem) {
   return false
 }
 
+const chinesePattern = /^[\u4e00-\u9fff]+$/
+const sizeChineseMapping = {
+  normal: [0, 4],
+  small: [5, 5],
+  tiny: [6, 6],
+  mini: [7, 7],
+  micro: [8, Infinity],
+}
+const sizeEnglishMapping = {
+  normal: [0, 10],
+  small: [11, 11],
+  tiny: [12, 12],
+  mini: [13, 13],
+  micro: [14, Infinity],
+}
+const getSize = (text: string) => {
+  const length = text.length
+  const mapping = chinesePattern.test(text) ? sizeChineseMapping : sizeEnglishMapping
+  for (const [size, [min, max]] of Object.entries(mapping)) {
+    if (length >= min && length <= max) {
+      return size
+    }
+  }
+  return 'normal'
+}
+
 const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boolean }) => {
   const { name, icon, homepage, repository, darkInvert, lessRadius, title } = appItem
   const { favoriteAppNames, hiddenAppNames, filterKey, moveLeft, moveRight, toggleFavorite, toggleVisible } =
     useContext(AppsContext)
   const imgClass = [darkInvert ? 'dark-invert' : '', lessRadius ? 'less-radius' : ''].join(' ')
-  const size =
-    name.length > 11
-      ? name.length > 12
-        ? name.length > 13
-          ? name.length > 14
-            ? 'micro'
-            : 'mini'
-          : 'tiny'
-        : 'small'
-      : 'normal'
+  const size = getSize(name)
 
   const isFavoriteApp =
     (!title || title !== 'favorites') && !appItem.favorite && favoriteAppNames.includes(appItem.name)

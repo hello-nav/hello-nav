@@ -311,6 +311,20 @@ export default <AppItem[]>[
     name: 'Electron',
   },
   {
+    homepage: 'https://electron-vite.github.io/',
+    repository: 'https://github.com/electron-vite',
+    icon: 'electronvite.png',
+    keywords: ['electronvite'],
+    name: 'Electron⚡️Vite',
+  },
+  {
+    homepage: 'https://www.electrobun.dev/',
+    repository: 'https://github.com/blackboardsh/electrobun',
+    icon: 'electrobun.png',
+    keywords: ['electrobun'],
+    name: 'Electrobun',
+  },
+  {
     homepage: 'https://tauri.app/',
     repository: 'https://github.com/tauri-apps/tauri',
     icon: 'tauri.png',

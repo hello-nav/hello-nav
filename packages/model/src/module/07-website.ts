@@ -79,6 +79,20 @@ export default <AppItem[]>[
     name: '通义',
   },
   {
+    homepage: 'https://v0.dev/',
+    icon: 'v0.png',
+    keywords: ['v0', 'ai'],
+    name: 'v0',
+    darkInvert: true,
+  },
+  {
+    homepage: 'https://bolt.new/',
+    icon: 'bolt.png',
+    keywords: ['bolt', 'ai'],
+    name: 'Bolt',
+    darkInvert: true,
+  },
+  {
     homepage: 'https://x.com/',
     repository: 'https://github.com/twitter',
     icon: 'x.png',
@@ -272,6 +286,13 @@ export default <AppItem[]>[
     icon: 'vscode.png',
     keywords: ['vscode'],
     name: 'VSCode',
+  },
+  {
+    homepage: 'https://www.cursor.com/',
+    repository: 'https://github.com/getcursor/cursor',
+    icon: 'cursor.png',
+    keywords: ['cursor'],
+    name: 'Cursor',
   },
   {
     homepage: 'https://www.jetbrains.com/webstorm/',

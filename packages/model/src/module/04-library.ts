@@ -289,6 +289,20 @@ export default <AppItem[]>[
     name: 'React Redux',
   },
   {
+    homepage: 'https://zustand-demo.pmnd.rs/',
+    repository: 'https://github.com/pmndrs/zustand',
+    icon: 'zustand.png',
+    keywords: ['zustand'],
+    name: 'Zustand',
+  },
+  {
+    homepage: 'https://mobx.js.org/',
+    repository: 'https://github.com/mobxjs/mobx',
+    icon: 'mobx.png',
+    keywords: ['mobx'],
+    name: 'MobX',
+  },
+  {
     homepage: 'https://pinia.vuejs.org/',
     repository: 'https://github.com/vuejs/pinia',
     icon: 'pinia.png',

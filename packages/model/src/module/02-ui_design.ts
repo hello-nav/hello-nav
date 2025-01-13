@@ -346,6 +346,7 @@ export default <AppItem[]>[
     icon: 'bits-ui.png',
     keywords: ['bits-ui', 'svelte'],
     name: 'Bits UI',
+    darkInvert: true,
   },
   {
     homepage: 'https://daisyui.com/',
