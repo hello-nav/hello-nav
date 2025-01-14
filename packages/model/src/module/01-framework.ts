@@ -339,6 +339,14 @@ export default <AppItem[]>[
     name: 'Ionic',
   },
   {
+    homepage: 'https://expo.dev/',
+    repository: 'https://github.com/expo/expo',
+    icon: 'expo.png',
+    keywords: ['expo'],
+    name: 'Expo',
+    darkInvert: true,
+  },
+  {
     homepage: 'https://docs.taro.zone/',
     repository: 'https://github.com/NervJS/taro',
     icon: 'taro.png',

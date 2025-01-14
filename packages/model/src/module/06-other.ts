@@ -172,6 +172,13 @@ export default <AppItem[]>[
     name: 'PostgreSQL',
   },
   {
+    homepage: 'https://sqlite.org/',
+    repository: 'https://github.com/sqlite/sqlite',
+    icon: 'sqlite.png',
+    keywords: ['sqlite'],
+    name: 'SQLite',
+  },
+  {
     homepage: 'https://www.mongodb.com/',
     repository: 'https://github.com/mongodb',
     icon: 'mongodb.png',

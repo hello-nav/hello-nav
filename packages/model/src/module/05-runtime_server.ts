@@ -1,13 +1,13 @@
 export default <AppItem[]>[
   {
-    homepage: 'https://nodejs.dev/',
+    homepage: 'https://nodejs.org/',
     repository: 'https://github.com/nodejs/node/',
     icon: 'nodejs.png',
     keywords: ['nodejs'],
     name: 'NodeJS',
   },
   {
-    homepage: 'https://deno.land/',
+    homepage: 'https://deno.com/',
     repository: 'https://github.com/denoland',
     icon: 'deno.png',
     keywords: ['deno'],
@@ -19,6 +19,13 @@ export default <AppItem[]>[
     icon: 'bun.png',
     keywords: ['bun'],
     name: 'Bun',
+  },
+  {
+    homepage: 'https://developers.cloudflare.com/workers/',
+    repository: 'https://github.com/cloudflare/workers-sdk',
+    icon: 'workers.png',
+    keywords: ['workers'],
+    name: 'Workers',
   },
   {
     homepage: 'https://nestjs.com/',
