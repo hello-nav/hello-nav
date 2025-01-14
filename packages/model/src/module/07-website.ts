@@ -1,12 +1,5 @@
 export default <AppItem[]>[
   {
-    homepage: 'https://www.baidu.com/',
-    repository: 'https://github.com/baidu',
-    icon: 'baidu.png',
-    keywords: ['百度', 'baidu'],
-    name: '百度',
-  },
-  {
     homepage: 'https://www.google.com/',
     repository: 'https://github.com/google',
     icon: 'google.png',
