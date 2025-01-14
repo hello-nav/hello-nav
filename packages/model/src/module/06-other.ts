@@ -172,6 +172,13 @@ export default <AppItem[]>[
     name: 'PostgreSQL',
   },
   {
+    homepage: 'https://pglite.dev/',
+    repository: 'https://github.com/electric-sql/pglite',
+    icon: 'pglite.png',
+    keywords: ['pglite'],
+    name: 'PGlite',
+  },
+  {
     homepage: 'https://sqlite.org/',
     repository: 'https://github.com/sqlite/sqlite',
     icon: 'sqlite.png',
@@ -184,5 +191,19 @@ export default <AppItem[]>[
     icon: 'mongodb.png',
     keywords: ['mongodb'],
     name: 'MongoDB',
+  },
+  {
+    homepage: 'https://www.edgedb.com/',
+    repository: 'https://github.com/edgedb/edgedb',
+    icon: 'edgedb.png',
+    keywords: ['edgedb'],
+    name: 'EdgeDB',
+  },
+  {
+    homepage: 'https://pingcap.com/',
+    repository: 'https://github.com/pingcap/tidb',
+    icon: 'tidb.png',
+    keywords: ['tidb'],
+    name: 'TiDB',
   },
 ]
