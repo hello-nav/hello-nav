@@ -228,6 +228,12 @@ export default <AppItem[]>[
     name: 'MDN',
   },
   {
+    homepage: 'https://developer.chrome.com/',
+    icon: 'chrome.png',
+    keywords: ['chromefordevelopers'],
+    name: 'Developers',
+  },
+  {
     homepage: 'https://web.dev/',
     icon: 'webdev.png',
     keywords: ['web dev'],
