@@ -48,6 +48,13 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://www.deepseek.com',
+    repository: 'https://github.com/deepseek-ai',
+    icon: 'deepseek.png',
+    keywords: ['deepseek', 'ai'],
+    name: 'DeepSeek',
+  },
+  {
     homepage: 'https://kimi.moonshot.cn/',
     icon: 'kimi.png',
     keywords: ['kimi', 'ai'],
