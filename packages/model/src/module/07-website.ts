@@ -101,6 +101,12 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://bsky.app',
+    icon: 'bsky.png',
+    keywords: ['bsky', 'bluesky'],
+    name: 'Bluesky',
+  },
+  {
     homepage: 'https://about.facebook.com/meta',
     repository: 'https://github.com/facebook',
     icon: 'meta.png',
