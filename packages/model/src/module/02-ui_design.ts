@@ -194,8 +194,16 @@ export default <AppItem[]>[
     homepage: 'https://material-ui.com/',
     repository: 'https://github.com/mui/material-ui',
     icon: 'material-ui.png',
-    keywords: ['materialui', 'react', 'ui'],
+    keywords: ['materialui', 'mui', 'react', 'ui'],
     name: 'Material UI',
+  },
+  {
+    homepage: 'https://base-ui.com/',
+    repository: 'https://github.com/mui/base-ui',
+    icon: 'base-ui.png',
+    keywords: ['base-ui', 'react', 'ui'],
+    name: 'Base UI',
+    darkInvert: true,
   },
   {
     homepage: 'https://chakra-ui.com/',
@@ -215,7 +223,7 @@ export default <AppItem[]>[
     homepage: 'https://ark-ui.com/',
     repository: 'https://github.com/chakra-ui/ark',
     icon: 'ark-ui.png',
-    keywords: ['ark', 'ui'],
+    keywords: ['ark', 'vue', 'react', 'solid', 'svelte', 'ui'],
     name: 'Ark UI',
   },
   {
@@ -240,6 +248,20 @@ export default <AppItem[]>[
     keywords: ['semidesign', 'react', 'ui'],
     name: 'Semi Design',
     darkInvert: true,
+  },
+  {
+    homepage: 'https://ariakit.org/',
+    repository: 'https://github.com/ariakit/ariakit',
+    icon: 'ariakit.png',
+    keywords: ['ariakit', 'react', 'ui'],
+    name: 'Ariakit',
+  },
+  {
+    homepage: 'https://reach.tech/',
+    repository: 'https://github.com/reach/reach-ui',
+    icon: 'reach-ui.png',
+    keywords: ['reachui', 'react', 'ui'],
+    name: 'Reach UI',
   },
   {
     homepage: 'https://rsuitejs.com/',
