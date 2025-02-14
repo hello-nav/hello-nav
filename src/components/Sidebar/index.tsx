@@ -68,14 +68,15 @@ const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: b
           .filter(v => v.children.length)
           .map(item => {
             const { title } = item
+            const id = title.replace(/\//g, '')
             return (
               <a
-                href={`#${title}`}
+                href={'#' + id}
                 title={title.toUpperCase()}
                 key={title}
-                className={currentAnchor === title ? 'active' : ''}
+                className={currentAnchor === id ? 'active' : ''}
                 draggable={false}
-                onClick={e => goToAnchor(e, title)}
+                onClick={e => goToAnchor(e, id)}
               >
                 <div>
                   <ReactSVG className="icon" src={icons[title]}></ReactSVG>

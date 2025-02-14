@@ -23,10 +23,11 @@ function ContainWrap({ list, type, isSettingMode }: ContainWrapProp & { isSettin
     contain = (list as CateItem[]).reduce((vmList: React.ReactElement[], cate: CateItem) => {
       const { children: apps } = cate
       if (apps.length) {
+        const id = cate.title.replace(/\//g, '')
         vmList.push(
           <div className="category-item" key={cate.title}>
-            <h2 className="category-item__title" id={cate.title}>
-              <a href={'#' + cate.title} className="category-item__title-link">
+            <h2 className="category-item__title" id={id}>
+              <a href={'#' + id} className="category-item__title-link">
                 {cate.title.toUpperCase()}
               </a>
             </h2>
