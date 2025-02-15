@@ -50,6 +50,13 @@ export default <AppItem[]>[
     name: 'Yew',
   },
   {
+    homepage: 'https://alpinejs.dev/',
+    repository: 'https://github.com/alpinejs/alpine',
+    icon: 'alpine.png',
+    keywords: ['alpinejs'],
+    name: 'Alpine',
+  },
+  {
     homepage: 'https://emberjs.com/',
     repository: 'https://github.com/emberjs/ember.js/',
     icon: 'ember.png',
