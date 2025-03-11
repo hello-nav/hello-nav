@@ -56,6 +56,13 @@ export default <AppItem[]>[
     name: 'Rolldown',
   },
   {
+    homepage: 'https://makojs.dev/',
+    repository: 'https://github.com/umijs/mako',
+    icon: 'mako.png',
+    keywords: ['mako'],
+    name: 'Mako',
+  },
+  {
     homepage: 'https://turbo.build/pack/',
     repository: 'https://github.com/vercel/turbo',
     icon: 'turbopack.png',
