@@ -6,26 +6,25 @@
   </picture>
 </div>
 
-# Hello Nav - A purely front-end development navigation
+A purely front-end development navigation.
 
-## 🌐 Website
+# Hello Nav
 
-Visit the website: [hello-nav.github.io](https://hello-nav.github.io)
+[hello-nav.github.io](https://hello-nav.github.io)
 
-## 🛠 Chrome new-tab extension
-
-Add Hello Nav to your Chrome: [Chrome Web Store](https://chromewebstore.google.com/detail/hello-nav/plcklfadokmohkcifkhlelmcilgnpmcd)
+Chrome New-Tab extension: [Chrome Web Store](https://chromewebstore.google.com/detail/hello-nav/plcklfadokmohkcifkhlelmcilgnpmcd)
 
 ## 🗺 Features
 
-- Effortlessly access over 300 curated apps
+- Elegant and refined UI
+- Effortlessly access over 400 curated apps
 - One-click navigation to GitHub links
 - Powerful and intuitive keyword search
-- Flexible list and category views, tailored to you
+- Flexible list and category views
 - Instantly access your favorite apps with bookmarks
 - Elegant and efficient sidebar navigation
 - Full support for Dark Mode, easy on the eyes
-- Seamlessly integrated into Chrome’s new tab, ready for your next idea
+- Seamlessly integrated into Chrome’s New-Tab, ready for your next idea
 
 ## 🎨 Design Overview
 
