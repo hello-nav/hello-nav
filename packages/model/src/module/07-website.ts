@@ -37,6 +37,13 @@ export default <AppItem[]>[
     lessRadius: true,
   },
   {
+    homepage: 'https://www.deepseek.com',
+    repository: 'https://github.com/deepseek-ai',
+    icon: 'deepseek.png',
+    keywords: ['deepseek', 'ai'],
+    name: 'DeepSeek',
+  },
+  {
     homepage: 'https://gemini.google.com/',
     icon: 'bard.png',
     keywords: ['bard', 'gemini', 'ai'],
@@ -49,11 +56,11 @@ export default <AppItem[]>[
     name: 'Perplexity',
   },
   {
-    homepage: 'https://www.deepseek.com',
-    repository: 'https://github.com/deepseek-ai',
-    icon: 'deepseek.png',
-    keywords: ['deepseek', 'ai'],
-    name: 'DeepSeek',
+    homepage: 'https://manus.im/',
+    icon: 'manus.png',
+    keywords: ['manus', 'ai'],
+    name: 'Manus',
+    darkInvert: true,
   },
   {
     homepage: 'https://kimi.moonshot.cn/',
