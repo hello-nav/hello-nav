@@ -44,8 +44,15 @@ export default <AppItem[]>[
     name: 'DeepSeek',
   },
   {
+    homepage: 'https://grok.com/',
+    icon: 'grok.png',
+    keywords: ['grok', 'ai'],
+    name: 'Grok',
+    darkInvert: true,
+  },
+  {
     homepage: 'https://gemini.google.com/',
-    icon: 'bard.png',
+    icon: 'gemini.png',
     keywords: ['bard', 'gemini', 'ai'],
     name: 'Gemini',
   },
