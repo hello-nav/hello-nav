@@ -333,7 +333,7 @@ export default <AppItem[]>[
     homepage: 'https://code.visualstudio.com/',
     repository: 'https://github.com/microsoft/vscode',
     icon: 'vscode.png',
-    keywords: ['vscode'],
+    keywords: ['vscode', 'visualstudio-code'],
     name: 'VSCode',
   },
   {
@@ -342,6 +342,26 @@ export default <AppItem[]>[
     icon: 'cursor.png',
     keywords: ['cursor'],
     name: 'Cursor',
+  },
+  {
+    homepage: 'https://windsurf.com/',
+    icon: 'windsurf.png',
+    keywords: ['windsurf'],
+    name: 'Windsurf',
+  },
+  {
+    homepage: 'https://www.trae.cn/',
+    repository: 'https://github.com/Trae-AI',
+    icon: 'trae.png',
+    keywords: ['trae'],
+    name: 'Trae',
+  },
+  {
+    homepage: 'https://kiro.dev/',
+    repository: 'https://github.com/kirodotdev/Kiro',
+    icon: 'kiro.png',
+    keywords: ['kiro'],
+    name: 'Kiro',
   },
   {
     homepage: 'https://www.jetbrains.com/webstorm/',
