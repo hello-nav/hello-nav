@@ -342,12 +342,14 @@ export default <AppItem[]>[
     icon: 'cursor.png',
     keywords: ['cursor'],
     name: 'Cursor',
+    darkInvert: true,
   },
   {
     homepage: 'https://windsurf.com/',
     icon: 'windsurf.png',
     keywords: ['windsurf'],
     name: 'Windsurf',
+    darkInvert: true,
   },
   {
     homepage: 'https://www.trae.cn/',
