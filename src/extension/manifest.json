@@ -1,14 +1,14 @@
 {
   "name": "Hello Nav",
   "description": "Quickly find frontend resources in every New-tab!",
-  "version": "1.3.3",
+  "version": "1.3.5",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
   "icons": {
-    "16": "./favicon/favicon-512.png",
-    "48": "./favicon/favicon-512.png",
-    "128": "./favicon/favicon-512.png"
+    "16": "favicon/favicon-512.png",
+    "48": "favicon/favicon-512.png",
+    "128": "favicon/favicon-512.png"
   },
   "manifest_version": 3
 }
