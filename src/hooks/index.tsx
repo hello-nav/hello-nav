@@ -160,3 +160,25 @@ const AppsProvider = ({ children }: any) => {
 }
 
 export { AppsContext, AppsProvider }
+
+// Hook to detect current theme
+export function useTheme() {
+  const [isDark, setIsDark] = useState(() => {
+    return document.documentElement.classList.contains('theme--dark')
+  })
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains('theme--dark'))
+    })
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
+  return isDark
+}

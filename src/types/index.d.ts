@@ -4,6 +4,7 @@ declare global {
     homepage: string
     repository?: string
     icon: string
+    iconDark?: string
     keywords?: string[]
     darkInvert?: true
     lessRadius?: true

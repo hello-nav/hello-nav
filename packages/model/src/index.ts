@@ -6,6 +6,7 @@ function getModules(context: Record<string, AppItem[]>): CateItem[] {
     children: context[path].map(item => ({
       ...item,
       icon: getIconUrl(item.icon),
+      iconDark: item.iconDark ? getIconUrl(item.iconDark) : undefined,
     })),
   }))
 }

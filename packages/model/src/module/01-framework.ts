@@ -223,6 +223,7 @@ export default <AppItem[]>[
     homepage: 'https://astro.build/',
     repository: 'https://github.com/withastro/astro',
     icon: 'astro.png',
+    iconDark: 'astro_dark.png',
     keywords: ['astro'],
     name: 'Astro',
   },

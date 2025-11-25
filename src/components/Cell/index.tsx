@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { AppsContext } from '../../hooks/index'
+import { AppsContext, useTheme } from '../../hooks/index'
 import gitHubIcon from '../../assets/images/github.png'
 import './index.less'
 
@@ -50,11 +50,15 @@ const getSize = (text: string) => {
 }
 
 const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boolean }) => {
-  const { name, icon, homepage, repository, darkInvert, lessRadius, title } = appItem
+  const { name, icon, iconDark, homepage, repository, darkInvert, lessRadius, title } = appItem
   const { favoriteAppNames, hiddenAppNames, filterKey, moveLeft, moveRight, toggleFavorite, toggleVisible } =
     useContext(AppsContext)
   const imgClass = [darkInvert ? 'dark-invert' : '', lessRadius ? 'less-radius' : ''].join(' ')
   const size = getSize(name)
+  const isDark = useTheme()
+
+  // Choose the appropriate icon based on theme
+  const currentIcon = isDark && iconDark ? iconDark : icon
 
   const isFavoriteApp =
     (!title || title !== 'favorites') && !appItem.favorite && favoriteAppNames.includes(appItem.name)
@@ -65,7 +69,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
     <li className={`cell ${isHiddenApp ? 'hide' : ''} ${appItem.favorite ? 'favorite' : ''}`}>
       <a className="app" href={homepage} title={name} onClick={() => onClickApp(appItem)}>
         <div className="img-box">
-          <img src={icon} className={imgClass} alt={name} />
+          <img src={currentIcon} className={imgClass} alt={name} />
         </div>
         <p className="title" data-size={size}>
           {name}
@@ -80,7 +84,7 @@ const Cell = (appItem: AppItem & { title: string | undefined; isSettingMode: boo
       </a>
       <div className="app-back">
         <div className="app-setting-head">
-          <img src={icon} className={imgClass} alt={name} />
+          <img src={currentIcon} className={imgClass} alt={name} />
           <p className="title" data-size={size} title={name}>
             {name}
           </p>
