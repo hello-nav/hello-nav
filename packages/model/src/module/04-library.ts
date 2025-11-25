@@ -7,6 +7,13 @@ export default <AppItem[]>[
     name: 'Vite',
   },
   {
+    homepage: 'https://rsbuild.rs/',
+    repository: 'https://github.com/web-infra-dev/rsbuild',
+    icon: 'rsbuild.png',
+    keywords: ['rsbuild'],
+    name: 'Rsbuild',
+  },
+  {
     homepage: 'https://webpack.js.org/',
     repository: 'https://github.com/webpack/webpack',
     icon: 'webpack.png',
@@ -133,6 +140,13 @@ export default <AppItem[]>[
     name: 'Oxc',
   },
   {
+    homepage: 'https://rslint.rs/',
+    repository: 'https://github.com/web-infra-dev/rslint',
+    icon: 'rslint.png',
+    keywords: ['rslint'],
+    name: 'Rslint',
+  },
+  {
     homepage: 'https://jshint.com/',
     repository: 'https://github.com/jshint/jshint',
     icon: 'jshint.png',
@@ -231,8 +245,8 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
-    homepage: 'https://turbo.build/repo/',
-    repository: 'https://github.com/vercel/turbo',
+    homepage: 'https://turborepo.com/',
+    repository: 'https://github.com/vercel/turborepo',
     icon: 'turborepo.png',
     keywords: ['turborepo'],
     name: 'Turborepo',
@@ -407,6 +421,13 @@ export default <AppItem[]>[
     icon: 'testing-library.png',
     keywords: ['testing-library'],
     name: 'TestingLibrary',
+  },
+  {
+    homepage: 'https://rstest.rs/',
+    repository: 'https://github.com/web-infra-dev/rstest',
+    icon: 'rstest.png',
+    keywords: ['rstest'],
+    name: 'Rstest',
   },
   {
     homepage: 'https://miragejs.com/',
