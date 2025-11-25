@@ -383,6 +383,8 @@ export default <AppItem[]>[
     icon: 'vercel.png',
     keywords: ['vercel'],
     name: 'Vercel',
+    darkInvert: true,
+    lessRadius: true,
   },
   {
     homepage: 'https://app.netlify.com/',
@@ -408,7 +410,8 @@ export default <AppItem[]>[
   {
     homepage: 'https://deno.com/deploy/',
     repository: 'https://github.com/denoland',
-    icon: 'deno.png',
+    icon: 'denodeploy.png',
+    iconDark: 'denodeploy_dark.png',
     keywords: ['denodeploy'],
     name: 'Deno Deploy',
   },

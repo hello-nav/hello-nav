@@ -10,6 +10,7 @@ export default <AppItem[]>[
     homepage: 'https://deno.com/',
     repository: 'https://github.com/denoland',
     icon: 'deno.png',
+    iconDark: 'deno_dark.png',
     keywords: ['deno'],
     name: 'Deno',
   },
