@@ -121,7 +121,7 @@ export default <AppItem[]>[
     lessRadius: true,
   },
   {
-    homepage: 'https://nerv.aotu.io/',
+    homepage: 'https://github.com/NervJS/nerv',
     repository: 'https://github.com/NervJS/nerv',
     icon: 'nervjs.png',
     keywords: ['nervjs', 'react'],

@@ -372,8 +372,8 @@ export default <AppItem[]>[
     name: 'STDF',
   },
   {
-    homepage: 'https://taro-ui.taro.zone',
-    repository: 'https://github.com/NervJS/taro-ui',
+    homepage: 'https://taro-ui.jd.com/',
+    repository: 'https://github.com/jd-opensource/taro-ui',
     icon: 'taro.png',
     keywords: ['taro', 'react', '小程序', 'ui', 'mobile'],
     name: 'Taro UI',

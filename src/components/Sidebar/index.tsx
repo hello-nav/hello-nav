@@ -8,6 +8,7 @@ import iconUIDesign from '../../assets/images/icon-design.svg'
 import iconServer from '../../assets/images/icon-server.svg'
 import iconOther from '../../assets/images/icon-other.svg'
 import iconWebsite from '../../assets/images/icon-website.svg'
+import iconAi from '../../assets/images/icon-ai.svg'
 import iconTop from '../../assets/images/icon-top.svg'
 import './index.less'
 
@@ -20,6 +21,7 @@ const icons: any = {
   'runtime/server': iconServer,
   other: iconOther,
   website: iconWebsite,
+  'ai/agent': iconAi,
 }
 
 const Sidebar = ({ list, type, hasFavorite }: ContainWrapProp & { hasFavorite: boolean }) => {
