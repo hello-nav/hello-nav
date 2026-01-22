@@ -81,6 +81,7 @@ export default <AppItem[]>[
     icon: 'opencode.png',
     keywords: ['opencode', 'ai'],
     name: 'OpenCode',
+    lessRadius: true,
   },
   {
     homepage: 'https://huggingface.co/',
