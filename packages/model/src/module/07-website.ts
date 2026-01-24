@@ -264,6 +264,12 @@ export default <AppItem[]>[
     name: 'Kiro',
   },
   {
+    homepage: 'https://antigravity.google/',
+    icon: 'antigravity.png',
+    keywords: ['antigravity'],
+    name: 'Antigravity',
+  },
+  {
     homepage: 'https://www.jetbrains.com/webstorm/',
     icon: 'webstorm.png',
     keywords: ['webstorm'],

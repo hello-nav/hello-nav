@@ -53,6 +53,7 @@ export default <AppItem[]>[
     icon: 'zhipu.png',
     keywords: ['bigmodel', 'zhipu', '智谱', 'glm', 'ai'],
     name: '智谱',
+    lessRadius: true,
   },
   {
     homepage: 'https://www.minimaxi.com/',
@@ -104,6 +105,14 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://kilo.ai/',
+    repository: 'https://github.com/cline/cline',
+    icon: 'kilo.png',
+    keywords: ['kilo', 'ai'],
+    name: 'Kilo',
+    lessRadius: true,
+  },
+  {
     homepage: 'https://ampcode.com/',
     icon: 'amp.png',
     keywords: ['ampcode', 'ai'],
@@ -123,6 +132,14 @@ export default <AppItem[]>[
     icon: 'goose.png',
     keywords: ['goose', 'ai'],
     name: 'Goose',
+    darkInvert: true,
+  },
+  {
+    homepage: 'https://roocode.com/',
+    repository: 'https://github.com/RooCodeInc/Roo-Code',
+    icon: 'roocode.png',
+    keywords: ['roocode', 'ai'],
+    name: 'Roo Code',
     darkInvert: true,
   },
   {
