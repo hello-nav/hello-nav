@@ -25,3 +25,6 @@ dist-ssr
 *.sw?
 *.zip
 .env.production
+
+# Generated files
+packages/model/src/icons-map.ts

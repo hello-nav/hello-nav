@@ -1,3 +1,5 @@
+import { getIconUrl } from './icons-map'
+
 const PATH_REG = /^.*\d{2}-(.*)\.ts$/
 
 function getModules(context: Record<string, AppItem[]>): CateItem[] {
@@ -15,13 +17,5 @@ const context: Record<string, AppItem[]> = import.meta.importGlob('./module/*.ts
   eager: true,
   import: 'default',
 })
-
-function getIconUrl(filename: string): string {
-  if (typeof window !== 'undefined') {
-    return new URL(`../public/icons/${filename}`, import.meta.url).href
-  } else {
-    return `./icons/${filename}`
-  }
-}
 
 export default <CateItem[]>getModules(context)

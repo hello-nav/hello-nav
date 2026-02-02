@@ -16,8 +16,8 @@
     "hello-nav"
   ],
   "scripts": {
-    "dev": "vite build --watch",
-    "build": "vite build"
+    "dev": "node scripts/build.js --watch",
+    "build": "node scripts/build.js"
   },
   "files": [
     "dist"
