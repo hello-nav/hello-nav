@@ -606,6 +606,13 @@ export default <AppItem[]>[
     name: 'Shiki',
   },
   {
+    homepage: 'https://diffs.com/',
+    repository: 'https://github.com/pierrecomputer/pierre',
+    icon: 'diffs.png',
+    keywords: ['diffs'],
+    name: 'Diffs',
+  },
+  {
     homepage: 'https://gsap.com/',
     repository: 'https://github.com/greensock/GSAP',
     icon: 'greensock.png',

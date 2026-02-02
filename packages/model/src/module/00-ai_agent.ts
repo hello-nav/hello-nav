@@ -89,12 +89,20 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://openclaw.ai/',
+    repository: 'https://github.com/openclaw/openclaw',
+    icon: 'openclaw.png',
+    keywords: ['openclaw', 'ai'],
+    name: 'OpenClaw',
+  },
+  {
     homepage: 'https://opencode.ai/',
     repository: 'https://github.com/anomalyco/opencode',
     icon: 'opencode.png',
     keywords: ['opencode', 'ai'],
     name: 'OpenCode',
     lessRadius: true,
+    darkInvert: true,
   },
   {
     homepage: 'https://cline.bot/',
