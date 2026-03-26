@@ -56,6 +56,13 @@ export default <AppItem[]>[
     lessRadius: true,
   },
   {
+    homepage: 'https://mimo.mi.com/',
+    icon: 'mimo.png',
+    keywords: ['xiaomi', 'mimo', '小米', 'ai'],
+    name: 'MiMo',
+    lessRadius: true,
+  },
+  {
     homepage: 'https://www.minimaxi.com/',
     repository: 'https://github.com/MiniMax-AI',
     icon: 'minimax.png',
@@ -156,6 +163,25 @@ export default <AppItem[]>[
     icon: 'huggingface.png',
     keywords: ['huggingface', 'ai'],
     name: 'Hugging Face',
+  },
+  {
+    homepage: 'https://openrouter.ai/',
+    icon: 'openrouter.png',
+    keywords: ['openrouter', 'ai'],
+    name: 'OpenRouter',
+    darkInvert: true,
+  },
+  {
+    homepage: 'https://www.siliconflow.com/',
+    icon: 'siliconflow.png',
+    keywords: ['siliconflow', 'ai'],
+    name: 'siliconflow',
+  },
+  {
+    homepage: 'https://www.siliconflow.cn/',
+    icon: 'siliconflow.png',
+    keywords: ['siliconflow', '硅基流动', 'ai'],
+    name: '硅基流动',
   },
   {
     homepage: 'https://ollama.com/',
