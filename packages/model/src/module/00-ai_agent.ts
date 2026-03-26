@@ -174,7 +174,7 @@ export default <AppItem[]>[
   {
     homepage: 'https://www.siliconflow.com/',
     icon: 'siliconflow.png',
-    keywords: ['siliconflow', 'ai'],
+    keywords: ['siliconflow', '硅基流动', 'ai'],
     name: 'SiliconFlow',
   },
   {
