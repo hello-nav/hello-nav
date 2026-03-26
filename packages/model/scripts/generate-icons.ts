@@ -27,8 +27,8 @@ function generateIconsMap(): void {
 
 export const iconsMap: Record<string, string> = ${JSON.stringify(iconsMap, null, 2)}
 
-export function getIconUrl(filename: string): string {
-  return iconsMap[filename] || ''
+export function getIconUrl(filename: string) {
+  return iconsMap[filename as keyof typeof iconsMap] || ''
 }
 `
 
