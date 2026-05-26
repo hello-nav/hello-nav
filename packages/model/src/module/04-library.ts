@@ -63,6 +63,13 @@ export default <AppItem[]>[
     name: 'Rolldown',
   },
   {
+    homepage: 'https://tsdown.dev/',
+    repository: 'https://github.com/rolldown/tsdown',
+    icon: 'tsdown.png',
+    keywords: ['tsdown'],
+    name: 'tsdown',
+  },
+  {
     homepage: 'https://makojs.dev/',
     repository: 'https://github.com/umijs/mako',
     icon: 'mako.png',
