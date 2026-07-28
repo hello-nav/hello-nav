@@ -369,6 +369,14 @@ export default <AppItem[]>[
     name: 'NativeScript',
   },
   {
+    homepage: 'https://lynxjs.org/',
+    repository: 'https://github.com/lynx-family',
+    icon: 'lynx.png',
+    keywords: ['lynx'],
+    name: 'Lynx',
+    darkInvert: true,
+  },
+  {
     homepage: 'https://weexapp.com/',
     repository: 'https://github.com/alibaba/weex',
     icon: 'weex.png',
