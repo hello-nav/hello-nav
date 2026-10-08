@@ -273,6 +273,15 @@ export default <AppItem[]>[
     darkInvert: true,
   },
   {
+    homepage: 'https://kumo-ui.com/',
+    repository: 'https://github.com/cloudflare/kumo',
+    icon: 'kumo.png',
+    keywords: ['kumo-ui', 'react', 'ui'],
+    name: 'Kumo',
+    lessRadius: true,
+    darkInvert: true,
+  },
+  {
     homepage: 'https://reach.tech/',
     repository: 'https://github.com/reach/reach-ui',
     icon: 'reach-ui.png',
